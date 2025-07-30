@@ -157,7 +157,7 @@ conn.public = true
   ◈ STATUS    : CONNECTED
   ◈ USER     : ${phoneNumber}
   ◈ SOCKET     : WHATSAPP
-  ◈ Dev     : t.me/trashcoredev
+  ◈ Dev     : t.me/maxie_dev
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 `)
 		console.log(`
@@ -167,7 +167,7 @@ conn.public = true
   ◈ STATUS    : CONNECTED
   ◈ USER     : ${phoneNumber}
   ◈ SOCKET     : WHATSAPP
-  ◈ Dev     : t.me/trashcoredev
+  ◈ Dev     : t.me/maxie_dev
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄`);
             }
 
@@ -774,15 +774,15 @@ bot.onText(/\/delsession (\d+)/, async (msg, match) => {
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  const imageUrl = 'https://url.bwmxmd.online/Adams.mgmt467f.jpg'; // Replace with the actual URL of your image
+  const imageUrl = 'https://files.catbox.moe/urnjdz.jpg'; // Replace with the actual URL of your image
   const menuText = `╭─⊷MAXIE-MD─
 │▢ Owner: maxwell dev
 │▢ Version: 1.3.0
 │▢ Type: MAXIE-MD
 ╰────────────
 ╭─⊷🐦‍🔥MAIN-CMD─
-│ /connect <wa_number>
-│ /delsession <wa_number>
+│ /connect 2547xxxx
+│ /delsession 2547xxxxx
 │ /status
 │ /start
 ╰────────────`;
