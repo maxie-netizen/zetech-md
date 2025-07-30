@@ -1,17 +1,17 @@
 // Owner Setting
-global.owner = ["254104245659",]
+global.owner = ["254743518481",]
 global.error = ["6666",]
-global.ownername = "Trashcore"
+global.ownername = "Maxwell"
 //━━━━━━━━━━━━━━━━━━━━━━━━//
 // Bot Setting
-global.botname = "Trashcore"
+global.botname = "maxie-md"
 global.botversion = "1.2.0"
 global.typebot = "Plugin"
 global.session = "trashsession"
 global.connect = true
 global.statusview = true
-global.thumb = "https://files.catbox.moe/4ryp6k.jpg"
-global.wagc = "https://chat.whatsapp.com/BPyIptm3ZH68y4pSPrLMyq?mode=r_t"
+global.thumb = "https://files.catbox.moe/urnjdz.jpg"
+global.wagc = "https://whatsapp.com/channel/0029VbB2Oro0lwgpSGvtrf25"
 //━━━━━━━━━━━━━━━━━━━━━━━━//
 // Sticker Marker
 global.packname = "MAXIE-MD"
@@ -23,7 +23,7 @@ global.mess = {
     admin: '🚨 Admin only.',
     premium: '🆘must be a premium user.',
     botAdmin: '🤖 Make me admin first.',
-    owner: '👑 Owner only.',
+    owner: '👑 Maxwell only.',
     OnlyGrup: '👥 Group only.',
     private: '📩 Private chat only.',
     wait: '⏳ Processing...',
