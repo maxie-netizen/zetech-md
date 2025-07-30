@@ -173,7 +173,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await trashcore.updateProfileStatus(`✳️ TRASHCORE BOT || ✅ Runtime : ${uptime}`)
+await trashcore.updateProfileStatus(`✳️ MAXIE-MD BOT || ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -226,7 +226,7 @@ const lol = {
   message: {
     orderMessage: {
       orderId: "2009",
-      thumbnailUrl: "https://files.catbox.moe/tq6zy6.jpg",
+      thumbnailUrl: "https://files.catbox.moe/urnjdz.jpg",
       itemCount: "999999",
       status: "INQUIRY",
       surface: "CATALOG",
@@ -260,7 +260,7 @@ amount1000: 999,
 requestFrom: '0@s.whatsapp.net',
 noteMessage: {
 extendedTextMessage: {
-text: `𝐒𝐈𝐋𝐄𝐍𝐂𝐄𝐑-𝐁𝐎𝐓`
+text: `MAXIE.MD-𝐁𝐎𝐓`
 }
 },
 expiryTimestamp: 999999999,
@@ -303,7 +303,7 @@ async function replymenu(teks) {
 trashcore.sendMessage(m.chat, {
 image:trashpic,  
 caption: teks,
-sourceUrl: 'https://github.com/Tennor-modz',    
+sourceUrl: 'https://github.com/maxie-netizen',    
 contextInfo: {
 forwardingScore: 9,
 isForwarded: true,
@@ -339,7 +339,7 @@ quoted: fkontak
 
         }
 if (m.isGroup) {
-    if (body.includes(`@254104245659`)) {
+    if (body.includes(`@254743518481`)) {
         reaction(m.chat, "❓")
     }
  }
@@ -823,7 +823,7 @@ break
                     }
                 );
 
-                await m.reply("Your bot is undergoing an upgrade, hold  for the next 2 minutes as the redeploy executes! Once done, you’ll have the freshest version of *Black-Demon* .");
+                await m.reply("Your bot is undergoing an upgrade, hold  for the next 2 minutes as the redeploy executes! Once done, you’ll have the freshest version of *maxie-md* .");
                 console.log("Build details:", response.data);
             } catch (error) {
                 const errorMessage = error.response?.data || error.message;
@@ -995,7 +995,7 @@ if (!m.quoted) return reply("quote a viewonce message eh")
     );
     
     // Confirm in chat
-    return m.reply(`✅  ${mediaType} Saved by Trashcore!`);
+    return m.reply(`✅  ${mediaType} Saved by Maxwell!`);
     
   } catch (error) {
     console.error('Save error:', error);
@@ -1077,8 +1077,8 @@ case "dev":
 case "devoloper":
 case "owner":
 case "xowner": {
-  let namaown = `TRASHCoreϟ`
-  let NoOwn = `254788460896`
+  let namaown = `Maxwellϟ`
+  let NoOwn = `254743518481`
   var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
     contactMessage: {
       displayName: namaown,
@@ -1509,7 +1509,7 @@ interactiveMessage: {
 body: {
 text: teks }, 
 footer: {
-text: "𝗕𝗮𝘀𝗲-𝗕𝗼𝘁𝘀-𝗩2" }, //input watermark footer
+text: "maxie-md-𝗩2" }, //input watermark footer
   nativeFlowMessage: {
   buttons: [
              {
