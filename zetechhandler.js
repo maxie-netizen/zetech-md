@@ -1431,15 +1431,15 @@ break
       download
     } = json.result;            
                await reply(`downloading song ${title}`);
-                let mbut = await fetchJson(`https://ochinpo-helper.hf.space/yt?query=${text}`)
-                let ahh = mbut.result
-                let crot = ahh.download.audio
+                let mbut = await fetch(`https://ochinpo-helper.hf.space/yt?query=${text}`)
+                let ahh = await mbut.json()
+                let crot = ahh.result.download.audio
 
                 conn.sendMessage(m.chat, {
                     audio: { url: crot },
                     mimetype: "audio/mpeg", 
                     ptt: true
-                }, { quoted: fkontak })
+                }, { quoted: m })
             }
             break
 //==================================================//
