@@ -15,10 +15,19 @@ let zetechplug = async (m, { conn, reply, text, trashown, prefix, command, args 
     // Ensure the message is a reply to a View Once message
     if (!m.quoted) return reply('*Please reply to a View Once message!*');
     
+    console.log(`[VV PLUGIN DEBUG] Quoted message structure:`, JSON.stringify(m.quoted.message, null, 2));
+    
     let msg = m.quoted.message;
-    if (msg.viewOnceMessageV2) msg = msg.viewOnceMessageV2.message;
-    else if (msg.viewOnceMessage) msg = msg.viewOnceMessage.message;
-    else return reply('*This is not a View Once message!*');
+    if (msg.viewOnceMessageV2) {
+        console.log(`[VV PLUGIN DEBUG] Found viewOnceMessageV2`);
+        msg = msg.viewOnceMessageV2.message;
+    } else if (msg.viewOnceMessage) {
+        console.log(`[VV PLUGIN DEBUG] Found viewOnceMessage`);
+        msg = msg.viewOnceMessage.message;
+    } else {
+        console.log(`[VV PLUGIN DEBUG] No View Once message found. Available keys:`, Object.keys(msg));
+        return reply('*This is not a View Once message!*');
+    }
 
     // Additional check to ensure it's media (image, video, or audio)
     const messageType = msg ? Object.keys(msg)[0] : null;

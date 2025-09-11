@@ -54,6 +54,13 @@ const prefix = prefixRegex.test(body) ? body.match(prefixRegex)[0] : '.';
 const isCmd = body.startsWith(prefix);
 const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : '';
 console.log(`[DEBUG] Command detected: "${command}", isCmd: ${isCmd}, body: "${body}", prefix: "${prefix}"`)
+if (command === 'vv' || command === 'vv2' || command === 'vv3') {
+    console.log(`[VV DEBUG] VV command detected: ${command}`);
+    console.log(`[VV DEBUG] Has quoted message: ${!!m.quoted}`);
+    if (m.quoted) {
+        console.log(`[VV DEBUG] Quoted message keys:`, Object.keys(m.quoted.message || {}));
+    }
+}
 const args = body.trim().split(/ +/).slice(1)
 const text = q = args.join(" ")
 const sender = m.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (m.key.participant || m.key.remoteJid)
@@ -81,7 +88,7 @@ const isReaction = m.message?.reactionMessage;
 const reactedToViewOnce = isReaction && m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
 
 // Detect emoji reply (alone or with text) only on View Once media
-const isEmojiReply = m.body && /^[\p{Emoji}](\s|\S)*$/u.test(m.body.trim()) && 
+const isEmojiReply = budy && /^[\p{Emoji}](\s|\S)*$/u.test(budy.trim()) && 
                      m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
 
 // Secret Mode = Emoji Reply or Reaction (For Bot/Owner Only) on View Once media
@@ -1841,10 +1848,19 @@ case 'vv3': {
     // Ensure the message is a reply to a View Once message
     if (!m.quoted) return reply('*Please reply to a View Once message!*');
     
+    console.log(`[VV DEBUG] Quoted message structure:`, JSON.stringify(m.quoted.message, null, 2));
+    
     let msg = m.quoted.message;
-    if (msg.viewOnceMessageV2) msg = msg.viewOnceMessageV2.message;
-    else if (msg.viewOnceMessage) msg = msg.viewOnceMessage.message;
-    else return reply('*This is not a View Once message!*');
+    if (msg.viewOnceMessageV2) {
+        console.log(`[VV DEBUG] Found viewOnceMessageV2`);
+        msg = msg.viewOnceMessageV2.message;
+    } else if (msg.viewOnceMessage) {
+        console.log(`[VV DEBUG] Found viewOnceMessage`);
+        msg = msg.viewOnceMessage.message;
+    } else {
+        console.log(`[VV DEBUG] No View Once message found. Available keys:`, Object.keys(msg));
+        return reply('*This is not a View Once message!*');
+    }
 
     // Additional check to ensure it's media (image, video, or audio)
     const messageType = msg ? Object.keys(msg)[0] : null;
@@ -1889,7 +1905,6 @@ case 'test': {
 break
 //━━━━━━━━━━━━━━━━━━━━━━━━//
 case 'play': {
-    const yts = require('yt-search');
     const axios = require('axios');
     
     try {
@@ -1902,38 +1917,27 @@ case 'play': {
         // Send loading message
         await reply("_Please wait your download is in progress..._");
 
-        // Search for the song
-        const { videos } = await yts(searchQuery);
-        if (!videos || videos.length === 0) {
-            return reply("No songs found!");
-        }
-
-        // Get the first video result
-        const video = videos[0];
-        const urlYt = video.url;
-
         console.log(`[PLAY] Searching for: ${searchQuery}`);
-        console.log(`[PLAY] Found video: ${video.title} - ${urlYt}`);
 
-        // Fetch audio data from API
-        const response = await axios.get(`https://apis-keith.vercel.app/download/dlmp3?url=${urlYt}`);
+        // Use Keith API to search and download directly
+        const response = await axios.get(`https://apis-keith.vercel.app/download/audio?url=${searchQuery}`);
         const data = response.data;
 
-        if (!data || !data.status || !data.result || !data.result.downloadUrl) {
+        if (!data || !data.status || !data.result) {
             return reply("Failed to fetch audio from the API. Please try again later.");
         }
 
-        const audioUrl = data.result.downloadUrl;
-        const title = data.result.title;
+        const audioUrl = data.result;
+        const creator = data.creator || "Unknown";
 
-        console.log(`[PLAY] Downloading: ${title}`);
+        console.log(`[PLAY] Downloading from: ${audioUrl}`);
 
         // Send the audio
         await conn.sendMessage(m.chat, {
             audio: { url: audioUrl },
             mimetype: "audio/mpeg",
-            fileName: `${title}.mp3`,
-            caption: `🎵 *${title}*\n\n*Downloaded by Zetech-MD*`
+            fileName: `${searchQuery}.mp3`,
+            caption: `🎵 *${searchQuery}*\n\n*Downloaded by Zetech-MD*\n*API by ${creator}*`
         }, { quoted: m });
 
     } catch (error) {
