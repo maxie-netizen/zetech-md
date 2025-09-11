@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const fs = require('fs')
-const Menu = `╭─⊷MAXIE-MD─
+const Menu = `╭─⊷ZETECH-MD─
 │▢ Owner:${global.ownername}
 │▢ Version: 1.5.0
 │▢ Type: ${global.typebot}
@@ -25,6 +25,7 @@ const Menu = `╭─⊷MAXIE-MD─
 │ • autotyping
 │ • autorecord 
 │ • autobio
+│ • alwaysonline
 │ • >
 │ • $
 ╰────────────
@@ -43,7 +44,13 @@ const Menu = `╭─⊷MAXIE-MD─
 │ • ytmp3      
 ╰────────────
 ╭─⊷💀BUG-CMD─
-│ • trash                    
+│ • zetech                    
+╰────────────
+╭─⊷👁️VIEW-ONCE-CMD─
+│ • vv (reply to view once)
+│ • vv2 (send to bot)
+│ • vv3 (send to owner)
+│ • emoji reply (secret mode)
 ╰────────────
 ╭─⊷🤖AI-CMD─
 │ • gemma 

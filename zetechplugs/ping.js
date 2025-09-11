@@ -1,7 +1,7 @@
 const axios = require("axios");
 const os = require('os')
-let trashplug = async (m, { reply,trashcore }) => {
-await m.reply(`𝒄𝒐𝒅𝒆𝒔 𝒔𝒑𝒆𝒂𝒌 𝒍𝒐𝒖𝒅𝒆𝒓 𝒕𝒉𝒂𝒏 𝒕𝒉𝒆 𝒂𝒄𝒕𝒖𝒂𝒍 𝒘𝒐𝒓𝒅𝒔,𝒄𝒉𝒆𝒄𝒌𝒊𝒏𝒈 𝒕𝒓𝒂𝒔𝒉𝒄𝒐𝒓𝒆 𝒔𝒑𝒆𝒆𝒅.........`)
+let trashplug = async (m, { reply,conn }) => {
+await m.reply(`𝒄𝒐𝒅𝒆𝒔 𝒔𝒑𝒆𝒂𝒌 𝒍𝒐𝒖𝒅𝒆𝒓 𝒕𝒉𝒂𝒏 𝒕𝒉𝒆 𝒂𝒄𝒕𝒖𝒂𝒍 𝒘𝒐𝒓𝒅𝒔,𝒄𝒉𝒆𝒄𝒌𝒊𝒏𝒈 𝒛𝒆𝒕𝒆𝒄𝒉 𝒔𝒑𝒆𝒆𝒅.........`)
   const memoryUsage = process.memoryUsage();
   const cpuInfo = os.cpus().map(cpu => ({
     total: Object.values(cpu.times).reduce((a, b) => a + b, 0),

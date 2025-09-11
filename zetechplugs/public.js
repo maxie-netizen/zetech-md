@@ -1,8 +1,8 @@
 const axios = require("axios");
  
-let trashplug = async (m, { trashown,reply,trashcore }) => {
+let trashplug = async (m, { trashown,reply,conn }) => {
                 if (!trashown) return reply(mess.owner)
-                trashcore.private = false
+                conn.private = false
                 reply('*Successful in Changing To Self Usage*')
             };
             

@@ -1,5 +1,5 @@
 const axios = require('axios');
-let trashplug = async (m, { text,trashcore,reply}) => {
+let trashplug = async (m, { text,conn,reply}) => {
   if (!text) return reply('provide a URL from YouTube!\n\nUse: .ytmp4 https://youtube.com/watch?v=xxxx 360p')
 
   let [url, quality] = text.split(' ')

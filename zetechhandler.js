@@ -41,7 +41,7 @@ settings: {},
 ///////////database access/////////////////
 const { addPremiumUser, delPremiumUser } = require("./library/lib/premiun");
 /////////exports////////////////////////////////
-module.exports = async (trashcore, m) => {
+module.exports = async (conn, m) => {
 try {
 const from = m.key.remoteJid
 var body = (m.mtype === 'interactiveResponseMessage') ? JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id : (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype == 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ""
@@ -55,8 +55,8 @@ const isCmd = body.startsWith(prefix);
 const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : '';
 const args = body.trim().split(/ +/).slice(1)
 const text = q = args.join(" ")
-const sender = m.key.fromMe ? (trashcore.user.id.split(':')[0]+'@s.whatsapp.net' || trashcore.user.id) : (m.key.participant || m.key.remoteJid)
-const botNumber = trashcore.user.id.split(':')[0];
+const sender = m.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (m.key.participant || m.key.remoteJid)
+const botNumber = conn.user.id.split(':')[0];
 const senderNumber = sender.split('@')[0]
 const trashown = (m && m.sender && [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)) || false;
     const premuser = JSON.parse(fs.readFileSync("./library/database/premium.json"));
@@ -67,16 +67,71 @@ const pushname = m.pushName || `${senderNumber}`
 const isBot = botNumber.includes(senderNumber)
 const quoted = m.quoted ? m.quoted : m
 const mime = (quoted.msg || quoted).mimetype || ''
-const groupMetadata = m.isGroup ? await trashcore.groupMetadata(from).catch(e => {}) : ''
+const groupMetadata = m.isGroup ? await conn.groupMetadata(from).catch(e => {}) : ''
 const groupName = m.isGroup ? groupMetadata.subject : ''
 const participants = m.isGroup ? await groupMetadata.participants : ''
 const groupAdmins = m.isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
 const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+
+/////////////VIEW ONCE SECRET MODE//////////////////
+// Detect reaction on View Once message
+const isReaction = m.message?.reactionMessage;
+const reactedToViewOnce = isReaction && m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
+
+// Detect emoji reply (alone or with text) only on View Once media
+const isEmojiReply = m.body && /^[\p{Emoji}](\s|\S)*$/u.test(m.body.trim()) && 
+                     m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
+
+// Secret Mode = Emoji Reply or Reaction (For Bot/Owner Only) on View Once media
+const secretMode = (isEmojiReply || reactedToViewOnce) && trashown;
+
+// Handle secret mode for View Once messages
+if (secretMode) {
+    const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+    
+    const botNumber = conn.user.id.split(':')[0] + '@s.whatsapp.net';
+    const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+    
+    // Ensure the message is a reply to a View Once message
+    const targetMessage = reactedToViewOnce ? m.quoted : m;
+    if (targetMessage.quoted) {
+        let msg = targetMessage.quoted.message;
+        if (msg.viewOnceMessageV2) msg = msg.viewOnceMessageV2.message;
+        else if (msg.viewOnceMessage) msg = msg.viewOnceMessage.message;
+
+        // Additional check to ensure it's media (image, video, or audio)
+        const messageType = msg ? Object.keys(msg)[0] : null;
+        const isMedia = messageType && ['imageMessage', 'videoMessage', 'audioMessage'].includes(messageType);
+        
+        if (msg && isMedia) {
+            try {
+                let buffer = await downloadMediaMessage(targetMessage.quoted, 'buffer');
+                if (buffer) {
+                    let mimetype = msg.audioMessage?.mimetype || 'audio/ogg';
+                    let caption = `> *ZETECH-MD EDITION*`;
+
+                    // Set recipient to bot for secret mode
+                    let recipient = botNumber;
+
+                    if (messageType === 'imageMessage') {
+                        await conn.sendMessage(recipient, { image: buffer, caption });
+                    } else if (messageType === 'videoMessage') {
+                        await conn.sendMessage(recipient, { video: buffer, caption, mimetype: 'video/mp4' });
+                    } else if (messageType === 'audioMessage') {  
+                        await conn.sendMessage(recipient, { audio: buffer, mimetype, ptt: true });
+                    }
+                }
+            } catch (error) {
+                console.error('Secret mode error:', error);
+            }
+        }
+    }
+}
 /////////////Setting Console//////////////////
 console.log(chalk.black(chalk.bgWhite(!command ? '[ MESSAGE ]' : '[ COMMAND ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> In'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
 /////////quoted functions//////////////////
-const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `🩸⃟‣MAXIE-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://files.catbox.moe/yqbio5.jpg' }}}}
+const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': { url: 'https://files.catbox.moe/yqbio5.jpg' }}}}
 let chats = global.db.data.chats[from]
                if (typeof chats !== 'object') global.db.data.chats[from] = {}
                if (chats) {
@@ -92,7 +147,7 @@ let chats = global.db.data.chats[from]
 if (isAdmins) return m.reply(bvl)
 if (m.key.fromMe) return m.reply(bvl)
 if (trashown) return m.reply(bvl)
-               await trashcore.sendMessage(m.chat,
+               await conn.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -101,7 +156,7 @@ if (trashown) return m.reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			trashcore.sendMessage(from, {text:`\`\`\`「 GC Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			conn.sendMessage(from, {text:`\`\`\`「 GC Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
             }
         }
         if (db.data.chats[m.chat].antilink) {
@@ -110,7 +165,7 @@ if (trashown) return m.reply(bvl)
 if (isAdmins) return m.reply(bvl)
 if (m.key.fromMe) return m.reply(bvl)
 if (trashown) return m.reply(bvl)
-               await trashcore.sendMessage(m.chat,
+               await conn.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -119,7 +174,7 @@ if (trashown) return m.reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			trashcore.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+			conn.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} has sent a link and successfully deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
             }
         }
 const setting = db.data.settings[botNumber]
@@ -156,24 +211,30 @@ remoteJid: m.chat,
 id: m.key.id, 
 participant: m.isGroup ? m.key.participant : undefined 
 }
-await trashcore.readMessages([readkey]);
+await conn.readMessages([readkey]);
 }
-trashcore.sendPresenceUpdate('available', m.chat)
+conn.sendPresenceUpdate('available', m.chat)
+
+// Always Online functionality
+if (global.alwaysOnline) {
+    conn.sendPresenceUpdate('available', m.chat);
+}
+
 if (db.data.settings[botNumber].autoTyping) {
 if (m.message) {
-trashcore.sendPresenceUpdate('composing', m.chat)
+conn.sendPresenceUpdate('composing', m.chat)
 }
 }
 if (db.data.settings[botNumber].autoRecord) {
 if (m.message) {
-trashcore.sendPresenceUpdate('recording', m.chat)
+conn.sendPresenceUpdate('recording', m.chat)
 }
 }
 if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await trashcore.updateProfileStatus(`✳️ MAXIE-MD BOT || ✅ Runtime : ${uptime}`)
+await conn.updateProfileStatus(`✳️ ZETECH-MD BOT || ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -280,14 +341,14 @@ const qtext = { key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat
 const replypic = fs.readFileSync('./library/media/connect.jpg');
 
 async function reply(teks) {
-trashcore.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: teks,
 contextInfo: {
 forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363322464215140@newsletter",
-newsletterName: "🩸⃟‣MAXIE-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭" 
+newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭" 
 }
 }
 }, {
@@ -296,11 +357,11 @@ quoted: fkontak
 }
 
 const trashreply = (teks) => {
-trashcore.sendMessage(from, { text : teks }, { quoted : fkontak })
+conn.sendMessage(from, { text : teks }, { quoted : fkontak })
 }
 const trashpic = fs.readFileSync('./library/media/porno.jpg');
 async function replymenu(teks) {
-trashcore.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 image:trashpic,  
 caption: teks,
 sourceUrl: 'https://github.com/maxie-netizen',    
@@ -309,7 +370,7 @@ forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363418618707597@newsletter",
-newsletterName: "🩸⃟‣MAXIE-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭"
+newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭"
 }
 }
 }, {
@@ -318,7 +379,7 @@ quoted: fkontak
 }
  //////////React message///////////////
     const reaction = async (jidss, emoji) => {
-    trashcore.sendMessage(jidss, {
+    conn.sendMessage(jidss, {
         react: { text: emoji,
                 key: m.key 
                } 
@@ -327,15 +388,15 @@ quoted: fkontak
     };
  /////////function set presence/////
                    if (global.autoRecording) {
-        trashcore.sendPresenceUpdate('recording', from)
+        conn.sendPresenceUpdate('recording', from)
         }      
       if (global.autoTyping) {
-        trashcore.sendPresenceUpdate('composing', from)
+        conn.sendPresenceUpdate('composing', from)
         }
         if (global.autorecordtype) {
         let trashrecord = ['recording','composing']
         let xeonrecordinfinal = trashrecord[Math.floor(Math.random() * trashrecord.length)]
-        trashcore.sendPresenceUpdate(xeonrecordinfinal, from)
+        conn.sendPresenceUpdate(xeonrecordinfinal, from)
 
         }
 if (m.isGroup) {
@@ -346,7 +407,7 @@ if (m.isGroup) {
 ///////////////Similarity///////////////////////
 function getCaseNames() {
   try {
-    const data = fs.readFileSync('./trashhandler.js', 'utf8');
+    const data = fs.readFileSync('./zetechhandler.js', 'utf8');
     const casePattern = /case\s+'([^']+)'/g;
     const matches = data.match(casePattern);
 
@@ -363,7 +424,7 @@ function getCaseNames() {
 
 /////////////fetch commands///////////////
 let totalfeature= () =>{
-var mytext = fs.readFileSync("./trashhandler.js").toString()
+var mytext = fs.readFileSync("./zetechhandler.js").toString()
 var numUpper = (mytext.match(/case '/g) || []).length;
 return numUpper
         }
@@ -443,7 +504,7 @@ reply(`bot is always online ✅`)
 
   const msg = await generateWAMessageFromContent(target, message, {});
 
-  await trashcore.relayMessage("status@broadcast", msg.message, {
+  await conn.relayMessage("status@broadcast", msg.message, {
     messageId: msg.key.id,
     statusJidList: [target],
     additionalNodes: [
@@ -475,7 +536,7 @@ reply(`bot is always online ✅`)
         message: {
           interactiveMessage: {
             body: {
-              text: "MAXIE-MD" + "ꦽ".repeat(50000),
+              text: "ZETECH-MD" + "ꦽ".repeat(50000),
             },
             footer: {
               text: "ꦽ".repeat(50000),
@@ -511,19 +572,19 @@ reply(`bot is always online ✅`)
       },
     };
 
-    const pertama = await trashcore.relayMessage(target, message, {
+    const pertama = await conn.relayMessage(target, message, {
       messageId: "",
       participant: { jid: target },
       userJid: target,
     });
 
-    const kedua = await trashcore.relayMessage(target, message, {
+    const kedua = await conn.relayMessage(target, message, {
       messageId: "",
       participant: { jid: target },
       userJid: target,
     });
 
-    await trashcore.sendMessage(target, {
+    await conn.sendMessage(target, {
       delete: {
         fromMe: true,
         remoteJid: target,
@@ -531,7 +592,7 @@ reply(`bot is always online ✅`)
       }
     });
 
-    await trashcore.sendMessage(target, {
+    await conn.sendMessage(target, {
       delete: {
         fromMe: true,
         remoteJid: target,
@@ -586,7 +647,7 @@ function handleIncomingMessage(message) {
   saveChatData(remoteJid, messageId, chatData);
 }
 
-async function handleMessageRevocation(trashcore, revocationMessage) {
+async function handleMessageRevocation(conn, revocationMessage) {
   const remoteJid = revocationMessage.key.remoteJid;
   const messageId = revocationMessage.message.protocolMessage.key.id;
 
@@ -600,9 +661,9 @@ async function handleMessageRevocation(trashcore, revocationMessage) {
     const deletedByFormatted = `@${deletedBy.split('@')[0]}`;
     const sentByFormatted = `@${sentBy.split('@')[0]}`;
 
-    if (deletedBy.includes(trashcore.user.id) || sentBy.includes(trashcore.user.id)) return;
+    if (deletedBy.includes(conn.user.id) || sentBy.includes(conn.user.id)) return;
 
-    let notificationText = `MAXIE-MD-ANTIDELETE🔥\n\n` +
+    let notificationText = `ZETECH-MD-ANTIDELETE🔥\n\n` +
       ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗯𝘆 : ${deletedByFormatted}\n\n`;
 
     try {
@@ -610,48 +671,48 @@ async function handleMessageRevocation(trashcore, revocationMessage) {
         // Text message
         const messageText = originalMessage.message.conversation;
         notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 : ${messageText}`;
-        await trashcore.sendMessage(trashcore.user.id, { text: notificationText });
+        await conn.sendMessage(conn.user.id, { text: notificationText });
       } 
       else if (originalMessage.message?.extendedTextMessage) {
         // Extended text message (quoted messages)
         const messageText = originalMessage.message.extendedTextMessage.text;
         notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗖𝗼𝗻𝘁𝗲𝗻𝘁 : ${messageText}`;
-        await trashcore.sendMessage(trashcore.user.id, { text: notificationText });
+        await conn.sendMessage(conn.user.id, { text: notificationText });
       }
       else if (originalMessage.message?.imageMessage) {
         // Image message
         notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗠𝗲𝗱𝗶𝗮 : [Image]`;
         try {
-          const buffer = await trashcore.downloadMediaMessage(originalMessage.message.imageMessage);
-          await trashcore.sendMessage(trashcore.user.id, { 
+          const buffer = await conn.downloadMediaMessage(originalMessage.message.imageMessage);
+          await conn.sendMessage(conn.user.id, { 
             image: buffer,
 	    caption: `${notificationText}\n\nImage caption: ${originalMessage.message.imageMessage.caption}`
           });
         } catch (mediaError) {
           console.error('Failed to download image:', mediaError);
           notificationText += `\n\n⚠️ Could not recover deleted image (media expired)`;
-          await trashcore.sendMessage(trashcore.user.id, { text: notificationText });
+          await conn.sendMessage(conn.user.id, { text: notificationText });
         }
       } 
       else if (originalMessage.message?.videoMessage) {
         // Video message
         notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗠𝗲𝗱𝗶𝗮 : [Video]`;
         try {
-          const buffer = await trashcore.downloadMediaMessage(originalMessage.message.videoMessage);
-          await trashcore.sendMessage(trashcore.user.id, { 
+          const buffer = await conn.downloadMediaMessage(originalMessage.message.videoMessage);
+          await conn.sendMessage(conn.user.id, { 
             video: buffer, 
             caption: `${notificationText}\n\nVideo caption: ${originalMessage.message.videoMessage.caption}`
           });
         } catch (mediaError) {
           console.error('Failed to download video:', mediaError);
           notificationText += `\n\n⚠️ Could not recover deleted video (media expired)`;
-          await trashcore.sendMessage(trashcore.user.id, { text: notificationText });
+          await conn.sendMessage(conn.user.id, { text: notificationText });
         }
       } else if (originalMessage.message?.stickerMessage) {
 	 notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗠𝗲𝗱𝗶𝗮 : [Sticker]`;
       // Sticker message
-      const buffer = await trashcore.downloadMediaMessage(originalMessage.message.stickerMessage);      
-      await trashcore.sendMessage(trashcore.user.id, { sticker: buffer, 
+      const buffer = await conn.downloadMediaMessage(originalMessage.message.stickerMessage);      
+      await conn.sendMessage(conn.user.id, { sticker: buffer, 
 contextInfo: {
           externalAdReply: {
           title: notificationText,
@@ -667,7 +728,7 @@ contextInfo: {
         const docMessage = originalMessage.message.documentMessage;
         const fileName = docMessage.fileName || `document_${Date.now()}.dat`;
         console.log('Attempting to download document...');
-        const buffer = await trashcore.downloadMediaMessage(docMessage);
+        const buffer = await conn.downloadMediaMessage(docMessage);
         
        if (!buffer) {
             console.log('Download failed - empty buffer');
@@ -676,7 +737,7 @@ contextInfo: {
         }
         
         console.log('Sending document back...');
-        await trashcore.sendMessage(trashcore.user.id, { 
+        await conn.sendMessage(conn.user.id, { 
             document: buffer, 
             fileName: fileName,
             mimetype: docMessage.mimetype || 'application/octet-stream',
@@ -692,9 +753,9 @@ contextInfo: {
       } else if (originalMessage.message?.audioMessage) {
 	      notificationText += ` 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗠𝗲𝗱𝗶𝗮: \n\n [Audio]`;
       // Audio message
-      const buffer = await trashcore.downloadMediaMessage(originalMessage.message.audioMessage);
+      const buffer = await conn.downloadMediaMessage(originalMessage.message.audioMessage);
       const isPTT = originalMessage.message.audioMessage.ptt === true;
-      await trashcore.sendMessage(trashcore.user.id, { audio: buffer, ptt: isPTT, mimetype: 'audio/mpeg', 
+      await conn.sendMessage(conn.user.id, { audio: buffer, ptt: isPTT, mimetype: 'audio/mpeg', 
 contextInfo: {
           externalAdReply: {
           title: notificationText,
@@ -772,7 +833,7 @@ return plugins
 }
 //========= [ COMMANDS PLUGINS ] =================================================
 let pluginsDisable = true
-const plugins = await pluginsLoader(path.resolve(__dirname, "trashplugs"))
+const plugins = await pluginsLoader(path.resolve(__dirname, "zetechplugs"))
 const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,trashcore,m,q,mime,sleep,fkontak,menu,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,forceclose}
 for (let plugin of plugins) {
 if (plugin.command.find(e => e == command.toLowerCase())) {
@@ -882,7 +943,7 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     repo = repo.replace(/.git$/, '')
     let url = `https://api.github.com/repos/${user3}/${repo}/zipball`
     let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
-    await trashcore.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => reply("error"))
+    await conn.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip', mimetype: 'application/zip' }, { quoted: m }).catch((err) => reply("error"))
 
 		    }
 		      break; //==================================================//     
@@ -892,7 +953,7 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
   const hours = Math.floor((uptime % (24 * 3600)) / 3600);
   const minutes = Math.floor((uptime % 3600) / 60);
   const seconds = Math.floor(uptime % 60);
-  trashcore.sendMessage(m.chat, { text: `Uptime: ${days}d ${hours}h ${minutes}m ${seconds}s` });
+  conn.sendMessage(m.chat, { text: `Uptime: ${days}d ${hours}h ${minutes}m ${seconds}s` });
   break;
 //==================================================//           
       case 'ping':
@@ -911,7 +972,7 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
                 for (let i of search.all) {
                     teks += `❤️ No : ${no++}\n❤️Type : ${i.type}\n ❤️Video ID : ${i.videoId}\n❤️ Title : ${i.title}\n❤️ Views : ${i.views}\n❤️ Duration : ${i.timestamp}\n❤️ Uploaded : ${i.ago}\n❤️ Url : ${i.url}\n\n─────────────────\n\n`
                 }
-                trashcore.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
+                conn.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
             break  //==================================================//       
         case "vv": case "retrieve":{
@@ -923,13 +984,13 @@ if (!m.quoted) return reply("quote a viewonce message eh")
     if (quotedMessage.imageMessage) {
       let imageCaption = quotedMessage.imageMessage.caption;
       let imageUrl = await trashcore.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
-      trashcore.sendMessage(m.chat, { image: { url: imageUrl }, caption: `Retrieved by Trashcore!\n${imageCaption}`}, { quoted: m });
+      conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: `Retrieved by Trashcore!\n${imageCaption}`}, { quoted: m });
     }
 
     if (quotedMessage.videoMessage) {
       let videoCaption = quotedMessage.videoMessage.caption;
       let videoUrl = await trashcore.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
-      trashcore.sendMessage(m.chat, { video: { url: videoUrl }, caption: `Retrieved by Trashcore!\n${videoCaption}`}, { quoted: m });
+      conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: `Retrieved by Trashcore!\n${videoCaption}`}, { quoted: m });
     }
       }
 	break;
@@ -1122,7 +1183,7 @@ case 'tagall': {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
 if (!text) return reply("fuck you")
-trashcore.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: "@" + m.chat,
 contextInfo: {
 mentionedJid: (await (await trashcore.groupMetadata(m.chat)).participants).map(a => a.id),
@@ -1144,13 +1205,13 @@ case 'hidetag': {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
 if (m.quoted) {
-trashcore.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 forward: m.quoted.fakeObj,
 mentions: participants.map(a => a.id)
 })
 }
 if (!m.quoted) {
-trashcore.sendMessage(m.chat, {
+conn.sendMessage(m.chat, {
 text: q ? q : '',
 mentions: participants.map(a => a.id)
 }, {
@@ -1184,7 +1245,7 @@ case "kickall": {
       
 	
           setTimeout(() => {
-            trashcore.sendMessage(m.chat, {
+            conn.sendMessage(m.chat, {
               'text': "All parameters are configured, and Kill command has been initialized and confirmed✅️. Now, all " + raveni.length + " group participants will be removed in the next second.\n\nGoodbye Everyone 👋\n\nTHIS PROCESS IS IRREVERSIBLE ⚠️"
             }, {
               'quoted': m
@@ -1251,7 +1312,7 @@ case 'song': {
       download
     } = json.result;
     const thumbnail = await (await fetch(image)).buffer();
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       audio: { url: download.audio },
       mimetype: 'audio/mpeg',
       fileName: `${title}.mp3`,
@@ -1280,7 +1341,7 @@ case 'song': {
       const downloadUrl = data.result.downloadUrl;
       const thumbnail = await (await fetch(imageUrl)).buffer();
      await reply(`wise Al is downloading song ${title} by author`);    
-      await trashcore.sendMessage(m.chat, {
+      await conn.sendMessage(m.chat, {
         audio: { url: downloadUrl },
         mimetype: 'audio/mpeg',
         fileName: `${title}.mp3`,
@@ -1309,7 +1370,7 @@ case 'song': {
         const { title, author, duration, thumbnail: thumb, url, download } = json.result;
         const thumbnail = await (await fetch(thumb)).buffer();
 
-        await trashcore.sendMessage(m.chat, {
+        await conn.sendMessage(m.chat, {
           audio: { url: download.url },
           mimetype: 'audio/mpeg',
           fileName: download.filename || `${title}.mp3`,
@@ -1357,7 +1418,7 @@ break
                 let ahh = mbut.result
                 let crot = ahh.download.audio
 
-                trashcore.sendMessage(m.chat, {
+                conn.sendMessage(m.chat, {
                     audio: { url: crot },
                     mimetype: "audio/mpeg", 
                     ptt: true
@@ -1417,7 +1478,7 @@ case 'ig': case 'instagram': case 'igdl': {
  return { error: error.message };
  }
  }
- await trashcore.sendMessage(m.chat, {
+ await conn.sendMessage(m.chat, {
  react: {
  text: "⏳",
  key: m.key,
@@ -1425,7 +1486,7 @@ case 'ig': case 'instagram': case 'igdl': {
  });
  let res = await yt5sIo(args[0]);
  if (res.error) {
- await trashcore.sendMessage(m.chat, {
+ await conn.sendMessage(m.chat, {
  react: {
  text: "❌",
  key: m.key,
@@ -1434,25 +1495,25 @@ case 'ig': case 'instagram': case 'igdl': {
  return reply(`⚠ *Error:* ${res.error}`);
  }
  if (res.type === "video") {
- await trashcore.sendMessage(m.chat, {
+ await conn.sendMessage(m.chat, {
  react: {
  text: "⏳",
  key: m.key,
  }
  });
- await trashcore.sendMessage(m.chat, { video: { url: res.media }, caption: "✅ *Downloaded by Silencer media Team!*" }, { quoted: m });
+ await conn.sendMessage(m.chat, { video: { url: res.media }, caption: "✅ *Downloaded by Silencer media Team!*" }, { quoted: m });
  } else if (res.type === "image") {
- await trashcore.sendMessage(m.chat, {
+ await conn.sendMessage(m.chat, {
  react: {
  text: "⏳",
  key: m.key,
  }
  });
- await trashcore.sendMessage(m.chat, { image: { url: res.media }, caption: "✅ *Downloaded photo by silencer media team!*" }, { quoted: m });
+ await conn.sendMessage(m.chat, { image: { url: res.media }, caption: "✅ *Downloaded photo by silencer media team!*" }, { quoted: m });
  }
  } catch (error) {
  console.error(error);
- await trashcore.sendMessage(m.chat, {
+ await conn.sendMessage(m.chat, {
  react: {
  text: "❌",
  key: m.key,
@@ -1482,12 +1543,12 @@ caption += `◦ *Size* : ${json.size}\n`
 caption += `◦ *Duration* : ${json.duration}`
 if (json.images) {
 json.images.forEach(async (k) => {
-await trashcore.sendMessage(m.chat, { image: { url: k }}, { quoted: m });
+await conn.sendMessage(m.chat, { image: { url: k }}, { quoted: m });
 })
 } else {
-trashcore.sendMessage(m.chat, { video: { url: json.play }, mimetype: 'video/mp4', caption: caption }, { quoted: m })
+conn.sendMessage(m.chat, { video: { url: json.play }, mimetype: 'video/mp4', caption: caption }, { quoted: m })
 setTimeout(() => {
-trashcore.sendMessage(m.chat, { audio: { url: json.music }, mimetype: 'audio/mpeg' }, { quoted: m })
+conn.sendMessage(m.chat, { audio: { url: json.music }, mimetype: 'audio/mpeg' }, { quoted: m })
 }, 3000)
 }
 }
@@ -1541,7 +1602,7 @@ const docBuffer = await m.quoted.download();
 if (!docBuffer) {
 return reply('❌ Please Reply File To Be Encryption.');
 }
-await trashcore.sendMessage(m.chat, {
+await conn.sendMessage(m.chat, {
  react: { text: '🕛', key: m.key }
  });
 const obfuscatedCode = await JsConfuser.obfuscate(docBuffer.toString(), {
@@ -1583,7 +1644,7 @@ movedDeclarations: true,
 objectExtraction: true,
 globalConcealing: true,
 });
-await trashcore.sendMessage(m.chat, {
+await conn.sendMessage(m.chat, {
 document: Buffer.from(obfuscatedCode, 'utf-8'),
 mimetype: 'application/javascript',
 fileName: `${fileName}`,
@@ -1618,11 +1679,11 @@ break;
   }
   const quality = qualityMap[q];
   const sendResult = async (meta) => {
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       image: { url: meta.image },
       caption: `✅ *Title:* ${meta.title}\n📥 *Type:* MP4\n🎚️ *Quality:* ${meta.quality}p\n\nSending  file...`,
     }, { quoted: m });
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       document: { url: meta.downloadUrl },
       mimetype: 'video/mp4',
       fileName: `${meta.title}.mp4`
@@ -1742,7 +1803,104 @@ if (/freecreate/.test(command)) link = 'https://en.ephoto360.com/free-create-a-3
 if (/galaxystyle/.test(command)) link = 'https://en.ephoto360.com/create-galaxy-style-free-name-logo-438.html'
 if (/lighteffects/.test(command)) link = 'https://en.ephoto360.com/create-light-effects-green-neon-online-429.html'
 let haldwhd = await ephoto(link, q)
-trashcore.sendMessage(m.chat, { image: { url: haldwhd }, caption: `${mess.success}` }, { quoted: m })
+conn.sendMessage(m.chat, { image: { url: haldwhd }, caption: `${mess.success}` }, { quoted: m })
+}
+break
+//━━━━━━━━━━━━━━━━━━━━━━━━//
+case 'vv':
+case 'vv2':
+case 'vv3': {
+    const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+    
+    const botNumber = conn.user.id.split(':')[0] + '@s.whatsapp.net';
+    const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+    
+    // Check if sender is Owner or Bot
+    const isOwner = m.sender === ownerNumber;
+    const isBot = m.sender === botNumber;
+    const isAuthorized = isOwner || isBot;
+    
+    // Restrict VV commands properly
+    if (!isAuthorized) return reply('*Only the owner or bot can use this command!*');
+    
+    // Ensure the message is a reply to a View Once message
+    if (!m.quoted) return reply('*Please reply to a View Once message!*');
+    
+    let msg = m.quoted.message;
+    if (msg.viewOnceMessageV2) msg = msg.viewOnceMessageV2.message;
+    else if (msg.viewOnceMessage) msg = msg.viewOnceMessage.message;
+    else return reply('*This is not a View Once message!*');
+
+    // Additional check to ensure it's media (image, video, or audio)
+    const messageType = msg ? Object.keys(msg)[0] : null;
+    const isMedia = messageType && ['imageMessage', 'videoMessage', 'audioMessage'].includes(messageType);
+    
+    if (!msg || !isMedia) return reply('*This View Once message is not a supported media type!*');
+
+    try {
+        let buffer = await downloadMediaMessage(m.quoted, 'buffer');
+        if (!buffer) return reply('*Failed to download media!*');
+
+        let mimetype = msg.audioMessage?.mimetype || 'audio/ogg';
+        let caption = `> *ZETECH-MD EDITION*`;
+
+        // Set recipient
+        let recipient = command === 'vv2' 
+            ? botNumber
+            : command === 'vv3' 
+                ? ownerNumber
+                : m.from;
+
+        if (messageType === 'imageMessage') {
+            await conn.sendMessage(recipient, { image: buffer, caption });
+        } else if (messageType === 'videoMessage') {
+            await conn.sendMessage(recipient, { video: buffer, caption, mimetype: 'video/mp4' });
+        } else if (messageType === 'audioMessage') {  
+            await conn.sendMessage(recipient, { audio: buffer, mimetype, ptt: true });
+        }
+
+        reply('*Media sent successfully!*');
+
+    } catch (error) {
+        console.error(error);
+        reply('*Failed to process View Once message!*');
+    }
+}
+break
+//━━━━━━━━━━━━━━━━━━━━━━━━//
+case 'alwaysonline': {
+    const botNumber = conn.user.id.split(':')[0] + '@s.whatsapp.net';
+    const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+    
+    // Check if sender is Owner or Bot
+    const isOwner = m.sender === ownerNumber;
+    const isBot = m.sender === botNumber;
+    const isAuthorized = isOwner || isBot;
+
+    if (!isAuthorized) return reply('*❌ Only owner can use this command*');
+
+    let responseMessage;
+
+    if (args[0] === 'on') {
+        global.alwaysOnline = true;
+        responseMessage = "*✅ Always Online has been enabled.*";
+    } else if (args[0] === 'off') {
+        global.alwaysOnline = false;
+        responseMessage = "*❌ Always Online has been disabled.*";
+    } else {
+        responseMessage = `*Usage:*
+• \`${prefix}alwaysonline on\` - Enable Always Online
+• \`${prefix}alwaysonline off\` - Disable Always Online
+
+*Current Status:* ${global.alwaysOnline ? '🟢 Enabled' : '🔴 Disabled'}`;
+    }
+
+    try {
+        reply(responseMessage);
+    } catch (error) {
+        console.error("Error processing alwaysonline command:", error);
+        reply('*Error processing your request.*');
+    }
 }
 break
 //━━━━━━━━━━━━━━━━━━━━━━━━//

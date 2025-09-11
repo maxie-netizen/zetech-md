@@ -1,15 +1,16 @@
-This base was created by Maxwell 
+# Zetech-MD WhatsApp Bot
 
-`Installation`
-* [Heroku](  https://heroku.com/deploy?template=https://github.com/maxie-netizen/maxie-md)
+This WhatsApp bot was created by Maxwell and rebranded to Zetech-MD
+
+## Installation
+* [Heroku](https://heroku.com/deploy?template=https://github.com/your-username/zetech-md)
 
 * [Bot hosting panel](https://bot-hosting.net/)
 
+## Credits
 
-Credition script 
+`Taira Makino` - Guider
 
+`Maxwell` - Scripter
 
-`Taira Makino`- Guider
-
-
-`maxwell`-Scripter
+`Zetech` - Rebranding

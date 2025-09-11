@@ -1,5 +1,5 @@
 const axios = require('axios');
-let trashplug = async (m, { trashown,text,trashcore,reply,isBotAdmins,isAdmins,prefix,command}) => {
+let trashplug = async (m, { trashown,text,conn,reply,isBotAdmins,isAdmins,prefix,command}) => {
 				if (!m.isGroup) return reply(mess.group);
 				if (!trashown && !isAdmins) return reply(mess.admin);
 			
@@ -15,7 +15,7 @@ let trashplug = async (m, { trashown,text,trashcore,reply,isBotAdmins,isAdmins,p
 					return reply('My Owner, Cant Kick Them');
 				}
 				try {
-					await trashcore.groupParticipantsUpdate(m.chat, [users], 'remove');
+					await conn.groupParticipantsUpdate(m.chat, [users], 'remove');
 					reply(mess.succes);
 				} catch (err) {
 					console.error(err);

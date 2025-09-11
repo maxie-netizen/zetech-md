@@ -34,7 +34,7 @@ let ytmp3mobi = async (youtubeUrl, format = "mp3") => {
     return { title, downloadURL }
 }
 
-let trashplug = async (m, { trashcore, args, command,reply }) => {
+let trashplug = async (m, { conn, args, command,reply }) => {
     try {
         if (!args[0]) return reply('provide a you tube link\n*Example :* .' + command + ' https://youtu.be/MN_JP4gyBNI?si=KNdrhuv6QfulNp1k')
         
@@ -46,7 +46,7 @@ let trashplug = async (m, { trashcore, args, command,reply }) => {
         
         let filename = `${title}.${format}`
         
-        await trashcore.sendMessage(m.chat, { document: { url: downloadURL }, fileName: filename, mimetype: format === 'mp4' ? 'video/mp4' : 'audio/mp3' }, { quoted: m })      
+        await conn.sendMessage(m.chat, { document: { url: downloadURL }, fileName: filename, mimetype: format === 'mp4' ? 'video/mp4' : 'audio/mp3' }, { quoted: m })      
     } catch (e) {
         reply(e.message)
     }

@@ -151,7 +151,7 @@ conn.public = true
                                 connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
                 saveConnectedUsers(); // Save connected users after updating
                 bot.sendMessage(telegramChatId, `
-┏━━『🩸⃟‣MAXIE-MD-≈🚭 』━━┓
+┏━━『🩸⃟‣ZETECH-MD-≈🚭 』━━┓
 
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
   ◈ STATUS    : CONNECTED
@@ -161,7 +161,7 @@ conn.public = true
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 `)
 		console.log(`
-┏━━『 🩸⃟‣MAXIE-MD-≈🚭』━━┓
+┏━━『 🩸⃟‣ZETECH-MD-≈🚭』━━┓
 
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
   ◈ STATUS    : CONNECTED
@@ -291,7 +291,7 @@ conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
         for (let i of kon) {
             list.push({
                 displayName: await conn.getName(i),
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await trashcore.getName(i)}\nFN:${await trashcore.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await conn.getName(i)}\nFN:${await conn.getName(i)}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
             });
         }
         conn.sendMessage(jid, {
@@ -368,7 +368,7 @@ conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
     };
     
     conn.sendPoll = (jid, name = '', values = [], selectableCount = 1) => {
-        return trashcore.sendMessage(jid, {
+        return conn.sendMessage(jid, {
             poll: {
                 name,
                 values,
@@ -535,7 +535,7 @@ conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
         else if (/video/.test(mime)) type = 'video';
         else if (/audio/.test(mime)) type = 'audio';
         else type = 'document';
-        await trashcore.sendMessage(jid, {
+        await conn.sendMessage(jid, {
             [type]: {
                 url: pathFile
             },
@@ -710,7 +710,7 @@ conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
             mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message;
             if (mek.key && mek.key.remoteJid === 'status@broadcast') return;
             let m = smsg(conn, mek, store);
-            require("./trashhandler.js")(conn, m, chatUpdate, store);
+            require("./zetechhandler.js")(conn, m, chatUpdate, store);
         } catch (err) {
             console.log(err);
         }
@@ -775,10 +775,10 @@ bot.onText(/\/delsession (\d+)/, async (msg, match) => {
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
   const imageUrl = 'https://files.catbox.moe/urnjdz.jpg'; // Replace with the actual URL of your image
-  const menuText = `╭─⊷MAXIE-MD─
+  const menuText = `╭─⊷ZETECH-MD─
 │▢ Owner: maxwell dev
 │▢ Version: 1.3.0
-│▢ Type: MAXIE-MD
+│▢ Type: ZETECH-MD
 ╰────────────
 ╭─⊷🐦‍🔥MAIN-CMD─
 │ /connect 2547xxxx
