@@ -31,48 +31,86 @@ let zetechplug = async (m, { conn, reply, text, args, command }) => {
         console.log(`[PLAY] Found: ${title}`);
         console.log(`[PLAY] YouTube URL: ${url}`);
 
-        // Step 2: Download the audio using Keith API
-        const downloadResponse = await fetch(`https://apis-keith.vercel.app/download/audio?url=${encodeURIComponent(url)}`);
+        // Step 2: Download the audio using Keith API (dlmp3 endpoint for MP3 format)
+        console.log(`[PLAY] Downloading from: https://apis-keith.vercel.app/download/dlmp3?url=${encodeURIComponent(url)}`);
+        
+        const downloadResponse = await fetch(`https://apis-keith.vercel.app/download/dlmp3?url=${encodeURIComponent(url)}`);
         
         if (!downloadResponse.ok) {
-            throw new Error('Download API failed');
+            console.error(`[PLAY] Download API failed with status: ${downloadResponse.status}`);
+            throw new Error(`Download API failed with status: ${downloadResponse.status}`);
         }
         
         const downloadData = await downloadResponse.json();
+        console.log(`[PLAY] Download API response:`, JSON.stringify(downloadData, null, 2));
         
-        if (!downloadData.status || !downloadData.result) {
+        if (!downloadData.status || !downloadData.result || !downloadData.result.success || !downloadData.result.data) {
+            console.error(`[PLAY] Invalid download response:`, downloadData);
             return reply("Failed to download audio. Please try again later.");
         }
 
-        const audioUrl = downloadData.result;
+        const audioData = downloadData.result.data;
+        const audioUrl = audioData.downloadUrl;
         const creator = downloadData.creator || "Keithkeizzah";
+        const audioTitle = audioData.title;
+        const audioThumbnail = audioData.thumbnail;
+        const audioDuration = audioData.duration;
+        const audioQuality = audioData.quality;
         
         console.log(`[PLAY] Download URL: ${audioUrl}`);
+        console.log(`[PLAY] Audio Title: ${audioTitle}`);
+        console.log(`[PLAY] Duration: ${audioDuration}s, Quality: ${audioQuality}kbps`);
 
         // Step 3: Send the audio with rich metadata
-        const thumbnailBuffer = await (await fetch(thumbnail)).buffer();
+        let thumbnailBuffer = null;
+        try {
+            // Use the thumbnail from the audio API response (higher quality)
+            const thumbnailUrl = audioThumbnail || thumbnail;
+            thumbnailBuffer = await (await fetch(thumbnailUrl)).buffer();
+        } catch (thumbError) {
+            console.warn(`[PLAY] Failed to fetch thumbnail:`, thumbError.message);
+        }
+        
+        // Since we're using dlmp3 endpoint, we always get MP3 files
+        const mimetype = 'audio/mpeg';
+        
+        console.log(`[PLAY] Sending audio with mimetype: ${mimetype}`);
+        
+        // Format duration from seconds to MM:SS
+        const formatDuration = (seconds) => {
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        };
+        
+        // Prepare context info with audio-specific data
+        const contextInfo = {
+            forwardingScore: 999,
+            isForwarded: true,
+            externalAdReply: {
+                title: audioTitle,
+                body: `${formatDuration(audioDuration)} • ${audioQuality}kbps`,
+                mediaUrl: url,
+                mediaType: 2,
+                renderLargerThumbnail: true,
+                sourceUrl: url
+            }
+        };
+        
+        // Add thumbnail only if we successfully fetched it
+        if (thumbnailBuffer) {
+            contextInfo.externalAdReply.thumbnail = thumbnailBuffer;
+        }
         
         await conn.sendMessage(m.chat, {
             audio: { url: audioUrl },
-            mimetype: 'audio/mpeg',
-            fileName: `${title}.mp3`,
+            mimetype: mimetype,
+            fileName: `${audioTitle}.mp3`,
             ptt: true,
-            contextInfo: {
-                forwardingScore: 999,
-                isForwarded: true,
-                externalAdReply: {
-                    title: title,
-                    body: `${duration} • ${views} views`,
-                    thumbnail: thumbnailBuffer,
-                    mediaUrl: url,
-                    mediaType: 2,
-                    renderLargerThumbnail: true,
-                    sourceUrl: url
-                }
-            }
+            contextInfo: contextInfo
         }, { quoted: m });
 
-        console.log(`[PLAY] Successfully sent: ${title}`);
+        console.log(`[PLAY] Successfully sent: ${audioTitle}`);
 
     } catch (error) {
         console.error('[PLAY ERROR] Error in play command:', error);
