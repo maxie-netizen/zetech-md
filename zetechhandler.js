@@ -53,6 +53,7 @@ const prefixRegex = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^β
 const prefix = prefixRegex.test(body) ? body.match(prefixRegex)[0] : '.';
 const isCmd = body.startsWith(prefix);
 const command = isCmd ? body.slice(prefix.length).trim().split(' ').shift().toLowerCase() : '';
+console.log(`[DEBUG] Command detected: "${command}", isCmd: ${isCmd}, body: "${body}", prefix: "${prefix}"`)
 const args = body.trim().split(/ +/).slice(1)
 const text = q = args.join(" ")
 const sender = m.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (m.key.participant || m.key.remoteJid)
@@ -834,12 +835,21 @@ return plugins
 //========= [ COMMANDS PLUGINS ] =================================================
 let pluginsDisable = true
 const plugins = await pluginsLoader(path.resolve(__dirname, "zetechplugs"))
-const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,trashcore,m,q,mime,sleep,fkontak,menu,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,forceclose}
+const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,conn,m,q,mime,sleep,fkontak,menu,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,forceclose}
 for (let plugin of plugins) {
 if (plugin.command.find(e => e == command.toLowerCase())) {
 pluginsDisable = false
-if (typeof plugin !== "function") return
-await plugin(m, trashdex)
+console.log(`[PLUGIN] Found command: ${command} in plugin: ${plugin.command}`)
+if (typeof plugin !== "function") {
+    console.log(`[PLUGIN ERROR] Plugin is not a function: ${plugin.command}`)
+    return
+}
+try {
+    await plugin(m, trashdex)
+    console.log(`[PLUGIN] Successfully executed: ${command}`)
+} catch (error) {
+    console.error(`[PLUGIN ERROR] Error executing ${command}:`, error)
+}
 }
 }
 if (!pluginsDisable) return
@@ -1865,6 +1875,11 @@ case 'vv3': {
         console.error(error);
         reply('*Failed to process View Once message!*');
     }
+}
+break
+//━━━━━━━━━━━━━━━━━━━━━━━━//
+case 'test': {
+    reply('*✅ Bot is working! Commands are being processed correctly.*');
 }
 break
 //━━━━━━━━━━━━━━━━━━━━━━━━//
