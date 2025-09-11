@@ -63,6 +63,7 @@ ${categoryStyle('〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙')}
  ${chalk.hex('#FFD700')('◈')} ${commandStyle('gethtml')}        ${chalk.hex('#FFD700')('◈')} ${commandStyle('getpp')}
  ${chalk.hex('#FFD700')('◈')} ${commandStyle('getplugin')}      ${chalk.hex('#FFD700')('◈')} ${commandStyle('save')}
  ${chalk.hex('#FFD700')('◈')} ${commandStyle('gitclone')}       ${chalk.hex('#FFD700')('◈')} ${commandStyle('weather')}
+ ${chalk.hex('#FFD700')('◈')} ${commandStyle('groups')}         ${chalk.hex('#FFD700')('◈')} ${commandStyle('mychats')}
 
 ${separator}
 ${categoryStyle('〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙')}
