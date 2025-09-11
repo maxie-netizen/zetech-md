@@ -1820,15 +1820,20 @@ break
 case 'vv':
 case 'vv2':
 case 'vv3': {
+    console.log(`[VV DEBUG] Command: ${command}, Sender: ${m.sender}`);
     const { downloadMediaMessage } = require('@whiskeysockets/baileys');
     
     const botNumber = conn.user.id.split(':')[0] + '@s.whatsapp.net';
     const ownerNumber = global.owner[0] + '@s.whatsapp.net';
     
+    console.log(`[VV DEBUG] Bot Number: ${botNumber}, Owner Number: ${ownerNumber}`);
+    
     // Check if sender is Owner or Bot
     const isOwner = m.sender === ownerNumber;
     const isBot = m.sender === botNumber;
     const isAuthorized = isOwner || isBot;
+    
+    console.log(`[VV DEBUG] Is Owner: ${isOwner}, Is Bot: ${isBot}, Is Authorized: ${isAuthorized}`);
     
     // Restrict VV commands properly
     if (!isAuthorized) return reply('*Only the owner or bot can use this command!*');
@@ -1880,6 +1885,61 @@ break
 //━━━━━━━━━━━━━━━━━━━━━━━━//
 case 'test': {
     reply('*✅ Bot is working! Commands are being processed correctly.*');
+}
+break
+//━━━━━━━━━━━━━━━━━━━━━━━━//
+case 'play': {
+    const yts = require('yt-search');
+    const axios = require('axios');
+    
+    try {
+        const searchQuery = text.trim();
+        
+        if (!searchQuery) {
+            return reply("What song do you want to download?\n\n*Usage:* `.play song name`");
+        }
+
+        // Send loading message
+        await reply("_Please wait your download is in progress..._");
+
+        // Search for the song
+        const { videos } = await yts(searchQuery);
+        if (!videos || videos.length === 0) {
+            return reply("No songs found!");
+        }
+
+        // Get the first video result
+        const video = videos[0];
+        const urlYt = video.url;
+
+        console.log(`[PLAY] Searching for: ${searchQuery}`);
+        console.log(`[PLAY] Found video: ${video.title} - ${urlYt}`);
+
+        // Fetch audio data from API
+        const response = await axios.get(`https://apis-keith.vercel.app/download/dlmp3?url=${urlYt}`);
+        const data = response.data;
+
+        if (!data || !data.status || !data.result || !data.result.downloadUrl) {
+            return reply("Failed to fetch audio from the API. Please try again later.");
+        }
+
+        const audioUrl = data.result.downloadUrl;
+        const title = data.result.title;
+
+        console.log(`[PLAY] Downloading: ${title}`);
+
+        // Send the audio
+        await conn.sendMessage(m.chat, {
+            audio: { url: audioUrl },
+            mimetype: "audio/mpeg",
+            fileName: `${title}.mp3`,
+            caption: `🎵 *${title}*\n\n*Downloaded by Zetech-MD*`
+        }, { quoted: m });
+
+    } catch (error) {
+        console.error('[PLAY ERROR] Error in play command:', error);
+        reply("Download failed. Please try again later.");
+    }
 }
 break
 //━━━━━━━━━━━━━━━━━━━━━━━━//
