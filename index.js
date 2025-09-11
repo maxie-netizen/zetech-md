@@ -18,6 +18,31 @@ const randomcolor = listcolor[Math.floor(Math.random() * listcolor.length)];
 const { color, bgcolor } = require('./library/lib/color.js');
 global.db = new Low(new JSONFile(`library/database/database.json`))
 
+// API Key Verification Function
+async function verifyApiKey(apiKey) {
+    try {
+        const response = await axios.post('https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key', {
+            api_key: apiKey
+        }, {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            timeout: 10000 // 10 second timeout
+        });
+        
+        return {
+            success: true,
+            data: response.data
+        };
+    } catch (error) {
+        console.log('API Key verification failed:', error.message);
+        return {
+            success: false,
+            error: error.response?.data || error.message
+        };
+    }
+}
+
 global.DATABASE = global.db
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000))
@@ -156,8 +181,9 @@ conn.public = true
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
   ◈ STATUS    : CONNECTED
   ◈ USER     : ${phoneNumber}
-  ◈ SOCKET     : WHATSAPP
-  ◈ Dev     : t.me/maxie_dev
+  ◈ API KEY  : ✅ VERIFIED
+  ◈ SOCKET   : WHATSAPP
+  ◈ Dev      : t.me/maxie_dev
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 `)
 		console.log(`
@@ -730,10 +756,24 @@ conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
 }
 
 
-// Handle /connect command
-bot.onText(/\/connect (\d+)/, async (msg, match) => {
+// Handle /connect command with API key
+bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
     const chatId = msg.chat.id;
     const phoneNumber = match[1];
+    const apiKey = match[2];
+    
+    // Verify API key first
+    bot.sendMessage(chatId, `🔐 *Verifying API Key...*\n\nPlease wait while we verify your API key.`);
+    
+    const verification = await verifyApiKey(apiKey);
+    
+    if (!verification.success) {
+        bot.sendMessage(chatId, `❌ *API Key Verification Failed*\n\n*Error:* ${verification.error}\n\nPlease check your API key and try again.\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site`);
+        return;
+    }
+    
+    bot.sendMessage(chatId, `✅ *API Key Verified Successfully!*\n\n*User:* ${verification.data.user || 'Unknown'}\n*Status:* ${verification.data.status || 'Active'}\n\n*Proceeding with WhatsApp connection...*`);
+    
     // Check if the number is allowed
     const sessionPath = path.join(__dirname, 'trash_baileys', `session_${phoneNumber}`);
 
@@ -741,25 +781,45 @@ bot.onText(/\/connect (\d+)/, async (msg, match) => {
     if (!fs.existsSync(sessionPath)) {
         // If the session does not exist, create the directory
         fs.mkdirSync(sessionPath, { recursive: true });
-        console.log(`Session directory created for ${phoneNumber}.`);
-        bot.sendMessage(chatId, `Session directory created for ${phoneNumber}.`);
+        console.log(`Session directory created for ${phoneNumber} with verified API key.`);
+        bot.sendMessage(chatId, `📱 *Session directory created for ${phoneNumber}*\n\n*API Key:* ✅ Verified\n*Status:* Ready to connect`);
 
         // Generate and send pairing code
         startWhatsAppBot(phoneNumber, chatId).catch(err => {
             console.log('Error:', err);
-            bot.sendMessage(chatId, 'An error occurred while connecting.');
+            bot.sendMessage(chatId, '❌ *An error occurred while connecting.*\n\nPlease try again or contact support.');
         });
     } else {
         // If the session already exists, check if the user is already connected
         const isAlreadyConnected = connectedUsers[chatId] && connectedUsers[chatId].some(user => user.phoneNumber === phoneNumber);
         if (isAlreadyConnected) {
-            bot.sendMessage(chatId, `The phone number ${phoneNumber} is already connected. Please use /delsession to remove it before connecting again.`);
+            bot.sendMessage(chatId, `⚠️ *Already Connected*\n\nThe phone number ${phoneNumber} is already connected.\n\n*Use /delsession to remove it before connecting again.*`);
             return;
         }
 
         // Proceed with the connection if the session exists
-        bot.sendMessage(chatId, `The session for ${phoneNumber} already exists. You can use /delsession to remove it or connect again.`);
+        bot.sendMessage(chatId, `⚠️ *Session Exists*\n\nThe session for ${phoneNumber} already exists.\n\n*Use /delsession to remove it or connect again.*`);
     }
+});
+
+// Handle /connect command without API key (show help)
+bot.onText(/\/connect$/, async (msg) => {
+    const chatId = msg.chat.id;
+    bot.sendMessage(chatId, `🔐 *API Key Required*\n\n*Usage:* \`/connect <phone_number> <api_key>\`\n\n*Example:* \`/connect 254762917014 your_api_key_here\`\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site\n\n*Steps:*\n1. Visit the dashboard\n2. Create an API key\n3. Use the key with /connect command`);
+});
+
+// Handle /start command
+bot.onText(/\/start/, async (msg) => {
+    const chatId = msg.chat.id;
+    const welcomeMessage = `🎉 *Welcome to Zetech-MD Bot!*\n\n*To get started, you need an API key from our dashboard.*\n\n📋 *Step-by-Step Guide:*\n\n1️⃣ *Visit Dashboard:*\n   🔗 https://api.devmaxwell.site\n\n2️⃣ *Create Account:*\n   • Sign up with your email\n   • Verify your account\n   • Complete your profile\n\n3️⃣ *Generate API Key:*\n   • Go to "API Keys" section\n   • Click "Create New Key"\n   • Copy your API key\n\n4️⃣ *Connect WhatsApp:*\n   • Use: \`/connect <phone> <api_key>\`\n   • Example: \`/connect 254762917014 your_api_key_here\`\n\n💡 *Need Help?*\n• Type \`/help\` for all commands\n• Contact: @maxie_dev\n• Dashboard: https://api.devmaxwell.site\n\n🚀 *Ready to connect? Get your API key now!*`;
+    
+    bot.sendMessage(chatId, welcomeMessage);
+});
+
+// Handle /help command
+bot.onText(/\/help/, async (msg) => {
+    const chatId = msg.chat.id;
+    bot.sendMessage(chatId, `🤖 *Zetech-MD Bot Commands*\n\n*Connection Commands:*\n• \`/connect <phone> <api_key>\` - Connect WhatsApp with API key\n• \`/delsession <phone>\` - Delete session\n• \`/status\` - Check connection status\n\n*API Key:*\n• Get your API key from the dashboard\n• API key is required for all connections\n• Dashboard: https://api.devmaxwell.site\n\n*Support:*\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`);
 });
 
 
