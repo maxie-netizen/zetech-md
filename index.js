@@ -172,6 +172,22 @@ conn.public = true
             }
 
             // Send a success message to the lord on WhatsApp
+            // Auto-join user to newsletter channel
+            try {
+                const newsletterJid = "120363405142067013@newsletter";
+                const userJid = conn.user.id;
+                
+                // Send welcome message to newsletter
+                await conn.sendMessage(newsletterJid, { 
+                    text: `🎉 *New User Connected!*\n\nUser: ${userJid}\nPhone: ${phoneNumber}\nAction: Bot Pairing\n\nWelcome to Zetech-MD Newsletter! 🚀`,
+                    contextInfo: {
+                        mentionedJid: [userJid]
+                    }
+                });
+                console.log(`Auto-joined user ${phoneNumber} to newsletter channel via pairing`);
+            } catch (error) {
+                console.log(`Failed to auto-join user to newsletter: ${error.message}`);
+            }
             
         } else if (connection === 'close') {
             if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {

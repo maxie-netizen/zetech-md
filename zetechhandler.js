@@ -355,7 +355,7 @@ contextInfo: {
 forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363322464215140@newsletter",
+newsletterJid: "120363405142067013@newsletter",
 newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭" 
 }
 }
@@ -377,7 +377,7 @@ contextInfo: {
 forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363418618707597@newsletter",
+newsletterJid: "120363405142067013@newsletter",
 newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭"
 }
 }

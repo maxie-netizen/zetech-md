@@ -27,7 +27,7 @@ mentionedJid: [m.sender],
 forwardingScore: 99, 
 isForwarded: true, 
 forwardedNewsletterMessageInfo: {
-newsletterJid: '120363418618707597@newsletter',
+newsletterJid: '120363405142067013@newsletter',
 serverMessageId: 20,
 newsletterName: '🩸⃟‣𝐓𝐑𝐀𝐒𝐇𝐂𝐎𝐑𝐄-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭'
 },
