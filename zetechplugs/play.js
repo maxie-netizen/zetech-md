@@ -11,120 +11,68 @@ let zetechplug = async (m, { conn, reply, text, args, command }) => {
 
         console.log(`[PLAY] Searching for: ${searchQuery}`);
 
-        // Try multiple APIs for better reliability
-        let success = false;
+        // Step 1: Search for the song using Keith API
+        const searchResponse = await fetch(`https://apis-keith.vercel.app/search/yts?query=${encodeURIComponent(searchQuery)}`);
         
-        // API 1: Ochinpo Helper
-        try {
-            let res = await fetch(`https://ochinpo-helper.hf.space/yt?query=${encodeURIComponent(searchQuery)}`);
-            if (res.ok) {
-                let json = await res.json();
-                if (json.success && json.result) {
-                    const { title, url, image, duration, author, download } = json.result;
-                    const thumbnail = await (await fetch(image)).buffer();
-                    
-                    await conn.sendMessage(m.chat, {
-                        audio: { url: download.audio },
-                        mimetype: 'audio/mpeg',
-                        fileName: `${title}.mp3`,
-                        ptt: true,
-                        contextInfo: {
-                            forwardingScore: 999,
-                            isForwarded: true,
-                            externalAdReply: {
-                                title,
-                                body: `${author.name} • ${duration.timestamp}`,
-                                thumbnail,
-                                mediaUrl: url,
-                                mediaType: 2,
-                                renderLargerThumbnail: true,
-                                sourceUrl: url
-                            }
-                        }
-                    }, { quoted: m });
-                    success = true;
+        if (!searchResponse.ok) {
+            throw new Error('Search API failed');
+        }
+        
+        const searchData = await searchResponse.json();
+        
+        if (!searchData.status || !searchData.result || searchData.result.length === 0) {
+            return reply("No songs found. Please try a different search term.");
+        }
+
+        // Get the first result (most relevant)
+        const firstResult = searchData.result[0];
+        const { title, url, thumbnail, duration, views } = firstResult;
+        
+        console.log(`[PLAY] Found: ${title}`);
+        console.log(`[PLAY] YouTube URL: ${url}`);
+
+        // Step 2: Download the audio using Keith API
+        const downloadResponse = await fetch(`https://apis-keith.vercel.app/download/audio?url=${encodeURIComponent(url)}`);
+        
+        if (!downloadResponse.ok) {
+            throw new Error('Download API failed');
+        }
+        
+        const downloadData = await downloadResponse.json();
+        
+        if (!downloadData.status || !downloadData.result) {
+            return reply("Failed to download audio. Please try again later.");
+        }
+
+        const audioUrl = downloadData.result;
+        const creator = downloadData.creator || "Keithkeizzah";
+        
+        console.log(`[PLAY] Download URL: ${audioUrl}`);
+
+        // Step 3: Send the audio with rich metadata
+        const thumbnailBuffer = await (await fetch(thumbnail)).buffer();
+        
+        await conn.sendMessage(m.chat, {
+            audio: { url: audioUrl },
+            mimetype: 'audio/mpeg',
+            fileName: `${title}.mp3`,
+            ptt: true,
+            contextInfo: {
+                forwardingScore: 999,
+                isForwarded: true,
+                externalAdReply: {
+                    title: title,
+                    body: `${duration} • ${views} views`,
+                    thumbnail: thumbnailBuffer,
+                    mediaUrl: url,
+                    mediaType: 2,
+                    renderLargerThumbnail: true,
+                    sourceUrl: url
                 }
             }
-        } catch (e) {
-            console.warn('[PLAY] Ochinpo API failed:', e.message);
-        }
+        }, { quoted: m });
 
-        // API 2: Nekorinn (Fallback)
-        if (!success) {
-            try {
-                let res = await fetch(`https://api.nekorinn.my.id/downloader/ytplay-savetube?q=${encodeURIComponent(searchQuery)}`);
-                let data = await res.json();
-                if (data.status && data.result) {
-                    const { title, channel, duration, imageUrl, link } = data.result.metadata;
-                    const downloadUrl = data.result.downloadUrl;
-                    const thumbnail = await (await fetch(imageUrl)).buffer();
-                    
-                    await conn.sendMessage(m.chat, {
-                        audio: { url: downloadUrl },
-                        mimetype: 'audio/mpeg',
-                        fileName: `${title}.mp3`,
-                        ptt: true,
-                        contextInfo: {
-                            forwardingScore: 999,
-                            isForwarded: true,
-                            externalAdReply: {
-                                title,
-                                body: `${channel} • ${duration}`,
-                                thumbnail,
-                                mediaUrl: link,
-                                mediaType: 2,
-                                renderLargerThumbnail: true,
-                                sourceUrl: link
-                            }
-                        }
-                    }, { quoted: m });
-                    success = true;
-                }
-            } catch (e) {
-                console.warn('[PLAY] Nekorinn API failed:', e.message);
-            }
-        }
-
-        // API 3: Diioffc (Final fallback)
-        if (!success) {
-            try {
-                const res = await fetch(`https://api.diioffc.web.id/api/search/ytplay?query=${encodeURIComponent(searchQuery)}`);
-                if (res.ok) {
-                    const json = await res.json();
-                    if (json.status && json.result) {
-                        const { title, author, duration, thumbnail: thumb, url, download } = json.result;
-                        const thumbnail = await (await fetch(thumb)).buffer();
-
-                        await conn.sendMessage(m.chat, {
-                            audio: { url: download.url },
-                            mimetype: 'audio/mpeg',
-                            fileName: download.filename || `${title}.mp3`,
-                            ptt: true,
-                            contextInfo: {
-                                forwardingScore: 999,
-                                isForwarded: true,
-                                externalAdReply: {
-                                    title,
-                                    body: `${author.name} • ${duration.timestamp}`,
-                                    thumbnail,
-                                    mediaUrl: url,
-                                    mediaType: 2,
-                                    renderLargerThumbnail: true,
-                                    sourceUrl: url
-                                }
-                            }
-                        }, { quoted: m });
-                        success = true;
-                    }
-                }
-            } catch (e) {
-                console.warn('[PLAY] Diioffc API failed:', e.message);
-            }
-        }
-
-        if (!success) {
-            reply("All APIs failed. Please try again later or try a different song name.");
-        }
+        console.log(`[PLAY] Successfully sent: ${title}`);
 
     } catch (error) {
         console.error('[PLAY ERROR] Error in play command:', error);
