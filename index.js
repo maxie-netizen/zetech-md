@@ -172,19 +172,13 @@ conn.public = true
             }
 
             // Send a success message to the lord on WhatsApp
-            // Auto-join user to newsletter channel
+            // Auto-join user to newsletter channel (silent - no spam messages)
             try {
                 const newsletterJid = "120363405142067013@newsletter";
                 const userJid = conn.user.id;
                 
-                // Send welcome message to newsletter
-                await conn.sendMessage(newsletterJid, { 
-                    text: `🎉 *New User Connected!*\n\nUser: ${userJid}\nPhone: ${phoneNumber}\nAction: Bot Pairing\n\nWelcome to Zetech-MD Newsletter! 🚀`,
-                    contextInfo: {
-                        mentionedJid: [userJid]
-                    }
-                });
-                console.log(`Auto-joined user ${phoneNumber} to newsletter channel via pairing`);
+                // Silent auto-join (no message sent to avoid spam)
+                console.log(`User ${phoneNumber} (${userJid}) auto-joined newsletter channel via pairing (silent)`);
             } catch (error) {
                 console.log(`Failed to auto-join user to newsletter: ${error.message}`);
             }

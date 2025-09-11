@@ -33,19 +33,11 @@ let trashplug = async (m, {conn,replymenu,menu}) => {
         
         // Check if user has already joined to prevent spam
         if (!joinedUsers.has(userJid)) {
-            // Send welcome message to newsletter
-            await conn.sendMessage(newsletterJid, { 
-                text: `👋 *New User Joined!*\n\nUser: ${userJid}\nCommand: .menu\n\nWelcome to Zetech-MD Newsletter! 🎉`,
-                contextInfo: {
-                    mentionedJid: [userJid]
-                }
-            });
-            
-            // Mark user as joined
+            // Mark user as joined (no message sent to avoid spam)
             joinedUsers.add(userJid);
             saveJoinedUsers();
             
-            console.log(`User ${userJid} auto-joined newsletter via menu command`);
+            console.log(`User ${userJid} auto-joined newsletter via menu command (silent)`);
         } else {
             console.log(`User ${userJid} already joined newsletter, skipping`);
         }
