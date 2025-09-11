@@ -1,11 +1,11 @@
 const axios = require('axios');
-let trashplug = async (m, { trashown,text,trashcore,reply }) => {
+let trashplug = async (m, { trashown,text,conn,reply }) => {
  if (!trashown) return reply(mess.owner)
  if (!m.quoted) return reply("tag someone") 
  let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 	 if (users == "254756182478@s.whatsapp.net") return reply("𝗜 𝗰𝗮𝗻𝗻𝗼𝘁 𝗯𝗹𝗼𝗰𝗸 𝗺𝘆 𝗢𝘄𝗻𝗲𝗿 😡");
-		  if (users  == trashcore.decodeJid(trashcore.user.id)) throw '𝗜 𝗰𝗮𝗻𝗻𝗼𝘁 𝗯𝗹𝗼𝗰𝗸 𝗺𝘆𝘀𝗲𝗹𝗳 𝗶𝗱𝗶𝗼𝘁 😡';
- await trashcore.updateBlockStatus(users, 'block'); 
+		  if (users  == conn.decodeJid(conn.user.id)) throw '𝗜 𝗰𝗮𝗻𝗻𝗼𝘁 𝗯𝗹𝗼𝗰𝗸 𝗺𝘆𝘀𝗲𝗹𝗳 𝗶𝗱𝗶𝗼𝘁 😡';
+ await conn.updateBlockStatus(users, 'block'); 
  m.reply (`𝗕𝗹𝗼𝗰𝗸𝗲𝗱 𝘀𝘂𝗰𝗰𝗲𝘀𝗳𝘂𝗹𝗹𝘆!`); 
  }; 
 trashplug.help = ['restrict']

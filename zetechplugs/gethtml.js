@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-let trashplug = async (m, {prefix, trashcore,reply,command,text }) => {
+let trashplug = async (m, {prefix, conn,reply,command,text }) => {
     if (!text) return reply(`Example: ${prefix + command} https://example.com`);
 
     try {
@@ -11,7 +11,7 @@ let trashplug = async (m, {prefix, trashcore,reply,command,text }) => {
         const filePath = path.join(__dirname, '../library/lib/html_dump.html');
         fs.writeFileSync(filePath, html);
 
-        await trashcore.sendMessage(m.chat, {
+        await conn.sendMessage(m.chat, {
             document: fs.readFileSync(filePath),
             mimetype: 'text/html',
             fileName: 'results.html'

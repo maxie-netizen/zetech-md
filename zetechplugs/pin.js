@@ -1,10 +1,10 @@
 const axios = require('axios');
 const fetch = require('node-fetch');
-let trashplug = async (m, { text,trashcore,reply}) => {
+let trashplug = async (m, { text,conn,reply}) => {
   if (!text) return m.reply('❌ Provide a URL Pinterest!\nUse: .pinterestdl https://pin.it/2NCffxXoN');
 
   try {
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       react: { text: '⏰', key: m.key }
     });
 
@@ -23,7 +23,7 @@ let trashplug = async (m, { text,trashcore,reply}) => {
     const caption = `📌 *Pinterest Downloader*\n\n🎞️ *Title:* ${data.result.title}\n💾 *Size:* ${media.formattedSize || '-'}\n📎 *Share:* ${text}`;
     const type = media.extension === 'mp4' ? 'video' : 'image';
 
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       [type]: { url: media.url },
       caption
     }, { quoted: m });

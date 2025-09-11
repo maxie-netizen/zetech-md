@@ -1,6 +1,6 @@
 const axios = require("axios");
  
-let trashplug = async (m, { text,trashcore,reply }) => {
+let trashplug = async (m, { text,conn,reply }) => {
   if (!text) return reply('provide a query *Example :* what is node js?');
  
   let { data } = await axios.get('https://www.abella.icu/hika-ai?q=' + encodeURIComponent(text));

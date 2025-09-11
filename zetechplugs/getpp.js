@@ -1,5 +1,5 @@
 const axios = require("axios");
-let trashplug = async (m, { trashown,trashcore,q,reply }) => {
+let trashplug = async (m, { trashown,conn,q,reply }) => {
 
   if (!trashown) return reply(mess.owner)
     let target;
@@ -21,9 +21,9 @@ let trashplug = async (m, { trashown,trashcore,q,reply }) => {
     }
 
     try {
-        const pp = await trashcore.profilePictureUrl(target, 'image').catch(() => null);
+        const pp = await conn.profilePictureUrl(target, 'image').catch(() => null);
         if (!pp) return m.reply(`</> profile picture is hidden/private.`);
-        await trashcore.sendMessage(m.chat, {
+        await conn.sendMessage(m.chat, {
             image: { url: pp },
             caption: `</> Success: ${target.split('@')[0]}`
         }, { quoted: m });

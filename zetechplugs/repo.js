@@ -1,8 +1,8 @@
 const axios = require('axios');
-let trashplug = async (m, {trashcore,reply,trashpic,fkontak}) => {
+let trashplug = async (m, {conn,reply,trashpic,fkontak}) => {
   try {
     let me = m.sender;
- const response = await axios.get(`https://api.github.com/repos/Tennor-modz/trashcore-system`)
+ const response = await axios.get(`https://api.github.com/repos/Tennor-modz/conn-system`)
     if (response.status === 200) {
       const repoData = response.data
       const repos = `
@@ -16,12 +16,12 @@ let trashplug = async (m, {trashcore,reply,trashpic,fkontak}) => {
 > ${repoData.forks_count}
 
 *GITHUB LINK:* 
-https://github.com/Tennor-modz/trashcore-system 
+https://github.com/Tennor-modz/conn-system 
 
 @${me.split("@")[0]}👋, Star ⭐ fork and deploy my repo 🤭
 
 > 🩸⃟‣𝐓𝐑𝐀𝐒𝐇𝐂𝐎𝐑𝐄-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭`;
-trashcore.sendMessage(m.chat, { text : repos,
+conn.sendMessage(m.chat, { text : repos,
 contextInfo: {
 mentionedJid: [m.sender],
 forwardingScore: 99, 

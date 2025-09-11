@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-let trashplug = async (m, { trashcore,trashown, reply, text, example }) => {
+let trashplug = async (m, { conn,trashown, reply, text, example }) => {
 if (!trashown) return reply(mess.owner)  
 if (!text) return reply("provide a plugin name")
 if (!text.endsWith(".js")) return m.reply("file name must end with  .js")

@@ -29,7 +29,7 @@ let trashplug = async (m, { text,conn,reply}) => {
 
     let { title, duration, channel, views, thumbnail } = data
 
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       text: `🎬 *Info Video YouTube:*\n\n📌 Title: ${title}\n📺 Channel: ${channel}\n⏱ Duration: ${duration}\n👁 Views: ${views}\n\n⏳ Quality*${qualityMap[quality]}*...`,
       contextInfo: {
         externalAdReply: {
@@ -61,7 +61,7 @@ let trashplug = async (m, { text,conn,reply}) => {
       (videoRes.headers['content-disposition'] || '').split("filename*=UTF-8''")[1] || `video_${quality}.mp4`
     ).replace(/[\/\\:*?"<>|]/g, '_')
 
-    await trashcore.sendMessage(m.chat, {
+    await conn.sendMessage(m.chat, {
       video: Buffer.from(videoRes.data),
       mimetype: 'video/mp4',
       fileName: filename,

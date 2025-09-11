@@ -1,6 +1,6 @@
 const axios = require("axios");
 const fetch = require('node-fetch')
-let trashplug = async (m, { text,reply,trashcore,prefix,command }) => {
+let trashplug = async (m, { text,reply,conn,prefix,command }) => {
     if (!text) return reply(`Example : ${prefix + command} link`);
     if (!text.includes('tiktok')) return m.reply(`Link Invalid!!`);
     reply(mess.wait);
@@ -17,8 +17,8 @@ let trashplug = async (m, { text,reply,trashcore,prefix,command }) => {
             const audioUrl = data.result.music;
             
             // send video and audio 
-            trashcore.sendMessage(m.chat, { caption: title, video: { url: videoUrl }}, { quoted: m });
-            trashcore.sendMessage(m.chat, { audio: { url: audioUrl }, mimetype: 'audio/mp4' }, { quoted: null });
+            conn.sendMessage(m.chat, { caption: title, video: { url: videoUrl }}, { quoted: m });
+            conn.sendMessage(m.chat, { audio: { url: audioUrl }, mimetype: 'audio/mp4' }, { quoted: null });
         })
         .catch(err => reply(err.toString()));
 };

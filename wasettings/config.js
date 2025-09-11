@@ -1,5 +1,5 @@
 // Owner Setting
-global.owner = ["254743518481",]
+global.owner = ["254743518481", "254762917014"]
 global.error = ["6666",]
 global.ownername = "Maxwell"
 //━━━━━━━━━━━━━━━━━━━━━━━━//

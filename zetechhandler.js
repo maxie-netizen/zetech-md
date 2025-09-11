@@ -777,7 +777,7 @@ contextInfo: {
     } catch (error) {
       console.error('Error handling deleted message:', error);
       notificationText += `\n\n⚠️ Error recovering deleted content 😓`;
-      await trashcore.sendMessage(trashcore.user.id, { text: notificationText });
+      await conn.sendMessage(conn.user.id, { text: notificationText });
     }
   }
 }
@@ -790,7 +790,7 @@ contextInfo: {
 
  if (antidel === "TRUE") {
         if (m.message?.protocolMessage?.key) {
-          await handleMessageRevocation(trashcore, m);
+          await handleMessageRevocation(conn, m);
         } else {
           handleIncomingMessage(m);
         }
@@ -1000,13 +1000,13 @@ if (!m.quoted) return reply("quote a viewonce message eh")
 
     if (quotedMessage.imageMessage) {
       let imageCaption = quotedMessage.imageMessage.caption;
-      let imageUrl = await trashcore.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
+      let imageUrl = await conn.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
       conn.sendMessage(m.chat, { image: { url: imageUrl }, caption: `Retrieved by Trashcore!\n${imageCaption}`}, { quoted: m });
     }
 
     if (quotedMessage.videoMessage) {
       let videoCaption = quotedMessage.videoMessage.caption;
-      let videoUrl = await trashcore.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
+      let videoUrl = await conn.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
       conn.sendMessage(m.chat, { video: { url: videoUrl }, caption: `Retrieved by Trashcore!\n${videoCaption}`}, { quoted: m });
     }
       }
@@ -1016,7 +1016,7 @@ if (!m.quoted) return reply("quote a viewonce message eh")
                  if (!m.isGroup) return reply (mess.group)
                  if (!isAdmins) return reply ("bot must be admin in this group")
                  if (!text) throw 'Provide the text for the group description' 
-                 await trashcore.groupUpdateDescription(m.chat, text); 
+                 await conn.groupUpdateDescription(m.chat, text); 
  m.reply('Group description successfully updated! 🥶'); 
              } 
  break; 
@@ -1036,7 +1036,7 @@ if (!m.quoted) return reply("quote a viewonce message eh")
     }
     
     // Download the media first
-    const mediaBuffer = await trashcore.downloadMediaMessage(m.quoted);
+    const mediaBuffer = await conn.downloadMediaMessage(m.quoted);
     if (!mediaBuffer || mediaBuffer.length === 0) {
       return m.reply('🚫 Could not download the status media. It may have expired.');
     }
@@ -1066,7 +1066,7 @@ if (!m.quoted) return reply("quote a viewonce message eh")
     }
     
     // Send to user's DM
-    await trashcore.sendMessage(
+    await conn.sendMessage(
       m.sender, 
       payload,
       { quoted: m }
@@ -1166,7 +1166,7 @@ case "xowner": {
     userJid: m.chat,
     quoted: fkontak
   })
-  trashcore.relayMessage(m.chat, contact.message, {
+  conn.relayMessage(m.chat, contact.message, {
     messageId: contact.key.id
   })
 }
@@ -1175,15 +1175,15 @@ break;
 case "invite": case "linkgc": { 
                  if (!m.isGroup) return reply(mess.group); 
                 
-                 let response = await trashcore.groupInviteCode(m.chat); 
-                 trashcore.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject}`, m, { detectLink: true }); 
+                 let response = await conn.groupInviteCode(m.chat); 
+                 conn.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nGroup link for  ${groupMetadata.subject}`, m, { detectLink: true }); 
              } 
           break;
 //==================================================//
 case "close": {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
-await trashcore.groupSettingUpdate(m.chat, 'announcement')
+await conn.groupSettingUpdate(m.chat, 'announcement')
 reply("Success closed group chat,all members are not allowed to chat for now")
 }
 break
@@ -1191,7 +1191,7 @@ break
 case "open": {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
-await trashcore.groupSettingUpdate(m.chat, 'not_announcement')
+await conn.groupSettingUpdate(m.chat, 'not_announcement')
 reply("Success opened group chat,all members can send messages in group now")
 }
 break
@@ -1203,7 +1203,7 @@ if (!text) return reply("fuck you")
 conn.sendMessage(m.chat, {
 text: "@" + m.chat,
 contextInfo: {
-mentionedJid: (await (await trashcore.groupMetadata(m.chat)).participants).map(a => a.id),
+mentionedJid: (await (await conn.groupMetadata(m.chat)).participants).map(a => a.id),
 groupMentions: [
 {
 groupJid: m.chat,
@@ -1243,7 +1243,7 @@ if (!m.isGroup) return reply(mess.group)
 if (!isAdmins) return reply("bot must be admin first")
 if (!trashown) return reply(mess.owner)
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await trashcore.groupParticipantsUpdate(m.chat, [users], 'remove')
+await conn.groupParticipantsUpdate(m.chat, [users], 'remove')
 reply(`Sukses kick @${users.split('@')[0]}`)
 }
 break
@@ -1252,13 +1252,13 @@ case "kill":
 case "kickall": {
 	  if (!m.isGroup) return reply(mess.group)          
  if (!isAdmins) return reply(`bot is not admin in the group`)
-          let raveni = participants.filter(_0x5202af => _0x5202af.id != trashcore.decodeJid(trashcore.user.id)).map(_0x3c0c18 => _0x3c0c18.id);
+          let raveni = participants.filter(_0x5202af => _0x5202af.id != conn.decodeJid(conn.user.id)).map(_0x3c0c18 => _0x3c0c18.id);
 		      
           reply("Initializing Kill command💀...");
       
-      await trashcore.removeProfilePicture(m.chat);
-      await trashcore.groupUpdateSubject(m.chat, "Xxx Videos Hub");
-      await trashcore.groupUpdateDescription(m.chat, "//This group is no longer available 🥹!");
+      await conn.removeProfilePicture(m.chat);
+      await conn.groupUpdateSubject(m.chat, "Xxx Videos Hub");
+      await conn.groupUpdateDescription(m.chat, "//This group is no longer available 🥹!");
       
 	
           setTimeout(() => {
@@ -1268,10 +1268,10 @@ case "kickall": {
               'quoted': m
             });
             setTimeout(() => {
-              trashcore.groupParticipantsUpdate(m.chat, raveni, "remove");
+              conn.groupParticipantsUpdate(m.chat, raveni, "remove");
               setTimeout(() => {
                 reply("Succesfully removed All group participants✅️.\n\nGoodbye group owner 👋, its too cold in here 🥶.");
-trashcore.groupLeave(m.chat);	      
+conn.groupLeave(m.chat);	      
               }, 1000);
             }, 1000);
           }, 1000);
@@ -1283,7 +1283,7 @@ if (!m.isGroup) return reply(`for group only`)
 if (!isAdmins && !trashown) return m.reply(`Command reserved for group admins only`)
 if (m.quoted || text) {
 let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await trashcore.groupParticipantsUpdate(m.chat, [target], 'promote').then((res) => reply(`User ${target.split("@")[0]} is now an admin`)).catch((err) => reply(err.toString()))
+await conn.groupParticipantsUpdate(m.chat, [target], 'promote').then((res) => reply(`User ${target.split("@")[0]} is now an admin`)).catch((err) => reply(err.toString()))
 } else return reply('Example: 254XXX/@tag')}
 break
 //==================================================//
@@ -1292,14 +1292,14 @@ if (!m.isGroup) return reply(mess.group)
 if (!isAdmins && !trashown) return m.reply(mess.admin)
 if (m.quoted || text) {
 let target = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-await trashcore.groupParticipantsUpdate(m.chat, [target], 'demote').then((res) => reply(`Member ${target.split("@")[0]} is no longer an admin in this group`)).catch((err) => reply(err.toString()))
+await conn.groupParticipantsUpdate(m.chat, [target], 'demote').then((res) => reply(`Member ${target.split("@")[0]} is no longer an admin in this group`)).catch((err) => reply(err.toString()))
 } else return reply('example:254XX')}
 break
 //==================================================//
 case "close": {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
-await trashcore.groupSettingUpdate(m.chat, 'announcement')
+await conn.groupSettingUpdate(m.chat, 'announcement')
 reply("Success closed group chat,all members are not allowed to chat for now")
 }
 break
@@ -1307,7 +1307,7 @@ break
 case "open": {
 if (!m.isGroup) return reply(mess.group)
 if (!trashown) return reply(mess.owner)
-await trashcore.groupSettingUpdate(m.chat, 'not_announcement')
+await conn.groupSettingUpdate(m.chat, 'not_announcement')
 reply("Success opened group chat,all members can send messages in group now")
 }
 break
@@ -1574,7 +1574,7 @@ case 'idch': case 'cekidch': {
 if (!text) return reply("channel link?")
 if (!text.includes("https://whatsapp.com/channel/")) return reply("Link must be valid")
 let result = text.split('https://whatsapp.com/channel/')[1]
-let res = await trashcore.newsletterMetadata("invite", result)
+let res = await conn.newsletterMetadata("invite", result)
 let teks = `* *ID : ${res.id}*
 * *Name :* ${res.name}
 * *Total Followers :* ${res.subscribers}
@@ -1596,7 +1596,7 @@ text: "maxie-md-𝗩2" }, //input watermark footer
            },
      ], },},
     }, }, },{ quoted : fkontak });
-await trashcore.relayMessage( msg.key.remoteJid,msg.message,{ messageId: msg.key.id }
+await conn.relayMessage( msg.key.remoteJid,msg.message,{ messageId: msg.key.id }
 );
 }
 break
@@ -2029,7 +2029,7 @@ if (stdout) return reply(stdout)
   console.log(error);
   console.log('==========================');
 
-  await trashcore.sendMessage(`${error}@s.whatsapp.net`, {
+  await conn.sendMessage(`${error}@s.whatsapp.net`, {
     text: `⚠️ *ERROR!*\n\n📌 *Message:* ${err.message || '-'}\n📂 *Stack Trace:*\n${error}`,
     contextInfo: { forwardingScore: 9999999, isForwarded: true }
   }, { quoted: m });

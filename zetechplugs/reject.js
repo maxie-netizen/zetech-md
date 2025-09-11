@@ -1,13 +1,13 @@
 const axios = require('axios');
-let trashplug = async (m, { text,trashcore,participants,isAdmins,reply }) => {
+let trashplug = async (m, { text,conn,participants,isAdmins,reply }) => {
 if (!m.isGroup) return reply(mess.group)
 if (!isAdmins) return reply("this feature is only for group admins")
-const responseList = await trashcore.groupRequestParticipantsList(m.chat);
+const responseList = await conn.groupRequestParticipantsList(m.chat);
 
 if (responseList.length === 0) return reply("no pending requests detected");
 
 for (const participan of responseList) {
-    const response = await trashcore.groupRequestParticipantsUpdate(
+    const response = await conn.groupRequestParticipantsUpdate(
         m.chat, 
         [participan.jid], // Approve/reject each participant individually
         "reject" // or "reject"

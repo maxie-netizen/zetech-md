@@ -1,5 +1,5 @@
 const axios = require('axios');
-let trashplug = async (m, { trashcore, trashown,reply,text }) => {
+let trashplug = async (m, { conn, trashown,reply,text }) => {
     if (!trashown) return reply(mess.owner) 
 
     // Parse command for 'on' or 'off'
