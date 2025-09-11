@@ -1,7 +1,30 @@
 let zetechplug = async (m, { conn, reply, trashown }) => {
     try {
+        // Check if sender is in owner list manually
+        const senderNumber = m.sender.replace('@s.whatsapp.net', '');
+        const isOwnerManual = global.owner.includes(senderNumber) || global.owner.includes(senderNumber.replace('+', ''));
+        
+        // Send debug information to owner's DM
+        const debugInfo = `🔍 *GROUPS PLUGIN DEBUG*\n\n` +
+            `📱 *Sender:* ${m.sender}\n` +
+            `👑 *Global Owner:* ${JSON.stringify(global.owner)}\n` +
+            `✅ *Trashown:* ${trashown}\n` +
+            `🔢 *Sender Number:* ${senderNumber}\n` +
+            `✅ *Manual Owner Check:* ${isOwnerManual}\n` +
+            `⏰ *Time:* ${new Date().toLocaleString()}`;
+        
+        // Send debug info to owner's DM
+        try {
+            const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+            await conn.sendMessage(ownerNumber, { text: debugInfo });
+        } catch (e) {
+            console.log('Failed to send debug info to owner');
+        }
+        
         // Check if user is owner
-        if (!trashown) return reply("*❌ Only owner can use this command*");
+        if (!trashown && !isOwnerManual) {
+            return reply(`*❌ Only owner can use this command*\n\n*Debug info sent to owner's DM*`);
+        }
 
         await reply("_Fetching your groups and channels..._");
 

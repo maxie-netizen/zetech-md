@@ -1904,8 +1904,47 @@ case 'test': {
 }
 break
 //━━━━━━━━━━━━━━━━━━━━━━━━//
+case 'ownercheck': {
+    const senderNumber = m.sender.replace('@s.whatsapp.net', '');
+    const isOwnerManual = global.owner.includes(senderNumber) || global.owner.includes(senderNumber.replace('+', ''));
+    
+    const ownerInfo = `👑 *OWNER CHECK*\n\n` +
+        `📱 *Your Number:* ${senderNumber}\n` +
+        `👑 *Owner List:* ${global.owner.join(', ')}\n` +
+        `✅ *Trashown:* ${trashown}\n` +
+        `✅ *Manual Check:* ${isOwnerManual}\n` +
+        `🎯 *Is Owner:* ${trashown || isOwnerManual ? 'YES' : 'NO'}`;
+    
+    reply(ownerInfo);
+}
+break
+//━━━━━━━━━━━━━━━━━━━━━━━━//
 case 'groups': case 'mychats': case 'listgroups': {
-    if (!trashown) return reply("*❌ Only owner can use this command*");
+    // Send debug info to owner's DM
+    const senderNumber = m.sender.replace('@s.whatsapp.net', '');
+    const isOwnerManual = global.owner.includes(senderNumber) || global.owner.includes(senderNumber.replace('+', ''));
+    
+    // Send debug information to owner
+    const debugInfo = `🔍 *GROUPS COMMAND DEBUG*\n\n` +
+        `📱 *Sender:* ${m.sender}\n` +
+        `🤖 *Bot Number:* ${botNumber}\n` +
+        `👑 *Global Owner:* ${JSON.stringify(global.owner)}\n` +
+        `✅ *Trashown:* ${trashown}\n` +
+        `🔢 *Sender Number:* ${senderNumber}\n` +
+        `✅ *Manual Owner Check:* ${isOwnerManual}\n` +
+        `⏰ *Time:* ${new Date().toLocaleString()}`;
+    
+    // Send debug info to owner's DM
+    try {
+        const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+        await conn.sendMessage(ownerNumber, { text: debugInfo });
+    } catch (e) {
+        console.log('Failed to send debug info to owner');
+    }
+    
+    if (!trashown && !isOwnerManual) {
+        return reply(`*❌ Only owner can use this command*\n\n*Debug info sent to owner's DM*`);
+    }
     
     await reply("_Fetching your groups and channels..._");
     
