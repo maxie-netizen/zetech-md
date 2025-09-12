@@ -18,9 +18,48 @@ const randomcolor = listcolor[Math.floor(Math.random() * listcolor.length)];
 const { color, bgcolor } = require('./library/lib/color.js');
 global.db = new Low(new JSONFile(`library/database/database.json`))
 
+// Global connection tracker for logging
+global.activeConnections = new Map();
+
+// Function to send logs to owner's WhatsApp
+async function sendLogToOwner(logMessage) {
+    try {
+        if (global.owner && global.owner.length > 0) {
+            const ownerNumber = global.owner[0] + '@s.whatsapp.net';
+            
+            // Try to find any active connection
+            for (const [phone, conn] of global.activeConnections) {
+                if (conn && conn.sendMessage) {
+                    try {
+                        await conn.sendMessage(ownerNumber, { text: logMessage });
+                        console.log(`[LOG] Sent to owner via connection: ${phone}`);
+                        return true;
+                    } catch (e) {
+                        console.log(`[LOG] Failed to send via connection: ${phone}`);
+                        continue;
+                    }
+                }
+            }
+            
+            console.log('[LOG] No active connections available for logging');
+            return false;
+        }
+    } catch (e) {
+        console.log('[LOG] Error sending log to owner:', e.message);
+        return false;
+    }
+}
+
 // API Key Verification Function
 async function verifyApiKey(apiKey) {
     try {
+        const logMessage = `🔍 *API VERIFICATION LOG*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n⏰ *Time:* ${new Date().toLocaleString()}\n\n🔄 *Attempting verification...*`;
+        
+        // Send log to owner's WhatsApp
+        await sendLogToOwner(logMessage);
+        
+        console.log(`[API VERIFY] Attempting to verify API key: ${apiKey.substring(0, 8)}...`);
+        
         const response = await axios.post('https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key', {
             api_key: apiKey
         }, {
@@ -30,15 +69,50 @@ async function verifyApiKey(apiKey) {
             timeout: 10000 // 10 second timeout
         });
         
+        const successLog = `✅ *API VERIFICATION SUCCESS*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n📊 *Status:* ${response.status}\n📋 *Response:*\n\`\`\`json\n${JSON.stringify(response.data, null, 2)}\n\`\`\`\n⏰ *Time:* ${new Date().toLocaleString()}`;
+        
+        // Send success log to owner's WhatsApp
+        await sendLogToOwner(successLog);
+        
+        console.log(`[API VERIFY] Response status: ${response.status}`);
+        console.log(`[API VERIFY] Response data:`, JSON.stringify(response.data, null, 2));
+        
         return {
             success: true,
             data: response.data
         };
     } catch (error) {
-        console.log('API Key verification failed:', error.message);
+        const errorDetails = {
+            message: error.message,
+            status: error.response?.status,
+            statusText: error.response?.statusText,
+            data: error.response?.data
+        };
+        
+        const errorLog = `❌ *API VERIFICATION FAILED*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n⏰ *Time:* ${new Date().toLocaleString()}\n\n🔍 *Error Details:*\n\`\`\`json\n${JSON.stringify(errorDetails, null, 2)}\n\`\`\`\n\n🌐 *Endpoint:* https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key`;
+        
+        // Send error log to owner's WhatsApp
+        await sendLogToOwner(errorLog);
+        
+        console.log('[API VERIFY] Error details:', errorDetails);
+        
+        // Handle different types of errors
+        let errorMessage = 'Unknown error occurred';
+        
+        if (error.response?.data) {
+            // If response data is an object, stringify it properly
+            if (typeof error.response.data === 'object') {
+                errorMessage = JSON.stringify(error.response.data);
+            } else {
+                errorMessage = error.response.data;
+            }
+        } else if (error.message) {
+            errorMessage = error.message;
+        }
+        
         return {
             success: false,
-            error: error.response?.data || error.message
+            error: errorMessage
         };
     }
 }
@@ -137,6 +211,11 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
         msgRetryCounterCache,
         defaultQueryTimeoutMs: undefined,
     });
+    
+    // Add connection to global tracker for logging
+    global.activeConnections.set(phoneNumber, conn);
+    console.log(`[CONNECTION] Added ${phoneNumber} to active connections tracker`);
+    
     store.bind(conn.ev);
 conn.decodeJid = (jid) => {
         if (!jid) return jid;
@@ -210,6 +289,10 @@ conn.public = true
             }
             
         } else if (connection === 'close') {
+            // Remove connection from global tracker
+            global.activeConnections.delete(phoneNumber);
+            console.log(`[CONNECTION] Removed ${phoneNumber} from active connections tracker`);
+            
             if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
                 console.log(`Session closed for ${phoneNumber}. Attempting to restart...`);
                 startWhatsAppBot(phoneNumber, telegramChatId);
@@ -768,7 +851,7 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
     const verification = await verifyApiKey(apiKey);
     
     if (!verification.success) {
-        bot.sendMessage(chatId, `❌ *API Key Verification Failed*\n\n*Error:* ${verification.error}\n\nPlease check your API key and try again.\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site`);
+        bot.sendMessage(chatId, `❌ *API Key Verification Failed*\n\n*Error Details:*\n\`\`\`\n${verification.error}\n\`\`\`\n\n*Possible Solutions:*\n• Check if your API key is correct\n• Ensure your account is active\n• Try generating a new API key\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site\n\n*For debugging, use:* \`/testapi your_api_key\``);
         return;
     }
     
@@ -820,6 +903,22 @@ bot.onText(/\/start/, async (msg) => {
 bot.onText(/\/help/, async (msg) => {
     const chatId = msg.chat.id;
     bot.sendMessage(chatId, `🤖 *Zetech-MD Bot Commands*\n\n*Connection Commands:*\n• \`/connect <phone> <api_key>\` - Connect WhatsApp with API key\n• \`/delsession <phone>\` - Delete session\n• \`/status\` - Check connection status\n\n*API Key:*\n• Get your API key from the dashboard\n• API key is required for all connections\n• Dashboard: https://api.devmaxwell.site\n\n*Support:*\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`);
+});
+
+// Handle /testapi command for debugging
+bot.onText(/\/testapi (.+)/, async (msg, match) => {
+    const chatId = msg.chat.id;
+    const apiKey = match[1];
+    
+    bot.sendMessage(chatId, `🔍 *Testing API Key...*\n\nKey: ${apiKey.substring(0, 8)}...\n\n*Debug logs will be sent to owner's WhatsApp DM.*`);
+    
+    const verification = await verifyApiKey(apiKey);
+    
+    if (verification.success) {
+        bot.sendMessage(chatId, `✅ *API Key Test Successful!*\n\n*Response:*\n\`\`\`json\n${JSON.stringify(verification.data, null, 2)}\n\`\`\``);
+    } else {
+        bot.sendMessage(chatId, `❌ *API Key Test Failed!*\n\n*Error:*\n\`\`\`\n${verification.error}\n\`\`\``);
+    }
 });
 
 
