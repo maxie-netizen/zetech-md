@@ -64,7 +64,8 @@ async function verifyApiKey(apiKey) {
             api_key: apiKey
         }, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${apiKey}`
             },
             timeout: 10000 // 10 second timeout
         });
