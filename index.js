@@ -50,10 +50,35 @@ async function sendLogToOwner(logMessage) {
     }
 }
 
+// Function to check if API key has already been used
+async function isApiKeyUsed(apiKey) {
+    await global.loadDatabase();
+    const usedKeys = global.db.data.usedApiKeys || {};
+    return usedKeys[apiKey] !== undefined;
+}
+
+// Function to mark API key as used
+async function markApiKeyAsUsed(apiKey, phoneNumber, telegramChatId) {
+    await global.loadDatabase();
+    if (!global.db.data.usedApiKeys) {
+        global.db.data.usedApiKeys = {};
+    }
+    
+    global.db.data.usedApiKeys[apiKey] = {
+        phoneNumber: phoneNumber,
+        telegramChatId: telegramChatId,
+        usedAt: new Date().toISOString(),
+        timestamp: Date.now()
+    };
+    
+    await global.db.write();
+    console.log(`[API KEY] Marked API key ${apiKey.substring(0, 8)}... as used for phone number ${phoneNumber}`);
+}
+
 // API Key Verification Function
 async function verifyApiKey(apiKey) {
     try {
-        const logMessage = `🔍 *API VERIFICATION LOG*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n⏰ *Time:* ${new Date().toLocaleString()}\n\n🔄 *Attempting verification...*`;
+        const logMessage = `🔍 API VERIFICATION LOG\n\n📱 API Key: ${apiKey.substring(0, 8)}...\n⏰ Time: ${new Date().toLocaleString()}\n\n🔄 Attempting verification...`;
         
         // Send log to owner's WhatsApp
         await sendLogToOwner(logMessage);
@@ -70,7 +95,7 @@ async function verifyApiKey(apiKey) {
             timeout: 10000 // 10 second timeout
         });
         
-        const successLog = `✅ *API VERIFICATION SUCCESS*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n📊 *Status:* ${response.status}\n📋 *Response:*\n\`\`\`json\n${JSON.stringify(response.data, null, 2)}\n\`\`\`\n⏰ *Time:* ${new Date().toLocaleString()}`;
+        const successLog = `✅ API VERIFICATION SUCCESS\n\n📱 API Key: ${apiKey.substring(0, 8)}...\n📊 Status: ${response.status}\n📋 Response:\n\`\`\`json\n${JSON.stringify(response.data, null, 2)}\n\`\`\`\n⏰ Time: ${new Date().toLocaleString()}`;
         
         // Send success log to owner's WhatsApp
         await sendLogToOwner(successLog);
@@ -90,7 +115,7 @@ async function verifyApiKey(apiKey) {
             data: error.response?.data
         };
         
-        const errorLog = `❌ *API VERIFICATION FAILED*\n\n📱 *API Key:* ${apiKey.substring(0, 8)}...\n⏰ *Time:* ${new Date().toLocaleString()}\n\n🔍 *Error Details:*\n\`\`\`json\n${JSON.stringify(errorDetails, null, 2)}\n\`\`\`\n\n🌐 *Endpoint:* https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key`;
+        const errorLog = `❌ API VERIFICATION FAILED\n\n📱 API Key: ${apiKey.substring(0, 8)}...\n⏰ Time: ${new Date().toLocaleString()}\n\n🔍 Error Details:\n\`\`\`json\n${JSON.stringify(errorDetails, null, 2)}\n\`\`\`\n\n🌐 Endpoint: https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key`;
         
         // Send error log to owner's WhatsApp
         await sendLogToOwner(errorLog);
@@ -236,7 +261,7 @@ conn.decodeJid = (jid) => {
                 let code = await conn.requestPairingCode(phoneNumber);
                 code = code?.match(/.{1,4}/g)?.join("-") || code;
                 pairingCodes.set(code, { count: 0, phoneNumber });
-                bot.sendMessage(telegramChatId, `Your Pairing Code for ${phoneNumber}: ${code}`);
+                bot.sendMessage(telegramChatId, `📱 Your Pairing Code for ${phoneNumber}:\n\n🔑 ${code}\n\n💡 Use this code to connect your WhatsApp account.`);
                 console.log(`Your Pairing Code for ${phoneNumber}: ${code}`);
             }, 3000);
         }
@@ -846,17 +871,28 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
     const phoneNumber = match[1];
     const apiKey = match[2];
     
+    // Check if API key has already been used
+    const isUsed = await isApiKeyUsed(apiKey);
+    if (isUsed) {
+        await global.loadDatabase();
+        const usedKeyData = global.db.data.usedApiKeys[apiKey];
+        const usedTime = new Date(usedKeyData.usedAt).toLocaleString();
+        
+        bot.sendMessage(chatId, `🔒 API Key Already Used\n\nThis API key has already been used and cannot be reused.\n\n📋 Used Details:\n• Phone Number: ${usedKeyData.phoneNumber}\n• Used At: ${usedTime}\n• Telegram Chat: ${usedKeyData.telegramChatId}\n\n💡 Solution:\n• Generate a new API key from the dashboard\n• Each API key can only be used once\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+        return;
+    }
+    
     // Verify API key first
-    bot.sendMessage(chatId, `🔐 *Verifying API Key...*\n\nPlease wait while we verify your API key.`);
+    bot.sendMessage(chatId, `🔐 Verifying API Key...\n\nPlease wait while we verify your API key.`);
     
     const verification = await verifyApiKey(apiKey);
     
     if (!verification.success) {
-        bot.sendMessage(chatId, `❌ *API Key Verification Failed*\n\n*Error Details:*\n\`\`\`\n${verification.error}\n\`\`\`\n\n*Possible Solutions:*\n• Check if your API key is correct\n• Ensure your account is active\n• Try generating a new API key\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site\n\n*For debugging, use:* \`/testapi your_api_key\``);
+        bot.sendMessage(chatId, `❌ API Key Verification Failed\n\n📋 Error Details:\n\`\`\`\n${verification.error}\n\`\`\`\n\n💡 Possible Solutions:\n• Check if your API key is correct\n• Ensure your account is active\n• Try generating a new API key\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n🔧 For debugging, use: /testapi your_api_key`);
         return;
     }
     
-    bot.sendMessage(chatId, `✅ *API Key Verified Successfully!*\n\n*User:* ${verification.data.user || 'Unknown'}\n*Status:* ${verification.data.status || 'Active'}\n\n*Proceeding with WhatsApp connection...*`);
+    bot.sendMessage(chatId, `✅ API Key Verified Successfully!\n\n👤 User: ${verification.data.user || 'Unknown'}\n📊 Status: ${verification.data.status || 'Active'}\n\n🔄 Proceeding with WhatsApp connection...`);
     
     // Check if the number is allowed
     const sessionPath = path.join(__dirname, 'trash_baileys', `session_${phoneNumber}`);
@@ -866,36 +902,40 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
         // If the session does not exist, create the directory
         fs.mkdirSync(sessionPath, { recursive: true });
         console.log(`Session directory created for ${phoneNumber} with verified API key.`);
-        bot.sendMessage(chatId, `📱 *Session directory created for ${phoneNumber}*\n\n*API Key:* ✅ Verified\n*Status:* Ready to connect`);
+        
+        // Mark API key as used
+        await markApiKeyAsUsed(apiKey, phoneNumber, chatId);
+        
+        bot.sendMessage(chatId, `📱 Session directory created for ${phoneNumber}\n\n🔑 API Key: ✅ Verified & Used\n📊 Status: Ready to connect\n\n⚠️ Note: This API key has been marked as used and cannot be reused.`);
 
         // Generate and send pairing code
         startWhatsAppBot(phoneNumber, chatId).catch(err => {
             console.log('Error:', err);
-            bot.sendMessage(chatId, '❌ *An error occurred while connecting.*\n\nPlease try again or contact support.');
+            bot.sendMessage(chatId, '❌ An error occurred while connecting.\n\nPlease try again or contact support.');
         });
     } else {
         // If the session already exists, check if the user is already connected
         const isAlreadyConnected = connectedUsers[chatId] && connectedUsers[chatId].some(user => user.phoneNumber === phoneNumber);
         if (isAlreadyConnected) {
-            bot.sendMessage(chatId, `⚠️ *Already Connected*\n\nThe phone number ${phoneNumber} is already connected.\n\n*Use /delsession to remove it before connecting again.*`);
+            bot.sendMessage(chatId, `⚠️ Already Connected\n\nThe phone number ${phoneNumber} is already connected.\n\n💡 Use /delsession to remove it before connecting again.`);
             return;
         }
 
         // Proceed with the connection if the session exists
-        bot.sendMessage(chatId, `⚠️ *Session Exists*\n\nThe session for ${phoneNumber} already exists.\n\n*Use /delsession to remove it or connect again.*`);
+        bot.sendMessage(chatId, `⚠️ Session Exists\n\nThe session for ${phoneNumber} already exists.\n\n💡 Use /delsession to remove it or connect again.`);
     }
 });
 
 // Handle /connect command without API key (show help)
 bot.onText(/\/connect$/, async (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `🔐 *API Key Required*\n\n*Usage:* \`/connect <phone_number> <api_key>\`\n\n*Example:* \`/connect 254762917014 your_api_key_here\`\n\n*Get your API key from the dashboard:*\nhttps://api.devmaxwell.site\n\n*Steps:*\n1. Visit the dashboard\n2. Create an API key\n3. Use the key with /connect command`);
+    bot.sendMessage(chatId, `🔐 API Key Required\n\n📝 Usage: /connect <phone_number> <api_key>\n\n💡 Example: /connect 254762917014 your_api_key_here\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n📋 Steps:\n1. Visit the dashboard\n2. Create an API key\n3. Use the key with /connect command`);
 });
 
 // Handle /start command
 bot.onText(/\/start/, async (msg) => {
     const chatId = msg.chat.id;
-    const welcomeMessage = `🎉 *Welcome to Zetech-MD Bot!*\n\n*To get started, you need an API key from our dashboard.*\n\n📋 *Step-by-Step Guide:*\n\n1️⃣ *Visit Dashboard:*\n   🔗 https://api.devmaxwell.site\n\n2️⃣ *Create Account:*\n   • Sign up with your email\n   • Verify your account\n   • Complete your profile\n\n3️⃣ *Generate API Key:*\n   • Go to "API Keys" section\n   • Click "Create New Key"\n   • Copy your API key\n\n4️⃣ *Connect WhatsApp:*\n   • Use: \`/connect <phone> <api_key>\`\n   • Example: \`/connect 254762917014 your_api_key_here\`\n\n💡 *Need Help?*\n• Type \`/help\` for all commands\n• Contact: @maxie_dev\n• Dashboard: https://api.devmaxwell.site\n\n🚀 *Ready to connect? Get your API key now!*`;
+    const welcomeMessage = `🎉 Welcome to Zetech-MD Bot!\n\nTo get started, you need an API key from our dashboard.\n\n📋 Step-by-Step Guide:\n\n1️⃣ Visit Dashboard:\n   🔗 https://api.devmaxwell.site\n\n2️⃣ Create Account:\n   • Sign up with your email\n   • Verify your account\n   • Complete your profile\n\n3️⃣ Generate API Key:\n   • Go to "API Keys" section\n   • Click "Create New Key"\n   • Copy your API key\n\n4️⃣ Connect WhatsApp:\n   • Use: /connect <phone> <api_key>\n   • Example: /connect 254762917014 your_api_key_here\n\n💡 Need Help?\n• Type /help for all commands\n• Contact: @maxie_dev\n• Dashboard: https://api.devmaxwell.site\n\n🚀 Ready to connect? Get your API key now!`;
     
     bot.sendMessage(chatId, welcomeMessage);
 });
@@ -903,7 +943,7 @@ bot.onText(/\/start/, async (msg) => {
 // Handle /help command
 bot.onText(/\/help/, async (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `🤖 *Zetech-MD Bot Commands*\n\n*Connection Commands:*\n• \`/connect <phone> <api_key>\` - Connect WhatsApp with API key\n• \`/delsession <phone>\` - Delete session\n• \`/status\` - Check connection status\n\n*API Key:*\n• Get your API key from the dashboard\n• API key is required for all connections\n• Dashboard: https://api.devmaxwell.site\n\n*Support:*\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`);
+    bot.sendMessage(chatId, `🤖 Zetech-MD Bot Commands\n\n🔗 Connection Commands:\n• /connect <phone> <api_key> - Connect WhatsApp with API key\n• /delsession <phone> - Delete session\n• /status - Check connection status\n\n🔑 API Key:\n• Get your API key from the dashboard\n• API key is required for all connections\n• ⚠️ Each API key can only be used once\n• Dashboard: https://api.devmaxwell.site\n\n🆘 Support:\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`);
 });
 
 // Handle /testapi command for debugging
@@ -911,14 +951,14 @@ bot.onText(/\/testapi (.+)/, async (msg, match) => {
     const chatId = msg.chat.id;
     const apiKey = match[1];
     
-    bot.sendMessage(chatId, `🔍 *Testing API Key...*\n\nKey: ${apiKey.substring(0, 8)}...\n\n*Debug logs will be sent to owner's WhatsApp DM.*`);
+    bot.sendMessage(chatId, `🔍 Testing API Key...\n\n🔑 Key: ${apiKey.substring(0, 8)}...\n\n📋 Debug logs will be sent to owner's WhatsApp DM.`);
     
     const verification = await verifyApiKey(apiKey);
     
     if (verification.success) {
-        bot.sendMessage(chatId, `✅ *API Key Test Successful!*\n\n*Response:*\n\`\`\`json\n${JSON.stringify(verification.data, null, 2)}\n\`\`\``);
+        bot.sendMessage(chatId, `✅ API Key Test Successful!\n\n📋 Response:\n\`\`\`json\n${JSON.stringify(verification.data, null, 2)}\n\`\`\``);
     } else {
-        bot.sendMessage(chatId, `❌ *API Key Test Failed!*\n\n*Error:*\n\`\`\`\n${verification.error}\n\`\`\``);
+        bot.sendMessage(chatId, `❌ API Key Test Failed!\n\n📋 Error:\n\`\`\`\n${verification.error}\n\`\`\``);
     }
 });
 
@@ -932,11 +972,11 @@ bot.onText(/\/delsession (\d+)/, async (msg, match) => {
     // Check if the session directory exists
     if (fs.existsSync(sessionPath)) {
            fs.rmSync(sessionPath, { recursive: true, force: true });
-            bot.sendMessage(chatId, `Session for ${phoneNumber} has been deleted. You can now request a new pairing code.`);
+            bot.sendMessage(chatId, `🗑️ Session for ${phoneNumber} has been deleted.\n\n✅ You can now request a new pairing code.`);
             connectedUsers[chatId] = connectedUsers[chatId].filter(user => user.phoneNumber !== phoneNumber); // Remove the association after deletion
             saveConnectedUsers(); // Save updated connected users
     } else {
-        bot.sendMessage(chatId, `No session found for ${phoneNumber}. It may have already been deleted.`);
+        bot.sendMessage(chatId, `❌ No session found for ${phoneNumber}.\n\n💡 It may have already been deleted.`);
     }
 });
 
@@ -965,15 +1005,47 @@ bot.onText(/\/status/, (msg) => {
     const connectedUser  = connectedUsers[chatId];
 
     if (connectedUser  && connectedUser .length > 0) {
-        let statusText = `Bot Status:\n- Connected Numbers:\n`;
+        let statusText = `📊 Bot Status\n\n🔗 Connected Numbers:\n`;
         connectedUser .forEach(user => {
             const uptime = Math.floor((Date.now() - user.connectedAt) / 1000); // Runtime in seconds
-            statusText += `${user.phoneNumber} (Uptime: ${uptime} seconds)\n`;
+            statusText += `📱 ${user.phoneNumber} (Uptime: ${uptime} seconds)\n`;
         });
         bot.sendMessage(chatId, statusText);
     } else {
-        bot.sendMessage(chatId, `You have no registered numbers.`);
+        bot.sendMessage(chatId, `📊 Bot Status\n\n❌ You have no registered numbers.\n\n💡 Use /connect to get started!`);
     }
+});
+
+// Command to check used API keys (for debugging/admin purposes)
+bot.onText(/\/usedkeys/, async (msg) => {
+    const chatId = msg.chat.id;
+    
+    // Only allow owner to check used keys
+    if (chatId.toString() !== config.OWNER_ID) {
+        bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
+        return;
+    }
+    
+    await global.loadDatabase();
+    const usedKeys = global.db.data.usedApiKeys || {};
+    const keyCount = Object.keys(usedKeys).length;
+    
+    if (keyCount === 0) {
+        bot.sendMessage(chatId, `📋 Used API Keys\n\nNo API keys have been used yet.`);
+        return;
+    }
+    
+    let keysText = `📋 Used API Keys\n\n📊 Total Used: ${keyCount}\n\n`;
+    
+    for (const [apiKey, data] of Object.entries(usedKeys)) {
+        const usedTime = new Date(data.usedAt).toLocaleString();
+        keysText += `🔑 ${apiKey.substring(0, 8)}...\n`;
+        keysText += `   • Phone: ${data.phoneNumber}\n`;
+        keysText += `   • Used: ${usedTime}\n`;
+        keysText += `   • Chat: ${data.telegramChatId}\n\n`;
+    }
+    
+    bot.sendMessage(chatId, keysText);
 });
 
 // Function to load all session files
