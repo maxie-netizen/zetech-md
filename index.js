@@ -143,6 +143,102 @@ async function verifyApiKey(apiKey) {
     }
 }
 
+// Function to check if API key is expired
+async function isApiKeyExpired(apiKey) {
+    try {
+        const response = await axios.post('https://gqvqvsbpszgbottgtcrf.supabase.co/functions/v1/verify-api-key', {
+            api_key: apiKey
+        }, {
+            headers: {
+                'Content-Type': 'application/json',
+                'X-API-Key': apiKey
+            },
+            timeout: 10000
+        });
+        
+        // If we get a successful response, the key is still valid
+        return false;
+    } catch (error) {
+        // Check if the error indicates expiration
+        if (error.response?.status === 401 || error.response?.status === 403) {
+            return true; // Key is expired or invalid
+        }
+        return false; // Other errors, assume key is still valid
+    }
+}
+
+// Function to disconnect a session
+async function disconnectSession(phoneNumber, telegramChatId, reason = 'API key expired') {
+    try {
+        // Close the WhatsApp connection
+        const connection = global.activeConnections.get(phoneNumber);
+        if (connection) {
+            await connection.logout();
+            global.activeConnections.delete(phoneNumber);
+            console.log(`[DISCONNECT] Disconnected ${phoneNumber} - ${reason}`);
+        }
+        
+        // Remove from connected users
+        if (connectedUsers[telegramChatId]) {
+            connectedUsers[telegramChatId] = connectedUsers[telegramChatId].filter(user => user.phoneNumber !== phoneNumber);
+            saveConnectedUsers();
+        }
+        
+        // Send notification to user
+        if (telegramChatId) {
+            bot.sendMessage(telegramChatId, `🔒 Session Disconnected\n\n📱 Phone: ${phoneNumber}\n📋 Reason: ${reason}\n\n💡 Please generate a new API key and reconnect using /connect command.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+        }
+        
+        // Log to owner
+        const logMessage = `🔒 SESSION DISCONNECTED\n\n📱 Phone: ${phoneNumber}\n📋 Reason: ${reason}\n⏰ Time: ${new Date().toLocaleString()}`;
+        await sendLogToOwner(logMessage);
+        
+        return true;
+    } catch (error) {
+        console.log(`[DISCONNECT] Error disconnecting ${phoneNumber}:`, error.message);
+        return false;
+    }
+}
+
+// Function to check all active sessions for API key expiration
+async function checkAllSessionsForExpiration() {
+    try {
+        await global.loadDatabase();
+        const usedKeys = global.db.data.usedApiKeys || {};
+        
+        console.log(`[EXPIRY CHECK] Checking ${Object.keys(usedKeys).length} API keys for expiration...`);
+        
+        for (const [apiKey, keyData] of Object.entries(usedKeys)) {
+            const { phoneNumber, telegramChatId } = keyData;
+            
+            // Check if this phone number is currently connected
+            const isConnected = global.activeConnections.has(phoneNumber);
+            
+            if (isConnected) {
+                console.log(`[EXPIRY CHECK] Checking API key for ${phoneNumber}...`);
+                
+                const isExpired = await isApiKeyExpired(apiKey);
+                
+                if (isExpired) {
+                    console.log(`[EXPIRY CHECK] API key expired for ${phoneNumber}, disconnecting...`);
+                    await disconnectSession(phoneNumber, telegramChatId, 'API key expired');
+                    
+                    // Mark the key as expired in database
+                    global.db.data.usedApiKeys[apiKey].expired = true;
+                    global.db.data.usedApiKeys[apiKey].expiredAt = new Date().toISOString();
+                    await global.db.write();
+                } else {
+                    console.log(`[EXPIRY CHECK] API key still valid for ${phoneNumber}`);
+                }
+            }
+        }
+        
+        console.log(`[EXPIRY CHECK] Expiration check completed`);
+    } catch (error) {
+        console.log(`[EXPIRY CHECK] Error during expiration check:`, error.message);
+    }
+}
+
 global.DATABASE = global.db
 global.loadDatabase = async function loadDatabase() {
   if (global.db.READ) return new Promise((resolve) => setInterval(function () { (!global.db.READ ? (clearInterval(this), resolve(global.db.data == null ? global.loadDatabase() : global.db.data)) : null) }, 1 * 1000))
@@ -892,6 +988,13 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
         return;
     }
     
+    // Additional check: Verify API key is not expired
+    const isExpired = await isApiKeyExpired(apiKey);
+    if (isExpired) {
+        bot.sendMessage(chatId, `❌ API Key Expired\n\n🔒 Your API key has expired and is no longer valid.\n\n💡 Please generate a new API key from the dashboard and try again.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+        return;
+    }
+    
     bot.sendMessage(chatId, `✅ API Key Verified Successfully!\n\n👤 User: ${verification.data.user || 'Unknown'}\n📊 Status: ${verification.data.status || 'Active'}\n\n🔄 Proceeding with WhatsApp connection...`);
     
     // Check if the number is allowed
@@ -943,7 +1046,15 @@ bot.onText(/\/start/, async (msg) => {
 // Handle /help command
 bot.onText(/\/help/, async (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `🤖 Zetech-MD Bot Commands\n\n🔗 Connection Commands:\n• /connect <phone> <api_key> - Connect WhatsApp with API key\n• /delsession <phone> - Delete session\n• /status - Check connection status\n\n🔑 API Key:\n• Get your API key from the dashboard\n• API key is required for all connections\n• ⚠️ Each API key can only be used once\n• Dashboard: https://api.devmaxwell.site\n\n🆘 Support:\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`);
+    const isOwner = chatId.toString() === config.OWNER_ID;
+    
+    let helpText = `🤖 Zetech-MD Bot Commands\n\n🔗 Connection Commands:\n• /connect <phone> <api_key> - Connect WhatsApp with API key\n• /delsession <phone> - Delete session\n• /status - Check connection status\n\n🔑 API Key:\n• Get your API key from the dashboard\n• API key is required for all connections\n• ⚠️ Each API key can only be used once\n• 🔒 Sessions auto-disconnect when API keys expire\n• Dashboard: https://api.devmaxwell.site\n\n🆘 Support:\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`;
+    
+    if (isOwner) {
+        helpText += `\n\n👑 Admin Commands:\n• /usedkeys - View all used API keys\n• /checkexpiry - Manually check API key expiration`;
+    }
+    
+    bot.sendMessage(chatId, helpText);
 });
 
 // Handle /testapi command for debugging
@@ -1048,6 +1159,26 @@ bot.onText(/\/usedkeys/, async (msg) => {
     bot.sendMessage(chatId, keysText);
 });
 
+// Command to manually check API key expiration (for testing/admin purposes)
+bot.onText(/\/checkexpiry/, async (msg) => {
+    const chatId = msg.chat.id;
+    
+    // Only allow owner to check expiration
+    if (chatId.toString() !== config.OWNER_ID) {
+        bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
+        return;
+    }
+    
+    bot.sendMessage(chatId, `🔍 Checking API key expiration...\n\nThis may take a few moments.`);
+    
+    try {
+        await checkAllSessionsForExpiration();
+        bot.sendMessage(chatId, `✅ API key expiration check completed.\n\n📋 Check console logs for detailed results.`);
+    } catch (error) {
+        bot.sendMessage(chatId, `❌ Error during expiration check:\n\n\`\`\`\n${error.message}\n\`\`\``);
+    }
+});
+
 // Function to load all session files
 async function loadAllSessions() {
     const sessionsDir = path.join(__dirname, 'trash_baileys');
@@ -1070,6 +1201,18 @@ loadAllSessions().catch(err => {
 
 // Start the bot
 console.log('Telegram bot is running...');
+
+// Set up periodic API key expiration check (every 30 minutes)
+setInterval(async () => {
+    try {
+        console.log('[EXPIRY CHECK] Starting scheduled API key expiration check...');
+        await checkAllSessionsForExpiration();
+    } catch (error) {
+        console.log('[EXPIRY CHECK] Error in scheduled expiration check:', error.message);
+    }
+}, 30 * 60 * 1000); // 30 minutes
+
+console.log('[EXPIRY CHECK] API key expiration monitoring started (every 30 minutes)');
 
 
 let file = require.resolve(__filename)
