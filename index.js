@@ -1,4 +1,3 @@
-
 const { makeWASocket, getContentType, useMultiFileAuthState, fetchLatestBaileysVersion, Browsers, makeCacheableSignalKeyStore, DisconnectReason,jidDecode ,makeInMemoryStore, generateWAMessageFromContent,downloadContentFromMessage } = require("@whiskeysockets/baileys");
 const { Low, JSONFile } = require('./library/lib/lowdb')
 const pino = require('pino')
@@ -317,9 +316,9 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
         isFirstLog = false;
     }
 
-
     const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
     const msgRetryCounterCache = new NodeCache();
+    
     const conn = makeWASocket({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: false,
@@ -331,7 +330,9 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
         markOnlineOnConnect: true,
         generateHighQualityLinkPreview: true,
         msgRetryCounterCache,
-        defaultQueryTimeoutMs: undefined,
+        defaultQueryTimeoutMs: 60000, // Increased timeout
+        connectTimeoutMs: 60000, // Added connection timeout
+        keepAliveIntervalMs: 10000, // Added keep alive
     });
     
     // Add connection to global tracker for logging
@@ -339,30 +340,42 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
     console.log(`[CONNECTION] Added ${phoneNumber} to active connections tracker`);
     
     store.bind(conn.ev);
-conn.decodeJid = (jid) => {
+    
+    conn.decodeJid = (jid) => {
         if (!jid) return jid;
         if (/:\d+@/gi.test(jid)) {
             let decode = jidDecode(jid) || {};
             return decode.user && decode.server && `${decode.user}@${decode.server}` || jid;
         } else return jid;
     };
+    
     // Check if session credentials are already saved
     if (conn.authState.creds.registered) {
         await saveCreds();
         console.log(`Session credentials reloaded successfully for ${phoneNumber}!`);
     } else {
-        // If not registered, generate a pairing code
+        // If not registered, generate a pairing code with error handling
         if (telegramChatId) {
-            setTimeout(async () => {
+            try {
                 let code = await conn.requestPairingCode(phoneNumber);
                 code = code?.match(/.{1,4}/g)?.join("-") || code;
                 pairingCodes.set(code, { count: 0, phoneNumber });
                 bot.sendMessage(telegramChatId, `📱 Your Pairing Code for ${phoneNumber}:\n\n🔑 ${code}\n\n💡 Use this code to connect your WhatsApp account.`);
                 console.log(`Your Pairing Code for ${phoneNumber}: ${code}`);
-            }, 3000);
+            } catch (error) {
+                console.error(`Error generating pairing code for ${phoneNumber}:`, error);
+                if (telegramChatId) {
+                    bot.sendMessage(telegramChatId, `❌ Error generating pairing code for ${phoneNumber}:\n\n${error.message}\n\nPlease try again.`);
+                }
+                // Remove from active connections
+                global.activeConnections.delete(phoneNumber);
+                return;
+            }
         }
     }
-conn.public = true
+    
+    conn.public = true
+    
     conn.ev.on('connection.update', async (update) => {
         const { connection, lastDisconnect } = update;
         if (connection === 'open') {
@@ -374,7 +387,7 @@ conn.public = true
                 if (!connectedUsers[telegramChatId]) {
                     connectedUsers[telegramChatId] = [];
                 }
-                                connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
+                connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
                 saveConnectedUsers(); // Save connected users after updating
                 bot.sendMessage(telegramChatId, `
 ┏━━『🩸⃟‣ZETECH-MD-≈🚭 』━━┓
@@ -415,13 +428,26 @@ conn.public = true
             global.activeConnections.delete(phoneNumber);
             console.log(`[CONNECTION] Removed ${phoneNumber} from active connections tracker`);
             
-            if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
+            const shouldReconnect = (lastDisconnect.error)?.output?.statusCode !== DisconnectReason.loggedOut;
+            
+            if (shouldReconnect) {
                 console.log(`Session closed for ${phoneNumber}. Attempting to restart...`);
-                startWhatsAppBot(phoneNumber, telegramChatId);
+                // Add delay before restarting to prevent infinite loop
+                setTimeout(() => {
+                    startWhatsAppBot(phoneNumber, telegramChatId).catch(err => {
+                        console.error(`Failed to restart session for ${phoneNumber}:`, err);
+                    });
+                }, 5000); // 5 second delay before restart
+            } else {
+                console.log(`Session for ${phoneNumber} was logged out. Not restarting.`);
+                if (telegramChatId) {
+                    bot.sendMessage(telegramChatId, `🔒 Session Logged Out\n\n📱 Phone: ${phoneNumber}\n\n💡 Use /connect to reconnect.`);
+                }
             }
         }
     });
-conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
+    
+    conn.sendText = (jid, text, quoted = '', options) => conn.sendMessage(jid, {
         text: text,
         ...options
     }, {
@@ -1046,7 +1072,7 @@ bot.onText(/\/start/, async (msg) => {
 // Handle /help command
 bot.onText(/\/help/, async (msg) => {
     const chatId = msg.chat.id;
-    const isOwner = chatId.toString() === config.OWNER_ID;
+    const isOwner = chatId.toString() === settings.OWNER_ID;
     
     let helpText = `🤖 Zetech-MD Bot Commands\n\n🔗 Connection Commands:\n• /connect <phone> <api_key> - Connect WhatsApp with API key\n• /delsession <phone> - Delete session\n• /status - Check connection status\n\n🔑 API Key:\n• Get your API key from the dashboard\n• API key is required for all connections\n• ⚠️ Each API key can only be used once\n• 🔒 Sessions auto-disconnect when API keys expire\n• Dashboard: https://api.devmaxwell.site\n\n🆘 Support:\n• Contact: @maxie_dev\n• Bot: @ZetechMD_Bot`;
     
@@ -1095,14 +1121,14 @@ bot.onText(/\/delsession (\d+)/, async (msg, match) => {
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  const imageUrl = 'https://files.catbox.moe/urnjdz.jpg'; // Replace with the actual URL of your image
+  const imageUrl = './media/porno.jpg'; // Replace with the actual URL of your image
   const menuText = `╭─⊷ZETECH-MD─
 │▢ Owner: maxwell dev
 │▢ Version: 1.3.0
 │▢ Type: ZETECH-MD
 ╰────────────
 ╭─⊷🐦‍🔥MAIN-CMD─
-│ /connect 2547xxxx
+│ /connect 2547xxxx api_key
 │ /delsession 2547xxxxx
 │ /status
 │ /start
@@ -1132,7 +1158,7 @@ bot.onText(/\/usedkeys/, async (msg) => {
     const chatId = msg.chat.id;
     
     // Only allow owner to check used keys
-    if (chatId.toString() !== config.OWNER_ID) {
+    if (chatId.toString() !== settings.OWNER_ID) {
         bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
         return;
     }
@@ -1164,7 +1190,7 @@ bot.onText(/\/checkexpiry/, async (msg) => {
     const chatId = msg.chat.id;
     
     // Only allow owner to check expiration
-    if (chatId.toString() !== config.OWNER_ID) {
+    if (chatId.toString() !== settings.OWNER_ID) {
         bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
         return;
     }
