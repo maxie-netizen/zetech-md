@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A502345C3D638D81FAA55AA2E8E580D3"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Acha nione kama Niko n mashilingi",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0797F4E851204E75218",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "niko na 7bob nataka kubuy Airtime"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428575",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

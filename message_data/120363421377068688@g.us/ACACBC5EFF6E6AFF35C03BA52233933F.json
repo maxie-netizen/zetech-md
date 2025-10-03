@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACACBC5EFF6E6AFF35C03BA52233933F",
+      "participant": "113950213587191@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjqpoKPBRAAGiDFFvSqxLmAgH+glYJ1sUDt7nKZBLLgkeHzTMAQTJ1uuyIhBVCC0Mr/foPpyt605hgOUGKHxYsb0QvENE2tAsO1Ykhz"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436427",
+    "participant": "113950213587191@lid",
+    "broadcast": false,
+    "pushName": "Collucci"
+  }
+]

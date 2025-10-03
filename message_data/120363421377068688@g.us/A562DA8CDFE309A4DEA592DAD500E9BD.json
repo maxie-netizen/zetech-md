@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A562DA8CDFE309A4DEA592DAD500E9BD",
+      "participant": "39634495119532@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiA7PjBBRAAGiC15f0uUdgg209whGNZtzWfsun9JHCoA5Ho3Dmp3Q3K9SIhBSVy7/t4S/EYQW7TP1xX/exHPE+5jCAI51i1fo9j+4Ij"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "thyMS2TD+bJaeg==",
+          "senderTimestamp": "1758982726",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC40E3BC32B44A608052769B261E2013",
+          "participant": "82644129808501@lid"
+        },
+        "text": "👍",
+        "senderTimestampMs": "1759436216215"
+      }
+    },
+    "messageTimestamp": "1759436218",
+    "participant": "39634495119532@lid",
+    "broadcast": false,
+    "pushName": "Richy"
+  }
+]

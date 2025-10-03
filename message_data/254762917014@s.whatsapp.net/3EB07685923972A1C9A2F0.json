@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB07685923972A1C9A2F0"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": ".menu",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "gSPgpX3GG1SlTxZyiXW2sGcyr1jmpS+p0L6w0w/9YZQ=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759427453",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

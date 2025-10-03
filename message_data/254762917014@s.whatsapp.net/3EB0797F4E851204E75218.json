@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0797F4E851204E75218"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "niko na 7bob nataka kubuy Airtime",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "qvH1KvRFHvoBSHajla5e6saZiy5uX/cDjMAw/t1u/H4=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428377",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0D828330480237158AF"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "zima chatbot",
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "RqQpRjUtsW8G1aLfO84+Z9/LSaTtXIu9MFh7ntiz0qo=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759427707",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

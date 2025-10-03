@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC5A951BE915E74EA8F2C5B5CA69F9B1",
+      "participant": "260515838308580@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiL9cD6BxAAGiBxp6FUzc32CpdZN90Oi1Zpb/D4AJe+srAdUaezD7UWNyIhBVgdLIL2/8hT78d6iYthhP3vUWkdovSAnP7prVMoRIxB"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "260515838308580@lid",
+    "broadcast": false,
+    "pushName": "𝗕𝗥𝗔𝗠𝗢 🐐"
+  }
+]

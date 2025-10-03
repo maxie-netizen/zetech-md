@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACF0D0079A95CEC2DBEE37EBB39DFFF5"
+    },
+    "message": {
+      "conversation": ".autorecording off"
+    },
+    "messageTimestamp": "1759441005",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

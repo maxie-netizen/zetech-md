@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0E6B271B20F40C8465A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": ".menu",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759353877",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

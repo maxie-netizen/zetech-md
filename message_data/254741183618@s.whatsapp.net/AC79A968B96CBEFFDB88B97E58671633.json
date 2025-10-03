@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC79A968B96CBEFFDB88B97E58671633"
+    },
+    "message": {
+      "conversation": "Ni nani hao wanadai kupelekwa macha",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "0kfAYczEmdOePQ5YXIkKNy/2pAoanW3DfReZyBd1occ="
+      }
+    },
+    "messageTimestamp": "1759436787",
+    "broadcast": false,
+    "pushName": "Riba"
+  }
+]

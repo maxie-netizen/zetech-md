@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5CC65462CD5C0EDB85E0366B404D92B",
+      "participant": "229910220144756@lid"
+    },
+    "message": {
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACE9BAA3E499E0936C7500CBB101BF8C",
+          "participant": "109590687523061@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759436466795"
+      }
+    },
+    "messageTimestamp": "1759436467",
+    "participant": "229910220144756@lid",
+    "broadcast": false,
+    "pushName": "aleexy"
+  }
+]

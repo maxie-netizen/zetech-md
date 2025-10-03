@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7EFBAE352646378710D3EC496C86DF"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Uskii iko under dev",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A59E40CCFD3EBC86FF3CC24DB1D527F1",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "😂😂😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435697",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

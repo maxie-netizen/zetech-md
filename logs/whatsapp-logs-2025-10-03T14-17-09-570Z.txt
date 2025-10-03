@@ -1,0 +1,230 @@
+[2025-10-03T14:15:12.090Z] [LOG] User 254762917014 (254762917014:18@s.whatsapp.net) auto-joined newsletter channel via pairing (silent)
+[2025-10-03T14:16:10.786Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-24-07-174Z.txt
+[2025-10-03T14:16:53.959Z] [LOG] [ COMMAND ] Fri Oct 03 2025 17:16:53 GMT+0300 (East Africa Time) .menu
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-03T14:16:53.981Z] [LOG] User 254762917014@s.whatsapp.net already joined newsletter, skipping
+[2025-10-03T14:16:54.220Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) Tuma pdf  mzee😂
+=> From Ethan🖤 254702570044@s.whatsapp.net
+=> In Private Chat 254702570044@s.whatsapp.net
+[2025-10-03T14:16:54.239Z] [LOG] [ COMMAND ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) .menu
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-03T14:16:54.264Z] [LOG] User 254762917014@s.whatsapp.net already joined newsletter, skipping
+[2025-10-03T14:16:54.763Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) stickerMessage
+=> From Denzo_zee 152386161094755@lid
+=> In Denzo_zee 120363419497709558@g.us
+[2025-10-03T14:16:54.842Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) tumia tu hiyo, acha nitoe dashes iache kukaa jatgpt😅😅
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254702570044@s.whatsapp.net
+[2025-10-03T14:16:54.855Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:54.883Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:54.910Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:54.988Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:54 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.016Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.046Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.074Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.098Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.115Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.138Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.183Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) Ndio tumeanza 😂😂
+=> From 🙂 115389178613979@lid
+=> In 🙂 120363419497709558@g.us
+[2025-10-03T14:16:55.316Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.439Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.864Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:55.888Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) groupStatusMentionMessage
+=> From 120363421815285138 14882665713768@lid
+=> In 120363421815285138 120363421815285138@g.us
+[2025-10-03T14:16:55.970Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:55 GMT+0300 (East Africa Time) Good day class,
+
+The Library team is pleased to share the *Common Unit Resource Package*.
+
+The units are:
+1. Communication Skills
+2. Digital Literacy
+3. Health and wellness
+4. Entrepreneurship
+
+Find the package  attached for your reference.
+
+If you encounter a problem in accessing  the above library resources, book a session with us via the link:
+https://forms.gle/VzhoidaPRNjN3W3UA
+=> From 120363421815285138 276931169808511@lid
+=> In 120363421815285138 120363421815285138@g.us
+[2025-10-03T14:16:56.286Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:56.563Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:56.632Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:56.715Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:56.764Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:56.787Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) hukuwa umefanya
+=> From 120363421000283549 60697098592278@lid
+=> In 120363421000283549 120363421000283549@g.us
+[2025-10-03T14:16:56.948Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:56 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:57.093Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:57 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:57.499Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:57 GMT+0300 (East Africa Time) Add me on StepUp, a fun app to track steps & compete with friends!
+https://join.thestepupapp.com/RGGvKN
+=> From 120363230268777458 9853275734085@lid
+=> In 120363230268777458 120363230268777458@g.us
+[2025-10-03T14:16:57.560Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:57 GMT+0300 (East Africa Time) 🥹
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-03T14:16:57.868Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:57 GMT+0300 (East Africa Time) Na chocolate hivi?😂
+=> From 120363419497709558 73762070380683@lid
+=> In 120363419497709558 120363419497709558@g.us
+[2025-10-03T14:16:57.955Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:57 GMT+0300 (East Africa Time) 
+╔═══════════════════════════════════════════════════╗
+║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║
+╠═══════════════════════════════════════════════════╣
+║   ✦ Owner: Maxwell     ║
+║   ✦ Version: 1.5.0                     ║
+║   ✦ Type: Plugin       ║
+╚═══════════════════════════════════════════════════╝
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ menu           ◈ ping
+ ◈ ping2          ◈ uptime
+ ◈ s              ◈ botinfo
+ ◈ listplugin     ◈ update
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙
+ ◈ public         ◈ private
+ ◈ addaccess      ◈ delaccess
+ ◈ autoreact      ◈ block
+ ◈ autotyping     ◈ autorecord
+ ◈ autorecording  ◈ autobio
+ ◈ alwaysonline   ◈ autostatus
+ ◈ chatbot        ◈ aichat
+ ◈ cloudsync      ◈ cloud
+ ◈ $              ◈ menu
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ play           ◈ ytmp4
+ ◈ ytvid          ◈ yts
+ ◈ pinterestdl    ◈ retrieve
+ ◈ song           ◈ twitterdl
+ ◈ tt             ◈ tiktok
+ ◈ igdl           ◈ ytmp3
+ ◈ tg             ◈ telegram
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ zetech
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ vv (reply to view once)
+ ◈ vv2 (send to bot)
+ ◈ vv3 (send to owner)
+ ◈ emoji reply (secret mode)
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gemma          ◈ indo-ai
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gethtml        ◈ getpp
+ ◈ getplugin      ◈ save
+ ◈ gitclone       ◈ weather
+ ◈ groups         ◈ mychats
+ ◈ tempnum        ◈ templist
+ ◈ otpbox         ◈ tools
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ add            ◈ remove
+ ◈ promote        ◈ revoke
+ ◈ approve        ◈ reject
+ ◈ antilinkgc     ◈ antilink
+ ◈ antilinkstatus ◈ antilinkget
+ ◈ tagall         ◈ hidetag
+ ◈ close          ◈ open
+ ◈ kickall        ◈ linkgc
+ ◈ setppgc        ◈ setdesc
+ ◈ tagme
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ enc            ◈ idch
+ ◈ dev
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ glithtext      ◈ lighteffects
+ ◈ writetext      ◈ advancedglow
+ ◈ typographytext ◈ pixelglitch
+ ◈ neonglitch     ◈ flagtext
+ ◈ flag3dtext     ◈ deletingtext
+ ◈ blackpinkstyle ◈ glowingtex
+ ◈ underwater     ◈ logomaker
+ ◈ cartoonstyle   ◈ papercutstyle
+ ◈ watercolortext ◈ effectclouds
+ ◈ blackpinklogo  ◈ gradienttext
+ ◈ luxurygold     ◈ sandsummer
+ ◈ multicoloredneon ◈ galaxywallpaper
+ ◈ 1917style      ◈ galaxystyle
+ ◈ royaltext      ◈ freecreate
+
+╔═══════════════════════════════════════════════════╗
+║  Type .menu <category> for specific commands  ║
+╚═══════════════════════════════════════════════════╝
+
+
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-03T14:16:58.274Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:58 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:16:58.982Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:16:58 GMT+0300 (East Africa Time) Iko sawa bado😂
+=> From 120363419497709558 73762070380683@lid
+=> In 120363419497709558 120363419497709558@g.us
+[2025-10-03T14:17:06.803Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:17:06 GMT+0300 (East Africa Time) protocolMessage
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254762917014@s.whatsapp.net
+[2025-10-03T14:17:07.587Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 17:17:07 GMT+0300 (East Africa Time) December ama 2027?😂
+=> From 120363419497709558 73762070380683@lid
+=> In 120363419497709558 120363419497709558@g.us

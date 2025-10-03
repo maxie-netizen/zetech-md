@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254702570044@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACB7399DC47ACD0C188685A8B0C1FC16"
+    },
+    "message": {
+      "conversation": "Acha basi nitatumia hio, we unataka mapenzi sasa😂😂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "IrTZp4/lwyOlrw==",
+          "senderTimestamp": "1759168098",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "8e2avTdKRoRMaG4A0vQCRV3MaPAwnTYQW6LHSa2SBSY="
+      }
+    },
+    "messageTimestamp": "1759501191",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

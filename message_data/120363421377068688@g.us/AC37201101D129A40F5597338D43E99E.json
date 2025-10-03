@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC37201101D129A40F5597338D43E99E",
+      "participant": "79508887601322@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiG8OOdBxAAGiAFDTjjuuTOkyKDwyujAiCZXznf2coGGJu7tJhCf6muFSIhBQ0h4x1aVP4WKZJaMmvXDI8YojThi075Y60Qd5oPm5tJ"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "79508887601322@lid",
+    "broadcast": false,
+    "pushName": "Naimora😎"
+  }
+]

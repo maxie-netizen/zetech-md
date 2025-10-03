@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5F7E07D95915181E2928FCB5C5E0771",
+      "participant": "143632950644864@lid"
+    },
+    "message": {
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACDB3442CBF83B9296EDDCE81F05189E",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759436071537"
+      }
+    },
+    "messageTimestamp": "1759436072",
+    "participant": "143632950644864@lid",
+    "broadcast": false,
+    "pushName": "el bicho"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACD3AAAE9DE599074D5491C1E9230940",
+      "participant": "152386161094755@lid"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/556424441_1159822779459687_3072604135971581113_n.enc?ccb=11-4&oh=01_Q5Aa2gE-8Ud3NEGyCdoQgI_0Lb1Vt3IxNE_iSpne0U5j8I9nlw&oe=69073D3E&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "H6sTn+jU/ex6NgWBMe5kdZAISuH3djrYbJUZeNAD/IA=",
+        "fileEncSha256": "So9PlulQfFh6p9O3gorQ/jMnGr3QmFnRBVh81lKuCdA=",
+        "mediaKey": "OyxSjl6dFJusjhVrwO9yqJUArAHdr51G9D9xlRqyGWo=",
+        "mimetype": "image/webp",
+        "height": 64,
+        "width": 64,
+        "directPath": "/v/t62.15575-24/556424441_1159822779459687_3072604135971581113_n.enc?ccb=11-4&oh=01_Q5Aa2gE-8Ud3NEGyCdoQgI_0Lb1Vt3IxNE_iSpne0U5j8I9nlw&oe=69073D3E&_nc_sid=5e03e0",
+        "fileLength": "34484",
+        "mediaKeyTimestamp": "1759501282",
+        "isAnimated": false,
+        "contextInfo": {
+          "stanzaId": "ACEE634E5774C00494F2C018702C0798",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Ni mambo ya dunia hadi😂"
+          }
+        },
+        "stickerSentTs": "1759501282926",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "Vrb4ZYCU9LqktPy5D5+B3z3eX0mDln/xrLlnv1QY/EA="
+      }
+    },
+    "messageTimestamp": "1759501284",
+    "participant": "152386161094755@lid",
+    "broadcast": false,
+    "pushName": "Denzo_zee"
+  }
+]

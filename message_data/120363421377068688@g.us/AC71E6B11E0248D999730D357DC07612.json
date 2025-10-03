@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC71E6B11E0248D999730D357DC07612",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwiasc/KBhAAGiB1/hhtdS9FydL5cmMYYXlyVSoe+V7SNaz9YpH1cKbm3CIhBfq69kgo8BwHGTDZKBD57/widwMQmYypgXVX9SdumJgd"
+      },
+      "extendedTextMessage": {
+        "text": "Kwanza Mahali imefika mnafaa mpaste for motivation 🫡",
+        "previewType": "NONE",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "O22MQEiEqm7qkPb/2ygyFGc4E9MUMS0FI/BtBhHzfik="
+      }
+    },
+    "messageTimestamp": "1759435892",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

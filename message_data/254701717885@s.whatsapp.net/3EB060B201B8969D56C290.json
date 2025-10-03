@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB060B201B8969D56C290"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "okay",
+        "contextInfo": {
+          "stanzaId": "AC8BC55FDCAC6ECC60162E6A88803027",
+          "participant": "254701717885@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "From Thika town utashuka Gali za muguga,nitamwambia Ni stage gani",
+            "messageContextInfo": {
+              "messageSecret": "M8+nqI/tONb02FniorKIJZuCRVBI4jz/Sb9wgj1G8UA="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759502697",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

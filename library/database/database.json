@@ -1,1 +1,223 @@
-[]
+{
+  "sticker": {},
+  "database": {},
+  "game": {},
+  "others": {},
+  "users": {},
+  "chats": {
+    "254762917014@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254743518481@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363405142067013@newsletter": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363401080215930@newsletter": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "201105269955@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254716461257@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254701346308@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254792142513@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363419712143560@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363321755839679@newsletter": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363374979957669@newsletter": {
+      "antilinkgc": false
+    },
+    "254739904826@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "254112371732@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "254117358782@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "254725095975@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "254704754601@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "120363199986894605@newsletter": {
+      "antilinkgc": false
+    },
+    "254740300165@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363142374129767@g.us": {
+      "antilinkgc": false
+    },
+    "120363421377068688@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254711933670@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254726768544@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363420610628343@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254740300165:40@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "120363421090251066@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "254741183618@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363403739187285@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363418940352259@g.us": {
+      "antilinkgc": false
+    },
+    "254717720074@s.whatsapp.net": {
+      "antilinkgc": false
+    },
+    "120363351424590490@newsletter": {
+      "antilinkgc": false
+    },
+    "254702570044@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363419497709558@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363421815285138@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363421000283549@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363230268777458@g.us": {
+      "antilinkgc": false
+    },
+    "254701717885@s.whatsapp.net": {
+      "antilinkgc": false,
+      "antilink": false
+    },
+    "120363402216514848@g.us": {
+      "antilinkgc": false,
+      "antilink": false
+    }
+  },
+  "settings": {
+    "254762917014": {
+      "anticall": false,
+      "status": 0,
+      "stock": 10,
+      "autobio": false,
+      "autoTyping": false,
+      "auto_ai_grup": false,
+      "goodbye": false,
+      "onlygrub": false,
+      "welcome": true,
+      "autoread": false,
+      "menuType": "externalImage",
+      "autoRecord": false
+    },
+    "254701346308": {
+      "anticall": false,
+      "status": 0,
+      "stock": 10,
+      "autobio": false,
+      "autoTyping": false,
+      "auto_ai_grup": false,
+      "goodbye": false,
+      "onlygrub": false,
+      "welcome": true,
+      "autoread": false,
+      "menuType": "externalImage",
+      "autoRecord": true
+    },
+    "254740300165": {
+      "anticall": false,
+      "status": 0,
+      "stock": 10,
+      "autobio": false,
+      "autoTyping": false,
+      "auto_ai_grup": false,
+      "goodbye": false,
+      "onlygrub": false,
+      "welcome": true,
+      "autoread": false,
+      "menuType": "externalImage",
+      "autoRecord": false
+    }
+  },
+  "usedApiKeys": {
+    "ztmd_1lJdpS6q1VeqOM3DiL9bEX54Yk5BWQHC": {
+      "phoneNumber": "254762917014",
+      "telegramChatId": 7802048260,
+      "usedAt": "2025-10-01T21:04:15.111Z",
+      "timestamp": 1759352655111
+    },
+    "ztmd_su7aPsSoyKzD38htHp4FzTWdRpP4KU32": {
+      "phoneNumber": "254762917014",
+      "telegramChatId": 7802048260,
+      "usedAt": "2025-10-02T00:02:45.079Z",
+      "timestamp": 1759363365079
+    },
+    "ztmd_OnDfAJiJnBiIlWGMLgSSjfRqkIEmhwDd": {
+      "phoneNumber": "254701346308",
+      "telegramChatId": 7802048260,
+      "usedAt": "2025-10-02T17:46:59.983Z",
+      "timestamp": 1759427219983
+    },
+    "ztmd_IvteXvR6oYrK3jSubdXpbBitUPIXKs1Z": {
+      "phoneNumber": "254740300165",
+      "telegramChatId": 7802048260,
+      "usedAt": "2025-10-02T19:47:10.585Z",
+      "timestamp": 1759434430585
+    },
+    "ztmd_ACeQVmb6OA4X32OqohKwkoTppQPikQy5": {
+      "phoneNumber": "254762917014",
+      "telegramChatId": 7802048260,
+      "usedAt": "2025-10-02T21:28:59.330Z",
+      "timestamp": 1759440539330
+    }
+  },
+  "chatbot": {
+    "AI_STATE": "{\"IB\":\"false\",\"GC\":\"false\"}"
+  }
+}

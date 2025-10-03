@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363418940352259@g.us",
+      "fromMe": false,
+      "id": "A5B9ECA53773882A8F3C93D7531F4909",
+      "participant": "170931410436193@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363418940352259@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjsoPjYAxACGiAOUrjPp0E1PWXoJOOgBP56JEpS4uMD+pnUTbfGmGKVdSIhBRB94/6yt/CCw3+dX0d8R+KIzU2v5iAK8an0A00MloYn"
+      },
+      "extendedTextMessage": {
+        "text": "😹😹😹😹😹",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACCBD5C91FA065E6953C907358347687",
+          "participant": "217875503665305@lid",
+          "quotedMessage": {
+            "conversation": "Huku blaze ukioa......umejichimbia kaburi😂😂😂😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "lYhGSKOYtSCflmREHeL/D2t7jOjb9R1nYEVQY3knV8M="
+      }
+    },
+    "messageTimestamp": "1759437109",
+    "participant": "170931410436193@lid",
+    "broadcast": false,
+    "pushName": "Irenemutheu",
+    "verifiedBizName": "Irenemutheu"
+  }
+]

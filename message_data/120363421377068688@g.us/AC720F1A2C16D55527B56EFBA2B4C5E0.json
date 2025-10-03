@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC720F1A2C16D55527B56EFBA2B4C5E0",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "all im asking for NI 800 members pekee",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACBBAB78284297A6300CAF4D657F4E71",
+          "participant": "254111207248@s.whatsapp.net",
+          "quotedMessage": {
+            "albumMessage": {}
+          },
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "UmgiQJEkayEBV5EFiB0Vpy92hqFjKeb7AKgFhs89C7o="
+      }
+    },
+    "messageTimestamp": "1759436170",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC0F3973A0FAE61003F493CEC1DBE06A",
+      "participant": "35678914117744@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "dUZh6gysC/e40FE4uIG84zMeQ7n0KV7+pU45FqLWGd2EXt3QQPiodHAIQDPn0DQa3Lg=",
+          "encIv": "QMSUu3gK36fHcYUG"
+        },
+        "senderTimestampMs": "1759435960471"
+      }
+    },
+    "messageTimestamp": "1759435960",
+    "participant": "35678914117744@lid",
+    "broadcast": false,
+    "pushName": "💀Îçôñ Mûĥãâ😇"
+  }
+]

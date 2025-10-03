@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A58A8AF8C67C236800392FF466F714C6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗭𝗶𝗶𝗶",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC1CF20C0D76765C7ABCAD3E430C7D7A",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Inasema typing ??"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "r35AoGDTrpSfxHeoIloBzLLo1sdsFpkElgxMF7psC24="
+      }
+    },
+    "messageTimestamp": "1759436487",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

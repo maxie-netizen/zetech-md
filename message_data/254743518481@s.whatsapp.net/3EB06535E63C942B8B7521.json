@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB06535E63C942B8B7521"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "https://www.youtube.com/watch?v=Zt9svt97OwY",
+        "matchedText": "https://www.youtube.com/watch?v=Zt9svt97OwY",
+        "description": "https://www.youtube.com/watch?v=Zt9svt97OwY",
+        "title": "www.youtube.com",
+        "previewType": "NONE",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759447653",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

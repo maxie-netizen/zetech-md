@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5D1996D00D4DB3BA99F0CB94BAD4240",
+      "participant": "61027827896379@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjvqbbpBRAAGiCj1j+GVxmuQXXnZhzhx0jfe/uID6xotxvCQrgzSCh2UiIhBetpU9eetctZL+XUCeQEX7H/xrmltJtE4+uaigsWr/Q4"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "61027827896379@lid",
+    "broadcast": false,
+    "pushName": "narcos",
+    "verifiedBizName": "narcos"
+  }
+]

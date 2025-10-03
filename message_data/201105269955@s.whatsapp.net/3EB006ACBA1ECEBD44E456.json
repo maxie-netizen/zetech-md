@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "201105269955@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB006ACBA1ECEBD44E456"
+    },
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m231/AQOg-ym_v9mOirm_le-Ta9vv6_OsiwB2mEO6E4kQ2Nula0wATK_sdGOgNbiKvjbrhhZasBOepbvOIuV4QSys_Hjn4i1EBxaaCB6Xx3P8-w?ccb=9-4&oh=01_Q5Aa2gGtJe3s3fm47yvO9dBqQt7Xm2rEoOXVGNOd7bYCHRCexQ&oe=690528B1&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "> *❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦*",
+        "fileSha256": "RZCaFXF6cWW/PTW+jhSwxxMf512xIB9SlVwQutQV7us=",
+        "fileLength": "54042",
+        "mediaKey": "3fWx/fFksDO3kXzY+07JILwMmMf4E78W7MM6tA9EWik=",
+        "fileEncSha256": "is4qZRlq889R6ADOkbjhykOC8m5d87IjGNhJLKeyrkc=",
+        "directPath": "/o1/v/t24/f2/m231/AQOg-ym_v9mOirm_le-Ta9vv6_OsiwB2mEO6E4kQ2Nula0wATK_sdGOgNbiKvjbrhhZasBOepbvOIuV4QSys_Hjn4i1EBxaaCB6Xx3P8-w?ccb=9-4&oh=01_Q5Aa2gGtJe3s3fm47yvO9dBqQt7Xm2rEoOXVGNOd7bYCHRCexQ&oe=690528B1&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1759361953"
+      }
+    },
+    "messageTimestamp": "1759361953",
+    "status": "SERVER_ACK"
+  }
+]

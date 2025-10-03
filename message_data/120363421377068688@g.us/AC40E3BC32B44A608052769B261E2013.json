@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC40E3BC32B44A608052769B261E2013",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "first person to paste @11:20 anakula 50🥲",
+        "previewType": "NONE",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "45kjls+nMnrM6f9LP2iyhIguWi22+nGltQ2JiYNz7W4="
+      }
+    },
+    "messageTimestamp": "1759436193",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

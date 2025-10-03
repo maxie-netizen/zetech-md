@@ -1,0 +1,45 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC090716195B10600487135A1ACABC85"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Iko sawa bado😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC5AE2D8A972D0FEDF988CA9A3369874",
+          "participant": "93763582058578@lid",
+          "quotedMessage": {
+            "conversation": "Toffee pia ni chocolate sindio😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "ST6QZiUhkBY4jPP4lxAUHY+d/Duz4jkcEQyP2PEqCxc="
+      }
+    },
+    "messageTimestamp": "1759500050",
+    "participant": "",
+    "reactions": [
+      {
+        "key": {
+          "remoteJid": "120363419497709558@g.us",
+          "fromMe": false,
+          "id": "ACB0DFB23F25A208645896947E04ACA9",
+          "participant": "93763582058578@lid"
+        },
+        "text": "👍",
+        "senderTimestampMs": "1759500077690"
+      }
+    ],
+    "messageSecret": "ST6QZiUhkBY4jPP4lxAUHY+d/Duz4jkcEQyP2PEqCxc=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQs/ybd1q2gxmZ4weg5KppDFQ4M="
+    },
+    "isMentionedInStatus": false
+  }
+]

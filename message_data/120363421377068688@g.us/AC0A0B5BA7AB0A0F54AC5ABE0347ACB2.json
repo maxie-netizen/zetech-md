@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC0A0B5BA7AB0A0F54AC5ABE0347ACB2",
+      "participant": "256131079356650@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "68kTPKwbequQK9L958Fca9nD6BeQacncUhzd+OOe+MyTo3rccJG3ic6Jrp5Lc2y9D5Y=",
+          "encIv": "xOv9hHPyTaRZVhYI"
+        },
+        "senderTimestampMs": "1759436561890"
+      }
+    },
+    "messageTimestamp": "1759436563",
+    "participant": "256131079356650@lid",
+    "broadcast": false,
+    "pushName": "Ni_Hakeem"
+  }
+]

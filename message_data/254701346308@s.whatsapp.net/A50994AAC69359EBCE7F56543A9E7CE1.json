@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A50994AAC69359EBCE7F56543A9E7CE1"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Sijauliza ivo 😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC52D8B173066A2A67CDAFDEB9EFD70A",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Me nikona bot adi ya iG"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "02hkEa1FciQHW0Npugqva/ZJzXTIhzV3qWI6jJ/Y4Hk="
+      }
+    },
+    "messageTimestamp": "1759434921",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

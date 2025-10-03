@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5AD86871AB58272DE3B86B20EB57CA6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂😂😹💔",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC1DFE1C4C1404C45A32EE6CE60F4329",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": ".vv3"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "p5dURj9TutV+1flSf9ybY04SmdgZvybBjcUemz/iDQg="
+      }
+    },
+    "messageTimestamp": "1759435705",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

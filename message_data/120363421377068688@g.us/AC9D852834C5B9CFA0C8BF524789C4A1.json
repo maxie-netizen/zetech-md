@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC9D852834C5B9CFA0C8BF524789C4A1",
+      "participant": "126581863407792@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiRoefMBxAIGiCwWZ6X4vH8/my/6mLC/psDi4L1vFvVC3RVXBu6kuignSIhBZbnoMVf3VLjItLjRO0xhg24d0JvC3U/urZm0TN5HhVA"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "jJMKzGZutgdmTA==",
+          "senderTimestamp": "1759039791",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC720F1A2C16D55527B56EFBA2B4C5E0",
+          "participant": "82644129808501@lid"
+        },
+        "text": "👍",
+        "senderTimestampMs": "1759436186392"
+      }
+    },
+    "messageTimestamp": "1759436191",
+    "participant": "126581863407792@lid",
+    "broadcast": false,
+    "pushName": "_its_dishon, EGH"
+  }
+]

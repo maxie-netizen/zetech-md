@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC443D669B6856AA0D8524C363A6399D",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "hana prove",
+        "previewType": "NONE",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "lSqcoVa8r14bWoIl9XvUmNtQnx4g0MKfR9iWD2rrudA="
+      }
+    },
+    "messageTimestamp": "1759436662",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

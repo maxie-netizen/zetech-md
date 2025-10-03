@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACC07B3729CE5BD8F6F3EE34DEE68C09",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ulishindwa Ku approach 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACB21550103E8AC5ED2A322EAD130CA2",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Si ni nyinyi mlisema hajiheshimu😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "IITfgdgA+2uWIDVdIp7X7gxZhhhxAbwyutozwSeuats="
+      }
+    },
+    "messageTimestamp": "1759501682",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

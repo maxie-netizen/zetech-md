@@ -1,0 +1,52 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB040C6FCC028E3B70D6A"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/553469231_1326005772397089_4472605807868713279_n.enc?ccb=11-4&oh=01_Q5Aa2gESp2lRew6TTa3soEaiecbfDZQNj4-6kw54h_Nx0CZXfg&oe=68FD0EE6&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "6uxF7TQYMxlfG1mtGLhnbArLtlZH69d1B5L3cA31R3E=",
+        "fileEncSha256": "6I1fkbxH/TYLApXhqMdoCQ9VHJhy3ReLicWU/QWjrN0=",
+        "mediaKey": "qRWN+teaiijuZ9QjZp2B9oBbZSRqMReaAOMbd4Yjg6k=",
+        "mimetype": "image/webp",
+        "directPath": "/v/t62.15575-24/558002819_1084285080182068_4269173155245530908_n.enc?ccb=11-4&oh=01_Q5Aa2gHp-dP24JhglXosaWSaXyPLLT-LSZkdNdrXrtuEKvUPGg&oe=69064428&_nc_sid=5e03e0",
+        "fileLength": "484472",
+        "mediaKeyTimestamp": "1753001653447",
+        "firstFrameLength": 484052,
+        "firstFrameSidecar": "shKAScBtRRinoA==",
+        "isAnimated": true,
+        "contextInfo": {
+          "stanzaId": "3EB04328E235323D65E7D0",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "❌ An error occurred while contacting the AI.",
+            "messageContextInfo": {}
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        },
+        "stickerSentTs": "1759427716205",
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "2oo3ifHsqM0NjX50vVW66zIcrP3xmMX/q09G4bRDXxM="
+      }
+    },
+    "messageTimestamp": "1759427716",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

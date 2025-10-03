@@ -1,0 +1,19 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363321755839679@newsletter",
+      "fromMe": true,
+      "id": "3EB083EF2FBE66BC0DC5E5"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ An error occurred while contacting the AI."
+      }
+    },
+    "messageTimestamp": "1759427613",
+    "status": "ERROR",
+    "messageStubParameters": [
+      "401"
+    ]
+  }
+]

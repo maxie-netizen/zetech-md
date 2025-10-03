@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACE0638197C0A4C6EBA83809C4413F55",
+      "participant": "50698431541477@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1758738242",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "htS5eBPBDhHxKbM3bgsAEJSRJrjlc/l+Rv8E6hqrcIIPNYvwhBh5vm0v3n7eeNNy0oo=",
+          "encIv": "jFStZ/QJxu15rggG"
+        },
+        "senderTimestampMs": "1759436084694"
+      }
+    },
+    "messageTimestamp": "1759436191",
+    "participant": "50698431541477@lid",
+    "broadcast": false,
+    "pushName": "mickey"
+  }
+]

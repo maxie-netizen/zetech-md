@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254702570044@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC162D6902B2B0638BAFAF586E501068"
+    },
+    "message": {
+      "conversation": "Sasa dashes ndio itafanya ikae AI 🤦😂😂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "IrTZp4/lwyOlrw==",
+          "senderTimestamp": "1759168098",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "5HHzxVr7wxvhajIwQZqXeEPRxSIn+MCIzQz+4h9D+VQ="
+      }
+    },
+    "messageTimestamp": "1759501051",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A59620C7DDE752BBD7C82442EB04B593"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂✊𝗸𝗶𝗹𝗮 𝗺𝘁𝘂 𝗻𝗮 𝗺𝗶𝘇𝗶𝗴𝗼 𝘇𝗮𝗸𝗲𝗲😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACC819EFCCC7306F34ABB036D8E9ADCB",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Sitaki kaa na yy"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "RScwn/bmq1wq+wGQGa+QwjMDl8O6Sv9bd2gd3FqLj0I="
+      }
+    },
+    "messageTimestamp": "1759436479",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

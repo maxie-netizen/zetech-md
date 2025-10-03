@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A57E4603824EBB80419BAE6A8C9BC7FE"
+    },
+    "message": {
+      "conversation": "𝗦𝗵𝗶𝗱𝗮 𝘁𝘂𝗽𝘂 𝗸𝗮𝗸𝗮𝗻𝗴𝘂😹😹🫴",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "a3lNtqmlKdYW/BH651f8GHH0qejK/Gb5U4NeUxV0T/4="
+      }
+    },
+    "messageTimestamp": "1759436265",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

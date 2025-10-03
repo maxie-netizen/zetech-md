@@ -1,0 +1,47 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACAD9D30D56859243B58D127F9B4D8F1",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Maxxie acha ufala, unajua kenye namaanisha😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0E090D97CB95BED54C8",
+          "participant": "79341434196121@lid",
+          "quotedMessage": {
+            "stickerMessage": {
+              "url": "https://web.whatsapp.net",
+              "fileSha256": "y5PxC9yHvQeG/TllmW5NTT3dvguJd0MH2LPAv36KF8s=",
+              "fileEncSha256": "UPnZhC4vvOpSFxj8Qhv5C10jKpYSUFdtRlhIAB1o2/M=",
+              "mediaKey": "J3evasp143fKjJ55ubqy6EaEfdBZbblVz+PA9L2xAbc=",
+              "mimetype": "image/webp",
+              "height": 64,
+              "width": 64,
+              "directPath": "/o1/v/t24/f2/m269/AQMMakJzQfdWtiobUFxeO7fnSuYVUfyOQQOaAsWxJgIeq3mAzolQtQeDT5mP4d80n4fERs-drikIPuVWFI1GFZQ0-VRbe4IMX-LqiPWxfw?ccb=9-4&oh=01_Q5Aa2gHbFadkwxXBQF30Zo5-fjtkUiXE8q6DUZ-1dr9hRXUfFw&oe=69052972&_nc_sid=e6ed6c",
+              "fileLength": "14128",
+              "mediaKeyTimestamp": "1759356128",
+              "isAnimated": false,
+              "stickerSentTs": "1759501393230",
+              "isAvatar": false,
+              "isAiSticker": false,
+              "isLottie": false
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "ZlX5cesRYOjnRXh1xOAk3LYMjEh9xKetRc7+v26BIH0="
+      }
+    },
+    "messageTimestamp": "1759501433",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

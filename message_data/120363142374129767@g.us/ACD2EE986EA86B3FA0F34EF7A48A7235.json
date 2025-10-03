@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363142374129767@g.us",
+      "fromMe": false,
+      "id": "ACD2EE986EA86B3FA0F34EF7A48A7235",
+      "participant": "254106897639@s.whatsapp.net"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363142374129767@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj32PnSARACGiD+c8/SxLeq0ZBOUfJtS1rzAKt8OnkaygTx8AjiQDNVLiIhBazUi2mpdKEnFc10z+pRgWZjLzyWFsEr1erJAVIaRz0K"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363142374129767@g.us",
+          "fromMe": false,
+          "id": "ACC101E552F30817C0910634CB3D3A47",
+          "participant": "254757707679@s.whatsapp.net"
+        },
+        "text": "👍🏿",
+        "senderTimestampMs": "1759434796186"
+      }
+    },
+    "messageTimestamp": "1759434797",
+    "participant": "254106897639@s.whatsapp.net",
+    "broadcast": false,
+    "pushName": "Senior 🤑😎💪"
+  }
+]

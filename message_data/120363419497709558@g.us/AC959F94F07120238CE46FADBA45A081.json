@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC959F94F07120238CE46FADBA45A081",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Aaah 😂😂 tuulize @196946262249660",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC15059A753B07CF46D1A069BD3BA9D6",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "You wish😂😂"
+          },
+          "mentionedJid": [
+            "196946262249660@lid"
+          ]
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "erH7UxSALeN0pIMz2s8uhmY+bIfytpH5KL22WJCYfRY="
+      }
+    },
+    "messageTimestamp": "1759501990",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

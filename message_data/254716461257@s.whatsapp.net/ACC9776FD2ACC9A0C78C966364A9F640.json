@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254716461257@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACC9776FD2ACC9A0C78C966364A9F640"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/558142472_1482546056325973_1012976904077136781_n.enc?ccb=11-4&oh=01_Q5Aa2gHTYwc7WUFzvwXAMxFsmk6aCXq8pxnugXFkDfOKyyCvUw&oe=69064289&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "VJ4xCgshYyFu7FEosYbd9HmVb79S1j5CoPEGPTiFkGM=",
+        "fileEncSha256": "9d/G8HJvcLe7tn9Eb5lzRnYzEl85xmP4hZ5k4GlRjDo=",
+        "mediaKey": "dUsV9AbZz3y5/kIhtAL+5chnYvlU1AKrfDCWMPp5O1M=",
+        "mimetype": "image/webp",
+        "height": 64,
+        "width": 64,
+        "directPath": "/v/t62.15575-24/558142472_1482546056325973_1012976904077136781_n.enc?ccb=11-4&oh=01_Q5Aa2gHTYwc7WUFzvwXAMxFsmk6aCXq8pxnugXFkDfOKyyCvUw&oe=69064289&_nc_sid=5e03e0",
+        "fileLength": "84212",
+        "mediaKeyTimestamp": "1759427463",
+        "isAnimated": false,
+        "contextInfo": {
+          "stanzaId": "3EB039520A875E5A3839F1",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "❌ An error occurred while contacting the AI."
+          }
+        },
+        "stickerSentTs": "1759427463231",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "B3jaI8Hv4FsfWQ==",
+          "senderTimestamp": "1759041117",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "Keokvmls0B6wb/zd4soZHgnPw4wDnTDj9nlhDXmU5VU="
+      }
+    },
+    "messageTimestamp": "1759427464",
+    "broadcast": false,
+    "pushName": "🖤ℕ𝕚𝕔𝕣𝕚🥷"
+  }
+]

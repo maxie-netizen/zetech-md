@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACDC6218CAD3AF0139D2C2823893E0C8",
+      "participant": "109590687523061@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiBopfZBRAAGiAV5eOY4Q+I55Kg85oXRf/aoAJiKzMHvVF+DmldzubbyCIhBfAUFCj4bKERcZRKaLM+7x1qOoitP1cMrtHuRurARpUt"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACA9ED0F4EF44C9E43E555F073B80542",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😭",
+        "senderTimestampMs": "1759436827150"
+      }
+    },
+    "messageTimestamp": "1759436829",
+    "participant": "109590687523061@lid",
+    "broadcast": false,
+    "pushName": "Elphas😯"
+  }
+]

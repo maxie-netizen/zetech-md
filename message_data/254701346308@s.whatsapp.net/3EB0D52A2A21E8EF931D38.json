@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0D52A2A21E8EF931D38"
+    },
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7114-24/559679783_1925108994733348_8771388950414574329_n.enc?ccb=11-4&oh=01_Q5Aa2gHu4h41aSEo-PQ3htAOOqEo608sVfk2ZW22XvDiOPYdNg&oe=69066B7E&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/mpeg",
+        "fileSha256": "MZrG2VgY5ChDsije8jz55YsAPUwQFm8ke6mQgpjRLHE=",
+        "fileLength": "3051116",
+        "seconds": 190,
+        "ptt": true,
+        "mediaKey": "mAmotJ5fskiWs2C9jOozO1+JeB+KiTjRd4KrbzslSxQ=",
+        "fileEncSha256": "Ka0xsxYDTwnJFgIjnrsYmVhbRrcwd3IR4m6o5lQQFyk=",
+        "directPath": "/v/t62.7114-24/559679783_1925108994733348_8771388950414574329_n.enc?ccb=11-4&oh=01_Q5Aa2gHu4h41aSEo-PQ3htAOOqEo608sVfk2ZW22XvDiOPYdNg&oe=69066B7E&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759436545",
+        "contextInfo": {
+          "stanzaId": "AC2FFF9755BADE7DBE905ACD0E6F7743",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": ".play Funky friday by dave"
+          },
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "externalAdReply": {
+            "title": "Dave - Funky Friday (ft. Fredo)",
+            "body": "3:11 • 128kbps",
+            "mediaType": "VIDEO",
+            "mediaUrl": "https://youtube.com/watch?v=Pxns_n9q0f4",
+            "sourceUrl": "https://youtube.com/watch?v=Pxns_n9q0f4",
+            "renderLargerThumbnail": true
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759436545",
+    "status": "DELIVERY_ACK"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A531EDAD45B5E5B97956A240F9CB339D",
+      "participant": "137778356596886@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwi/l4aCBRAAGiDycMnMT0xxm/q5D0jZbJnx4j2vOh0oF5W+hQisZriuIyIhBagFWWSRvH5ubgmtV2WSnbzGJfITinNGRGcg98LuZf8S"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436418",
+    "participant": "137778356596886@lid",
+    "broadcast": false,
+    "pushName": "christian",
+    "verifiedBizName": "christian"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACA5D714176441F0A7D1E3FCD255C4B2"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "HISTORY_SYNC_NOTIFICATION",
+        "historySyncNotification": {
+          "fileSha256": "EPockWAEAh3QPkvevaE6JcM6kHiQrfJentP0kc/pLvo=",
+          "fileLength": "182079",
+          "mediaKey": "+HDxeJbHAOe9aqXVS0qVHb3fIp8Psawjj7Z7Ho4gUz8=",
+          "fileEncSha256": "LQFfVfsr7AqFz2gnMGJJ/3ektBIE00s6njRNYvRyE+I=",
+          "directPath": "/v/t62.31111-24/556233710_1113747600872481_268959257206567927_n.enc?ccb=11-4&oh=01_Q5Aa2gFdSvpXpbP_Rs1wwYNXYWKPELFmLaYHyTBSY__AupA5zQ&oe=69051B5D&_nc_sid=5e03e0",
+          "syncType": "INITIAL_BOOTSTRAP",
+          "encHandle": "AQJliGgtfKzLnb4EK4AxZ4Uusr-bdL1I7NpzjgE8ZMYKOBE_4hTABGwBltYuGNNiTZv73kWgc5t1A7f9h7vEaYMQBN0W_FTXxLLz-2wbJRCDmM7nLLJwUweOSpMsPFWvCYw"
+        }
+      }
+    },
+    "messageTimestamp": "1759352711",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

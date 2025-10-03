@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACBD8B7C09E0F47A46E837B1C6471FB5",
+      "participant": "194970392785000@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjQgM32BRAAGiArZ8W9FNziIFq1wNDXzn5MooFbC0J9RGjUhq/AEU2KkiIhBf9bMc9zyVaFpBUCBxGCBvrpb5mVkaKjamfIkaluXdQe"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "194970392785000@lid",
+    "broadcast": false,
+    "pushName": "Ote Jr"
+  }
+]

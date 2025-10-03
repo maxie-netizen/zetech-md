@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACEC00152EEA5A6BAE5029908C92835A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "December ama 2027?😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0C3FA42C58013764DDE",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "hii itaniskuma mpaka December🥲😅thank you so much"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "VrI/DSKU/F4oz73jir6HjaHAz/ZGN7QewBc9bhIpPTQ="
+      }
+    },
+    "messageTimestamp": "1759500121",
+    "participant": "",
+    "messageSecret": "VrI/DSKU/F4oz73jir6HjaHAz/ZGN7QewBc9bhIpPTQ=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQu/7CHMTQd9y8iNG0twdfWww7I="
+    },
+    "isMentionedInStatus": false
+  }
+]

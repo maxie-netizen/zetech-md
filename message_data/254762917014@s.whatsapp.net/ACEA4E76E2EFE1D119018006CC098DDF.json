@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACEA4E76E2EFE1D119018006CC098DDF"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB08F52C0AD4EE3ED11DB",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "CjEKFzEyMDM2MzQyMTgxNTI4NTEzOEBnLnVzEAAaFDNGMURDM0EwQUNGRTZCNTNENURFEsgHOsUHCsEBaHR0cHM6Ly9tbWcud2hhdHNhcHAubmV0L3YvdDYyLjcxMTktMjQvNTU5ODU3MDQzXzgzNzkyMzQ0MjIyODQyOV8zMDgxNDgwNDczNDI1Mzg5OTU5X24uZW5jP2NjYj0xMS00Jm9oPTAxX1E1QWEyZ0VRb2VWOG9OWUMyLWxqWVl1aUVFVFREVDNiNVlDMDZ3amJ2Q0RyOUpMcmtnJm9lPTY5MDcxRTI4Jl9uY19zaWQ9NWUwM2UwJm1tczM9dHJ1ZRIPYXBwbGljYXRpb24vcGRmGirwn5OaIENvbW1vbiBVbml0cyBSZXNvdXJjZSBQYWNrYWdlICgxKS5wZGYiIO7lg84BOIUxMILVq90IoFktkXSqbXwCo6NVE0brDvKBKIydCjACOiAjSO5vUHi7Q7NS+//qaZ9y/wwxPjuiwK0pWR2UvoOgeEIq8J+TmiBDb21tb24gVW5pdHMgUmVzb3VyY2UgUGFja2FnZSAoMSkucGRmSiB7rxfmzn/sbCACdqpA8gXTOIRT8FcRXlaux6aw4Dd0rVKfAS92L3Q2Mi43MTE5LTI0LzU1OTg1NzA0M184Mzc5MjM0NDIyMjg0MjlfMzA4MTQ4MDQ3MzQyNTM4OTk1OV9uLmVuYz9jY2I9MTEtNCZvaD0wMV9RNUFhMmdFUW9lVjhvTllDMi1sallZdWlFRVRURFQzYjVZQzA2d2pidkNEcjlKTHJrZyZvZT02OTA3MUUyOCZfbmNfc2lkPTVlMDNlMFjpr/7GBqIBgANHb29kIGRheSBjbGFzcywKClRoZSBMaWJyYXJ5IHRlYW0gaXMgcGxlYXNlZCB0byBzaGFyZSB0aGUgKkNvbW1vbiBVbml0IFJlc291cmNlIFBhY2thZ2UqLgoKVGhlIHVuaXRzIGFyZToKMS4gQ29tbXVuaWNhdGlvbiBTa2lsbHMKMi4gRGlnaXRhbCBMaXRlcmFjeQozLiBIZWFsdGggYW5kIHdlbGxuZXNzCjQuIEVudHJlcHJlbmV1cnNoaXAKCkZpbmQgdGhlIHBhY2thZ2UgIGF0dGFjaGVkIGZvciB5b3VyIHJlZmVyZW5jZS4KCklmIHlvdSBlbmNvdW50ZXIgYSBwcm9ibGVtIGluIGFjY2Vzc2luZyAgdGhlIGFib3ZlIGxpYnJhcnkgcmVzb3VyY2VzLCBib29rIGEgc2Vzc2lvbiB3aXRoIHVzIHZpYSB0aGUgbGluazoKaHR0cHM6Ly9mb3Jtcy5nbGUvVnpob2lkYVBSTmpOM1czVUEYirf+xgYqEzI3NjkzMTE2OTgwODUxMUBsaWSyAk0KS01lZGlhL1doYXRzQXBwIERvY3VtZW50cy9Qcml2YXRlL/Cfk5ogQ29tbW9uIFVuaXRzIFJlc291cmNlIFBhY2thZ2UgKDEpLnBkZvIDEgoQAQvb7ch+eLKJ4apZ8PMV3ogEAA=="
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759500983",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

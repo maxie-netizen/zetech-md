@@ -1,0 +1,90 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A521F57730910514734679BA5A40817F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗙𝗶𝘅 𝗮𝗳𝘂𝘂 𝗻𝗶𝗼𝗻𝗲 𝘃𝗶𝗹𝗲 𝘇𝗶𝗻𝗮 𝘄𝗼𝗿𝗸 𝗻𝗶𝗶𝗯𝗲😆",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC7EA0C3FCE5B3808228F06E770ED892",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Wacha usenge mzee😂😂 unda yako"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437242",
+    "messageSecret": "rz+dn8tdoavQsvrsQAxXSKFUncca00QcGZPtZCvtlrE=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQsVUxFX5ZdRf7pyAa4LDMvjGPk="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A521F57730910514734679BA5A40817F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗙𝗶𝘅 𝗮𝗳𝘂𝘂 𝗻𝗶𝗼𝗻𝗲 𝘃𝗶𝗹𝗲 𝘇𝗶𝗻𝗮 𝘄𝗼𝗿𝗸 𝗻𝗶𝗶𝗯𝗲😆",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC7EA0C3FCE5B3808228F06E770ED892",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Wacha usenge mzee😂😂 unda yako"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437242",
+    "messageSecret": "rz+dn8tdoavQsvrsQAxXSKFUncca00QcGZPtZCvtlrE=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQsVUxFX5ZdRf7pyAa4LDMvjGPk="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A521F57730910514734679BA5A40817F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗙𝗶𝘅 𝗮𝗳𝘂𝘂 𝗻𝗶𝗼𝗻𝗲 𝘃𝗶𝗹𝗲 𝘇𝗶𝗻𝗮 𝘄𝗼𝗿𝗸 𝗻𝗶𝗶𝗯𝗲😆",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC7EA0C3FCE5B3808228F06E770ED892",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Wacha usenge mzee😂😂 unda yako"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "rz+dn8tdoavQsvrsQAxXSKFUncca00QcGZPtZCvtlrE="
+      }
+    },
+    "messageTimestamp": "1759437420",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲",
+    "verifiedBizName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

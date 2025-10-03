@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5E794864C6F4EC1C612CEC7056E2F9D"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/556669280_1494117585030985_8856717783698978982_n.enc?ccb=11-4&oh=01_Q5Aa2gEU-KT932pwh17380UhtdDiikRoWauchuS_ZLuHBNrRNQ&oe=69065193&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "eCv/Lj+QXuZ5o/wg8Dlp12oiSj+lS+KtdUdMZg6ucb8=",
+        "fileEncSha256": "zzQiTszVEOSy7o4fqA3fUHYhyPn1ZPbyevareEKSN2s=",
+        "mediaKey": "O8Hzk7kPCWSpWOjgVFZTthYgzb6Y6yd0vA6n6h2CXmg=",
+        "mimetype": "image/webp",
+        "directPath": "/v/t62.15575-24/556669280_1494117585030985_8856717783698978982_n.enc?ccb=11-4&oh=01_Q5Aa2gEU-KT932pwh17380UhtdDiikRoWauchuS_ZLuHBNrRNQ&oe=69065193&_nc_sid=5e03e0",
+        "fileLength": "154512",
+        "mediaKeyTimestamp": "1751982323195",
+        "firstFrameLength": 154096,
+        "firstFrameSidecar": "3XnUt22UI9xbZg==",
+        "isAnimated": true,
+        "contextInfo": {
+          "stanzaId": "AC95005BD43306D40397D1611E2C71EB",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Unaniona danda bois😂😂"
+          }
+        },
+        "stickerSentTs": "1759434653802",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "a8Z4uEqN8lNfi6FC3p/IkzdMQfeRD9mPNdBZ3mwfKUw="
+      }
+    },
+    "messageTimestamp": "1759434654",
+    "broadcast": false,
+    "pushName": "Spoiler",
+    "verifiedBizName": "Spoiler"
+  }
+]

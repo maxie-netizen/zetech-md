@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A552493CE0258CDEBF982D8533652CE5",
+      "participant": "126976950010064@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiM1tvYBxAAGiBh0YhoRRq5/2UqetYsTFda1qAne9r0E58fO6aUsylg0SIhBR/eMpDPJbiUC0hBU2bn+OKaJCt8o2PP7VJz9uZ3zF9L"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "A/Tabo5G+4eoIw==",
+          "senderTimestamp": "1758239869",
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436425",
+    "participant": "126976950010064@lid",
+    "broadcast": false,
+    "pushName": "z",
+    "verifiedBizName": "z"
+  }
+]

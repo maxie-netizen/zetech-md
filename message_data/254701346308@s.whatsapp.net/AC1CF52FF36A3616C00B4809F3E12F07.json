@@ -1,0 +1,50 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC1CF52FF36A3616C00B4809F3E12F07"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂mm imeleta waiting for this message banaa",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5BD9FDAA1F4CB041F5B84894A28A4B1",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "imageMessage": {
+              "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m232/AQNsrnjI5GkX5SEOgVa9g12MquU8etFtZCv7ZT0UPMtuDYC9k0wVXoHOY2WA8OXqsVAvc8PbUxEq88ybrriGsufCsFmc5AXA6COD8BpMFg?ccb=9-4&oh=01_Q5Aa2gFRj_8UvnIWQFpBJG-By_Teq6IJLvQD0CvWVOEpqovbEg&oe=69064780&_nc_sid=e6ed6c&mms3=true",
+              "mimetype": "image/jpeg",
+              "fileSha256": "2TR5YPZtcP9x0f3cYRlM7l0qLPQ+KIVZCYZu65Njrwo=",
+              "fileLength": "65099",
+              "height": 1280,
+              "width": 576,
+              "mediaKey": "hnOglMF1PwpoRoi1hDPHXCUDVWyb5a7jmAuMBL45Vq8=",
+              "fileEncSha256": "7oiYofnu8dAuO26QwNMrNSMOtBTsPVhhpvZmCkFoHCI=",
+              "directPath": "/o1/v/t24/f2/m232/AQNsrnjI5GkX5SEOgVa9g12MquU8etFtZCv7ZT0UPMtuDYC9k0wVXoHOY2WA8OXqsVAvc8PbUxEq88ybrriGsufCsFmc5AXA6COD8BpMFg?ccb=9-4&oh=01_Q5Aa2gFRj_8UvnIWQFpBJG-By_Teq6IJLvQD0CvWVOEpqovbEg&oe=69064780&_nc_sid=e6ed6c",
+              "mediaKeyTimestamp": "1759436942",
+              "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAIAMBIgACEQEDEQH/xAAtAAADAQEBAAAAAAAAAAAAAAAAAQMCBAUBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAA8AW7MbKEE+g5iiFVCLcRWV3MzKQtvAJoQH//xAAgEAEAAgICAgMBAAAAAAAAAAABAAIREgMxECEEE0Ei/9oACAEBAAE/ABwYlvbAIVrrZVz+eNibVjy1TGvhE7I48HZLaoZzGpNZV1Rl+d5MZIOYVbVZXjEl+PWCzZm1g9LP6t2ypT9Jb6wcVldcGZVp+s2pnonI5sznv8R0+vPXuBW3UsVr3NuOf//EABQRAQAAAAAAAAAAAAAAAAAAADD/2gAIAQIBAT8AL//EABkRAAMAAwAAAAAAAAAAAAAAAAEQEQAgYf/aAAgBAwEBPwDShXmA1//Z",
+              "contextInfo": {
+                "pairedMediaType": "NOT_PAIRED_MEDIA"
+              },
+              "scansSidecar": "wpfyAgloBSk9ha4N9mhXtMO9yli5U5DsUIN8uIA+3VWIVSVrn2VxGg==",
+              "scanLengths": [
+                5770,
+                23486,
+                14609,
+                21234
+              ],
+              "midQualityFileSha256": "egPQtkJX0eLeRHHinLsdV806e8fjO00nqHS9epOE30I="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437423",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5A6B4834A184FA0826DC49FAA4BBB6E"
+    },
+    "message": {
+      "conversation": "03524702",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "eAhs2tSa8UQFI3ZjguqYV1eG3iPDNiKcQ5gEqrfB768="
+      }
+    },
+    "messageTimestamp": "1759437559",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

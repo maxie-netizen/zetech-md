@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A521A8EED534F996AE1D3A804E5DCF1C"
+    },
+    "message": {
+      "conversation": "𝗕𝗼𝗿𝗮 𝘇𝗮 𝘀𝗮𝗿𝗮𝘁 😂🥱",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "lrNg4ZCSNb45FrLHx0TgDwXikKMy9mVVLAp3h2j8+ac="
+      }
+    },
+    "messageTimestamp": "1759436833",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

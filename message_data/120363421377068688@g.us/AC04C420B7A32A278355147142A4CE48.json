@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC04C420B7A32A278355147142A4CE48",
+      "participant": "258815249408132@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj4jJKhAxADGiBpjUThIdANjzFDDeDZaGE5lxPe/QNlvTC2TKF0Q2fx/SIhBbhjmwN4nsoVZqYENZYlGctJHJNREnyqcbSTjJFflpNb"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759435916530"
+      }
+    },
+    "messageTimestamp": "1759435917",
+    "participant": "258815249408132@lid",
+    "broadcast": false,
+    "pushName": "CASCANTE"
+  }
+]

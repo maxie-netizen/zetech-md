@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACA831EA5CF9FF60367E827DD34AF43B",
+      "participant": "126581863407792@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwie1drMAxAAGiAX4MgNVmvjs+lQ6FgcOnLqq/DA2M3YSGo5lscUT6wS4SIhBZhR8/4bDCJFy0J+exruCwEtwD/gYD2adClCoH5IbQlX"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "jJMKzGZutgdmTA==",
+          "senderTimestamp": "1759039791",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACCD9E385D93EFF505813EE8354821AD",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759436328530"
+      }
+    },
+    "messageTimestamp": "1759436331",
+    "participant": "126581863407792@lid",
+    "broadcast": false,
+    "pushName": "_its_dishon, EGH"
+  }
+]

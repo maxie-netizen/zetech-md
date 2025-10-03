@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254702570044@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACA37EA2DD3D840413BDDBC457CCBEA3"
+    },
+    "message": {
+      "conversation": "Tuma pdf  mzee😂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "IrTZp4/lwyOlrw==",
+          "senderTimestamp": "1759168098",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "K3Z5jQyso9yVxUQZRodiIxSyCWHatQ0N16Gx076kagI="
+      }
+    },
+    "messageTimestamp": "1759500933",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

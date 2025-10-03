@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A53B43D76EAF2B4D8FAFACC002F806DA"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Gani",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB051EFE0AF6510626476",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Alafu nkuonyeshe trick flani hapa😅😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428591",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

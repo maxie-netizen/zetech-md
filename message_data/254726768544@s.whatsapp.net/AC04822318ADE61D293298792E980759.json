@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC04822318ADE61D293298792E980759"
+    },
+    "message": {
+      "conversation": "Brawl hype imeisha after Badder kushuka",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "7bCYe9xbYBLkUP9OtBLSucbJIOOHePuGY3y+NXSxCrs="
+      }
+    },
+    "messageTimestamp": "1759435525",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

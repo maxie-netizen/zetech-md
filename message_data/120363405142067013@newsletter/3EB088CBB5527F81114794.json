@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363405142067013@newsletter",
+      "fromMe": true,
+      "id": "3EB088CBB5527F81114794"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ Please reply to a status message"
+      }
+    },
+    "messageTimestamp": "1759354359",
+    "status": "PENDING"
+  }
+]

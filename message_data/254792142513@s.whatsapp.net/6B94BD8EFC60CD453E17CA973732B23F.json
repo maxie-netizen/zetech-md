@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": false,
+      "id": "6B94BD8EFC60CD453E17CA973732B23F"
+    },
+    "message": {
+      "conversation": "Nko poa",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109208"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "5ihFL7iXNjTB45Hgh3+SYNOeKH2lQJkqjMPZGTSpZO0="
+      }
+    },
+    "messageTimestamp": "1759427341",
+    "broadcast": false,
+    "pushName": "CM🥰"
+  },
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": false,
+      "id": "6B94BD8EFC60CD453E17CA973732B23F"
+    },
+    "message": {
+      "conversation": "Nko poa"
+    },
+    "messageTimestamp": "1759427341",
+    "messageSecret": "5ihFL7iXNjTB45Hgh3+SYNOeKH2lQJkqjMPZGTSpZO0=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQuHzcAkgbZaQQlLAVB0f3TpAfY="
+    },
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB04328E235323D65E7D0"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ An error occurred while contacting the AI.",
+        "contextInfo": {
+          "stanzaId": "3EB0D828330480237158AF",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "zima chatbot",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759427708",
+    "status": "PENDING"
+  }
+]

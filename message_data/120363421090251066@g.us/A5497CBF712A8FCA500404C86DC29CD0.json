@@ -1,0 +1,19 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "A5497CBF712A8FCA500404C86DC29CD0"
+    },
+    "message": {
+      "conversation": "𝗠𝘁𝘂 𝗮𝗻𝗮𝗷𝘂𝗮 𝗸𝘂𝗰𝗵𝗲𝘇𝗮"
+    },
+    "messageTimestamp": "1759437708",
+    "participant": "",
+    "messageSecret": "h8d0PlO6qJHb1JBXJpoClAfP2LY3HBSPkBXxObF6NbI=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQsbxIsBTmyMgOEE9Q4LC+K8B30="
+    },
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "A50D155B3A3016ED439FA9DC1035B929",
+      "participant": "41519767634070@lid"
+    },
+    "message": {
+      "conversation": "03524702",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjikannBxAOGiD3Mcelt6Jc7zkEmX2SdR2PIcyysAixXNAZUwo7H/qjoyIhBbZckPAH7HW17Roq4YN+Z+AXdTXQmFU2o842mwPfTjgx"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "R4FuLnXaDUuNxOCvvlV1RkqQZSqCRG2vy/3IQyo+BEA="
+      }
+    },
+    "messageTimestamp": "1759438122",
+    "participant": "41519767634070@lid",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲",
+    "verifiedBizName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

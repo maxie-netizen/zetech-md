@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB01FF746EEB7FCC3A6C0"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Code became empty after sanitization",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:254740300165,\nitem1.TEL;waid=254740300165:254740300165\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759435693",
+    "status": "SERVER_ACK"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5C38023D3DBE50A526D7B98286BEC65",
+      "participant": "143632950644864@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "5gmqIg+Kt1mBhbk7y2I2Lbz6IAZtnzfdCeKIlk/vsntRvsjAwFFU9a+vX5Ok/h4HQdo=",
+          "encIv": "Tno4TgG1Io7OsG1y"
+        },
+        "senderTimestampMs": "1759435955969"
+      }
+    },
+    "messageTimestamp": "1759435956",
+    "participant": "143632950644864@lid",
+    "broadcast": false,
+    "pushName": "el bicho",
+    "verifiedBizName": "el bicho"
+  }
+]

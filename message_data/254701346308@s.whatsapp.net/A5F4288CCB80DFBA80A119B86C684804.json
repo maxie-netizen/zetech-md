@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5F4288CCB80DFBA80A119B86C684804"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Sasa mbona ukule ban na ii Iko under dev",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACDA592863CA616BC0F0A1C227D970FF",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Nikikula ban tutakosana😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "Pf7r8uI4pBIMmMuFtmz3ENco5qXV7bZZr0F2wQHHLUo="
+      }
+    },
+    "messageTimestamp": "1759434577",
+    "broadcast": false,
+    "pushName": "Spoiler",
+    "verifiedBizName": "Spoiler"
+  }
+]

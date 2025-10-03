@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254717720074@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC127B0D670AAED2C21FF305EF01B644"
+    },
+    "message": {
+      "conversation": "Alafu hiyo mambo ya mi na Nat hatudate tuliamua tumeet pekee🙂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "fFitI72YF1GzWg==",
+          "senderTimestamp": "1758474713",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "5cNcwkKRzlWd41PNvxwligX5dqhf3rhRm3rR13ikuDs="
+      }
+    },
+    "messageTimestamp": "1759440879",
+    "broadcast": false,
+    "pushName": "Bossman😌🤑"
+  }
+]

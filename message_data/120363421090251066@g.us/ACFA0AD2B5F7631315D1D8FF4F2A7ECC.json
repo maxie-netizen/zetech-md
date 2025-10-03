@@ -1,0 +1,69 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "ACFA0AD2B5F7631315D1D8FF4F2A7ECC"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Nugu",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC28F23D45EB6709BD08D6EA42FE151A",
+          "participant": "167147712061630@lid",
+          "quotedMessage": {
+            "conversation": "Wewe Na wewe.. hutosheki kupigwa"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436316",
+    "participant": "",
+    "messageSecret": "nVVBaMAePhSDRJrlYyltiUa8gk5vqZzaC6eEx9lU3k8=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQuh6pgLrqbQ/1DxK4dB4yphB9Q="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "ACFA0AD2B5F7631315D1D8FF4F2A7ECC",
+      "participant": "55491380170994@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj/xOcbEDAaINDTsW4PqkKUioWI32qav4gBF/Fz+HDyYQA1Xja+zL4FIiEFsIoNUxNy8pWjpDnhyBgMXJGhoNj9MoqAhnAh/448/WE="
+      },
+      "extendedTextMessage": {
+        "text": "Nugu",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC28F23D45EB6709BD08D6EA42FE151A",
+          "participant": "167147712061630@lid",
+          "quotedMessage": {
+            "conversation": "Wewe Na wewe.. hutosheki kupigwa"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1758193443",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "nVVBaMAePhSDRJrlYyltiUa8gk5vqZzaC6eEx9lU3k8="
+      }
+    },
+    "messageTimestamp": "1759436324",
+    "participant": "55491380170994@lid",
+    "broadcast": false,
+    "pushName": "💦Sp@rtå☠️🏌️"
+  }
+]

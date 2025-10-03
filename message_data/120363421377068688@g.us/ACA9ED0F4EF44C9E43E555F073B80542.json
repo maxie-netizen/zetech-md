@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACA9ED0F4EF44C9E43E555F073B80542",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "huyu alikuwa amechilll tuu anagoja icon muhaa akue Hana evidence 😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACE9BAA3E499E0936C7500CBB101BF8C",
+          "participant": "109590687523061@lid",
+          "quotedMessage": {
+            "conversation": "0703463438"
+          },
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "ghVfS424LJw2tPxXRiT7bewyrRbNyieBU8nVJP5wRpA="
+      }
+    },
+    "messageTimestamp": "1759436803",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

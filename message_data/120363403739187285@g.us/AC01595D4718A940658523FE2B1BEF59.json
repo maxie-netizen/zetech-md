@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363403739187285@g.us",
+      "fromMe": false,
+      "id": "AC01595D4718A940658523FE2B1BEF59",
+      "participant": "261160200843371@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363403739187285@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjXsKwzEAIaIFYAGTiq5K4ozenq105QUCa2xvP4+KQ0d5Bom4WtJAh6IiEFl7rqjcvJKm6L2dhDeRncBpD8IX3AA4koENo9Nm3t5RM="
+      },
+      "extendedTextMessage": {
+        "text": "Rada G we unafika??",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC1660BC742E5A7CD077EF6C0EFD8D07",
+          "participant": "184129844969686@lid",
+          "quotedMessage": {
+            "conversation": "Nikii"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436200",
+    "participant": "261160200843371@lid",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

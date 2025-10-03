@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC04B9AEC54E55DCA3A8FA961474B67C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Eeeh najua😂🫴",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A518DC9EEB06975BDD2E2E85FAA57816",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Nakwambia Iko under dev bana"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435168",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

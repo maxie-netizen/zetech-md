@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACA6B7D0C76233EF42D14DE0800ECA09"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ata io bot si ikona API error",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A50994AAC69359EBCE7F56543A9E7CE1",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Sijauliza ivo 😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435041",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

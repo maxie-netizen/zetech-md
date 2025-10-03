@@ -1,0 +1,60 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B40CEC1ED8FA6C1698E8523E1D5BFA"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😹😹😹𝗻𝗶𝗸𝘂𝗽𝗮𝘁𝗶𝗲",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACFBE0B285F7C7C127AB51EE5BB07AD6",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "imageMessage": {
+              "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m232/AQNROkAzoyNqR5nVI16FUGCTQc_CbHQj0XOr7CVbhqF534UiB9A2ZM_WisVzLK9F3U_IL6DjG6m6RRSzOuhUl1SGhAuBO0EVlOIZYP0t6Q?ccb=9-4&oh=01_Q5Aa2gGqMVYLtW7tHhZNaebWrc3ccQZKTU3sVmKHfYaOl6hnxw&oe=69063196&_nc_sid=e6ed6c&mms3=true",
+              "mimetype": "image/jpeg",
+              "caption": "😂😂😂",
+              "fileSha256": "LqYwbTajUpThhLbp3jzUaQuuBrfQ1xTc4V4Pyh3+1HU=",
+              "fileLength": "118118",
+              "height": 1600,
+              "width": 720,
+              "mediaKey": "PFZpSKizrhrWvFH6UMNjvrmPCc6sWs4byg/SF+mv4bg=",
+              "fileEncSha256": "30t1kgsIGlZA5Vjqo9cLldFf8qgSOWjttIS93+HDPEw=",
+              "directPath": "/o1/v/t24/f2/m232/AQNROkAzoyNqR5nVI16FUGCTQc_CbHQj0XOr7CVbhqF534UiB9A2ZM_WisVzLK9F3U_IL6DjG6m6RRSzOuhUl1SGhAuBO0EVlOIZYP0t6Q?ccb=9-4&oh=01_Q5Aa2gGqMVYLtW7tHhZNaebWrc3ccQZKTU3sVmKHfYaOl6hnxw&oe=69063196&_nc_sid=e6ed6c",
+              "mediaKeyTimestamp": "1759435815",
+              "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAHwMBIgACEQEDEQH/xAAuAAADAQEBAAAAAAAAAAAAAAAAAgMBBAUBAQEBAQAAAAAAAAAAAAAAAAEAAgP/2gAMAwEAAhADEAAAAPETomkGps9WrHebkQqNN9gSZxPVxqu1OHXzqA1nAv/EACMQAAICAgIBBAMAAAAAAAAAAAECABEDIRIxIhMyQlJBUWH/2gAIAQEAAT8AGA/KHEbNTgYVrUyD26lTjAuxqZG8ROCsogRbqHGBcu+QhyONQu1AxcjMdzGulMZUsUIVH1MCA3+KmJm40e5eh/DDldWga+4w8tRzUVgO1uDKn1h+JjHoTEo4w41/UAA3ygUsQQLgy+norUXMrdmp/8QAGxEBAAMBAAMAAAAAAAAAAAAAAQACESEDMTL/2gAIAQIBAT8AcgdCNADJUdJRj5aEr6l/phZJvdTZ/8QAHhEAAgICAgMAAAAAAAAAAAAAAAECERIhEzEyQVH/2gAIAQMBAT8AVtnpv4ZOxvTJxOOQ+yHijFFapM//2Q==",
+              "contextInfo": {
+                "pairedMediaType": "NOT_PAIRED_MEDIA",
+                "statusSourceType": "IMAGE"
+              },
+              "scansSidecar": "f3SoPgidh5s/oID1Ia9kwLwrr7eWaxm8WSz4zhYsN19PnMqBLA6KZA==",
+              "scanLengths": [
+                12788,
+                51921,
+                19988,
+                33421
+              ],
+              "midQualityFileSha256": "79hOj+AHwwAK+cA6yyqkzAjwvHcJv7Geirw6e2h64Bw="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "MFxga/fZ6yVLDxYSC50aJM6phG/r59HV3ELSoLls1+g="
+      }
+    },
+    "messageTimestamp": "1759435845",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

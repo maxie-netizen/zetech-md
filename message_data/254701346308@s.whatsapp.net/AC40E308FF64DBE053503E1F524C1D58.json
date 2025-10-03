@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC40E308FF64DBE053503E1F524C1D58"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Mm inasema waiting for this message",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5B99E34E578CB8F355ECF13BC26B489",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ndo nashangaa 😂imenipeleka YouTube"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436799",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

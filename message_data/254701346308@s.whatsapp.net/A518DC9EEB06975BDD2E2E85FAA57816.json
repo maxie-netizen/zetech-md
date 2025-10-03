@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A518DC9EEB06975BDD2E2E85FAA57816"
+    },
+    "message": {
+      "conversation": "Nakwambia Iko under dev bana",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "/vKklPbg4ePv2rMS/nnD2q9L8TL0X29xq4Xm7HF3mBw="
+      }
+    },
+    "messageTimestamp": "1759435107",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

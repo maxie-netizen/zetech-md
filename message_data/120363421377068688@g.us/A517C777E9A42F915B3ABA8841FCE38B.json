@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A517C777E9A42F915B3ABA8841FCE38B",
+      "participant": "152257228181739@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "aaTsY/24YqNo7OxoMHXnXa7ytTWG0pA6POkrx9an/2kQDDD9TFy83ugCKVZEXNYidaw=",
+          "encIv": "C5LBd0QLnriFIwTz"
+        },
+        "senderTimestampMs": "1759435987086"
+      }
+    },
+    "messageTimestamp": "1759435988",
+    "participant": "152257228181739@lid",
+    "broadcast": false,
+    "pushName": "Joshua kimmich koin"
+  }
+]

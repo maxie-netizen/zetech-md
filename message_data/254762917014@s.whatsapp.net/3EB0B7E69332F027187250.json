@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0B7E69332F027187250"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "*Successful in Changing To Self Usage*",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:Spoiler,\nitem1.TEL;waid=254701346308:254701346308\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759427660",
+    "status": "PENDING"
+  }
+]

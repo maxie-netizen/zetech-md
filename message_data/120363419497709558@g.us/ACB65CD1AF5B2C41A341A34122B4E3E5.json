@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACB65CD1AF5B2C41A341A34122B4E3E5",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Hadi wewe unajua nikitaka nitapata😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC5F5A425EB1E4B5EEF1D77DB44E9698",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "Failure😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "HNLz2mRgtHjVYu8NedxaoLvpNxAOmbV38ZDfmC8OdKI="
+      }
+    },
+    "messageTimestamp": "1759501349",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

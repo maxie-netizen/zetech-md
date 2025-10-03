@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0C547FA01955B83AFF8"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Pinging...",
+        "contextInfo": {
+          "stanzaId": "3EB018A7CF3579E5D350AA",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": ".ping",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759501131",
+    "status": "SERVER_ACK"
+  }
+]

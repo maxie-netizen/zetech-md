@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACC6E3A5B12747444CC79736F04E1622"
+    },
+    "message": {
+      "videoMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7161-24/557492358_809360764939220_8003539482591571100_n.enc?ccb=11-4&oh=01_Q5Aa2gFeV74lbN-MXw_OeSsFkd7Y792cesFMQ4ThQAboy30YSA&oe=69063D0F&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "video/mp4",
+        "fileSha256": "QLv0BZPpKWwTUXNFOD/p6scU1moxPNsMT3gbLVc+nng=",
+        "fileLength": "2143062",
+        "seconds": 10,
+        "mediaKey": "KqJNTGg4Wk70lAh8yo8LM1KVDNgjZewf6PinH3BzG7c=",
+        "caption": "Mcheza saa saba sato😂😂",
+        "height": 864,
+        "width": 480,
+        "fileEncSha256": "Rz2UuoJLj5hO6F8/wFjohhDFfmoyKcAz89zdO1DoD6s=",
+        "directPath": "/v/t62.7161-24/557492358_809360764939220_8003539482591571100_n.enc?ccb=11-4&oh=01_Q5Aa2gFeV74lbN-MXw_OeSsFkd7Y792cesFMQ4ThQAboy30YSA&oe=69063D0F&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759435351",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAKAMBIgACEQEDEQH/xAAvAAADAQEBAAAAAAAAAAAAAAAAAwQCBQEBAAMBAQAAAAAAAAAAAAAAAAEDBAIA/9oADAMBAAIQAxAAAADlobnfJwzw8seMD1N1h82exNtVREDE9UNaa+01OLUccSLGLefuZlbud26xwzwmWv0B27geZgFj/8QAIxAAAgICAgIDAAMAAAAAAAAAAQIAAxEhBBIiQRMUMRBCUf/aAAgBAQABPwBqdBgIagZ1KiYLTBn2fLyGBPlBwFEsbtoRBCm49fyhToGGjr+PGRQuQd+4Jw+NRZUTYdidgMgiBqyvXZY+pXxFNZBGzPoWAnMr5ltCsqgQPvBEQJ3Q+4h0ID+zlhQ7dRrMAOYgJauKZZagzkxmySfRMzvEQhOMXDeWcASvl3Z/2Cux5ZpmGdZgYiB/HBlbdXBiuHXI9iXL1sYfwgywEsUo5E4tn9ZywRbP/8QAHxEBAAMAAQQDAAAAAAAAAAAAAQACESEDBBASEzNx/9oACAECAQE/AMJWvs5LdOtXG0bUVwlabzF1YZAwIlLciHip8hVWPC+O3X2ydX7L/s//xAAeEQEAAgIBBQAAAAAAAAAAAAABAAIQESEDEhMxYf/aAAgBAwEBPwDeNzxfSPDEdwbNbCbJpYjC7zzOnfsLTeD3j//Z",
+        "contextInfo": {
+          "pairedMediaType": "SD_VIDEO_PARENT",
+          "statusSourceType": "VIDEO"
+        },
+        "streamingSidecar": "05l9YBznG8ee0+zKVUzMfUEPaOgMBBeX1N8rCp0qfG6s5Hi3UQ7SEqOziZq1LfoEeTtPcWbK7Y3daJgqN7LyQ+4js4zd1l53hAFzxQ/bWfXZ7ETv/+d1Ga370u3EZ6ews6vBU5ASb2sv2VczLQLPJ/1CjdI7tV4Zthm2ND5NmD6xL7aVyltMRB+vbvl0ynxIYEBcd+R5SQ97Vg7xs+EWvVU1igtN9M+vmyxus21CRUfzDsJTY666NicMFvWOMwF3XdR2jHHNWgOcOCk193aWXZ7Ct2bwesxIwXubHIMBJP1rESimflRO1j4sa2XWBaB10y3CgbUUHNRAkBFAemhCtZptDPTWKXQefk5xBq2o33Jr7dIAgUFeg9z0Z0UJP+RVhO2B5Mrpi3GYkJSi0uh5cxBXsAyqSVn17BgHT/UxLCXgwEqG8l0Xh7Su",
+        "externalShareFullVideoDurationInSeconds": 0
+      }
+    },
+    "messageTimestamp": "1759435353",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

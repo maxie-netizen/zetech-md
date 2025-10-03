@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC87C7E8D5D043F189F93571C97B4712"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Lakini kusema ukweli Brawl ilikua moto",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACF0E8E77B58F98556BA3CDF34926BB3",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Nikona morrio amekufa na brawl😂😂adi ukisema oppo kinasema mawee😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "ErDJtNFv7Oe9B3xp8Ax1BqqV6Jqumd9MOPqmj1HmcM0="
+      }
+    },
+    "messageTimestamp": "1759436341",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

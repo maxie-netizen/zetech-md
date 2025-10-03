@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5D8939B9515C9098704B8ACD52C864C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Tegea",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACCD7B763A4A21634C858B6E42C780F5",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ikonayo two instances zimerunniwa at the same time angalia terminal vizuri bois😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "tf6NI95tQZAbAI5N6mlv8MDdkJJOmluy53V+sID2y1s="
+      }
+    },
+    "messageTimestamp": "1759435430",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

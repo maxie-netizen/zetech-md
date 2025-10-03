@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5E175FB9292C745008855A20D7B5B00"
+    },
+    "message": {
+      "conversation": ".chatbotoff"
+    },
+    "messageTimestamp": "1759428387",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0394146A8E58B17B9DE"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "✅ API VERIFICATION SUCCESS\n\n📱 API Key: ztmd_su7...\n📊 Status: 200\n📋 Response:\n```json\n{\n  \"valid\": true,\n  \"user_id\": \"492d6253-0d4c-4d1b-9051-a47b0c57dd8a\",\n  \"key_name\": \"2\",\n  \"expires_at\": null\n}\n```\n⏰ Time: 10/2/2025, 3:02:13 AM"
+      }
+    },
+    "messageTimestamp": "1759363333",
+    "status": "PENDING"
+  }
+]

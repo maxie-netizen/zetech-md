@@ -1,0 +1,50 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A56B15D318191EF677A0B6638D3A233C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗡𝗱𝗶𝗼 𝗵𝗶𝗶😅",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0A2014AC76FA20F1E54",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "audioMessage": {
+              "url": "https://mmg.whatsapp.net/v/t62.7114-24/558818125_667073359785959_1816204895240296546_n.enc?ccb=11-4&oh=01_Q5Aa2gHi8CS7rVdY5h1LXvq8RUZaLzeyItTEPkZSsiItOGYfdg&oe=69066882&_nc_sid=5e03e0&mms3=true",
+              "mimetype": "audio/mpeg",
+              "fileSha256": "eWN/tyNp6cXXtdTihfDqPvlGHVLy6pff1gqWvnpQAvc=",
+              "fileLength": "2195948",
+              "seconds": 137,
+              "ptt": true,
+              "mediaKey": "8Jxa+EddWH4q0nhWCznNZ/HVUiyPbctyiQY2iNRJM2s=",
+              "fileEncSha256": "7w5pniWQINf7PS/rZdjFnGbLLKoyCmr6cy/qLw9G8tQ=",
+              "directPath": "/v/t62.7114-24/558818125_667073359785959_1816204895240296546_n.enc?ccb=11-4&oh=01_Q5Aa2gHi8CS7rVdY5h1LXvq8RUZaLzeyItTEPkZSsiItOGYfdg&oe=69066882&_nc_sid=5e03e0",
+              "mediaKeyTimestamp": "1759437483",
+              "contextInfo": {
+                "forwardingScore": 1,
+                "isForwarded": true
+              }
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "Agyzv5RV6B1cds8+KGEwHDldX6xu3V8NC1FzLCUdbYY="
+      }
+    },
+    "messageTimestamp": "1759437503",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

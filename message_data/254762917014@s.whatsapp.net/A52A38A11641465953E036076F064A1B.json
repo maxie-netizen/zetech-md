@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A52A38A11641465953E036076F064A1B"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Aje ?",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0B54B5D3704BCE132CB",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "sasa si ndio nataka kukuonyesha😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428731",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

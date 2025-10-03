@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0F86CC13238486F8D76"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "sii bangi😅😅",
+        "contextInfo": {
+          "stanzaId": "A5513C8F1989445FA807EB2ACCFECABB",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Sinanga pesa ya bangi kijana",
+            "messageContextInfo": {
+              "messageSecret": "Y9Qe+HiHzy4w6Nce/czByt+vPVLTnx7/Z5tMNIdHihE="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "WeiUtOvyM6oCQqkKpK2H68Kx5dFt0nQub94uvE0TyYM=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428349",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

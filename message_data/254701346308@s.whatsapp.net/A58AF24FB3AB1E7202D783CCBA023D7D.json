@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A58AF24FB3AB1E7202D783CCBA023D7D"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Mbona?😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACBBD769FEE4A9858779600B5678C618",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Bot nayo nmeitii💯"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "dmlqQkR2l3fSAdMIMj3rZd2vlYasqcKrtu1eI4wnys4="
+      }
+    },
+    "messageTimestamp": "1759436184",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

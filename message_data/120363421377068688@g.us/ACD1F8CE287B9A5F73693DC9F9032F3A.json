@@ -1,0 +1,43 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACD1F8CE287B9A5F73693DC9F9032F3A",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/557761849_1535489640963171_1115196572191479697_n.enc?ccb=11-4&oh=01_Q5Aa2gEDNf72I0Xq5ImYyefMP7ah9ZFR-Bo206UW-xqvVynBRw&oe=69064A12&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "qYUxkci2U3LeQYiMHB/cueaJaJwR88dfSDtJi2evgk4=",
+        "fileEncSha256": "vm86OviVW1gOddmMtdyqxW9kkyF74WhtpnZi7bkHDno=",
+        "mediaKey": "7iBWr55lzUtO56TfZ7KRXsO8MHGjBWS5bfDV/ekOvdA=",
+        "mimetype": "image/webp",
+        "height": 512,
+        "width": 512,
+        "directPath": "/v/t62.15575-24/557761849_1535489640963171_1115196572191479697_n.enc?ccb=11-4&oh=01_Q5Aa2gEDNf72I0Xq5ImYyefMP7ah9ZFR-Bo206UW-xqvVynBRw&oe=69064A12&_nc_sid=5e03e0",
+        "fileLength": "37508",
+        "mediaKeyTimestamp": "1759292422",
+        "isAnimated": false,
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "stickerSentTs": "1759440572526",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "P/Lr7/3ZZeA76u+tLCHweLsH73E88RPACA5Q6T4V5W4="
+      }
+    },
+    "messageTimestamp": "1759440573",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

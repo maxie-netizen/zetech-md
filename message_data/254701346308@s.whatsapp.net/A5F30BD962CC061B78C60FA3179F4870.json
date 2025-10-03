@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5F30BD962CC061B78C60FA3179F4870"
+    },
+    "message": {
+      "conversation": "Ebu eka ii .play tuko fully",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "JxSpZ5RNCunfeoNbnUJycySw+RTwn2Hy89Y6hbGtnTA="
+      }
+    },
+    "messageTimestamp": "1759436474",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

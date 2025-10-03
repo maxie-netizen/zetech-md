@@ -1,0 +1,49 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363142374129767@g.us",
+      "fromMe": false,
+      "id": "AC07A7525F8C127616E4D5BBBE1B978F",
+      "participant": "254701675727@s.whatsapp.net"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363142374129767@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj3l5MGEA4aIJXei+Q9jjOj/vMXwXuuvyK+mtAAdjfExDNq7T48rG2sIiEFpowVKV8tPONtp+Wwt+wFV4pst/wd/mBsWeufOPGMa2M="
+      },
+      "extendedTextMessage": {
+        "text": "Sure",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC751954B4CBFDC22E441F22760517EF",
+          "participant": "254708669145@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "@254701675727 hapa utafaulu",
+              "previewType": "NONE",
+              "contextInfo": {
+                "mentionedJid": [
+                  "254701675727@s.whatsapp.net"
+                ]
+              },
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          },
+          "expiration": 86400,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "2lEjqkwq7oJvq/YsXBHnBBBoqGc2wD+6Lhoozgz/ZaI="
+      }
+    },
+    "messageTimestamp": "1759436688",
+    "participant": "254701675727@s.whatsapp.net",
+    "broadcast": false,
+    "pushName": "DANiTO"
+  }
+]

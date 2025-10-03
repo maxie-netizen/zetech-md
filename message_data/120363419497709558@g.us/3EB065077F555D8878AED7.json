@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "3EB065077F555D8878AED7",
+      "participant": "79341434196121@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363419497709558@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjipub0BRDEARogYAG3r3mVl8Zs0NEZi+hqmo6glRjnaxV/w4GH9ckBb0ciIQU3O00/cWyzsw3WsGE2V9E0X3j1ky/MIXDAFwWsZZu2fQ=="
+      },
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/553469231_1326005772397089_4472605807868713279_n.enc?ccb=11-4&oh=01_Q5Aa2gESp2lRew6TTa3soEaiecbfDZQNj4-6kw54h_Nx0CZXfg&oe=68FD0EE6&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "6uxF7TQYMxlfG1mtGLhnbArLtlZH69d1B5L3cA31R3E=",
+        "fileEncSha256": "6I1fkbxH/TYLApXhqMdoCQ9VHJhy3ReLicWU/QWjrN0=",
+        "mediaKey": "qRWN+teaiijuZ9QjZp2B9oBbZSRqMReaAOMbd4Yjg6k=",
+        "mimetype": "image/webp",
+        "directPath": "/v/t62.15575-24/558002819_1084285080182068_4269173155245530908_n.enc?ccb=11-4&oh=01_Q5Aa2gGd7am6U1tl33UGlhNefDZ8hkBcUPlvHlJ3QOGZxMA5ZQ&oe=69075D68&_nc_sid=5e03e0",
+        "fileLength": "484472",
+        "mediaKeyTimestamp": "1753001653447",
+        "firstFrameLength": 484052,
+        "firstFrameSidecar": "shKAScBtRRinoA==",
+        "isAnimated": true,
+        "contextInfo": {
+          "stanzaId": "ACACCCD52DD253A239958741DEDD1C87",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "Kama ulishindwa kubag nancy 😂😂",
+            "messageContextInfo": {
+              "messageSecret": "ahL2x/UWegKNT7HnM50lIOEg7RXifX/QsFnLZGNrchU="
+            }
+          }
+        },
+        "stickerSentTs": "1759502078191",
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "oYlAboZoAxcGvlgmUUNH7728Skz2yJuYbGxAGSmVuaQ="
+      }
+    },
+    "messageTimestamp": "1759502078",
+    "participant": "79341434196121@lid",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

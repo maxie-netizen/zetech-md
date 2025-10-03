@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC0F13004DB954112AB252713AB5D9F6",
+      "participant": "271382155911248@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjm4ZLVBBAAGiCV+NyyZKBMg9CjHD5GYRcpRzOTaA9KK1TE6h1PmWEUvCIhBX5FQxANkRsAYyOkaGceeG4BVZ+DqnUDdTFffRAE1O06"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436428",
+    "participant": "271382155911248@lid",
+    "broadcast": false,
+    "pushName": "💫Android  18🐦‍🔥"
+  }
+]

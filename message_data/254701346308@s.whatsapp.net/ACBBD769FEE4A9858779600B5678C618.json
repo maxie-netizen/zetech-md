@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACBBD769FEE4A9858779600B5678C618"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Bot nayo nmeitii💯",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A55B7B9F0C43BBC3BD3EA655A759D36C",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Natengeneza bana"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436163",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

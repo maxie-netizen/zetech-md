@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC64A2CBE3F9EB5309265F2BE960A6AA",
+      "participant": "155289223450819@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiU0LnKARAAGiB0iXcfsD6lEoMDQpluoQcuNLzyi+a7nG9Z77RJ5JZubCIhBTswaT8m53EPYvyR45aWK4wL8FwzMrHm7jLZKxN1DgUZ"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759156974",
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "wYnPhM9Kq88G+vLeTNKaIP+ey9xJRVa6QeaoxghPef5vA4TfjUQLd0d+MYB44LVczks=",
+          "encIv": "AoQPyhGq53GAbd3s"
+        },
+        "senderTimestampMs": "1759435982776"
+      }
+    },
+    "messageTimestamp": "1759435988",
+    "participant": "155289223450819@lid",
+    "broadcast": false,
+    "pushName": "💫Austin💉"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5AA33EA42C2E2CA8B2AB608A6DBE2BD",
+      "participant": "91637975900338@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiYn8zHARAAGiA8tlfLE7Sp/WAWVTCHhr6WAahps16uZ3DNrDavVC23USIhBcJxzblAZSH5IFeSjaB05c63aB861vEXD5ZA2xdCRzhE"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436420",
+    "participant": "91637975900338@lid",
+    "broadcast": false,
+    "pushName": "𝐅𝐚𝐭𝐡𝐦𝐚 𝐏𝐚𝐬𝐭𝐫𝐲 𝐂𝐡𝐞𝐟",
+    "verifiedBizName": "𝐅𝐚𝐭𝐡𝐦𝐚 𝐏𝐚𝐬𝐭𝐫𝐲 𝐂𝐡𝐞𝐟"
+  }
+]

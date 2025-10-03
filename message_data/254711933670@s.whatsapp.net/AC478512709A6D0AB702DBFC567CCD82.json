@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC478512709A6D0AB702DBFC567CCD82"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ako area gani",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5B40CEC1ED8FA6C1698E8523E1D5BFA",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "😹😹😹𝗻𝗶𝗸𝘂𝗽𝗮𝘁𝗶𝗲"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435899",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

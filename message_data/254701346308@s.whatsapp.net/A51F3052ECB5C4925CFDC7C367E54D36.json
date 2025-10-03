@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A51F3052ECB5C4925CFDC7C367E54D36"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Acha nione",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACA6B7D0C76233EF42D14DE0800ECA09",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ata io bot si ikona API error"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "UBHXxLZqt+mcFfKWHOdZRVLkvzIi6nc4SU2DnTSLFYQ="
+      }
+    },
+    "messageTimestamp": "1759435069",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

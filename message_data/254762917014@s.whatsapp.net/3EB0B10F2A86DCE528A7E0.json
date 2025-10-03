@@ -1,0 +1,49 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0B10F2A86DCE528A7E0"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "shiet🤦‍♂️",
+        "contextInfo": {
+          "stanzaId": "3EB029D11FC3F8D30900EF",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "Code became empty after sanitization",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            },
+            "messageContextInfo": {}
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "umXdaEF6SFzydmx0r9JEnfInFoYSreThICqD6YT2SKg=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428397",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

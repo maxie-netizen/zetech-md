@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A554C75CE36728523359AC8CD010878A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗛𝗶𝘇𝗼 𝗲𝗿𝗿𝗼𝗿𝘀 𝗻𝗮𝗲𝘇𝗮",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC1394EC65F145BF2B1CF621F53F7CD3",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Acha bot ikuwe sambamba😂nikaa ntamsaidia sasa kufix izi errors😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "RZVENCE52fHFPGaqJeBHGH/Pby8fEMPnCLm99dR/ABM="
+      }
+    },
+    "messageTimestamp": "1759436824",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

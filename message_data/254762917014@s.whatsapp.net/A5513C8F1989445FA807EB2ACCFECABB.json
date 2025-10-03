@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5513C8F1989445FA807EB2ACCFECABB"
+    },
+    "message": {
+      "conversation": "Sinanga pesa ya bangi kijana"
+    },
+    "messageTimestamp": "1759428334",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A57B1ADBDD380D08AAFA1077D5855BAD"
+    },
+    "message": {
+      "conversation": "Na unacheza nayo sana kijana kwani huna dem",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "19ykqMDcoqVGKBTXSDx0wip9AtEn3uxgh13yFVTN9rs="
+      }
+    },
+    "messageTimestamp": "1759435840",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

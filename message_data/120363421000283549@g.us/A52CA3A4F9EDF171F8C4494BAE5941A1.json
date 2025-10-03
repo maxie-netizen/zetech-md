@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "A52CA3A4F9EDF171F8C4494BAE5941A1",
+      "participant": "125413565161514@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Haitafanya usinidanganye 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC35EBCD7F887854ED8A855B771F249C",
+          "participant": "195537362010272@lid",
+          "quotedMessage": {
+            "conversation": "Aii bana tunatumia Chat Gpt"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "7E3LobuLJQaLEsqZObKr7l64ghds+ecLO0upxo21gvg=",
+        "limitSharingV2": {
+          "sharingLimited": true,
+          "trigger": "CHAT_SETTING",
+          "limitSharingSettingTimestamp": "1758376462973",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759501901",
+    "participant": "125413565161514@lid",
+    "broadcast": false,
+    "pushName": "chumbaa"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACF0E8E77B58F98556BA3CDF34926BB3"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Nikona morrio amekufa na brawl😂😂adi ukisema oppo kinasema mawee😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC04822318ADE61D293298792E980759",
+          "participant": "254726768544@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Brawl hype imeisha after Badder kushuka"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436263",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

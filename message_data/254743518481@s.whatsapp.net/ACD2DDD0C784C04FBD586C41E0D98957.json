@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACD2DDD0C784C04FBD586C41E0D98957"
+    },
+    "message": {
+      "conversation": "Tuko fully"
+    },
+    "messageTimestamp": "1759443150",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

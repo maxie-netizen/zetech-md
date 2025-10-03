@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A523032DFDFFF227A00B767B0D5707A6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Izah n bot",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB03C29A663ABC46007C3",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "❌ An error occurred while contacting the AI."
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759427635",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

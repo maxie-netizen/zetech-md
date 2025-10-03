@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A517D3C5D1FCB2279A2D5968ADDF8EE5"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ee",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0D828330480237158AF",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "zima chatbot"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428281",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

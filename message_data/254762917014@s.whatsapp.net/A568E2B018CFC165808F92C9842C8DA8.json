@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A568E2B018CFC165808F92C9842C8DA8"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Wachana na bangi kijana 😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0603CCF14C477FF9F9F",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "ebu niongeze 3bob niongeze nchukue blunt moja"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428319",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

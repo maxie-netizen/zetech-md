@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACCB3E9B43B596C09CFE4685E940080C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂hapo sada ndio nmeshangaa 😂😂hakuna session buda",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5241EEB108C049C08322A248ACBE825",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "𝗣𝗲𝘀𝘁 𝗹𝗶𝗻𝗸 𝘆𝗮 𝘀𝗲𝘀𝘀𝗶𝗼𝗻 𝗻𝗶𝗼𝗻𝗲"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436113",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

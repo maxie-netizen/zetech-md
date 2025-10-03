@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC6948A38456256DB6FEB2E8FC6E6D17",
+      "participant": "188103058821251@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjI4eqsBRAAGiAV9r2m8M7nqCtnw6DP2bK+DdrtWFruQDroLTzXcgnHQCIhBfxUQ9bwXSmOOb2O0Y6miotlHS9lwUehLODJJchtjClv"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "WQiro2tPYSYZwQ==",
+          "senderTimestamp": "1759264299",
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "188103058821251@lid",
+    "broadcast": false,
+    "pushName": "Gram Dzaddy 👻"
+  }
+]

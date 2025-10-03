@@ -1,0 +1,393 @@
+[2025-10-02T22:08:06.698Z] [LOG] 📊 Initializing log collector...
+[2025-10-02T22:08:06.699Z] [LOG] 📊 Log collector initialized with Telegram integration
+[2025-10-02T22:08:06.700Z] [LOG] ⏰ Log scheduler started - will send logs every 1 minutes
+[2025-10-02T22:08:06.700Z] [LOG] ✅ Log collector ready - logs will be sent every 1 minutes
+[2025-10-02T22:08:06.700Z] [LOG] 🚀 Starting ZETECH-MD Bot...
+[2025-10-02T22:08:06.701Z] [LOG] 🔄 Initializing cloud storage...
+[2025-10-02T22:08:06.701Z] [LOG] 🔄 Initializing Local Backup...
+[2025-10-02T22:08:06.702Z] [LOG] 🔄 Initializing local backup system...
+[2025-10-02T22:08:06.703Z] [LOG] Telegram bot is running...
+[2025-10-02T22:08:06.703Z] [LOG] [EXPIRY CHECK] API key expiration monitoring started (every 30 minutes)
+[2025-10-02T22:08:06.704Z] [LOG] ✅ Local backup system ready
+[2025-10-02T22:08:06.704Z] [LOG] ✅ Local Backup ready
+[2025-10-02T22:08:06.704Z] [LOG] ✅ Local Backup ready
+[2025-10-02T22:08:06.704Z] [LOG] 📥 Loading database from backup...
+[2025-10-02T22:08:06.705Z] [LOG] ℹ️ No backups available to restore from
+[2025-10-02T22:08:06.705Z] [LOG] 🎉 Cloud storage system ready!
+[2025-10-02T22:08:06.705Z] [LOG] ✅ Cloud storage ready, loading sessions...
+[2025-10-02T22:08:06.705Z] [LOG] 🔄 Loading sessions from cloud...
+[2025-10-02T22:08:06.706Z] [LOG] 📱 Loading local session: 254740300165
+[2025-10-02T22:08:07.205Z] [LOG] Using Baileys version: 2,3000,1023223821 (Latest: true)
+[2025-10-02T22:08:07.216Z] [LOG] [CONNECTION] Added 254740300165 to active connections tracker
+[2025-10-02T22:08:07.219Z] [LOG] Session credentials reloaded successfully for 254740300165!
+[2025-10-02T22:08:07.219Z] [LOG] 📱 Loading local session: 254762917014
+[2025-10-02T22:08:07.372Z] [LOG] [CONNECTION] Added 254762917014 to active connections tracker
+[2025-10-02T22:08:07.375Z] [LOG] Session credentials reloaded successfully for 254762917014!
+[2025-10-02T22:08:07.375Z] [LOG] 🎉 ZETECH-MD Bot is ready!
+[2025-10-02T22:08:08.542Z] [LOG] Credentials saved successfully for 254740300165!
+[2025-10-02T22:08:08.571Z] [LOG] Credentials saved successfully for 254762917014!
+[2025-10-02T22:08:18.814Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Rada", prefix: "."
+[2025-10-02T22:08:24.185Z] [LOG] [DEBUG] Command detected: "menu", isCmd: true, body: ".menu", prefix: "."
+[2025-10-02T22:08:24.197Z] [LOG] [PLUGIN] Found command: menu in plugin: menu
+[2025-10-02T22:08:24.204Z] [LOG] [PLUGIN] Successfully executed: menu
+[2025-10-02T22:08:26.196Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-02T22:08:26.395Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "
+╔═══════════════════════════════════════════════════╗
+║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║
+╠═══════════════════════════════════════════════════╣
+║   ✦ Owner: Maxwell     ║
+║   ✦ Version: 1.5.0                     ║
+║   ✦ Type: Plugin       ║
+╚═══════════════════════════════════════════════════╝
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ menu           ◈ ping
+ ◈ ping2          ◈ uptime
+ ◈ s              ◈ botinfo
+ ◈ listplugin     ◈ update
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙
+ ◈ public         ◈ private
+ ◈ addaccess      ◈ delaccess
+ ◈ autoreact      ◈ block
+ ◈ autotyping     ◈ autorecord
+ ◈ autorecording  ◈ autobio
+ ◈ alwaysonline   ◈ autostatus
+ ◈ chatbot        ◈ aichat
+ ◈ cloudsync      ◈ cloud
+ ◈ $              ◈ menu
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ play           ◈ ytmp4
+ ◈ ytvid          ◈ yts
+ ◈ pinterestdl    ◈ retrieve
+ ◈ song           ◈ twitterdl
+ ◈ tt             ◈ tiktok
+ ◈ igdl           ◈ ytmp3
+ ◈ tg             ◈ telegram
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ zetech
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ vv (reply to view once)
+ ◈ vv2 (send to bot)
+ ◈ vv3 (send to owner)
+ ◈ emoji reply (secret mode)
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gemma          ◈ indo-ai
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gethtml        ◈ getpp
+ ◈ getplugin      ◈ save
+ ◈ gitclone       ◈ weather
+ ◈ groups         ◈ mychats
+ ◈ tempnum        ◈ templist
+ ◈ otpbox         ◈ tools
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ add            ◈ remove
+ ◈ promote        ◈ revoke
+ ◈ approve        ◈ reject
+ ◈ antilinkgc     ◈ antilink
+ ◈ antilinkstatus ◈ antilinkget
+ ◈ tagall         ◈ hidetag
+ ◈ close          ◈ open
+ ◈ kickall        ◈ linkgc
+ ◈ setppgc        ◈ setdesc
+ ◈ tagme
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ enc            ◈ idch
+ ◈ dev
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ glithtext      ◈ lighteffects
+ ◈ writetext      ◈ advancedglow
+ ◈ typographytext ◈ pixelglitch
+ ◈ neonglitch     ◈ flagtext
+ ◈ flag3dtext     ◈ deletingtext
+ ◈ blackpinkstyle ◈ glowingtex
+ ◈ underwater     ◈ logomaker
+ ◈ cartoonstyle   ◈ papercutstyle
+ ◈ watercolortext ◈ effectclouds
+ ◈ blackpinklogo  ◈ gradienttext
+ ◈ luxurygold     ◈ sandsummer
+ ◈ multicoloredneon ◈ galaxywallpaper
+ ◈ 1917style      ◈ galaxystyle
+ ◈ royaltext      ◈ freecreate
+
+╔═══════════════════════════════════════════════════╗
+║  Type .menu <category> for specific commands  ║
+╚═══════════════════════════════════════════════════╝
+
+", prefix: "."
+[2025-10-02T22:08:33.531Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Yes", prefix: "."
+[2025-10-02T22:08:38.598Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Yaah", prefix: "."
+[2025-10-02T22:09:06.711Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:09:06.731Z] [ERROR] (node:27656) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-10-02T22:09:08.011Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-09-06-711Z.txt & whatsapp-logs-2025-10-02T22-09-06-711Z.txt
+[2025-10-02T22:10:06.725Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:10:07.466Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-10-06-726Z.txt & whatsapp-logs-2025-10-02T22-10-06-726Z.txt
+[2025-10-02T22:11:06.727Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:11:07.803Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-11-06-727Z.txt & whatsapp-logs-2025-10-02T22-11-06-727Z.txt
+[2025-10-02T22:12:06.732Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:12:07.535Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-12-06-733Z.txt & whatsapp-logs-2025-10-02T22-12-06-733Z.txt
+[2025-10-02T22:12:31.566Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Tuko fully", prefix: "."
+[2025-10-02T22:13:06.739Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:13:07.586Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-13-06-740Z.txt & whatsapp-logs-2025-10-02T22-13-06-740Z.txt
+[2025-10-02T22:14:06.740Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:14:07.651Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-14-06-741Z.txt & whatsapp-logs-2025-10-02T22-14-06-741Z.txt
+[2025-10-02T22:14:07.655Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-09-06-711Z.txt
+[2025-10-02T22:15:06.746Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:15:07.488Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-15-06-747Z.txt & whatsapp-logs-2025-10-02T22-15-06-747Z.txt
+[2025-10-02T22:15:07.490Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-10-06-726Z.txt
+[2025-10-02T22:16:06.749Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:16:07.589Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-16-06-750Z.txt & whatsapp-logs-2025-10-02T22-16-06-750Z.txt
+[2025-10-02T22:16:07.591Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-11-06-727Z.txt
+[2025-10-02T22:17:06.756Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:17:07.703Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-17-06-757Z.txt & whatsapp-logs-2025-10-02T22-17-06-757Z.txt
+[2025-10-02T22:17:07.705Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-12-06-733Z.txt
+[2025-10-02T22:18:06.770Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:18:07.663Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-18-06-771Z.txt & whatsapp-logs-2025-10-02T22-18-06-771Z.txt
+[2025-10-02T22:18:07.665Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-13-06-740Z.txt
+[2025-10-02T22:19:06.771Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:19:07.585Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-19-06-771Z.txt & whatsapp-logs-2025-10-02T22-19-06-771Z.txt
+[2025-10-02T22:19:07.587Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-14-06-741Z.txt
+[2025-10-02T22:20:06.782Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:20:07.551Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-20-06-783Z.txt & whatsapp-logs-2025-10-02T22-20-06-783Z.txt
+[2025-10-02T22:20:07.553Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-15-06-747Z.txt
+[2025-10-02T22:21:06.786Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:21:07.755Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-21-06-786Z.txt & whatsapp-logs-2025-10-02T22-21-06-786Z.txt
+[2025-10-02T22:21:07.757Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-16-06-750Z.txt
+[2025-10-02T22:22:06.794Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:22:07.615Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-22-06-795Z.txt & whatsapp-logs-2025-10-02T22-22-06-795Z.txt
+[2025-10-02T22:22:07.618Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-17-06-757Z.txt
+[2025-10-02T22:23:06.794Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:23:08.100Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-23-06-795Z.txt & whatsapp-logs-2025-10-02T22-23-06-795Z.txt
+[2025-10-02T22:23:08.109Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-18-06-771Z.txt
+[2025-10-02T22:24:06.800Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:24:07.685Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-24-06-800Z.txt & whatsapp-logs-2025-10-02T22-24-06-800Z.txt
+[2025-10-02T22:24:07.687Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-19-06-771Z.txt
+[2025-10-02T22:25:06.808Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:25:07.617Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-25-06-809Z.txt & whatsapp-logs-2025-10-02T22-25-06-809Z.txt
+[2025-10-02T22:25:07.619Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-20-06-783Z.txt
+[2025-10-02T22:26:06.821Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:26:07.944Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-26-06-822Z.txt & whatsapp-logs-2025-10-02T22-26-06-822Z.txt
+[2025-10-02T22:26:07.952Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-21-06-786Z.txt
+[2025-10-02T22:27:06.827Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:27:07.600Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-27-06-828Z.txt & whatsapp-logs-2025-10-02T22-27-06-828Z.txt
+[2025-10-02T22:27:07.602Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-22-06-795Z.txt
+[2025-10-02T22:28:06.831Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:28:07.625Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-28-06-832Z.txt & whatsapp-logs-2025-10-02T22-28-06-832Z.txt
+[2025-10-02T22:28:07.627Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-23-06-795Z.txt
+[2025-10-02T22:29:06.841Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:29:07.647Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-29-06-841Z.txt & whatsapp-logs-2025-10-02T22-29-06-841Z.txt
+[2025-10-02T22:29:07.649Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-24-06-800Z.txt
+[2025-10-02T22:30:06.842Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:30:07.771Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-30-06-843Z.txt & whatsapp-logs-2025-10-02T22-30-06-843Z.txt
+[2025-10-02T22:30:07.773Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-25-06-809Z.txt
+[2025-10-02T22:31:06.843Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:31:08.207Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-31-06-844Z.txt & whatsapp-logs-2025-10-02T22-31-06-844Z.txt
+[2025-10-02T22:31:08.209Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-26-06-822Z.txt
+[2025-10-02T22:32:06.844Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:32:07.667Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-32-06-844Z.txt & whatsapp-logs-2025-10-02T22-32-06-844Z.txt
+[2025-10-02T22:32:07.670Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-27-06-828Z.txt
+[2025-10-02T22:33:06.858Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:33:07.581Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-33-06-859Z.txt & whatsapp-logs-2025-10-02T22-33-06-859Z.txt
+[2025-10-02T22:33:07.583Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-28-06-832Z.txt
+[2025-10-02T22:34:06.869Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:34:07.620Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-34-06-870Z.txt & whatsapp-logs-2025-10-02T22-34-06-870Z.txt
+[2025-10-02T22:34:07.621Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-29-06-841Z.txt
+[2025-10-02T22:35:06.871Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:35:07.739Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-35-06-871Z.txt & whatsapp-logs-2025-10-02T22-35-06-871Z.txt
+[2025-10-02T22:35:07.741Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-30-06-843Z.txt
+[2025-10-02T22:36:06.872Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:36:07.768Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-36-06-873Z.txt & whatsapp-logs-2025-10-02T22-36-06-873Z.txt
+[2025-10-02T22:36:07.770Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-31-06-844Z.txt
+[2025-10-02T22:37:06.887Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:37:07.631Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-37-06-888Z.txt & whatsapp-logs-2025-10-02T22-37-06-888Z.txt
+[2025-10-02T22:37:07.633Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-32-06-844Z.txt
+[2025-10-02T22:38:06.710Z] [LOG] [EXPIRY CHECK] Starting scheduled API key expiration check...
+[2025-10-02T22:38:06.711Z] [LOG] [EXPIRY CHECK] Checking 5 API keys for expiration...
+[2025-10-02T22:38:06.711Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T22:38:06.898Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:38:08.050Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-38-06-898Z.txt & whatsapp-logs-2025-10-02T22-38-06-898Z.txt
+[2025-10-02T22:38:08.053Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-33-06-859Z.txt
+[2025-10-02T22:38:08.624Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T22:38:08.624Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T22:38:09.482Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T22:38:09.482Z] [LOG] [EXPIRY CHECK] Checking API key for 254740300165...
+[2025-10-02T22:38:10.253Z] [LOG] [EXPIRY CHECK] API key still valid for 254740300165
+[2025-10-02T22:38:10.254Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T22:38:10.984Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T22:38:10.985Z] [LOG] [EXPIRY CHECK] Expiration check completed
+[2025-10-02T22:39:06.905Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:39:07.728Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-39-06-906Z.txt & whatsapp-logs-2025-10-02T22-39-06-906Z.txt
+[2025-10-02T22:39:07.731Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-34-06-870Z.txt
+[2025-10-02T22:40:06.915Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:40:08.024Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-40-06-916Z.txt & whatsapp-logs-2025-10-02T22-40-06-916Z.txt
+[2025-10-02T22:40:08.032Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-35-06-871Z.txt
+[2025-10-02T22:41:06.921Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:41:07.753Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-41-06-921Z.txt & whatsapp-logs-2025-10-02T22-41-06-921Z.txt
+[2025-10-02T22:41:07.756Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-36-06-873Z.txt
+[2025-10-02T22:42:06.928Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:42:07.916Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-42-06-929Z.txt & whatsapp-logs-2025-10-02T22-42-06-929Z.txt
+[2025-10-02T22:42:07.918Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-37-06-888Z.txt
+[2025-10-02T22:43:06.930Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:43:07.734Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-43-06-931Z.txt & whatsapp-logs-2025-10-02T22-43-06-931Z.txt
+[2025-10-02T22:43:07.738Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-38-06-898Z.txt
+[2025-10-02T22:44:06.942Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:44:07.847Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-44-06-942Z.txt & whatsapp-logs-2025-10-02T22-44-06-942Z.txt
+[2025-10-02T22:44:07.850Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-39-06-906Z.txt
+[2025-10-02T22:45:06.948Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:45:07.690Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-45-06-949Z.txt & whatsapp-logs-2025-10-02T22-45-06-949Z.txt
+[2025-10-02T22:45:07.697Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-40-06-916Z.txt
+[2025-10-02T22:46:06.955Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:46:07.783Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-46-06-955Z.txt & whatsapp-logs-2025-10-02T22-46-06-955Z.txt
+[2025-10-02T22:46:07.785Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-41-06-921Z.txt
+[2025-10-02T22:47:06.968Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:47:07.725Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-47-06-968Z.txt & whatsapp-logs-2025-10-02T22-47-06-968Z.txt
+[2025-10-02T22:47:07.727Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-42-06-929Z.txt
+[2025-10-02T22:48:06.982Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:48:07.698Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-48-06-982Z.txt & whatsapp-logs-2025-10-02T22-48-06-982Z.txt
+[2025-10-02T22:48:07.701Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-43-06-931Z.txt
+[2025-10-02T22:49:06.986Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:49:09.534Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-49-06-986Z.txt & whatsapp-logs-2025-10-02T22-49-06-986Z.txt
+[2025-10-02T22:49:09.536Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-44-06-942Z.txt
+[2025-10-02T22:50:06.987Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:50:07.783Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-50-06-988Z.txt & whatsapp-logs-2025-10-02T22-50-06-988Z.txt
+[2025-10-02T22:50:07.786Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-45-06-949Z.txt
+[2025-10-02T22:51:06.988Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:51:08.177Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-51-06-989Z.txt & whatsapp-logs-2025-10-02T22-51-06-989Z.txt
+[2025-10-02T22:51:08.181Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-46-06-955Z.txt
+[2025-10-02T22:52:06.994Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:52:07.768Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-52-06-995Z.txt & whatsapp-logs-2025-10-02T22-52-06-995Z.txt
+[2025-10-02T22:52:07.770Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-47-06-968Z.txt
+[2025-10-02T22:53:07.005Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:53:08.051Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-53-07-005Z.txt & whatsapp-logs-2025-10-02T22-53-07-005Z.txt
+[2025-10-02T22:53:08.054Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-48-06-982Z.txt
+[2025-10-02T22:54:07.015Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:54:07.743Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-54-07-016Z.txt & whatsapp-logs-2025-10-02T22-54-07-016Z.txt
+[2025-10-02T22:54:07.751Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-49-06-986Z.txt
+[2025-10-02T22:55:07.019Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:55:07.792Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-55-07-020Z.txt & whatsapp-logs-2025-10-02T22-55-07-020Z.txt
+[2025-10-02T22:55:07.795Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-50-06-988Z.txt
+[2025-10-02T22:56:07.024Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:56:08.317Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-56-07-025Z.txt & whatsapp-logs-2025-10-02T22-56-07-025Z.txt
+[2025-10-02T22:56:08.319Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-51-06-989Z.txt
+[2025-10-02T22:57:07.025Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:57:07.883Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-57-07-026Z.txt & whatsapp-logs-2025-10-02T22-57-07-026Z.txt
+[2025-10-02T22:57:07.886Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-52-06-995Z.txt
+[2025-10-02T22:58:07.032Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:58:07.836Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-58-07-033Z.txt & whatsapp-logs-2025-10-02T22-58-07-033Z.txt
+[2025-10-02T22:58:07.839Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-53-07-005Z.txt
+[2025-10-02T22:59:07.035Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:59:07.813Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T22-59-07-036Z.txt & whatsapp-logs-2025-10-02T22-59-07-036Z.txt
+[2025-10-02T22:59:07.814Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-54-07-016Z.txt
+[2025-10-02T23:00:07.038Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:00:07.743Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-00-07-039Z.txt & whatsapp-logs-2025-10-02T23-00-07-039Z.txt
+[2025-10-02T23:00:07.753Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-55-07-020Z.txt
+[2025-10-02T23:01:07.040Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:01:08.006Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-01-07-041Z.txt & whatsapp-logs-2025-10-02T23-01-07-041Z.txt
+[2025-10-02T23:01:08.015Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-56-07-025Z.txt
+[2025-10-02T23:02:07.051Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:02:07.805Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-02-07-052Z.txt & whatsapp-logs-2025-10-02T23-02-07-052Z.txt
+[2025-10-02T23:02:07.808Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-57-07-026Z.txt
+[2025-10-02T23:03:07.054Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:03:07.923Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-03-07-055Z.txt & whatsapp-logs-2025-10-02T23-03-07-055Z.txt
+[2025-10-02T23:03:07.932Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-58-07-033Z.txt
+[2025-10-02T23:04:07.064Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:04:07.885Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-04-07-066Z.txt & whatsapp-logs-2025-10-02T23-04-07-066Z.txt
+[2025-10-02T23:04:07.888Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T22-59-07-036Z.txt
+[2025-10-02T23:05:07.079Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:05:07.927Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-05-07-079Z.txt & whatsapp-logs-2025-10-02T23-05-07-079Z.txt
+[2025-10-02T23:05:07.935Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-00-07-039Z.txt
+[2025-10-02T23:06:07.085Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:06:08.001Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-06-07-086Z.txt & whatsapp-logs-2025-10-02T23-06-07-086Z.txt
+[2025-10-02T23:06:08.011Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-01-07-041Z.txt
+[2025-10-02T23:07:07.088Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:07:07.904Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-07-07-089Z.txt & whatsapp-logs-2025-10-02T23-07-07-089Z.txt
+[2025-10-02T23:07:07.913Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-02-07-052Z.txt
+[2025-10-02T23:08:06.721Z] [LOG] [EXPIRY CHECK] Starting scheduled API key expiration check...
+[2025-10-02T23:08:06.723Z] [LOG] [EXPIRY CHECK] Checking 5 API keys for expiration...
+[2025-10-02T23:08:06.723Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T23:08:07.089Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:08:07.874Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-08-07-090Z.txt & whatsapp-logs-2025-10-02T23-08-07-090Z.txt
+[2025-10-02T23:08:07.880Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-03-07-055Z.txt
+[2025-10-02T23:08:08.416Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T23:08:08.417Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T23:08:08.902Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T23:08:08.902Z] [LOG] [EXPIRY CHECK] Checking API key for 254740300165...
+[2025-10-02T23:08:09.573Z] [LOG] [EXPIRY CHECK] API key still valid for 254740300165
+[2025-10-02T23:08:09.574Z] [LOG] [EXPIRY CHECK] Checking API key for 254762917014...
+[2025-10-02T23:08:10.265Z] [LOG] [EXPIRY CHECK] API key still valid for 254762917014
+[2025-10-02T23:08:10.266Z] [LOG] [EXPIRY CHECK] Expiration check completed
+[2025-10-02T23:09:07.097Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:09:07.891Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-09-07-098Z.txt & whatsapp-logs-2025-10-02T23-09-07-098Z.txt
+[2025-10-02T23:09:07.899Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-04-07-066Z.txt
+[2025-10-02T23:10:07.103Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:10:09.526Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-10-07-104Z.txt & whatsapp-logs-2025-10-02T23-10-07-104Z.txt
+[2025-10-02T23:10:09.529Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-05-07-079Z.txt
+[2025-10-02T23:11:07.114Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:11:07.979Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-11-07-115Z.txt & whatsapp-logs-2025-10-02T23-11-07-115Z.txt
+[2025-10-02T23:11:07.983Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-06-07-086Z.txt
+[2025-10-02T23:12:07.123Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:12:07.944Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-12-07-124Z.txt & whatsapp-logs-2025-10-02T23-12-07-124Z.txt
+[2025-10-02T23:12:07.946Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-07-07-089Z.txt
+[2025-10-02T23:13:07.125Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:13:07.895Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-13-07-126Z.txt & whatsapp-logs-2025-10-02T23-13-07-126Z.txt
+[2025-10-02T23:13:07.905Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-08-07-090Z.txt
+[2025-10-02T23:14:07.125Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:14:07.888Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-14-07-126Z.txt & whatsapp-logs-2025-10-02T23-14-07-126Z.txt
+[2025-10-02T23:14:07.891Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-09-07-098Z.txt
+[2025-10-02T23:15:07.136Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:15:08.705Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-15-07-137Z.txt & whatsapp-logs-2025-10-02T23-15-07-137Z.txt
+[2025-10-02T23:15:08.713Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-10-07-104Z.txt
+[2025-10-02T23:16:07.140Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:16:07.864Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-16-07-141Z.txt & whatsapp-logs-2025-10-02T23-16-07-141Z.txt
+[2025-10-02T23:16:07.880Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-11-07-115Z.txt
+[2025-10-02T23:17:07.142Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:17:07.954Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-17-07-143Z.txt & whatsapp-logs-2025-10-02T23-17-07-143Z.txt
+[2025-10-02T23:17:07.965Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-12-07-124Z.txt
+[2025-10-02T23:18:07.146Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:18:07.905Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-18-07-147Z.txt & whatsapp-logs-2025-10-02T23-18-07-147Z.txt
+[2025-10-02T23:18:07.910Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-13-07-126Z.txt
+[2025-10-02T23:19:07.152Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:19:07.961Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-19-07-153Z.txt & whatsapp-logs-2025-10-02T23-19-07-153Z.txt
+[2025-10-02T23:19:07.970Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-14-07-126Z.txt
+[2025-10-02T23:20:07.153Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:20:07.904Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-20-07-153Z.txt & whatsapp-logs-2025-10-02T23-20-07-153Z.txt
+[2025-10-02T23:20:07.906Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-15-07-137Z.txt
+[2025-10-02T23:21:07.153Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:21:07.946Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-21-07-155Z.txt & whatsapp-logs-2025-10-02T23-21-07-155Z.txt
+[2025-10-02T23:21:07.948Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-16-07-141Z.txt
+[2025-10-02T23:22:07.155Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:22:08.202Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-22-07-156Z.txt & whatsapp-logs-2025-10-02T23-22-07-156Z.txt
+[2025-10-02T23:22:08.211Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-17-07-143Z.txt
+[2025-10-02T23:23:07.162Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:23:07.960Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-23-07-163Z.txt & whatsapp-logs-2025-10-02T23-23-07-163Z.txt
+[2025-10-02T23:23:07.964Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-18-07-147Z.txt
+[2025-10-02T23:24:07.173Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:24:08.103Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-24-07-174Z.txt & whatsapp-logs-2025-10-02T23-24-07-174Z.txt
+[2025-10-02T23:24:08.112Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-19-07-153Z.txt
+[2025-10-02T23:24:35.963Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-02T23:25:07.188Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:25:08.102Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-25-07-189Z.txt & whatsapp-logs-2025-10-02T23-25-07-189Z.txt
+[2025-10-02T23:25:08.110Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-20-07-153Z.txt
+[2025-10-02T23:26:07.192Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T23:26:08.012Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-02T23-26-07-192Z.txt & whatsapp-logs-2025-10-02T23-26-07-192Z.txt
+[2025-10-02T23:26:08.015Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-21-07-155Z.txt
+[2025-10-02T23:27:07.195Z] [LOG] 📤 Scheduled log sending triggered...

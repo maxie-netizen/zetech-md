@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACF6B19E6BA2CF2BF0C9EA78513D6EA2"
+    },
+    "message": {
+      "conversation": "Sato man siezi fika tao schedule ni tight mbaya",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "oCx5LFG8WF9I4rI8RB171PfHx+OTDTUj25JNlZnUVMc="
+      }
+    },
+    "messageTimestamp": "1759435651",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

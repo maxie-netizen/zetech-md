@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "AC78DFD3122B8763B2038EB53225806C",
+      "participant": "246278189535408@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "fiti man",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACA642DD76EE754D42CBCCB0948D6E92",
+          "participant": "259974856990728@lid",
+          "quotedMessage": {
+            "conversation": "Ee"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "dfh54eWz0215beQHlPnJFDhnn3GBxCkgzuHmldbvyig="
+      }
+    },
+    "messageTimestamp": "1759438882",
+    "participant": "246278189535408@lid",
+    "broadcast": false,
+    "pushName": "Masawa junior"
+  }
+]

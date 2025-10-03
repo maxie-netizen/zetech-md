@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC78BB8F272320656EEC77F498FD9D8E",
+      "participant": "150251126161458@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjTpNFoEAAaIHVIuT7peO+/Ozsk9bZLiDElcPzxga6DbVQLIO19rFFLIiEF3UMYGMXNuE4+jhQtAygMPzvkxqloBGm6CmIsklBjjF0="
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "150251126161458@lid",
+    "broadcast": false,
+    "pushName": "Kiddo Jay"
+  }
+]

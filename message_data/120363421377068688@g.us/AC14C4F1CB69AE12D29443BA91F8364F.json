@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC14C4F1CB69AE12D29443BA91F8364F",
+      "participant": "50698431541477@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwiq4d3kAhAAGiBOO62xXjZu3V/3h+bNAv5g2LwSxo3LlnUYqpj7ZeJEICIhBRKs0FfDoC3MJ+2i88Ys69PZHBIrAhaSOcdUboLpElU9"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1758738242",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC40E3BC32B44A608052769B261E2013",
+          "participant": "82644129808501@lid"
+        },
+        "text": "👍🏾",
+        "senderTimestampMs": "1759436209401"
+      }
+    },
+    "messageTimestamp": "1759436211",
+    "participant": "50698431541477@lid",
+    "broadcast": false,
+    "pushName": "mickey"
+  }
+]

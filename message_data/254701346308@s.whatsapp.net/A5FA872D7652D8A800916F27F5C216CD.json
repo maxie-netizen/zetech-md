@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5FA872D7652D8A800916F27F5C216CD"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂ur still children to this",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC42C542480DE081377C002225CFD6C9",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Si ni ya platform mbili ama n me siradii😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "eQWV8//5XqVT2PQdGGitCWRalOC3/R30nnl08hhNqSc="
+      }
+    },
+    "messageTimestamp": "1759435100",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

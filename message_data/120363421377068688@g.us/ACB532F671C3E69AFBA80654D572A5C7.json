@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACB532F671C3E69AFBA80654D572A5C7",
+      "participant": "200029981642757@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwio+KDmBxAAGiD9ao+aTAvw/WNpThlgMDAqtJ3ThjfFwkelqxm1FOzsUSIhBSB9nX0xnWv6DKhaF17ymEJX6cIH8mK3FJ4mw0LFPvgI"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "200029981642757@lid",
+    "broadcast": false,
+    "pushName": "Mashintho"
+  }
+]

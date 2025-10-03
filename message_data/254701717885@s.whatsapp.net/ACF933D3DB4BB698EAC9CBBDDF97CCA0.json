@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACF933D3DB4BB698EAC9CBBDDF97CCA0"
+    },
+    "message": {
+      "conversation": "Let me add you in kamothos family",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "6q7yz/o9309H2cc5uO4tx5T9PwMgtU6s/7PHj3uSgno="
+      }
+    },
+    "messageTimestamp": "1759502533",
+    "broadcast": false,
+    "pushName": "Dorcas Njoki"
+  }
+]

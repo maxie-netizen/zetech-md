@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5FAD753425281AC8976B3CCFD309E51",
+      "participant": "161371031359559@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwit8OzgBRAAGiDV435UbIuixwtHBWAX4/3PaMsZVuMBLW7A4eFpi76aKiIhBYPLDQnprhxr0ANHt6rFzg8fYD1YENWJhaZCELzSZYgM"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "161371031359559@lid",
+    "broadcast": false,
+    "pushName": "Man Of God",
+    "verifiedBizName": "Man Of God"
+  }
+]

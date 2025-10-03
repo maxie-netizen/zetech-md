@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": false,
+      "id": "56E9CA547A28C03248AEE246918477B6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Rada",
+        "previewType": "NONE",
+        "inviteLinkGroupTypeV2": "DEFAULT",
+        "linkPreviewMetadata": {}
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "Io4+A3XeFDoXoms2HOWyvE7DP9QonSOLXBPLSzUYckw="
+      }
+    },
+    "messageTimestamp": "1759427536",
+    "broadcast": false,
+    "pushName": "CM🥰"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A586AECE1D1BAE24D7A1862BA862536A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ni ?",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB0F86CC13238486F8D76",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "sii bangi😅😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428358",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

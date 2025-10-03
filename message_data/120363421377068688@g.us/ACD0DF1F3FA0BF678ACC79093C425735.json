@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACD0DF1F3FA0BF678ACC79093C425735",
+      "participant": "264583239483400@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj/4/+qAxAAGiA9yK8T+MfJiLZbOKSLqWLtQd6IHbjbI8euqFH9zoOrtiIhBfSVIcw6YuAtVNaFWZBkTpHySgcNeVG0xRjGaJzjqQ5+"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "264583239483400@lid",
+    "broadcast": false,
+    "pushName": "Naph💥🥂💥💫"
+  }
+]

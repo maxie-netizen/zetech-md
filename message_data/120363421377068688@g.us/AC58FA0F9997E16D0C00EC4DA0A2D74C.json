@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC58FA0F9997E16D0C00EC4DA0A2D74C",
+      "participant": "72602731213021@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwijyueFBRAAGiBGstLe8fqE0GqzlEqX4njlmOw+PP4sf6cvxghx+hIWgSIhBRuDfW/EGUtWTIHxy7BhQklvtxLOsEFVq7dn4KDhZQgu"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "72602731213021@lid",
+    "broadcast": false,
+    "pushName": "bobbie"
+  }
+]

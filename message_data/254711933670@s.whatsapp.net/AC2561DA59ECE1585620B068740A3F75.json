@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC2561DA59ECE1585620B068740A3F75"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Jooh",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A59620C7DDE752BBD7C82442EB04B593",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "😂✊𝗸𝗶𝗹𝗮 𝗺𝘁𝘂 𝗻𝗮 𝗺𝗶𝘇𝗶𝗴𝗼 𝘇𝗮𝗸𝗲𝗲😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436523",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

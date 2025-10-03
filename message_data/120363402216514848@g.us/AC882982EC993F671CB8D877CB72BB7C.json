@@ -1,0 +1,20 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363402216514848@g.us",
+      "fromMe": false,
+      "id": "AC882982EC993F671CB8D877CB72BB7C",
+      "participant": "254172070940845@lid"
+    },
+    "message": {
+      "conversation": "Passion and pineapple group too. Continue relaxing",
+      "messageContextInfo": {
+        "messageSecret": "MeIfPGtqQ82DZJ7yaYPakUwjSy+h0m6WAf1LJOmvagE="
+      }
+    },
+    "messageTimestamp": "1759502770",
+    "participant": "254172070940845@lid",
+    "broadcast": false,
+    "pushName": "Flora Mwanja"
+  }
+]

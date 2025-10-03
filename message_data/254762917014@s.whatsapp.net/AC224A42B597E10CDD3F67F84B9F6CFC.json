@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC224A42B597E10CDD3F67F84B9F6CFC"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB0CCC43CAE27931430C1",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzQxOTQ5NzcwOTU1OEBnLnVzEAAaIEFDQjVBMTQzRTdFNTRFRjkzOURCRDE2Mzc2NkM2QjI3ElUKLk1hZGVtIHNpIG1uaXdpc2ggaGFkaSBoYXBweSBib3lmcmllbmRzIGRhefCfmIKaAiIaIIBIWfr7/J8SSAxPideEFTAbPZwA4Dk2sOHRSnXqYDfSGM2q/8YGKhI3Mzc2MjA3MDM4MDY4M0BsaWSKAyCASFn6+/yfEkgMT4nXhBUwGz2cAOA5NrDh0Up16mA30vIDFgoUAQvKdGPNcoK/PKZ3v+tB6cTfbKCIBAA="
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759501002",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

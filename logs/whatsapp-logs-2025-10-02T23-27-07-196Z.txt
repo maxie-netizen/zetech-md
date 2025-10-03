@@ -1,0 +1,201 @@
+[2025-10-02T22:08:08.543Z] [LOG] User 254740300165 (254740300165:40@s.whatsapp.net) auto-joined newsletter channel via pairing (silent)
+[2025-10-02T22:08:08.571Z] [LOG] User 254762917014 (254762917014:18@s.whatsapp.net) auto-joined newsletter channel via pairing (silent)
+[2025-10-02T22:08:18.815Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:08:18 GMT+0300 (East Africa Time) Rada
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:08:24.186Z] [LOG] [ COMMAND ] Fri Oct 03 2025 01:08:24 GMT+0300 (East Africa Time) .menu
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:08:24.199Z] [LOG] User 254762917014@s.whatsapp.net already joined newsletter, skipping
+[2025-10-02T22:08:26.197Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:08:26 GMT+0300 (East Africa Time) 🔥
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:08:26.400Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:08:26 GMT+0300 (East Africa Time) 
+╔═══════════════════════════════════════════════════╗
+║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║
+╠═══════════════════════════════════════════════════╣
+║   ✦ Owner: Maxwell     ║
+║   ✦ Version: 1.5.0                     ║
+║   ✦ Type: Plugin       ║
+╚═══════════════════════════════════════════════════╝
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ menu           ◈ ping
+ ◈ ping2          ◈ uptime
+ ◈ s              ◈ botinfo
+ ◈ listplugin     ◈ update
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙
+ ◈ public         ◈ private
+ ◈ addaccess      ◈ delaccess
+ ◈ autoreact      ◈ block
+ ◈ autotyping     ◈ autorecord
+ ◈ autorecording  ◈ autobio
+ ◈ alwaysonline   ◈ autostatus
+ ◈ chatbot        ◈ aichat
+ ◈ cloudsync      ◈ cloud
+ ◈ $              ◈ menu
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ play           ◈ ytmp4
+ ◈ ytvid          ◈ yts
+ ◈ pinterestdl    ◈ retrieve
+ ◈ song           ◈ twitterdl
+ ◈ tt             ◈ tiktok
+ ◈ igdl           ◈ ytmp3
+ ◈ tg             ◈ telegram
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ zetech
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ vv (reply to view once)
+ ◈ vv2 (send to bot)
+ ◈ vv3 (send to owner)
+ ◈ emoji reply (secret mode)
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gemma          ◈ indo-ai
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gethtml        ◈ getpp
+ ◈ getplugin      ◈ save
+ ◈ gitclone       ◈ weather
+ ◈ groups         ◈ mychats
+ ◈ tempnum        ◈ templist
+ ◈ otpbox         ◈ tools
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ add            ◈ remove
+ ◈ promote        ◈ revoke
+ ◈ approve        ◈ reject
+ ◈ antilinkgc     ◈ antilink
+ ◈ antilinkstatus ◈ antilinkget
+ ◈ tagall         ◈ hidetag
+ ◈ close          ◈ open
+ ◈ kickall        ◈ linkgc
+ ◈ setppgc        ◈ setdesc
+ ◈ tagme
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ enc            ◈ idch
+ ◈ dev
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ glithtext      ◈ lighteffects
+ ◈ writetext      ◈ advancedglow
+ ◈ typographytext ◈ pixelglitch
+ ◈ neonglitch     ◈ flagtext
+ ◈ flag3dtext     ◈ deletingtext
+ ◈ blackpinkstyle ◈ glowingtex
+ ◈ underwater     ◈ logomaker
+ ◈ cartoonstyle   ◈ papercutstyle
+ ◈ watercolortext ◈ effectclouds
+ ◈ blackpinklogo  ◈ gradienttext
+ ◈ luxurygold     ◈ sandsummer
+ ◈ multicoloredneon ◈ galaxywallpaper
+ ◈ 1917style      ◈ galaxystyle
+ ◈ royaltext      ◈ freecreate
+
+╔═══════════════════════════════════════════════════╗
+║  Type .menu <category> for specific commands  ║
+╚═══════════════════════════════════════════════════╝
+
+
+=> From 254762917014 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:08:33.533Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:08:33 GMT+0300 (East Africa Time) Yes
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:08:38.598Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:08:38 GMT+0300 (East Africa Time) Yaah
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:12:31.567Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 01:12:31 GMT+0300 (East Africa Time) Tuko fully
+=> From 404 Not Found 254762917014@s.whatsapp.net
+=> In Private Chat 254743518481@s.whatsapp.net
+[2025-10-02T22:14:07.658Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-09-06-711Z.txt
+[2025-10-02T22:15:07.492Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-10-06-726Z.txt
+[2025-10-02T22:16:07.593Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-11-06-727Z.txt
+[2025-10-02T22:17:07.708Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-12-06-733Z.txt
+[2025-10-02T22:18:07.667Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-13-06-740Z.txt
+[2025-10-02T22:19:07.589Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-14-06-741Z.txt
+[2025-10-02T22:20:07.555Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-15-06-747Z.txt
+[2025-10-02T22:21:07.760Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-16-06-750Z.txt
+[2025-10-02T22:22:07.620Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-17-06-757Z.txt
+[2025-10-02T22:23:08.111Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-18-06-771Z.txt
+[2025-10-02T22:24:07.689Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-19-06-771Z.txt
+[2025-10-02T22:25:07.621Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-20-06-783Z.txt
+[2025-10-02T22:26:07.954Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-21-06-786Z.txt
+[2025-10-02T22:27:07.604Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-22-06-795Z.txt
+[2025-10-02T22:28:07.629Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-23-06-795Z.txt
+[2025-10-02T22:29:07.652Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-24-06-800Z.txt
+[2025-10-02T22:30:07.776Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-25-06-809Z.txt
+[2025-10-02T22:31:08.211Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-26-06-822Z.txt
+[2025-10-02T22:32:07.672Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-27-06-828Z.txt
+[2025-10-02T22:33:07.585Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-28-06-832Z.txt
+[2025-10-02T22:34:07.623Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-29-06-841Z.txt
+[2025-10-02T22:35:07.743Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-30-06-843Z.txt
+[2025-10-02T22:36:07.773Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-31-06-844Z.txt
+[2025-10-02T22:37:07.635Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-32-06-844Z.txt
+[2025-10-02T22:38:08.055Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-33-06-859Z.txt
+[2025-10-02T22:39:07.734Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-34-06-870Z.txt
+[2025-10-02T22:40:08.038Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-35-06-871Z.txt
+[2025-10-02T22:41:07.759Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-36-06-873Z.txt
+[2025-10-02T22:42:07.920Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-37-06-888Z.txt
+[2025-10-02T22:43:07.740Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-38-06-898Z.txt
+[2025-10-02T22:44:07.852Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-39-06-906Z.txt
+[2025-10-02T22:45:07.699Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-40-06-916Z.txt
+[2025-10-02T22:46:07.788Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-41-06-921Z.txt
+[2025-10-02T22:47:07.730Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-42-06-929Z.txt
+[2025-10-02T22:48:07.704Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-43-06-931Z.txt
+[2025-10-02T22:49:09.538Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-44-06-942Z.txt
+[2025-10-02T22:50:07.789Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-45-06-949Z.txt
+[2025-10-02T22:51:08.184Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-46-06-955Z.txt
+[2025-10-02T22:52:07.772Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-47-06-968Z.txt
+[2025-10-02T22:53:08.056Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-48-06-982Z.txt
+[2025-10-02T22:54:07.753Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-49-06-986Z.txt
+[2025-10-02T22:55:07.798Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-50-06-988Z.txt
+[2025-10-02T22:56:08.320Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-51-06-989Z.txt
+[2025-10-02T22:57:07.888Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-52-06-995Z.txt
+[2025-10-02T22:58:07.842Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-53-07-005Z.txt
+[2025-10-02T22:59:07.816Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-54-07-016Z.txt
+[2025-10-02T23:00:07.759Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-55-07-020Z.txt
+[2025-10-02T23:01:08.018Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-56-07-025Z.txt
+[2025-10-02T23:02:07.819Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-57-07-026Z.txt
+[2025-10-02T23:03:07.935Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-58-07-033Z.txt
+[2025-10-02T23:04:07.891Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T22-59-07-036Z.txt
+[2025-10-02T23:05:07.937Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-00-07-039Z.txt
+[2025-10-02T23:06:08.014Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-01-07-041Z.txt
+[2025-10-02T23:07:07.915Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-02-07-052Z.txt
+[2025-10-02T23:08:07.884Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-03-07-055Z.txt
+[2025-10-02T23:09:07.902Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-04-07-066Z.txt
+[2025-10-02T23:10:09.531Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-05-07-079Z.txt
+[2025-10-02T23:11:07.984Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-06-07-086Z.txt
+[2025-10-02T23:12:07.948Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-07-07-089Z.txt
+[2025-10-02T23:13:07.909Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-08-07-090Z.txt
+[2025-10-02T23:14:07.894Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-09-07-098Z.txt
+[2025-10-02T23:15:08.715Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-10-07-104Z.txt
+[2025-10-02T23:16:07.888Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-11-07-115Z.txt
+[2025-10-02T23:17:07.968Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-12-07-124Z.txt
+[2025-10-02T23:18:07.912Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-13-07-126Z.txt
+[2025-10-02T23:19:07.973Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-14-07-126Z.txt
+[2025-10-02T23:20:07.907Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-15-07-137Z.txt
+[2025-10-02T23:21:07.950Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-16-07-141Z.txt
+[2025-10-02T23:22:08.214Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-17-07-143Z.txt
+[2025-10-02T23:23:07.967Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-18-07-147Z.txt
+[2025-10-02T23:24:08.115Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-19-07-153Z.txt
+[2025-10-02T23:24:36.565Z] [LOG] [ MESSAGE ] Fri Oct 03 2025 02:24:36 GMT+0300 (East Africa Time) 😂
+=> From CASCANTE 258815249408132@lid
+=> In CASCANTE 120363421377068688@g.us
+[2025-10-02T23:25:08.113Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-20-07-153Z.txt
+[2025-10-02T23:26:08.019Z] [LOG] 🗑️ Cleaned up old WhatsApp log file: whatsapp-logs-2025-10-02T23-21-07-155Z.txt

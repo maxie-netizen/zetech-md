@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0CE9068BA2D3CEA5F90"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": ".ping",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759502119",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  },
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0CE9068BA2D3CEA5F90"
+    },
+    "message": {
+      "conversation": ".ping"
+    },
+    "messageTimestamp": "1759502112",
+    "status": "SERVER_ACK",
+    "messageSecret": "SRe9ZC1fZ5xMWiPf9drV5cBp7FLryU/VVANDRzuTg1I=",
+    "originalSelfAuthorUserJidString": "254762917014@s.whatsapp.net",
+    "isMentionedInStatus": false
+  }
+]

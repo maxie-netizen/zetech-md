@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363351424590490@newsletter",
+      "fromMe": false,
+      "id": "A59D3C986B4EC39519C210439801B675"
+    },
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/m1/v/t24/An_oNq-iw_pl-lgbnnHpWsS8fdqlDwIt23c_HMMk55mDwL7JQNUy1siAFoDMvLpQ0tmc8-ZiGE4iKOjJcGTYCgl344nmFm0rkuPRNo1d6myMTIgwIQm2S9re-lEPLLUqxg?ccb=10-5&oh=01_Q5Aa2gEZJYaSxj-6FIsqcsCwzsuunMp98cBzPc_5UpVZZGIyRg&oe=69065986&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "I believe that soon I will share Primis Crasher V6 and then I will work on the Apk Bug\n\n_React_\n\n---\n\nJe crois que bientôt je partagerai Primis Crasher V6, puis je travaillerai sur le bug APK\n\n_Réagir_\n\n> 🐉 *Ds Primis*",
+        "fileSha256": "+EKJf6JZL0xUgF5akA+qKKj+1apPfp7pEXv3ccKvdpE=",
+        "fileLength": "56220",
+        "height": 1080,
+        "width": 686,
+        "directPath": "/m1/v/t24/An_oNq-iw_pl-lgbnnHpWsS8fdqlDwIt23c_HMMk55mDwL7JQNUy1siAFoDMvLpQ0tmc8-ZiGE4iKOjJcGTYCgl344nmFm0rkuPRNo1d6myMTIgwIQm2S9re-lEPLLUqxg?ccb=10-5&oh=01_Q5Aa2gEZJYaSxj-6FIsqcsCwzsuunMp98cBzPc_5UpVZZGIyRg&oe=69065986&_nc_sid=5e03e0&_nc_hot=1759441894",
+        "mediaKeyTimestamp": "1759441682",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEMAKwMBIgACEQEDEQH/xAAuAAEAAwEBAAAAAAAAAAAAAAAEAAECAwYBAQEBAQAAAAAAAAAAAAAAAAACAwH/2gAMAwEAAhADEAAAAPPtG1G5WOZ2JZO1TgqV2zUZURZF5eFyt3mczoKi9rLwrV2zUZ4KwasqkV0kjLJJF//EACIQAQACAQMEAwEAAAAAAAAAAAEAAjEDEBESITJRBCJBgf/aAAgBAQABPwCaNatMd5xTl5rOKOKy5UwRywz3mgDWP6TiIxy7fH8SOWIn7OWOXbSfoThcDOLemI+o5dtA5pxC2pXsJOvV9ktq3eyxy7aHiR8p72cu3x/Ej5f2Ng5NnLtpWShOpnVb1GzHLtpr0k6mddovMtln/8QAGBEBAQADAAAAAAAAAAAAAAAAARAAIDH/2gAIAQIBAT8Aa15DHb//xAAYEQEAAwEAAAAAAAAAAAAAAAACABBBMf/aAAgBAwEBPwBcobFyhsVDYuUNj5Q2f//Z",
+        "contextInfo": {
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363419474272514@newsletter",
+            "serverMessageId": 508,
+            "newsletterName": "🐉 𝐏𝐫𝐢𝐦𝐢𝐬 𝐂𝐫𝐚𝐬𝐡𝐞𝐫 𝐂𝐇"
+          },
+          "pairedMediaType": "NOT_PAIRED_MEDIA"
+        },
+        "thumbnailDirectPath": "/m1/v/t24/An9iIIdvt9wK63JRsBDjvIrGsEDQjuwPEKPHRwOwgUC94_dRbH-Ad9Rk7dvsnQZGjl-b2yfscGJsZeCWmIZDpKH8UWXiDKkNIi4DnI3Ro8SMuWZ3U3w842sj3qGI3GJ6qfOcT1PzKCGi-TiQs9yb3HNtfw?ccb=10-5&oh=01_Q5Aa2gF70gAGSiRouczvRRZE7qmCxlwIpPuK6EVMO326FG3t8Q&oe=69067397&_nc_sid=5e03e0",
+        "thumbnailSha256": "i+ZaslzU6uoZStloO1C4RgJUT8YB93ku1cIiqJi6cYI="
+      }
+    },
+    "messageTimestamp": "1759441900",
+    "broadcast": false
+  }
+]

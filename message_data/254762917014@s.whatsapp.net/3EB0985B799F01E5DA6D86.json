@@ -1,0 +1,54 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0985B799F01E5DA6D86"
+    },
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7114-24/557989130_1387385440061258_3157897651327353859_n.enc?ccb=11-4&oh=01_Q5Aa2gEgbxii_uM4AJDBT07zg_090YyZmOTZFbYkL201IRRcSw&oe=69062E3E&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/mpeg",
+        "fileSha256": "pAXjYdzkhwr4P+2fxjwg9VNSE7Oop+DQOp2Gxmmqx6I=",
+        "fileLength": "195485",
+        "seconds": 12,
+        "ptt": false,
+        "mediaKey": "r8o5ToALNFtKV+l8x7Mup9fWzCirsgNtT7tYU0KVFOA=",
+        "fileEncSha256": "WCOBUzVyrkA2j+egyHN2HUmTP2FXcRFqs4H0CjRZA88=",
+        "directPath": "/v/t62.7114-24/557989130_1387385440061258_3157897651327353859_n.enc?ccb=11-4&oh=01_Q5Aa2gEgbxii_uM4AJDBT07zg_090YyZmOTZFbYkL201IRRcSw&oe=69062E3E&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759428038",
+        "contextInfo": {
+          "stanzaId": "3EB02B3020385A6D9A9BDE",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "*Only the owner or bot can use this command!*",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            },
+            "messageContextInfo": {}
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT"
+          }
+        },
+        "streamingSidecar": "biHPZoEeh8apSR8TS6kSlh44LlgEtUUeoJjsdr9D",
+        "viewOnce": false
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "5FP7Ow11MPMlYNm188hG5f4CDdnQWVYbwJJGPM4fAr4="
+      }
+    },
+    "messageTimestamp": "1759428042",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

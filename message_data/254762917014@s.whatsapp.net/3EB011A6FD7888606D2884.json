@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB011A6FD7888606D2884"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ An error occurred while contacting the AI.",
+        "contextInfo": {
+          "stanzaId": "3EB070F97DC484E1DBD00D",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "we mzee",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759427793",
+    "status": "SERVER_ACK"
+  }
+]

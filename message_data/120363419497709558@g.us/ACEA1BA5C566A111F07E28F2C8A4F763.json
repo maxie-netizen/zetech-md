@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACEA1BA5C566A111F07E28F2C8A4F763",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Zentech😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC77F926E832A9233EB3501E808BA9DD",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "Utapata wapi 😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "0BsLDknjbkLo/27gvLOW/Il0K7nS7l9MURaqAviadUI="
+      }
+    },
+    "messageTimestamp": "1759501531",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

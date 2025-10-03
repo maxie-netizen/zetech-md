@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "201105269955@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB00DCB663BBEA4F0A59E"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Eval Error: Invalid or unexpected token",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:254762917014,\nitem1.TEL;waid=254762917014:254762917014\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759361726",
+    "status": "SERVER_ACK"
+  }
+]

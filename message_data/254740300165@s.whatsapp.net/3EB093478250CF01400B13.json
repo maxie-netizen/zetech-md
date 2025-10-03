@@ -1,0 +1,22 @@
+[
+  {
+    "key": {
+      "remoteJid": "254740300165@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB093478250CF01400B13"
+    },
+    "message": {
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "254740300165@s.whatsapp.net",
+          "fromMe": true,
+          "id": "AC79CC49518752810A10B2D47B5D5719"
+        },
+        "text": "🔥",
+        "senderTimestampMs": "1759434838364"
+      }
+    },
+    "messageTimestamp": "1759434838",
+    "status": "SERVER_ACK"
+  }
+]

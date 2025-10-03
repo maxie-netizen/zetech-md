@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC182E9FBA09D3B34065509C67F75F4B"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Umeona io yenye imekam??",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A57B1ADBDD380D08AAFA1077D5855BAD",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Na unacheza nayo sana kijana kwani huna dem"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435925",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

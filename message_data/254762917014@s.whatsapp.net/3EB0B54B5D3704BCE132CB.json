@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0B54B5D3704BCE132CB"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "sasa si ndio nataka kukuonyesha😅",
+        "contextInfo": {
+          "stanzaId": "A5816A5E1630262D289DD50068A85445",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Kijana mjinga kabisa umeniekea bot usome meso zangu",
+            "messageContextInfo": {
+              "messageSecret": "2UAvI0GT5ov/3PR0U8ysTue3q4Po+bKIWYhE5Ol6Pt0="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "oSXxfxq+faZOFgDNK/Ff2UdniVNTBk+r58hBikhWXFU=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428702",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

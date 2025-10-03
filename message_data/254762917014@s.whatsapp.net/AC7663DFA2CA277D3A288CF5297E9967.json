@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7663DFA2CA277D3A288CF5297E9967"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB06A776497C4B0DBD7F2",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "Cj0KFzEyMDM2MzIzMDI2ODc3NzQ1OEBnLnVzEAAaIEFDOTAyQzk3RTUzOERGQjAwN0EyRDczQUI3MDJEMDA0EmkKZ0FkZCBtZSBvbiBTdGVwVXAsIGEgZnVuIGFwcCB0byB0cmFjayBzdGVwcyAmIGNvbXBldGUgd2l0aCBmcmllbmRzIQpodHRwczovL2pvaW4udGhlc3RlcHVwYXBwLmNvbS9SR0d2S04YiPH+xgYqETk4NTMyNzU3MzQwODVAbGlkigMgORyeTKQc4JxVul7TFn5nuAWYVzRK0CDqczNU5o4YgibyAxYKFAELyHVYQJjC+Se6TmfofSmDdvkgiAQA"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759500986",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

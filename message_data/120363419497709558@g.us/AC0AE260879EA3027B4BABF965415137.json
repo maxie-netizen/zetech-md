@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC0AE260879EA3027B4BABF965415137"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Na chocolate hivi?😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACE07080A9CF7E957F484D23DB0D851D",
+          "participant": "93763582058578@lid",
+          "quotedMessage": {
+            "conversation": "Happy boyfriends day to all broshodoz🩷"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "HV6TCp67VSoTH2DNnLU1YbR2J0NGrqsYD4luYoh/Vlw="
+      }
+    },
+    "messageTimestamp": "1759499924",
+    "participant": "",
+    "messageSecret": "HV6TCp67VSoTH2DNnLU1YbR2J0NGrqsYD4luYoh/Vlw=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQsHMCtD0y59H94ckdPsNBGXlPY="
+    },
+    "isMentionedInStatus": false
+  }
+]

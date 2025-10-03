@@ -40,11 +40,54 @@ settings: {},
 }
 ///////////database access/////////////////
 const { addPremiumUser, delPremiumUser } = require("./library/lib/premiun");
+// Import autostatus handler
+const { handleStatusUpdate } = require("./zetechplugs/autostatus");
+// Import antilink handler
+const { handleLinkDetection } = require("./zetechplugs/antilink");
+// Import AI chat handler
+const { handleAIChat } = require("./zetechplugs/aichat");
+// Import cloud storage
+const { initializeCloudDB } = require("./zetechplugs/cloudsync");
+const AutoSync = require("./library/lib/autoSync");
 /////////exports////////////////////////////////
 module.exports = async (conn, m) => {
 try {
 const from = m.key.remoteJid
 var body = (m.mtype === 'interactiveResponseMessage') ? JSON.parse(m.message.interactiveResponseMessage.nativeFlowResponseMessage.paramsJson).id : (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype == 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ""
+
+// Initialize cloud storage on first run
+if (!global.cloudInitialized) {
+    try {
+        // Initialize auto-sync system
+        global.autoSync = new AutoSync();
+        await global.autoSync.initialize();
+        global.cloudInitialized = true;
+        console.log('✅ Cloud storage with auto-sync initialized');
+    } catch (error) {
+        console.log('⚠️ Cloud storage not available:', error.message);
+    }
+}
+
+// Handle autostatus updates
+try {
+    await handleStatusUpdate(conn, m);
+} catch (error) {
+    console.error('Error in autostatus handler:', error);
+}
+
+// Handle antilink detection
+try {
+    await handleLinkDetection(conn, m);
+} catch (error) {
+    console.error('Error in antilink handler:', error);
+}
+
+// Handle AI chat
+try {
+    await handleAIChat(conn, m);
+} catch (error) {
+    console.error('Error in AI chat handler:', error);
+}
 //////////Libraryfunction///////////////////////
 const { smsg, fetchJson, getBuffer, fetchBuffer, getGroupAdmins, TelegraPh, isUrl, hitungmundur, sleep, clockString, checkBandwidth, runtime, tanggal, getRandom } = require('./library/lib/function')
 // Main Setting (Admin And Prefix )///////
@@ -85,11 +128,11 @@ const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
 /////////////VIEW ONCE SECRET MODE//////////////////
 // Detect reaction on View Once message
 const isReaction = m.message?.reactionMessage;
-const reactedToViewOnce = isReaction && m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
+const reactedToViewOnce = isReaction && m.quoted && m.quoted.message && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
 
 // Detect emoji reply (alone or with text) only on View Once media
 const isEmojiReply = budy && /^[\p{Emoji}](\s|\S)*$/u.test(budy.trim()) && 
-                     m.quoted && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
+                     m.quoted && m.quoted.message && (m.quoted.message.viewOnceMessage || m.quoted.message.viewOnceMessageV2);
 
 // Secret Mode = Emoji Reply or Reaction (For Bot/Owner Only) on View Once media
 const secretMode = (isEmojiReply || reactedToViewOnce) && trashown;
@@ -306,7 +349,7 @@ const lol = {
   },
   contextInfo: {
     mentionedJid: ["13135550002@s.whatsapp.net"],
-    forwardingScore: 999,
+    forwardingScore: 1,
     isForwarded: true,
   }
 }
@@ -356,7 +399,7 @@ forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363405142067013@newsletter",
-newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭" 
+newsletterName: "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦" 
 }
 }
 }, {
@@ -378,7 +421,7 @@ forwardingScore: 9,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
 newsletterJid: "120363405142067013@newsletter",
-newsletterName: "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭"
+newsletterName: "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
 }
 }
 }, {
@@ -553,7 +596,7 @@ reply(`bot is always online ✅`)
               participant: "0@s.whatsapp.net",
               remoteJid: "status@broadcast",
               mentionedJid: ["0@s.whatsapp.net", "13135550002@s.whatsapp.net"],
-              forwardingScore: 999,
+              forwardingScore: 1,
               isForwarded: true
             },
             nativeFlowMessage: {
@@ -842,14 +885,14 @@ return plugins
 //========= [ COMMANDS PLUGINS ] =================================================
 let pluginsDisable = true
 const plugins = await pluginsLoader(path.resolve(__dirname, "zetechplugs"))
-const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,conn,m,q,mime,sleep,fkontak,menu,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,forceclose}
+const trashdex = { trashown, reply,replymenu,command,isCmd, text, botNumber, prefix, reply,fetchJson,example, totalfeature,conn,m,q,mime,sleep,fkontak,menu,addPremiumUser, args,delPremiumUser,isPremium,trashpic,trashdebug,sleep,isAdmins,groupAdmins,isBotAdmins,quoted,from,groupMetadata,downloadAndSaveMediaMessage,forceclose,reaction}
 for (let plugin of plugins) {
-if (plugin.command.find(e => e == command.toLowerCase())) {
+if (plugin.command && plugin.command.find(e => e == command.toLowerCase())) {
 pluginsDisable = false
 console.log(`[PLUGIN] Found command: ${command} in plugin: ${plugin.command}`)
 if (typeof plugin !== "function") {
     console.log(`[PLUGIN ERROR] Plugin is not a function: ${plugin.command}`)
-    return
+    continue
 }
 try {
     await plugin(m, trashdex)
@@ -980,6 +1023,11 @@ let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
   const latency = end - start;
   m.reply(`Pong! Latency: ${latency}ms`);
   break; //==================================================//      
+      case 'cloudsync':
+      case 'cloud':
+        const { cloudsyncCommand } = require("./zetechplugs/cloudsync");
+        await cloudsyncCommand(conn, m.chat, m, args);
+        break;
     case 'yts': case 'ytsearch': {
                 if (!text) return reply(`Example : ${prefix + command} faded`)
                 let yts = require("yt-search")
@@ -1128,6 +1176,14 @@ if (!isAdmins && !trashown) return m.reply(mess.owner)
             break
 //==================================================//      
         case 'autorecord':
+        case 'autorecording':
+// React to the autorecording message
+try {
+    await reaction(m.chat, "🎙️");
+} catch (error) {
+    console.log('Failed to react to autorecording message:', error.message);
+}
+
 if (!trashown) return reply(mess.owner)
 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
 if (q == 'on') {
@@ -1335,7 +1391,7 @@ case 'song': {
       fileName: `${title}.mp3`,
       ptt: true,
       contextInfo: {
-        forwardingScore: 999,
+        forwardingScore: 1,
         isForwarded: true,
         externalAdReply: {
           title,
@@ -1364,7 +1420,7 @@ case 'song': {
         fileName: `${title}.mp3`,
         ptt: true,
         contextInfo: {
-          forwardingScore: 999,
+          forwardingScore: 1,
           isForwarded: true,
           externalAdReply: {
             title,
@@ -1393,7 +1449,7 @@ case 'song': {
           fileName: download.filename || `${title}.mp3`,
           ptt: true,
           contextInfo: {
-            forwardingScore: 999,
+            forwardingScore: 1,
             isForwarded: true,
             externalAdReply: {
               title,
@@ -2134,7 +2190,42 @@ if (!trashown) return
 let kode = budy.trim().split(/ +/)[0]
 let teks
 try {
-teks = await eval(`(async () => { ${kode == ">>" ? "return" : ""} ${q}})()`)
+let code = budy.slice(1).trim()
+
+if (code.length === 0) {
+teks = "No code provided"
+} else {
+// Sanitize only the most problematic characters that cause syntax errors
+let sanitizedCode = code
+  .replace(/[*]/g, '') // Remove asterisks (main cause of syntax errors)
+  .replace(/[`]/g, '') // Remove backticks (can break template literals)
+  .replace(/[\$]/g, '') // Remove dollar signs (can cause issues)
+  .replace(/[\\]/g, '') // Remove backslashes (can cause escape issues)
+  .replace(/["']/g, '') // Remove quotes (can break string parsing)
+  .replace(/[<>]/g, '') // Remove angle brackets (can cause parsing issues)
+  .replace(/[&]/g, '') // Remove ampersands (can cause issues)
+  .replace(/[|]/g, '') // Remove pipes (can cause issues)
+  .replace(/[~]/g, '') // Remove tildes (can cause issues)
+  .replace(/[^]/g, '') // Remove carets (can cause issues)
+  .replace(/[!]/g, '') // Remove exclamation marks (can cause issues)
+  .replace(/[@]/g, '') // Remove at symbols (can cause issues)
+  .replace(/[#]/g, '') // Remove hash symbols (can cause issues)
+  .replace(/[%]/g, '') // Remove percent signs (can cause issues)
+  .replace(/[?]/g, '') // Remove question marks (can cause issues)
+
+if (sanitizedCode.length === 0) {
+teks = "Code became empty after sanitization"
+} else {
+// Use Function constructor instead of eval for better safety
+try {
+let funcBody = kode == ">>" ? `return ${sanitizedCode}` : sanitizedCode
+let func = new Function(funcBody)
+teks = await func()
+} catch (evalError) {
+teks = `Function Error: ${evalError.message}`
+}
+}
+}
 } catch (e) {
 teks = e
 } finally {
@@ -2159,7 +2250,7 @@ if (stdout) return reply(stdout)
 
   await conn.sendMessage(`${error}@s.whatsapp.net`, {
     text: `⚠️ *ERROR!*\n\n📌 *Message:* ${err.message || '-'}\n📂 *Stack Trace:*\n${error}`,
-    contextInfo: { forwardingScore: 9999999, isForwarded: true }
+    contextInfo: { forwardingScore: 1, isForwarded: true }
   }, { quoted: m });
 }
 }

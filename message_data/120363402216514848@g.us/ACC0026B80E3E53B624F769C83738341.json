@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363402216514848@g.us",
+      "fromMe": false,
+      "id": "ACC0026B80E3E53B624F769C83738341",
+      "participant": "254172070940845@lid"
+    },
+    "message": {
+      "conversation": "Mango group you refused completely to email me the list of your group members. Remember I won't allocate tasks again. I'm too busy too",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363402216514848@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjn1pXjAhAAGiCKXzov2/q9kuBiTxJ1PBwFvvhVZ7Ep3IunkHJswCAR0CIhBROuyBFSe6IueojS/axXVUWpFerx1mPKpU12FC6RBkUf"
+      },
+      "messageContextInfo": {
+        "messageSecret": "A2Qmv2n5fGQvFw0HkSlg/7vtKXQKGsVWqGfiMFkrTrQ="
+      }
+    },
+    "messageTimestamp": "1759502413",
+    "participant": "254172070940845@lid",
+    "broadcast": false,
+    "pushName": "Flora Mwanja"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC58582D7AC23800E59105E5DEE1A28E"
+    },
+    "message": {
+      "conversation": ".menu"
+    },
+    "messageTimestamp": "1759442470",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

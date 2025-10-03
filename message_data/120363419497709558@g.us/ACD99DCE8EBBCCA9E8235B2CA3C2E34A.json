@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACD99DCE8EBBCCA9E8235B2CA3C2E34A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Zinamiss😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC0B8512399ED4B3669AD1484FC7213A",
+          "participant": "93763582058578@lid",
+          "quotedMessage": {
+            "conversation": "Ama hamjui kushoot shot😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "effOzMWw+ZnGGcv7mdSEsAlcTUZczo7+S9RS4o4sH3o="
+      }
+    },
+    "messageTimestamp": "1759500369",
+    "participant": "",
+    "messageSecret": "effOzMWw+ZnGGcv7mdSEsAlcTUZczo7+S9RS4o4sH3o=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQtoMbO4+UXCVQdIeLQ7Zc0qWX8="
+    },
+    "isMentionedInStatus": false
+  }
+]

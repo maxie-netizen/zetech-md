@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACF02F74A8E15EE89C300D0F2CE54BE1",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Nakuelewa😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC439A8617D392DE1889F20A4C4A1D41",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "Sindio 😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "Y5c/GXF2TWWPbIGpLZWL5lVYzzoexONGkMmNcOSApGU="
+      }
+    },
+    "messageTimestamp": "1759502808",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

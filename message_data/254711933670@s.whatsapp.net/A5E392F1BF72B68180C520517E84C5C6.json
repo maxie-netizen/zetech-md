@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5E392F1BF72B68180C520517E84C5C6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘇𝗶𝗻𝗴𝗶𝗻𝗲 𝗵𝗮𝘁𝗮 𝘀𝗶𝗷𝘂𝗶😂😂🏃💨",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACAA6DEC75BF4868C8F183422FB2C67F",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Hii n genje mzee😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "L7EXOzLhs+y60TYypw0mhOdN8j4KRq9EO9tc5yHMSwQ="
+      }
+    },
+    "messageTimestamp": "1759434988",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

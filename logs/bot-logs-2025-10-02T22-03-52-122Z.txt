@@ -1,0 +1,270 @@
+[2025-10-02T22:00:52.093Z] [LOG] 📊 Initializing log collector...
+[2025-10-02T22:00:52.095Z] [LOG] 📊 Log collector initialized with Telegram integration
+[2025-10-02T22:00:52.095Z] [LOG] ⏰ Log scheduler started - will send logs every 1 minutes
+[2025-10-02T22:00:52.095Z] [LOG] ✅ Log collector ready - logs will be sent every 1 minutes
+[2025-10-02T22:00:52.095Z] [LOG] 🚀 Starting ZETECH-MD Bot...
+[2025-10-02T22:00:52.095Z] [LOG] 🔄 Initializing cloud storage...
+[2025-10-02T22:00:52.096Z] [LOG] 🔄 Initializing Local Backup...
+[2025-10-02T22:00:52.096Z] [LOG] 🔄 Initializing local backup system...
+[2025-10-02T22:00:52.097Z] [LOG] Telegram bot is running...
+[2025-10-02T22:00:52.097Z] [LOG] [EXPIRY CHECK] API key expiration monitoring started (every 30 minutes)
+[2025-10-02T22:00:52.098Z] [LOG] ✅ Local backup system ready
+[2025-10-02T22:00:52.098Z] [LOG] ✅ Local Backup ready
+[2025-10-02T22:00:52.098Z] [LOG] ✅ Local Backup ready
+[2025-10-02T22:00:52.098Z] [LOG] 📥 Loading database from backup...
+[2025-10-02T22:00:52.098Z] [LOG] ℹ️ No backups available to restore from
+[2025-10-02T22:00:52.098Z] [LOG] 🎉 Cloud storage system ready!
+[2025-10-02T22:00:52.099Z] [LOG] ✅ Cloud storage ready, loading sessions...
+[2025-10-02T22:00:52.099Z] [LOG] 🔄 Loading sessions from cloud...
+[2025-10-02T22:00:52.099Z] [LOG] 📱 Loading local session: 254740300165
+[2025-10-02T22:00:52.610Z] [LOG] Using Baileys version: 2,3000,1023223821 (Latest: true)
+[2025-10-02T22:00:52.621Z] [LOG] [CONNECTION] Added 254740300165 to active connections tracker
+[2025-10-02T22:00:52.624Z] [LOG] Session credentials reloaded successfully for 254740300165!
+[2025-10-02T22:00:52.624Z] [LOG] 📱 Loading local session: 254762917014
+[2025-10-02T22:00:52.778Z] [LOG] [CONNECTION] Added 254762917014 to active connections tracker
+[2025-10-02T22:00:52.780Z] [LOG] Session credentials reloaded successfully for 254762917014!
+[2025-10-02T22:00:52.780Z] [LOG] 🎉 ZETECH-MD Bot is ready!
+[2025-10-02T22:00:53.804Z] [LOG] Credentials saved successfully for 254762917014!
+[2025-10-02T22:00:53.804Z] [LOG] User 254762917014 (254762917014:18@s.whatsapp.net) auto-joined newsletter channel via pairing (silent)
+[2025-10-02T22:00:54.130Z] [LOG] Credentials saved successfully for 254740300165!
+[2025-10-02T22:00:54.131Z] [LOG] User 254740300165 (254740300165:40@s.whatsapp.net) auto-joined newsletter channel via pairing (silent)
+[2025-10-02T22:01:12.070Z] [LOG] [DEBUG] Command detected: "menu", isCmd: true, body: ".menu", prefix: "."
+[2025-10-02T22:01:12.071Z] [LOG] [30m[47m[ COMMAND ][49m[39m [30m[42mFri Oct 03 2025 01:01:12 GMT+0300 (East Africa Time)[49m[39m [30m[44m.menu[49m[39m
+[35m=> From[39m [32m404 Not Found[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:01:12.105Z] [LOG] [PLUGIN] Found command: menu in plugin: menu
+[2025-10-02T22:01:12.108Z] [LOG] User 254762917014@s.whatsapp.net already joined newsletter, skipping
+[2025-10-02T22:01:12.118Z] [LOG] [PLUGIN] Successfully executed: menu
+[2025-10-02T22:01:14.227Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-02T22:01:14.228Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:01:14 GMT+0300 (East Africa Time)[49m[39m [30m[44m🌚[49m[39m
+[35m=> From[39m [32m254762917014[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:01:14.286Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "
+╔═══════════════════════════════════════════════════╗
+║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║
+╠═══════════════════════════════════════════════════╣
+║   ✦ Owner: Maxwell     ║
+║   ✦ Version: 1.5.0                     ║
+║   ✦ Type: Plugin       ║
+╚═══════════════════════════════════════════════════╝
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ menu           ◈ ping
+ ◈ ping2          ◈ uptime
+ ◈ s              ◈ botinfo
+ ◈ listplugin     ◈ update
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙
+ ◈ public         ◈ private
+ ◈ addaccess      ◈ delaccess
+ ◈ autoreact      ◈ block
+ ◈ autotyping     ◈ autorecord
+ ◈ autorecording  ◈ autobio
+ ◈ alwaysonline   ◈ autostatus
+ ◈ chatbot        ◈ aichat
+ ◈ cloudsync      ◈ cloud
+ ◈ $              ◈ menu
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ play           ◈ ytmp4
+ ◈ ytvid          ◈ yts
+ ◈ pinterestdl    ◈ retrieve
+ ◈ song           ◈ twitterdl
+ ◈ tt             ◈ tiktok
+ ◈ igdl           ◈ ytmp3
+ ◈ tg             ◈ telegram
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ zetech
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ vv (reply to view once)
+ ◈ vv2 (send to bot)
+ ◈ vv3 (send to owner)
+ ◈ emoji reply (secret mode)
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gemma          ◈ indo-ai
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gethtml        ◈ getpp
+ ◈ getplugin      ◈ save
+ ◈ gitclone       ◈ weather
+ ◈ groups         ◈ mychats
+ ◈ tempnum        ◈ templist
+ ◈ otpbox         ◈ tools
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ add            ◈ remove
+ ◈ promote        ◈ revoke
+ ◈ approve        ◈ reject
+ ◈ antilinkgc     ◈ antilink
+ ◈ antilinkstatus ◈ antilinkget
+ ◈ tagall         ◈ hidetag
+ ◈ close          ◈ open
+ ◈ kickall        ◈ linkgc
+ ◈ setppgc        ◈ setdesc
+ ◈ tagme
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ enc            ◈ idch
+ ◈ dev
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ glithtext      ◈ lighteffects
+ ◈ writetext      ◈ advancedglow
+ ◈ typographytext ◈ pixelglitch
+ ◈ neonglitch     ◈ flagtext
+ ◈ flag3dtext     ◈ deletingtext
+ ◈ blackpinkstyle ◈ glowingtex
+ ◈ underwater     ◈ logomaker
+ ◈ cartoonstyle   ◈ papercutstyle
+ ◈ watercolortext ◈ effectclouds
+ ◈ blackpinklogo  ◈ gradienttext
+ ◈ luxurygold     ◈ sandsummer
+ ◈ multicoloredneon ◈ galaxywallpaper
+ ◈ 1917style      ◈ galaxystyle
+ ◈ royaltext      ◈ freecreate
+
+╔═══════════════════════════════════════════════════╗
+║  Type .menu <category> for specific commands  ║
+╚═══════════════════════════════════════════════════╝
+
+", prefix: "."
+[2025-10-02T22:01:14.292Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:01:14 GMT+0300 (East Africa Time)[49m[39m [30m[44m[49m[39m
+[30m[44m╔═══════════════════════════════════════════════════╗[49m[39m
+[30m[44m║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║[49m[39m
+[30m[44m╠═══════════════════════════════════════════════════╣[49m[39m
+[30m[44m║   ✦ Owner: Maxwell     ║[49m[39m
+[30m[44m║   ✦ Version: 1.5.0                     ║[49m[39m
+[30m[44m║   ✦ Type: Plugin       ║[49m[39m
+[30m[44m╚═══════════════════════════════════════════════════╝[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ menu           ◈ ping[49m[39m
+[30m[44m ◈ ping2          ◈ uptime[49m[39m
+[30m[44m ◈ s              ◈ botinfo[49m[39m
+[30m[44m ◈ listplugin     ◈ update[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙[49m[39m
+[30m[44m ◈ public         ◈ private[49m[39m
+[30m[44m ◈ addaccess      ◈ delaccess[49m[39m
+[30m[44m ◈ autoreact      ◈ block[49m[39m
+[30m[44m ◈ autotyping     ◈ autorecord[49m[39m
+[30m[44m ◈ autorecording  ◈ autobio[49m[39m
+[30m[44m ◈ alwaysonline   ◈ autostatus[49m[39m
+[30m[44m ◈ chatbot        ◈ aichat[49m[39m
+[30m[44m ◈ cloudsync      ◈ cloud[49m[39m
+[30m[44m ◈ $              ◈ menu[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ play           ◈ ytmp4[49m[39m
+[30m[44m ◈ ytvid          ◈ yts[49m[39m
+[30m[44m ◈ pinterestdl    ◈ retrieve[49m[39m
+[30m[44m ◈ song           ◈ twitterdl[49m[39m
+[30m[44m ◈ tt             ◈ tiktok[49m[39m
+[30m[44m ◈ igdl           ◈ ytmp3[49m[39m
+[30m[44m ◈ tg             ◈ telegram[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ zetech[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ vv (reply to view once)[49m[39m
+[30m[44m ◈ vv2 (send to bot)[49m[39m
+[30m[44m ◈ vv3 (send to owner)[49m[39m
+[30m[44m ◈ emoji reply (secret mode)[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ gemma          ◈ indo-ai[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ gethtml        ◈ getpp[49m[39m
+[30m[44m ◈ getplugin      ◈ save[49m[39m
+[30m[44m ◈ gitclone       ◈ weather[49m[39m
+[30m[44m ◈ groups         ◈ mychats[49m[39m
+[30m[44m ◈ tempnum        ◈ templist[49m[39m
+[30m[44m ◈ otpbox         ◈ tools[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ add            ◈ remove[49m[39m
+[30m[44m ◈ promote        ◈ revoke[49m[39m
+[30m[44m ◈ approve        ◈ reject[49m[39m
+[30m[44m ◈ antilinkgc     ◈ antilink[49m[39m
+[30m[44m ◈ antilinkstatus ◈ antilinkget[49m[39m
+[30m[44m ◈ tagall         ◈ hidetag[49m[39m
+[30m[44m ◈ close          ◈ open[49m[39m
+[30m[44m ◈ kickall        ◈ linkgc[49m[39m
+[30m[44m ◈ setppgc        ◈ setdesc[49m[39m
+[30m[44m ◈ tagme[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ enc            ◈ idch[49m[39m
+[30m[44m ◈ dev[49m[39m
+[30m[44m[49m[39m
+[30m[44m├────────────────────────────❖────────────────────────────┤[49m[39m
+[30m[44m〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙[49m[39m
+[30m[44m ◈ glithtext      ◈ lighteffects[49m[39m
+[30m[44m ◈ writetext      ◈ advancedglow[49m[39m
+[30m[44m ◈ typographytext ◈ pixelglitch[49m[39m
+[30m[44m ◈ neonglitch     ◈ flagtext[49m[39m
+[30m[44m ◈ flag3dtext     ◈ deletingtext[49m[39m
+[30m[44m ◈ blackpinkstyle ◈ glowingtex[49m[39m
+[30m[44m ◈ underwater     ◈ logomaker[49m[39m
+[30m[44m ◈ cartoonstyle   ◈ papercutstyle[49m[39m
+[30m[44m ◈ watercolortext ◈ effectclouds[49m[39m
+[30m[44m ◈ blackpinklogo  ◈ gradienttext[49m[39m
+[30m[44m ◈ luxurygold     ◈ sandsummer[49m[39m
+[30m[44m ◈ multicoloredneon ◈ galaxywallpaper[49m[39m
+[30m[44m ◈ 1917style      ◈ galaxystyle[49m[39m
+[30m[44m ◈ royaltext      ◈ freecreate[49m[39m
+[30m[44m[49m[39m
+[30m[44m╔═══════════════════════════════════════════════════╗[49m[39m
+[30m[44m║  Type .menu <category> for specific commands  ║[49m[39m
+[30m[44m╚═══════════════════════════════════════════════════╝[49m[39m
+[30m[44m[49m[39m
+[30m[44m[49m[39m
+[35m=> From[39m [32m254762917014[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:01:52.105Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:01:52.134Z] [ERROR] (node:24116) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-10-02T22:01:55.995Z] [LOG] 📤 Logs sent to Telegram group: bot-logs-2025-10-02T22-01-52-106Z.txt
+[2025-10-02T22:02:43.196Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Hello", prefix: "."
+[2025-10-02T22:02:43.198Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:02:43 GMT+0300 (East Africa Time)[49m[39m [30m[44mHello[49m[39m
+[35m=> From[39m [32m404 Not Found[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:02:45.663Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Yooh", prefix: "."
+[2025-10-02T22:02:45.665Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:02:45 GMT+0300 (East Africa Time)[49m[39m [30m[44mYooh[49m[39m
+[35m=> From[39m [32m404 Not Found[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:02:47.962Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Rada", prefix: "."
+[2025-10-02T22:02:47.963Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:02:47 GMT+0300 (East Africa Time)[49m[39m [30m[44mRada[49m[39m
+[35m=> From[39m [32m404 Not Found[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:02:50.758Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Fala", prefix: "."
+[2025-10-02T22:02:50.760Z] [LOG] [30m[47m[ MESSAGE ][49m[39m [30m[42mFri Oct 03 2025 01:02:50 GMT+0300 (East Africa Time)[49m[39m [30m[44mFala[49m[39m
+[35m=> From[39m [32m404 Not Found[39m [33m254762917014@s.whatsapp.net[39m
+[94m=> In[39m [32mPrivate Chat 254743518481@s.whatsapp.net[39m
+[2025-10-02T22:02:52.121Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-02T22:02:52.480Z] [LOG] 📤 Logs sent to Telegram group: bot-logs-2025-10-02T22-02-52-121Z.txt
+[2025-10-02T22:03:52.122Z] [LOG] 📤 Scheduled log sending triggered...

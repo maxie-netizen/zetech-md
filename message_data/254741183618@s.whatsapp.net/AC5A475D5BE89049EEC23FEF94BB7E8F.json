@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC5A475D5BE89049EEC23FEF94BB7E8F"
+    },
+    "message": {
+      "conversation": "😂😂🫴"
+    },
+    "messageTimestamp": "1759437376",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  },
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC5A475D5BE89049EEC23FEF94BB7E8F"
+    },
+    "message": {
+      "conversation": "😂😂🫴",
+      "messageContextInfo": {
+        "messageSecret": "qllF2EnwGKpRr46KnA3sp+NTLDOFsSpvaT6BcjJRePQ="
+      }
+    },
+    "messageTimestamp": "1759437306",
+    "status": "READ",
+    "userReceipt": [
+      {
+        "userJid": "254741183618@s.whatsapp.net",
+        "receiptTimestamp": "1759437306",
+        "readTimestamp": "1759437367",
+        "playedTimestamp": "0"
+      }
+    ],
+    "messageSecret": "qllF2EnwGKpRr46KnA3sp+NTLDOFsSpvaT6BcjJRePQ=",
+    "originalSelfAuthorUserJidString": "254740300165@s.whatsapp.net",
+    "isMentionedInStatus": false
+  }
+]

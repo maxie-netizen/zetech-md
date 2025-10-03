@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACAD28F7286FAE6EA2D43DE5B2D5F7F9",
+      "participant": "35678914117744@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwi03ZO0BxAAGiDfHjdLlGZ53cbfbfabqkrzPCobHxnCL0Ac6Lc9cPd4viIhBV7mNEoqa/8pcnKv4Tn1NWLnyYdNkBnNHjvVJ1A/pScu"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1757946402",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "🤝",
+        "senderTimestampMs": "1759435911649"
+      }
+    },
+    "messageTimestamp": "1759435915",
+    "participant": "35678914117744@lid",
+    "broadcast": false,
+    "pushName": "💀Îçôñ Mûĥãâ😇"
+  }
+]

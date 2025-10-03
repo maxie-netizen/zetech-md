@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "201105269955@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB06BA37F47CC70EA721C"
+    },
+    "message": {
+      "conversation": ".autorecording off",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "zYRKLu7lElfIlA==",
+          "senderTimestamp": "1758277308",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "/uJMm152wcMt0g==",
+          "recipientTimestamp": "1759352687"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "IIiXfYzFJi0PJxC9SU4yKkBSSVqsrJKqIMPDPavl3+w="
+      }
+    },
+    "messageTimestamp": "1759358213",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

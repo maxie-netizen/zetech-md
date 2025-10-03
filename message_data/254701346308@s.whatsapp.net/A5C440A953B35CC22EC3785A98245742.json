@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5C440A953B35CC22EC3785A98245742"
+    },
+    "message": {
+      "conversation": "Zih haijatoka",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "7VBKgMItriSkf8YDQcqn0WnAB/O7XhCU97+Tk3w3UsM="
+      }
+    },
+    "messageTimestamp": "1759435009",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363420610628343@g.us",
+      "fromMe": false,
+      "id": "ACAEFF82D2480D6B2789EC81858B08D4",
+      "participant": "162079566737556@lid"
+    },
+    "message": {
+      "conversation": "600",
+      "messageContextInfo": {
+        "messageSecret": "Q6KM40R18x85UQk1LdJ0QmJY81TxWxyDXIMDCXBIzdI="
+      }
+    },
+    "messageTimestamp": "1759435154",
+    "participant": "162079566737556@lid",
+    "broadcast": false,
+    "pushName": "DeClinton"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "A59602F7907F042E22A57EC33F0DE344",
+      "participant": "125413565161514@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Eeh",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC9ADD048EFC24332DD9E7A3757A285E",
+          "participant": "195537362010272@lid",
+          "quotedMessage": {
+            "conversation": "Mkiendelea hivi tutaenda mbali as a group"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "xrrXwbtHY8fV+iFDzn3iXglYRhQtRWBdE+l0UcXurKo=",
+        "limitSharingV2": {
+          "sharingLimited": true,
+          "trigger": "CHAT_SETTING",
+          "limitSharingSettingTimestamp": "1758376462973",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759501249",
+    "participant": "125413565161514@lid",
+    "broadcast": false,
+    "pushName": "chumbaa"
+  }
+]

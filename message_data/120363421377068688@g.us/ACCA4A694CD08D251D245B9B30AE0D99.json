@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACCA4A694CD08D251D245B9B30AE0D99",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "90 members  to account giveaway",
+        "previewType": "NONE",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "zF4O6Z5RQeZmPI+BU/zGMi61QjOy91hCqWTgxRaAUHc="
+      }
+    },
+    "messageTimestamp": "1759434886",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

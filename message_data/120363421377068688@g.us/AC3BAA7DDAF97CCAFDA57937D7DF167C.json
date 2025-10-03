@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC3BAA7DDAF97CCAFDA57937D7DF167C",
+      "participant": "12017805078764@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjw+O3IAxAAGiBt8I2J98LKujRH4roGuxOUOpE3bxe212RTL87LzYA9GSIhBQbozf41YdWduZ3NfPGGOLRJ+HaspIQ43/qTOfOfeupc"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "12017805078764@lid",
+    "broadcast": false,
+    "pushName": "Wes"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACF882F820D4EC1384E1AF5E1F50AA36"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ni ngombe ingine apa naissidia kufix polling error 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A581008C6E1B75A537B7DE431EDFECB4",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "𝗠𝘀𝗲𝗲 𝗮𝗺𝗲𝗲𝗸𝗮 𝗵𝗶𝗶 𝗯𝗼𝘁 𝗻𝗮 𝗺𝗿𝗮𝗻𝗸 𝗮𝘀𝗵𝗮𝗶 𝗻𝘂𝘂𝘇𝗶𝗮 𝗽𝗮𝗻𝗲𝗹 𝘆𝗮 𝗯𝘂𝗴 𝗯𝗼𝘁 🫴𝗯𝗼𝘁 𝘇𝗮𝗸𝗲 𝗵𝘂𝘄𝗮𝗻𝗴𝗮 𝗹𝗲𝗴𝗶𝘁 🗣💭✊"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435887",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "181517BF83269682C495CDC7C207CDCB",
+      "participant": "60160160620596@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiH59CyBBAAGiB/cRXzv8M/lt5pmgk8tc+Ocqzox3rK0ZvmCa0cVQEm+SIhBWtC5q8x+RB+84esWl044TwqIuwBBS4IoDXxAQDnV24N"
+      },
+      "extendedTextMessage": {
+        "text": "This command is restricted to the owner and sudos only.",
+        "contextInfo": {
+          "stanzaId": "ACCEA328DB311FC007D62F7DF686B01A",
+          "participant": "261160200843371@lid",
+          "quotedMessage": {
+            "conversation": ".tagall"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759437054",
+    "participant": "60160160620596@lid",
+    "broadcast": false,
+    "pushName": "@KÏJÄÑĀ KŪLKHËËD ȚẼČĦ:::",
+    "verifiedBizName": ""
+  }
+]

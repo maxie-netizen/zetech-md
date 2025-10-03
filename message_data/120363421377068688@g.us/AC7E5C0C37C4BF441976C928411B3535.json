@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC7E5C0C37C4BF441976C928411B3535",
+      "participant": "271717398257911@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiZzKPoBBAAGiCmXeyukAj+qDviNCBXLvnin6Phe+AbbYdhAcBdGz/nTyIhBZeIpnAcRvVWGoBTY08f8Tqm9PhgKEb7qWiPcYbzgmIE"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "G8VSi3ObNlWmt0MbgOrIiotMZ53gJ/YPU7g8tlja936UYMfTo45WwFn8fVYg4lvhhso=",
+          "encIv": "jRJtq7CNuQT5bzhy"
+        },
+        "senderTimestampMs": "1759436275181"
+      }
+    },
+    "messageTimestamp": "1759436279",
+    "participant": "271717398257911@lid",
+    "broadcast": false,
+    "pushName": "Vinnie_vee🥶🔥"
+  }
+]

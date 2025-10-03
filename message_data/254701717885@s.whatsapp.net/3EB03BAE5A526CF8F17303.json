@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB03BAE5A526CF8F17303"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "yeah",
+        "contextInfo": {
+          "stanzaId": "AC63D1BC4728DCB99087434B77FB7954",
+          "participant": "254701717885@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "So niseme",
+            "messageContextInfo": {
+              "messageSecret": "pKWZEM6gLwotj8JAOK4k4mI54mv7JJM3oaUjc+Zp6Dw="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759502535",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254117358782@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5E7C9A3AD5E995A53051FD9057BE746"
+    },
+    "message": {
+      "conversation": "Hakuna"
+    },
+    "messageTimestamp": "1759428436",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

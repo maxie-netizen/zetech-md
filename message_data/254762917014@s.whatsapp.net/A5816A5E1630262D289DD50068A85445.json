@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5816A5E1630262D289DD50068A85445"
+    },
+    "message": {
+      "conversation": "Kijana mjinga kabisa umeniekea bot usome meso zangu"
+    },
+    "messageTimestamp": "1759428678",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

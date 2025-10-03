@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "AC6173BE5F5B1E559172348377D8D0E1",
+      "participant": "195537362010272@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A59602F7907F042E22A57EC33F0DE344",
+          "participant": "125413565161514@lid",
+          "quotedMessage": {
+            "conversation": "Eeh"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "2uxlgIVfUCn+JHfgMGN62MUpFmpvRDMVa/2HV2NSyKg="
+      }
+    },
+    "messageTimestamp": "1759501373",
+    "participant": "195537362010272@lid",
+    "broadcast": false,
+    "pushName": "FullServerX32"
+  }
+]

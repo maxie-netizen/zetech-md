@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB03C29A663ABC46007C3"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ An error occurred while contacting the AI.",
+        "contextInfo": {
+          "stanzaId": "56E9CA547A28C03248AEE246918477B6",
+          "participant": "254792142513@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "Rada",
+              "previewType": "NONE",
+              "inviteLinkGroupTypeV2": "DEFAULT",
+              "linkPreviewMetadata": {}
+            }
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759427537",
+    "status": "SERVER_ACK"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACAEBA2E5B07792AAF086AE07DB56957"
+    },
+    "message": {
+      "conversation": ".ping"
+    },
+    "messageTimestamp": "1759353253",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

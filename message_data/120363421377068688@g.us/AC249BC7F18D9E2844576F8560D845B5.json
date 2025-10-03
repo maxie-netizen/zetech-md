@@ -1,0 +1,50 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC249BC7F18D9E2844576F8560D845B5",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/558834318_794899426630331_1704085455522212643_n.enc?ccb=11-4&oh=01_Q5Aa2gHRD3iqMz6bBLwQmnjBzq37sRuEPifzgU_85nO_DdY99A&oe=69066650&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "OvPMIj0ZCsBawPXA++R2u4xY1SD2osfvkg0t96Bwp1M=",
+        "fileEncSha256": "PBcybfkyHV+Mautp2Wy48cQYcx8/wW9+GevxEeTPqMY=",
+        "mediaKey": "5XpK2PIkqz4ICroGPmcOBoflcoE/jY1OUVWcRZqm1Y4=",
+        "mimetype": "image/webp",
+        "height": 64,
+        "width": 64,
+        "directPath": "/v/t62.15575-24/558834318_794899426630331_1704085455522212643_n.enc?ccb=11-4&oh=01_Q5Aa2gHRD3iqMz6bBLwQmnjBzq37sRuEPifzgU_85nO_DdY99A&oe=69066650&_nc_sid=5e03e0",
+        "fileLength": "505656",
+        "mediaKeyTimestamp": "1759436498",
+        "firstFrameLength": 505352,
+        "firstFrameSidecar": "7LtURHHvCP/TZQ==",
+        "isAnimated": true,
+        "contextInfo": {
+          "stanzaId": "AC8452AC6220F6604203670B54831C74",
+          "participant": "126581863407792@lid",
+          "quotedMessage": {
+            "conversation": "0746 777543"
+          },
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "stickerSentTs": "1759436498386",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "4js0EKxPlMtTiXK+b3V2gBQqDpuwS2txTF0XT1xC1NI="
+      }
+    },
+    "messageTimestamp": "1759436500",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

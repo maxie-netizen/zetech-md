@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254740300165@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC2E3D1FAD729C66BB4244E189F0993E"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB0C3F577524C2550362B",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "CkEKGzI1NDc0MDMwMDE2NUBzLndoYXRzYXBwLm5ldBABGiBBQzQ0Qzk1QkRFNzFBQ0UwQjA0RDJDQzk2MzMwNUIwQRI6ChMuIGF1dG92aWV3c3RhdHVzIG9umgIiGiAa6n+PPyEE+Lj67bubP8ZeCDAnigSYd4RaJbaZkwXOHBiSxPvGBiAEigMgGup/jz8hBPi4+u27mz/GXggwJ4oEmHeEWiW2mZMFzhyaAxsyNTQ3NDAzMDAxNjVAcy53aGF0c2FwcC5uZXSIBAA="
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759437381",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC63D1BC4728DCB99087434B77FB7954"
+    },
+    "message": {
+      "conversation": "So niseme",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "pKWZEM6gLwotj8JAOK4k4mI54mv7JJM3oaUjc+Zp6Dw="
+      }
+    },
+    "messageTimestamp": "1759502501",
+    "broadcast": false,
+    "pushName": "Dorcas Njoki"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC51CDE73CEF5A1A7F10F10D92EE0EFA",
+      "participant": "60731408007311@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "🚨",
+        "senderTimestampMs": "1759435938588"
+      }
+    },
+    "messageTimestamp": "1759435982",
+    "participant": "60731408007311@lid",
+    "broadcast": false,
+    "pushName": "~Mayoo"
+  },
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC51CDE73CEF5A1A7F10F10D92EE0EFA",
+      "participant": "60731408007311@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiS7pe0AhABGiCGdHfyssuS4k99d4vdSiOIlGL7E348QfZy8Amoxy6VICIhBaTNPPxpwwsOAhbt9VGKs0Si/2vSW9cSNLVqF6hxkF8n"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "🚨",
+        "senderTimestampMs": "1759435938588"
+      }
+    },
+    "messageTimestamp": "1759435984",
+    "participant": "60731408007311@lid",
+    "broadcast": false,
+    "pushName": "~Mayoo"
+  }
+]

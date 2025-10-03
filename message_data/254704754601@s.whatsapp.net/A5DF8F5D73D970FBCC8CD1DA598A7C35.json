@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "254704754601@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5DF8F5D73D970FBCC8CD1DA598A7C35"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ee",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC279CC5EF5DE0E181E7693C8BBF1C59",
+          "participant": "254704754601@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "leo umeniitisha game kijana"
+          },
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "1738757159",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN",
+            "initiatedByMe": false
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759428710",
+    "status": "DELIVERY_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

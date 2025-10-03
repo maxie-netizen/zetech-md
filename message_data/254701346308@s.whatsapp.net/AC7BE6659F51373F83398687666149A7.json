@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7BE6659F51373F83398687666149A7"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Huoni imekataa",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A51AAB083DCC520EEF72E59879C840F6",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Aje sasa 🫴🏽😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436566",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

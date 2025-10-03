@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B8F9FEE0012B92BA4CC926BC9B2485"
+    },
+    "message": {
+      "conversation": "Shida n kumaliza 🤦🏾‍♂️",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "F9l5fYyaFYmmR6EqGz32h4rKvQvk6Bz7DPeHm1q5SPI="
+      }
+    },
+    "messageTimestamp": "1759436371",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

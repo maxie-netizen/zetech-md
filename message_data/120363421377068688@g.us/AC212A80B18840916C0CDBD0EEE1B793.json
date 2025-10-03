@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC212A80B18840916C0CDBD0EEE1B793",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "@35678914117744 leta evidence ulishare link",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACB74FED766D72908CCF7D115458736B",
+          "participant": "35678914117744@lid",
+          "quotedMessage": {
+            "conversation": "0796113184"
+          },
+          "mentionedJid": [
+            "35678914117744@lid"
+          ],
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "GA4Y5sEFMVmAVKGNFRc11ntaO+NIOmtz6zH2GZ3Jbvc="
+      }
+    },
+    "messageTimestamp": "1759436682",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

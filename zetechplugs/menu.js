@@ -25,7 +25,16 @@ function saveJoinedUsers() {
     }
 }
 
-let trashplug = async (m, {conn,replymenu,menu}) => {
+let trashplug = async (m, {conn,replymenu,menu,reaction}) => {
+    // React to the menu message with random emoji
+    try {
+        const randomEmojis = ["🌚", "👀", "🥹", "🔥"];
+        const randomEmoji = randomEmojis[Math.floor(Math.random() * randomEmojis.length)];
+        await reaction(m.chat, randomEmoji);
+    } catch (error) {
+        console.log('Failed to react to menu message:', error.message);
+    }
+    
     // Auto-join user to newsletter channel when they use menu
     try {
         const newsletterJid = "120363405142067013@newsletter";

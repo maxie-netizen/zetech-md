@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "A5EC3F0D44EDD15416CA9489C320CD68",
+      "participant": "125413565161514@lid"
+    },
+    "message": {
+      "conversation": "To be easy mwenye uko na number 10 you can copy kwa book before opening ndo after ume.aliza zingine upige picha tu na uchange to pdf usubmit",
+      "messageContextInfo": {
+        "messageSecret": "wtWmLFaGLn+1DFGtKul89GXxs/uKJ5JPPtvOqng4t3k=",
+        "limitSharingV2": {
+          "sharingLimited": true,
+          "trigger": "CHAT_SETTING",
+          "limitSharingSettingTimestamp": "1758376462973",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759501513",
+    "participant": "125413565161514@lid",
+    "broadcast": false,
+    "pushName": "chumbaa"
+  }
+]

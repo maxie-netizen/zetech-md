@@ -1,0 +1,63 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B99E34E578CB8F355ECF13BC26B489"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ndo nashangaa 😂imenipeleka YouTube",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACFDABDA5CF3E4ACFC65F3398C371B66",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Kwank imecheza kwako pekee"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436766",
+    "messageSecret": "e1R2fYRfPXcui6NWCU3lnA33lY8GKrDECA6wGVgAQ00=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQv1FCxSdNZlMivnNDk2xlKEjn8="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B99E34E578CB8F355ECF13BC26B489"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ndo nashangaa 😂imenipeleka YouTube",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACFDABDA5CF3E4ACFC65F3398C371B66",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Kwank imecheza kwako pekee"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "e1R2fYRfPXcui6NWCU3lnA33lY8GKrDECA6wGVgAQ00="
+      }
+    },
+    "messageTimestamp": "1759436789",
+    "broadcast": false,
+    "pushName": "Spoiler",
+    "verifiedBizName": "Spoiler"
+  }
+]

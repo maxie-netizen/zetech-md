@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A541018701F1B5F30E4880B590ADA500"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗔𝗸𝗼 𝗸𝗮𝗻𝗮𝗶𝗿𝗼 𝗵𝘂𝗸𝗼 𝗸𝗮𝘆𝗼𝗹𝗲",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC478512709A6D0AB702DBFC567CCD82",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ako area gani"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "0H7pF/1GE99dLc8Pvam4sNfLfroqBqsX8uUhvBRiYmE="
+      }
+    },
+    "messageTimestamp": "1759436001",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

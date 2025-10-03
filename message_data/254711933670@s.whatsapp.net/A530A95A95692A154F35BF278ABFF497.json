@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A530A95A95692A154F35BF278ABFF497"
+    },
+    "message": {
+      "conversation": "𝗘𝗯𝘂 𝗮𝗻𝗱𝗶𝗸𝗮 𝗯𝘂𝗴 𝗺𝗲𝗻𝘂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "cceOfoK7/IcdXmToro50McmVYEkwbXBESlhx7Vijc4k="
+      }
+    },
+    "messageTimestamp": "1759435720",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

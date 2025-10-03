@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACCD7B763A4A21634C858B6E42C780F5"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ikonayo two instances zimerunniwa at the same time angalia terminal vizuri bois😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5B8EA35AA446F8CEEDF3AB3A5CCA992",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Na Haina API error jameni"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435406",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC93D2193E3DF441F4B0053B1C49AB14"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Super bionic💯💯",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC7394A7C6CC1293AA44CB3396DFA5CF",
+          "participant": "254726768544@s.whatsapp.net",
+          "quotedMessage": {
+            "videoMessage": {
+              "url": "https://mmg.whatsapp.net/v/t62.7161-24/558825714_1520531338941854_8399333320236400622_n.enc?ccb=11-4&oh=01_Q5Aa2gGIpBg5yVrnVxOTYnQkOWGC5TQITkLfR8dLK8FGMtO_8g&oe=6906625F&_nc_sid=5e03e0&mms3=true",
+              "mimetype": "video/mp4",
+              "fileSha256": "sVeN08sIi9U9pjeeRE3ufHK07tY0ov3tLKeZOxaS68k=",
+              "fileLength": "1421258",
+              "seconds": 13,
+              "mediaKey": "bx+e0DcrpHrO8DZdNvuKPoSrJpRn9OUwLze0HrZhTUw=",
+              "height": 848,
+              "width": 480,
+              "fileEncSha256": "jAmNwzeEWT1BXB1lq3A1w6zkdN4fxyp6lXyHjosbO/s=",
+              "directPath": "/v/t62.7161-24/558825714_1520531338941854_8399333320236400622_n.enc?ccb=11-4&oh=01_Q5Aa2gGIpBg5yVrnVxOTYnQkOWGC5TQITkLfR8dLK8FGMtO_8g&oe=6906625F&_nc_sid=5e03e0",
+              "mediaKeyTimestamp": "1759434289",
+              "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAKQMBIgACEQEDEQH/xAAvAAACAwEAAAAAAAAAAAAAAAAABAECAwUBAAMBAQAAAAAAAAAAAAAAAAABAwIE/9oADAMBAAIQAxAAAADTZBu0ZVblinR5DNI8LoZNcfbTWcnkrtUOe1sxOnOcatnSmu4LOZq3MwIkpULANAATAJ//xAAnEAACAgECBAYDAAAAAAAAAAABAgADERIhBBAUMRMgQVFTcSIzQv/aAAgBAQABPwCn9a/XJFKu2/ecSjK2vuDKUezYHI9Z0ySu9VQZHaLYrDaADVqzGIwcyguGdlJAnUP8kYsT6iBClWs5EXiWRZ1AdCCRuIrKqlQe88NvaWKviZU7TDWBQ5ITEfhayuQZXwostAAwAI9C1Wtg/QmbPiMLAOWGQJ1yaUGgkgSy97QBUjAASk3JUo0HVGptsYF2ngL7tKuHwPzOYKah/AgUDyY5Z5ZmRNtPfyETTNuWZmZm8//EAB0RAQACAgIDAAAAAAAAAAAAAAEAEQISAzETIFH/2gAIAQIBAT8A2OoSsnpmTqzyAXDl+MUY0lVD3//EAB8RAQACAgAHAAAAAAAAAAAAAAEAEQISAxMgIjFBUf/aAAgBAwEBPwDV81Enb7mJtjOW3UeH9CAhCxu49f8A/9k=",
+              "contextInfo": {
+                "pairedMediaType": "NOT_PAIRED_MEDIA"
+              },
+              "streamingSidecar": "TUDvFr5fQ84cWUYQ802iaHqRMkvA5T6jwXeg1Ge1+2xsRzVS32t9V8DYes2bIEBjr4rIuNVmdryir70sH7/Nl3l1XvsvIYP/1pxDNGSap967wh384orUh+3HY0PoiXqnmekGiSyPyZquPnc22QDI58LYMrcA60mkkNGES+SMEFtzNuuunBfQ+hGs5mVslb7bvrFAjBpnpcmL0AkASMFevjBfl+JFaQWvSppF/+a9Aw2L4NeDv4MDHpTVizW/xclE17VKwbV9IF81cniV6KsbRN0J2jM44GnhAWtgkQ=="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435115",
+    "status": "DELIVERY_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

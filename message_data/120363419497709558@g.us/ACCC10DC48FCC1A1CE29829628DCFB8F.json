@@ -1,0 +1,20 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACCC10DC48FCC1A1CE29829628DCFB8F",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "conversation": "Ngojea Thursday basi 😂",
+      "messageContextInfo": {
+        "messageSecret": "BBn07J01XgrdqUXHlDZC22564mcJnSt11JErGCbfzUQ="
+      }
+    },
+    "messageTimestamp": "1759501771",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

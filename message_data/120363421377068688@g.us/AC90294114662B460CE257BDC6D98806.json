@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC90294114662B460CE257BDC6D98806",
+      "participant": "138302594273318@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwijxvSRBRAAGiA3yspPr1ylCsyjE4X/uSOmaiIFAk2EepomggtJMltutiIhBTtVCDyVV3DcWNO1BkGkPelfCQvRZVzLA6IpJ+5Cn0Em"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436426",
+    "participant": "138302594273318@lid",
+    "broadcast": false,
+    "pushName": "Bulowa"
+  }
+]

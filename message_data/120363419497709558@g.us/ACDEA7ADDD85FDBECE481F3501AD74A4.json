@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACDEA7ADDD85FDBECE481F3501AD74A4",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂 sindio utajuaje",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC15893DDAEB31E9A27B5E38493E5693",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Iysher lazima akutetee😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "WS2dklFrhlxFNDDRWGV3da8tE40RB1deQvJ4XX2sCdY="
+      }
+    },
+    "messageTimestamp": "1759502481",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

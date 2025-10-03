@@ -1,0 +1,30 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACA09EA0EB76A498E059C498B6ADD833",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "messageSecret": "jy4a0wZoMaquio5frXhT/kVykMqowZ6VUSiQgmuzBUg="
+      },
+      "albumMessage": {
+        "expectedImageCount": 2,
+        "expectedVideoCount": 0,
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759436997",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

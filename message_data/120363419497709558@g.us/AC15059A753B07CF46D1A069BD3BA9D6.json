@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC15059A753B07CF46D1A069BD3BA9D6",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "You wish😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACECD862883F5710E7B6FF88BAFEDD50",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "😂😂  unakumbuka ukiniuliza mtu anafanyanga nini 😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "Y3coMZAs8v4s3YqlF3A9YTRUT3/48eeORtYh1I2y3hU="
+      }
+    },
+    "messageTimestamp": "1759501939",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

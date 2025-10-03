@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC12EB65CB1432EBF19BC150F27F459C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Take ur time 😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5B8F9FEE0012B92BA4CC926BC9B2485",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Shida n kumaliza 🤦🏾‍♂️"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436487",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

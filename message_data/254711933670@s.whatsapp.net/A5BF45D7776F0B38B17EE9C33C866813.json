@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5BF45D7776F0B38B17EE9C33C866813"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😹😹😹𝗴𝗹𝗲𝗻 𝗻𝗱𝗶𝗼 𝗮𝗹𝗶𝗸𝘂𝘄𝗲𝗸𝗲𝗮?",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACF882F820D4EC1384E1AF5E1F50AA36",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ni ngombe ingine apa naissidia kufix polling error 😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "2bb+PDiT9ldcGcC8xO8IBgtCd40BIkTa68muuu662TE="
+      }
+    },
+    "messageTimestamp": "1759435978",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

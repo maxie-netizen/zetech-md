@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC783A7E664B15D1011470DDF72B059A",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "kwani mikono zenu hazina damu ama bones😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC2EDB3F9D5BBD68D99D693E97D9A0DC",
+          "participant": "258815249408132@lid",
+          "quotedMessage": {
+            "conversation": "0769172634"
+          },
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "cLYCxFYIQ62LADbPc66dqVk3Xe3iM2+LYbJBOCf2Geg="
+      }
+    },
+    "messageTimestamp": "1759436469",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

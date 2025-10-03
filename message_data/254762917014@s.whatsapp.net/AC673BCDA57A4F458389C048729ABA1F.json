@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC673BCDA57A4F458389C048729ABA1F"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB0C2E688C83E8079902F",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "CjcKGzI1NDc0MzUxODQ4MUBzLndoYXRzYXBwLm5ldBABGhYzRUIwNUFCRkY1NjQ2RDUwNTgyNjUxEq8FMqwFCgMudnZQAIoBngUKFjNFQjBFNUYwNzEwQTMyNkE4QTlGMDMSGzI1NDc2MjkxNzAxNEBzLndoYXRzYXBwLm5ldBrmBBrjBAr6AWh0dHBzOi8vbW1nLndoYXRzYXBwLm5ldC9vMS92L3QyNC9mMi9tMjM0L0FRTUh2QTZtVXdPTGRKR0JzVl91MG5QNWRXMExralR3bXRwbnlmTGNtVzZwb1F1dzdfVUdnaFBfMDZTOVUxTjI0bHU0bkV5N0Fob1pYSkpoeDhUVXdGeGo4Qmt1UFltbEJ1WU1pVGZaalE/Y2NiPTktNCZvaD0wMV9RNUFhMmdFZ3ZGcHBmbUk0WFVLV0t6NWdocWtDMjlsajlKSjAwOTZCU3BVSU1yOFNDUSZvZT02OTA3MzlFNyZfbmNfc2lkPWU2ZWQ2YyZtbXMzPXRydWUSCmltYWdlL2pwZWciIDCLFjELla0gyPs312612EDufXu13r90yRzFcUgeQpEiKKyiBTClBTi4BkIg+2G6nBJVD2zMxEmMJ4Wme2KRPz7oj2vEUUfJuR69MclKIOerLptbf5fnyrJl3I/j/f7Uad5yitR6IxQBIlxCk+lTWtgBL28xL3YvdDI0L2YyL20yMzQvQVFNSHZBNm1Vd09MZEpHQnNWX3UwblA1ZFcwTGtqVHdtdHBueWZMY21XNnBvUXV3N19VR2doUF8wNlM5VTFOMjRsdTRuRXk3QWhvWlhKSmh4OFRVd0Z4ajhCa3VQWW1sQnVZTWlUZlpqUT9jY2I9OS00Jm9oPTAxX1E1QWEyZ0VndkZwcGZtSTRYVUtXS3o1Z2hxa0MyOWxqOUpKMDA5NkJTcFVJTXI4U0NRJm9lPTY5MDczOUU3Jl9uY19zaWQ9ZTZlZDZjYNm2/8YGigED2AMAyAEB6AEAGOi4/8YGIAKKAyDXndP6B0TDvArFuXY4yuXug1DAfSHXRrEnkm2WMWzhPJoDGzI1NDc2MjkxNzAxNEBzLndoYXRzYXBwLm5ldIgEAA=="
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759501422",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

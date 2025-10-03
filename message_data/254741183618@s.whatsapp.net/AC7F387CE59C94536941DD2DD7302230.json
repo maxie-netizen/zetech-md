@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7F387CE59C94536941DD2DD7302230"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ni after😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACCD526E34FB6D48ADA405F5E18B86FB",
+          "participant": "254741183618@s.whatsapp.net",
+          "quotedMessage": {
+            "audioMessage": {
+              "url": "https://mmg.whatsapp.net/v/t62.7117-24/559531075_4177247609261063_4447947717515853834_n.enc?ccb=11-4&oh=01_Q5Aa2gFhSz8P-Tpc73eQNfgbh7bWJ8wyXGmD8aJHWIPod2G0eA&oe=690650C0&_nc_sid=5e03e0&mms3=true",
+              "mimetype": "audio/ogg; codecs=opus",
+              "fileSha256": "MY08HyOviS2+3abQ/qV/JOoNLnsJmeSIZwR5gRG3vhk=",
+              "fileLength": "75520",
+              "seconds": 37,
+              "ptt": true,
+              "mediaKey": "8ZT8LhHFiETrCg5Jk496FSocH8QVykD8RiCnQpZVLww=",
+              "fileEncSha256": "7GkwLT0Fu/m/436JavYbbS+lOrETBl9G+9VReoLrCWA=",
+              "directPath": "/v/t62.7117-24/559531075_4177247609261063_4447947717515853834_n.enc?ccb=11-4&oh=01_Q5Aa2gFhSz8P-Tpc73eQNfgbh7bWJ8wyXGmD8aJHWIPod2G0eA&oe=690650C0&_nc_sid=5e03e0",
+              "mediaKeyTimestamp": "1759437615",
+              "waveform": "AAArBAAVGyYQMB4nAB8jADYzAAAjCxAeBAAeGgAYAAAiJiQmHSgnJxghKAMAKCoiKC0AAAAeIAAkAAADIQ8gAA=="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437689",
+    "status": "READ",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

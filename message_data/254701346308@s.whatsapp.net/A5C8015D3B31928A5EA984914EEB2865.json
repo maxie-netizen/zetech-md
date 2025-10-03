@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5C8015D3B31928A5EA984914EEB2865"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Acha nione",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC182E9FBA09D3B34065509C67F75F4B",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Umeona io yenye imekam??"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "KfAK9J99YC3oms+Jr3wvG8G2bS+BFqPXg1iPrvUnkUQ="
+      }
+    },
+    "messageTimestamp": "1759435977",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

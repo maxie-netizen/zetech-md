@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC3510D9B8A9E1EC79A80789EB28ABDC"
+    },
+    "message": {
+      "conversation": "Mzee",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "EFycAVAg6Gdq8G/vBeAzsMOTzp2bY98FoLF1ocOoDPc="
+      }
+    },
+    "messageTimestamp": "1759436572",
+    "broadcast": false,
+    "pushName": "Riba"
+  }
+]

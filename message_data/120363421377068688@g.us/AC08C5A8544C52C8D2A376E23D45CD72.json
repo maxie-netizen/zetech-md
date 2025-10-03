@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC08C5A8544C52C8D2A376E23D45CD72",
+      "participant": "84933397729412@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj99vDDARAAGiCPaIMiN6KuNZ6u/ywHhL1cKeF8O5Id0YqRNxz6AoMD+SIhBa7e8SlxTSuPhbOF4TYq5aG1b1ky4p3Wujzs/SNxDAZE"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "D6hqp/skXqo6zQ==",
+          "senderTimestamp": "1759148741",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "84933397729412@lid",
+    "broadcast": false,
+    "pushName": "sixteenovhba"
+  }
+]

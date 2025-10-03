@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "254740300165@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACB42931913B9B573BD37E4D239EFABB"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "APP_STATE_SYNC_KEY_SHARE",
+        "appStateSyncKeyShare": {
+          "keys": [
+            {
+              "keyId": {
+                "keyId": "AAAAAHnz"
+              },
+              "keyData": {
+                "keyData": "RlyrRpOdbJqaELRC4T/nPT7qvgPInTG7Ei3SNdtip2o=",
+                "fingerprint": {
+                  "rawId": 1507988238,
+                  "currentIndex": 1,
+                  "deviceIndexes": [
+                    0,
+                    1
+                  ]
+                },
+                "timestamp": "1759434502639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759434502",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

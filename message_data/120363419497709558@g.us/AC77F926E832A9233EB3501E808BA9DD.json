@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC77F926E832A9233EB3501E808BA9DD",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Utapata wapi 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACB65CD1AF5B2C41A341A34122B4E3E5",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Hadi wewe unajua nikitaka nitapata😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "UHd4rKk7pY7JdM6gjdEspwkPoGKcEjryAYNiRK6lX00="
+      }
+    },
+    "messageTimestamp": "1759501442",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

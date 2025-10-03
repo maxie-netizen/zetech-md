@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A578A50B98C4B75F82518EE3725F98DE"
+    },
+    "message": {
+      "conversation": "𝗡𝗮𝘁𝗮𝗸𝗮 𝗸𝘂𝘁𝗲𝘀𝗮 𝗲𝘅😂😂🥱",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "4IHWIbaOAlQPHJ51z6PHN93y6izSGIepLMij6cf1iX0="
+      }
+    },
+    "messageTimestamp": "1759435602",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

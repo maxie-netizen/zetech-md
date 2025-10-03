@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5E0B9A9C66424C70AABFB2B7FDF55C5",
+      "participant": "74586821517447@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiruqnbBRAAGiCV9bskxLUQkUm/YtkrA8AA5FVtJrKCU85XlSs/dpF8eSIhBYUf7SSBxymqoD/85qwl8vxiOOjNlNcQmGihXd5TSq4U"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACCD9E385D93EFF505813EE8354821AD",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759436350922"
+      }
+    },
+    "messageTimestamp": "1759436357",
+    "participant": "74586821517447@lid",
+    "broadcast": false,
+    "pushName": "Tiki taka"
+  }
+]

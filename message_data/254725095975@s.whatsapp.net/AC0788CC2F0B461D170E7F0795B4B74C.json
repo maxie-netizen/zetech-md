@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254725095975@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC0788CC2F0B461D170E7F0795B4B74C"
+    },
+    "message": {
+      "conversation": "ooh",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "bbCSY9GLz+AIXb9rsbxsJWEoGht1yLGkSIhFNy9Cka4="
+      }
+    },
+    "messageTimestamp": "1759428440",
+    "broadcast": false,
+    "pushName": "Musomi Joey"
+  }
+]

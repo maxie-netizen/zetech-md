@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC16660E9B8D69DE32BD3BC74FE4AA4D",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "@258815249408132 leta prove umeshare link",
+        "previewType": "NONE",
+        "contextInfo": {
+          "mentionedJid": [
+            "258815249408132@lid"
+          ],
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "1RKIzfflpqJrImKCKXvTXbjrEaAlzk/URKPLm3J+6WQ="
+      }
+    },
+    "messageTimestamp": "1759436574",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

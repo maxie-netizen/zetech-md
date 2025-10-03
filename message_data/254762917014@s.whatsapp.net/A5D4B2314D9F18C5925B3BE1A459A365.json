@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5D4B2314D9F18C5925B3BE1A459A365"
+    },
+    "message": {
+      "conversation": "Ebu screenshot nione"
+    },
+    "messageTimestamp": "1759428823",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

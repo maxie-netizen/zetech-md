@@ -1,0 +1,97 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A52CA4DAA39B04D80F9C540B393F7A95"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗧𝘂𝗹𝗶𝗮 𝘂𝘁𝗮𝗼𝗻𝗮 😹💔",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACE64A92A9536574653E285120B1C2E4",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "stickerMessage": {
+              "url": "https://mmg.whatsapp.net/v/t62.15575-24/556600498_4347426188825450_6129661985401919597_n.enc?ccb=11-4&oh=01_Q5Aa2gEqxjg-P5Dc_0MFfhM750Pfe9qQ5LSLUlZXxrlfhItzzg&oe=69066C56&_nc_sid=5e03e0&mms3=true",
+              "fileSha256": "p6t2ffCNgQAqku7a+ky3pmLMvAO6Hn9AI7ayPvuZfRU=",
+              "fileEncSha256": "Xy7w0ubrdylY3tQtqoDQo94Jyau/E7wy/o6vaKIls1g=",
+              "mediaKey": "R7yxt97+k6JRp9BsRjsSI1Q/7s1NW65v5KM4+qd0SME=",
+              "mimetype": "image/webp",
+              "directPath": "/v/t62.15575-24/556600498_4347426188825450_6129661985401919597_n.enc?ccb=11-4&oh=01_Q5Aa2gEqxjg-P5Dc_0MFfhM750Pfe9qQ5LSLUlZXxrlfhItzzg&oe=69066C56&_nc_sid=5e03e0",
+              "fileLength": "115268",
+              "mediaKeyTimestamp": "1743239204137",
+              "firstFrameLength": 114884,
+              "firstFrameSidecar": "C/McTi8vAHxrWg==",
+              "isAnimated": true,
+              "stickerSentTs": "1759437287174",
+              "isAvatar": false,
+              "isAiSticker": false,
+              "isLottie": false
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437411",
+    "messageSecret": "j9htuV3AVKyKiguq2bvw/yl5MYSZomMkaRcurdo+qs4=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQuhlE/7vImqhrrRraM1ecALDGg="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A52CA4DAA39B04D80F9C540B393F7A95"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗧𝘂𝗹𝗶𝗮 𝘂𝘁𝗮𝗼𝗻𝗮 😹💔",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACE64A92A9536574653E285120B1C2E4",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "stickerMessage": {
+              "url": "https://mmg.whatsapp.net/v/t62.15575-24/556600498_4347426188825450_6129661985401919597_n.enc?ccb=11-4&oh=01_Q5Aa2gEqxjg-P5Dc_0MFfhM750Pfe9qQ5LSLUlZXxrlfhItzzg&oe=69066C56&_nc_sid=5e03e0&mms3=true",
+              "fileSha256": "p6t2ffCNgQAqku7a+ky3pmLMvAO6Hn9AI7ayPvuZfRU=",
+              "fileEncSha256": "Xy7w0ubrdylY3tQtqoDQo94Jyau/E7wy/o6vaKIls1g=",
+              "mediaKey": "R7yxt97+k6JRp9BsRjsSI1Q/7s1NW65v5KM4+qd0SME=",
+              "mimetype": "image/webp",
+              "height": 64,
+              "width": 64,
+              "directPath": "/v/t62.15575-24/556600498_4347426188825450_6129661985401919597_n.enc?ccb=11-4&oh=01_Q5Aa2gEqxjg-P5Dc_0MFfhM750Pfe9qQ5LSLUlZXxrlfhItzzg&oe=69066C56&_nc_sid=5e03e0",
+              "fileLength": "115268",
+              "mediaKeyTimestamp": "1743239204137",
+              "firstFrameLength": 114884,
+              "firstFrameSidecar": "C/McTi8vAHxrWg==",
+              "isAnimated": true,
+              "stickerSentTs": "1759437287174",
+              "isAvatar": false,
+              "isAiSticker": false,
+              "isLottie": false
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "j9htuV3AVKyKiguq2bvw/yl5MYSZomMkaRcurdo+qs4="
+      }
+    },
+    "messageTimestamp": "1759437421",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲",
+    "verifiedBizName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

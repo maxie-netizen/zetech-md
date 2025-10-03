@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254792142513@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0A06E4ECEFD6B35F30B"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "❌ An error occurred while contacting the AI.",
+        "contextInfo": {
+          "stanzaId": "6B94BD8EFC60CD453E17CA973732B23F",
+          "participant": "254792142513@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Nko poa"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759427435",
+    "status": "SERVER_ACK"
+  }
+]

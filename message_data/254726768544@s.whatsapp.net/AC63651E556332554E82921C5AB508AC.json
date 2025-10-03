@@ -1,0 +1,39 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC63651E556332554E82921C5AB508AC"
+    },
+    "message": {
+      "associatedChildMessage": {
+        "message": {
+          "videoMessage": {
+            "url": "https://mmg.whatsapp.net/v/t62.7161-24/557766345_1296555415286941_5499569866369679002_n.enc?ccb=11-4&oh=01_Q5Aa2gFSUMfvPfDLhjR7LQlO0VHysnlzEqA0FOVvs6Ay5LdRZA&oe=69066684&_nc_sid=5e03e0&mms3=true",
+            "mimetype": "video/mp4",
+            "fileSha256": "6NwPr/iwXe7D7a2LS0InhYtndXhggnLUMP1pJoAN9EQ=",
+            "fileLength": "4114076",
+            "seconds": 10,
+            "mediaKey": "M4/tKTKZTjAWOuj6QKGOYKanP1tN5IZ1K0I0a39YHo4=",
+            "caption": "Mcheza saa saba sato😂😂",
+            "height": 1280,
+            "width": 720,
+            "fileEncSha256": "LoWFi1+Ch6W9LCjOMDxiZw/8G7nNPlkwPZC+DNtnSsg=",
+            "directPath": "/v/t62.7161-24/557766345_1296555415286941_5499569866369679002_n.enc?ccb=11-4&oh=01_Q5Aa2gFSUMfvPfDLhjR7LQlO0VHysnlzEqA0FOVvs6Ay5LdRZA&oe=69066684&_nc_sid=5e03e0",
+            "mediaKeyTimestamp": "1759435362",
+            "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAKQMBIgACEQEDEQH/xAAvAAACAwEAAAAAAAAAAAAAAAADBAABBQIBAAMBAQAAAAAAAAAAAAAAAAECAwQA/9oADAMBAAIQAxAAAADLXPw/B4MPu4pi6gwTRLjFrrvJhrJIEUYSbjr2jArbDLzGhzFOId5qNHzNzWMURQZ0uSKCtyWIkpEH/8QAJRAAAgIBAwMEAwAAAAAAAAAAAQIAAxEEEjEQISITFEFRFTNS/9oACAEBAAE/ADQMZC5hqmwgTmYMwZ7sl8kYE9QN2EsYEYEQQrNo+49YtReARDRswQ8ZE9Pnygmh09Vqt6s9nppuxkEd4GrIxg5lOlBUlhzDoLA32Imps05cJPylv8LA5yM94qjcp+Yh8YDNWU3sUExADmLkmvEQ8RrFHJlrZdz8EzxgMrZV07tnyHEr1lwP3AtjsTjmWgK7KD0DEQP4kdoh2tK7AygialdtzdRyJYmxppbO+2a39gPT/8QAHxEAAgIBBAMAAAAAAAAAAAAAAQIAEQMQEiFxIzEz/9oACAECAQE/AKEVbao2NVNFoWQk8REvmE2YKEApR1CFb0QNF8irZjcMe9MBO+pn+rT/xAAeEQEAAgEEAwAAAAAAAAAAAAABABECAxASIRMxYf/aAAgBAwEBPwC9rni+keojcHJMhLJSxGGaX3NPPhy6i3se9v/Z",
+            "contextInfo": {
+              "pairedMediaType": "HD_VIDEO_CHILD"
+            },
+            "streamingSidecar": "Tt9tRLxxxco26dloozx557O0LXPLg6OxQ7oW5HCvX8IQwKnRj3SQcQtHNYXGcNGoKme8XJO5xJe4i9jiK+EZ/qNFbrukM3RhCxz/r5PaQad+gPp9IYKp1Pahci5utFLt4tgNcyTRquPFFO1uIG+m9lpxVwkmfsTCvLZRNS3YK2QwFdjKodpmdJ8kUWHcJXGEV1xvwtneRgDx3UkDyWzBFsKDT75DbH0MxbeWuBa6hE0l/TvEQbgFu7rf40tU0gUKRdEQCuxkjk2aqqn1qkaE87XcyhoJzyLFUwWeCz4k5oVrtgVViRADF1grHhMVduwcKe3t9rzjukOy3eHtWVvIOdeIgBI+1vaqAAS/qNi7UoHZhhgG1gGDsjfKohcOg96zSnjkJNMc97aodq7Mv3WVMDfUK71n4PTCvU6vQQRWNBlnib+LrX1hxS8V000UUetiYNQnPQUWlJYPoLADRv+qp43MfaiA2OdpJ7XKSsM2rlSjHeF0qmThwXUUIWrQP4Ay+/mwMiohW33zSGX3MbfeWHSlVNfoO54ifHZjERdWtzAwiuTgG82tKz2f3utBcMr3Qx0l1JUj3E5Jg6zq8tWgbQDqiRAN/VsHUfsKXBLAWwiVGchocl9A3eL6towdKyqEjy0GKsn6It94Br3FNx3ZEoe+vZt5xtGbo4gjAQ5oLM2KGuPDzl9WUyA6BH49Q0aWOOZzpjOPF40n9LZ+3E6C3XlC04Sx3ufener9KaTueOz2ZzI/s47rD1ioY04k/XmkIVXBiHNJHLj4MFoQ8sPcDVyPfUV909sg4nOCzn6AhQSempB/Gx102+SQX/+5pJ+Ph3mOn9EJ",
+            "externalShareFullVideoDurationInSeconds": 0
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759435365",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

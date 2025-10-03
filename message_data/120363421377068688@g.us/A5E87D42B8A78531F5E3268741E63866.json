@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5E87D42B8A78531F5E3268741E63866",
+      "participant": "229910220144756@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "7lDW4GRhzJKUAVZ+FgqB5+pvVlOpIIQZwjSd606BvvwXKkqX2AFBaopY8HwVNOa7V1E=",
+          "encIv": "RNtkHpBkqfiANigV"
+        },
+        "senderTimestampMs": "1759435965969"
+      }
+    },
+    "messageTimestamp": "1759435968",
+    "participant": "229910220144756@lid",
+    "broadcast": false,
+    "pushName": "aleexy"
+  }
+]

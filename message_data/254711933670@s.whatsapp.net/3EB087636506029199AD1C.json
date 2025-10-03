@@ -1,0 +1,22 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB087636506029199AD1C"
+    },
+    "message": {
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "254711933670@s.whatsapp.net",
+          "fromMe": true,
+          "id": "AC62AA73E127A26D4AF7A0FFC14D8253"
+        },
+        "text": "👀",
+        "senderTimestampMs": "1759434927056"
+      }
+    },
+    "messageTimestamp": "1759434927",
+    "status": "PENDING"
+  }
+]

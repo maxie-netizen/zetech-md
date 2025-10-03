@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACD1EB12C5793005F06AB520C76580AC"
+    },
+    "message": {
+      "conversation": "Tunaeda date 10/10/25 kumuona kamothos",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "P6mYSXId/tfxeShFFx8WO1KerO21M/TWejQmZLjZaBg="
+      }
+    },
+    "messageTimestamp": "1759502391",
+    "broadcast": false,
+    "pushName": "Dorcas Njoki"
+  }
+]

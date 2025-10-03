@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACF8F2CE6DA3E1AE70786CB376F443D5"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Padan anapenda madem nikama to Mcheza wa Heartless 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACDD8B5E03C8747CE19BB0B18B3D630D",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Matrix n Padan akuwa ama"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "oCiX9TGU3IeZzDsd6gN7MhLJhiSAnwgY+FqTbMh7NJg="
+      }
+    },
+    "messageTimestamp": "1759435194",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

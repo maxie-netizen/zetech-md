@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACAB77F5D93AC500D3A37BCA735711C7"
+    },
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7117-24/557851361_2345970319170416_4535654395745129657_n.enc?ccb=11-4&oh=01_Q5Aa2gH1V5my-IpqJl8bHjXvngFabdML12R9KWbUhCqCFua3uQ&oe=6906424A&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/ogg; codecs=opus",
+        "fileSha256": "JPyJ9wDG2twivDumkZ839pwQyok17lnFBzNCXcMvLZU=",
+        "fileLength": "20418",
+        "seconds": 10,
+        "ptt": true,
+        "mediaKey": "Otf9qsP2mLsbI2MLAk9eFyYD1n592sp22JO3vCwFbb4=",
+        "fileEncSha256": "UkCOw85t4rPrH0Flc57mV4RWMIYKvleGwojHv9hBLe4=",
+        "directPath": "/v/t62.7117-24/557851361_2345970319170416_4535654395745129657_n.enc?ccb=11-4&oh=01_Q5Aa2gH1V5my-IpqJl8bHjXvngFabdML12R9KWbUhCqCFua3uQ&oe=6906424A&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759437531",
+        "waveform": "ADEpMwMrDiEmKysqMDAyLDUvJQAAAAAAAAAAACwwJyspICshJTIeFx0XHRsmJCcpEgAYDBMIGBUSAAAAAAAAAA=="
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "oQWwsEIgk1CJeP+5+0M1AaPJv0ZsaLkgSfryQG3DxP0="
+      }
+    },
+    "messageTimestamp": "1759437541",
+    "broadcast": false,
+    "pushName": "Riba"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACB1BF4B90F86FD5EB9A94F4D0F7E053",
+      "participant": "193282453823613@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjZi8yRBhAAGiAgvuDSTcwWCm7jqJn43d+c6fgdxfNvXs5e59MvaN4tuSIhBW4+vzy4Mj9YCuE9UqLjyxxt95KC36cdAMZ/CmWZ8+g6"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436422",
+    "participant": "193282453823613@lid",
+    "broadcast": false,
+    "pushName": "Diñhø mpenda wamama✨️"
+  }
+]

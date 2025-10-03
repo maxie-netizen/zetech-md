@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254716461257@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC3B3DDE2ABB25F777FED8095388AF15"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/557515552_1273289851478028_6980489801839989373_n.enc?ccb=11-4&oh=01_Q5Aa2gHR71ldGGeZ41ar3ig_QkZe-F-HN2fgzefckysCamh_9w&oe=69063BA8&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "XXoWuGwIz3JqsF/YP5AEnPHx6+G4/FfCrL08ciJXdMk=",
+        "fileEncSha256": "nR5JsYuTxOi3dlQGP8srAUvxTaIENmNR4gXbIzu3Mt8=",
+        "mediaKey": "PecDIv9sgIV5jkKieFh1ti1zKbRliPujG3oiXJd51mU=",
+        "mimetype": "image/webp",
+        "height": 64,
+        "width": 64,
+        "directPath": "/v/t62.15575-24/557515552_1273289851478028_6980489801839989373_n.enc?ccb=11-4&oh=01_Q5Aa2gHR71ldGGeZ41ar3ig_QkZe-F-HN2fgzefckysCamh_9w&oe=69063BA8&_nc_sid=5e03e0",
+        "fileLength": "38028",
+        "mediaKeyTimestamp": "1759245013",
+        "isAnimated": false,
+        "contextInfo": {
+          "stanzaId": "A50BD3C1AC7C185925ED9E4951C3557B",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Mmi nikamwambia?🌚s\nUsiniekelee plz"
+          }
+        },
+        "stickerSentTs": "1759427845609",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "B3jaI8Hv4FsfWQ==",
+          "senderTimestamp": "1759041117",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "SAKLuMEpYtLG5xatWifORCRYnWDiVAXHJJYtL3OOiNQ="
+      }
+    },
+    "messageTimestamp": "1759427846",
+    "broadcast": false,
+    "pushName": "🖤ℕ𝕚𝕔𝕣𝕚🥷"
+  }
+]

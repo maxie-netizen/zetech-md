@@ -1,0 +1,43 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "3FAF58B9A6CA8DF5BF9F",
+      "participant": "21101526704347@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjNx/qrBRAAGiBdb5tTUeP7k+0QHVAsvCh4dqzt41qub+Kz4KTrsIuCtiIhBR/pU46KARVFBFOK4cNK/PS2NJSxWVlZH9EFF55xUPtL"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "gufWT8lgPCPYXw==",
+          "senderTimestamp": "1759389133",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "3rpVGLHSN8MtQe3UFKxADVbx19UVhx9TAS29mD66+P/ie1XtZFlF4LjW7rQ77IJlFJ4=",
+          "encIv": "AuGV+aFlopLDSB+C"
+        },
+        "metadata": {},
+        "senderTimestampMs": "1759436076653"
+      }
+    },
+    "messageTimestamp": "1759436082",
+    "participant": "21101526704347@lid",
+    "broadcast": false,
+    "pushName": "Casillas Mac'Okinyo"
+  }
+]

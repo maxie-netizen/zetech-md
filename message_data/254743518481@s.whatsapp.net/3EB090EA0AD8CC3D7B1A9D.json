@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB090EA0AD8CC3D7B1A9D"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Successfully Changed Auto Typing To off",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:404 Not Found,\nitem1.TEL;waid=254762917014:254762917014\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759353398",
+    "status": "SERVER_ACK"
+  }
+]

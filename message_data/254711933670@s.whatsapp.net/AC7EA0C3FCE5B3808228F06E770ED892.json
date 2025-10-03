@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7EA0C3FCE5B3808228F06E770ED892"
+    },
+    "message": {
+      "conversation": "Wacha usenge mzee😂😂 unda yako"
+    },
+    "messageTimestamp": "1759437355",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  },
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7EA0C3FCE5B3808228F06E770ED892"
+    },
+    "message": {
+      "conversation": "Wacha usenge mzee😂😂 unda yako",
+      "messageContextInfo": {
+        "messageSecret": "wDixvS7n5wrPYOj+Kpj0nOVMJvPzPcP4kT45M/ZM+Rs="
+      }
+    },
+    "messageTimestamp": "1759437195",
+    "status": "DELIVERY_ACK",
+    "userReceipt": [
+      {
+        "userJid": "254711933670@s.whatsapp.net",
+        "receiptTimestamp": "1759437196",
+        "readTimestamp": "0",
+        "playedTimestamp": "0"
+      }
+    ],
+    "messageSecret": "wDixvS7n5wrPYOj+Kpj0nOVMJvPzPcP4kT45M/ZM+Rs=",
+    "originalSelfAuthorUserJidString": "254740300165@s.whatsapp.net",
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A55B7B9F0C43BBC3BD3EA655A759D36C"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Natengeneza bana",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACA445BF22AF56005E923C42334A2EAF",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "imageMessage": {
+              "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m233/AQNE8V9RqJrPwrE-LJRiPy0p5eZ-2kmGYA_h07PxBmVVK586C_ZGek-KL2zZYDhR7iVd5zntjOkD3szr39bmvzgPrBqCHt9O_4aw2Y_kKw?ccb=9-4&oh=01_Q5Aa2gHxh6QTSixuk73eOv3KZPWtlGOj3gkoyZbe21V5xKrOAA&oe=69064734&_nc_sid=e6ed6c&mms3=true",
+              "mimetype": "image/jpeg",
+              "caption": "Kila saaa tu ni hivi ata view once",
+              "fileSha256": "qXTntYIUpokwxW6bcyeTi9gvfeNetxS1dEokO94/fLs=",
+              "fileLength": "36236",
+              "height": 327,
+              "width": 1080,
+              "mediaKey": "Cj1kVEQpW9NqNuL4hCeAoQywgWgURhIrmyzSYvHyCuE=",
+              "fileEncSha256": "x/OYg7eUMjBocPlvuKlM8jd+3g3Ee7aQ5ilwiX2ic6g=",
+              "directPath": "/o1/v/t24/f2/m233/AQNE8V9RqJrPwrE-LJRiPy0p5eZ-2kmGYA_h07PxBmVVK586C_ZGek-KL2zZYDhR7iVd5zntjOkD3szr39bmvzgPrBqCHt9O_4aw2Y_kKw?ccb=9-4&oh=01_Q5Aa2gHxh6QTSixuk73eOv3KZPWtlGOj3gkoyZbe21V5xKrOAA&oe=69064734&_nc_sid=e6ed6c",
+              "mediaKeyTimestamp": "1759436032",
+              "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIABQAQwMBIgACEQEDEQH/xAAuAAEBAQEBAQAAAAAAAAAAAAAAAwIBBAUBAQEBAQAAAAAAAAAAAAAAAAECAwT/2gAMAwEAAhADEAAAAPmczm5rnmGazesfD324moqpY5N89zNM63JQGo59/wD/xAAhEAEAAgIBAwUAAAAAAAAAAAABAAIRIRIDE1EiMUFCcf/aAAgBAQABPwDVqk4niY/Z6YlAEdzc2QtaZtCzTpnF2zuXXbC937SxhgLqVqYI0r4lqBOzn5Z0anJfBH3ZWN3kkoqx1Msywn//xAAbEQEBAAMAAwAAAAAAAAAAAAABAgAQMRESUf/aAAgBAgEBPwAKVz0vKEk8/cJp4ajrqum//8QAHBEBAAIBBQAAAAAAAAAAAAAAAQACEBIhMUGB/9oACAEDAQE/ANgmqsqjbyKGLcQh3n//2Q==",
+              "contextInfo": {
+                "pairedMediaType": "NOT_PAIRED_MEDIA",
+                "statusSourceType": "IMAGE"
+              },
+              "scansSidecar": "kd4n9Gvj29N2/eL9WF34x/WFkosaLX9X2FIN0lyYpENXQojFcj/1zg==",
+              "scanLengths": [
+                3835,
+                14136,
+                6602,
+                11663
+              ],
+              "midQualityFileSha256": "fRrWnK98fY9n2Y+K9SqJIpU3HmPDyTXmcldR+cIbe2E="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "cMQe0yMD9dVhu4JBoAnKz1QB51GxJroIbfvblknSYPc="
+      }
+    },
+    "messageTimestamp": "1759436135",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

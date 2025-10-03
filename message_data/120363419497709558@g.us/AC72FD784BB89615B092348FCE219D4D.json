@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC72FD784BB89615B092348FCE219D4D",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Tebu ambia Iysher akuonyeshe zile screenshot alinitumia jana😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC959F94F07120238CE46FADBA45A081",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": "Aaah 😂😂 tuulize @196946262249660",
+              "previewType": "NONE",
+              "contextInfo": {
+                "mentionedJid": [
+                  "196946262249660@lid"
+                ]
+              },
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "zYJt9evBoiavpyEiGFxUt79ksm+oaawfz3qJ6/vuWRA="
+      }
+    },
+    "messageTimestamp": "1759502196",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5577DBC6F57290BF212D3F2E17465B1",
+      "participant": "152257228181739@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiCs66aBxAAGiA3V4I/ZzVtEBR41YaHN1sP37jzwBgFMV8oFbdFOS7C7CIhBfQHrXnPhci3aoQ7zH5ZyitcGxUK+StutR0i8dQoRJFR"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACA9ED0F4EF44C9E43E555F073B80542",
+          "participant": "82644129808501@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759436834033"
+      }
+    },
+    "messageTimestamp": "1759436837",
+    "participant": "152257228181739@lid",
+    "broadcast": false,
+    "pushName": "Joshua kimmich koin"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB00A7E4F53FF4FBC5776"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "turiiaaa",
+        "contextInfo": {
+          "stanzaId": "A57273B5700060274ACB07B233D12D9D",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Wacha kwwnza niizime",
+            "messageContextInfo": {
+              "messageSecret": "KR/WIAettBJO7NJRXOv4aaemmaJHAZo/ywW5Cy6dbAI="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "im4YVWXFnOeMpbSWwS3NcfR/QVfc9XbkU2JibOlMXKE=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428746",
+    "status": "READ",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

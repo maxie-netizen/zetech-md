@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACACCCD52DD253A239958741DEDD1C87",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Kama ulishindwa kubag nancy 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACEA1BA5C566A111F07E28F2C8A4F763",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Zentech😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "ahL2x/UWegKNT7HnM50lIOEg7RXifX/QsFnLZGNrchU="
+      }
+    },
+    "messageTimestamp": "1759501570",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACB21550103E8AC5ED2A322EAD130CA2",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Si ni nyinyi mlisema hajiheshimu😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACACCCD52DD253A239958741DEDD1C87",
+          "participant": "115389178613979@lid",
+          "quotedMessage": {
+            "conversation": "Kama ulishindwa kubag nancy 😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "gJBn6Bsn8Q2p2Qj8hZFeHJuZLjc8bV0zsBe/TBFsUMs="
+      }
+    },
+    "messageTimestamp": "1759501602",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

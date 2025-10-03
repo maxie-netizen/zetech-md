@@ -1,0 +1,30 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363403739187285@g.us",
+      "fromMe": false,
+      "id": "AC029C2B183DEEDD3D79B9976A960C5D"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Sawa",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACCAD6BDAAC8B6491284D1141A61DA89",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Mm ndio nakuja na gari bois😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759437144",
+    "participant": "",
+    "messageSecret": "UM95vEfUc+5C3q01RC9UhsilWEh8JFNeQEyCXu/TFvY=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQu7fkjHZB1W/bLkTspFdpz0Qow="
+    },
+    "isMentionedInStatus": false
+  }
+]

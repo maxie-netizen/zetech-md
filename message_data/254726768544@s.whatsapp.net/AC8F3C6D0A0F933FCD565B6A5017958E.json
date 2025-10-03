@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC8F3C6D0A0F933FCD565B6A5017958E"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Erico anauza uoga skuizi 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACF8F2CE6DA3E1AE70786CB376F443D5",
+          "participant": "254726768544@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Padan anapenda madem nikama to Mcheza wa Heartless 😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "yHrtm1z7f1iSRM2yQLByHzj8t2+sjcG3kW3hziJfWcI="
+      }
+    },
+    "messageTimestamp": "1759435317",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

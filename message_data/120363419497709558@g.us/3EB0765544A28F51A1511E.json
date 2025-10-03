@@ -1,0 +1,30 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "3EB0765544A28F51A1511E",
+      "participant": "79341434196121@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "utakufa vibaya nakuhurumia😅😅",
+        "contextInfo": {
+          "stanzaId": "ACEA1BA5C566A111F07E28F2C8A4F763",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Zentech😂😂",
+            "messageContextInfo": {
+              "messageSecret": "0BsLDknjbkLo/27gvLOW/Il0K7nS7l9MURaqAviadUI="
+            }
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759501571",
+    "participant": "79341434196121@lid",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

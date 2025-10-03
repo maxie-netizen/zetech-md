@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC703D981756119F466B4BBCB56F0FEC",
+      "participant": "139741089558642@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjslYWSAhAAGiAhLP5XTJSd53Tv20RjX40RiHTk+nXbqVlVkpQY2y7dACIhBRUC2Fjg7kKpVCKVxOvLTgDKJEtng08/CJFCC5LOaetw"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "139741089558642@lid",
+    "broadcast": false,
+    "pushName": "God Did🙏🏿⚡"
+  }
+]

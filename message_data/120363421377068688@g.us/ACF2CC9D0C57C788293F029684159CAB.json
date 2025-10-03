@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACF2CC9D0C57C788293F029684159CAB",
+      "participant": "134020629303394@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjX5t6TBBAAGiCkYZTIC9UWXhtDkc+RqKCeGidPcp3iuhho9vJwjtt4fiIhBS2f3zwXR0OpR6LYKPkb1t05ceaMSF+raicLWOOEZmV6"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "134020629303394@lid",
+    "broadcast": false,
+    "pushName": "Ombima"
+  }
+]

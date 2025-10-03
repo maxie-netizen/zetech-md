@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACCEFD2CBB0EF66056C926F0CE9E3F76"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Pia mm naeza 😂🫴",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A554C75CE36728523359AC8CD010878A",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "𝗛𝗶𝘇𝗼 𝗲𝗿𝗿𝗼𝗿𝘀 𝗻𝗮𝗲𝘇𝗮"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436878",
+    "status": "DELIVERY_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

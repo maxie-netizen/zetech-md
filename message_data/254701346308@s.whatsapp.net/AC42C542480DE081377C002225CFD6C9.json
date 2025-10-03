@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC42C542480DE081377C002225CFD6C9"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Si ni ya platform mbili ama n me siradii😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A50994AAC69359EBCE7F56543A9E7CE1",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Sijauliza ivo 😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435069",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

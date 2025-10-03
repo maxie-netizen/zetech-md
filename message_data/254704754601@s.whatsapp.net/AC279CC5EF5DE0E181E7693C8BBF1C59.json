@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254704754601@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC279CC5EF5DE0E181E7693C8BBF1C59"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "leo umeniitisha game kijana",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A57731613D914BE54D054093E07D48DD",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Kuingia game"
+          },
+          "expiration": 0,
+          "ephemeralSettingTimestamp": "1738757159",
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "GzFyg2C1vRf7QA==",
+          "senderTimestamp": "1759203918",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "8TbCdTZ+76xqZNGFni8c67EXsX3myXQyrphRGPNqVLo="
+      }
+    },
+    "messageTimestamp": "1759428488",
+    "broadcast": false,
+    "pushName": "Obadiah waweru"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "AC9ADD048EFC24332DD9E7A3757A285E",
+      "participant": "195537362010272@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Mkiendelea hivi tutaenda mbali as a group",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A52960FCB9C88A4BE5B7E1893B11EE23",
+          "participant": "125413565161514@lid",
+          "quotedMessage": {
+            "conversation": "Reality😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "XwanhJBz2V+aPgBUd/UEb3LcV5wJnMN1j9A377QDd/0="
+      }
+    },
+    "messageTimestamp": "1759501223",
+    "participant": "195537362010272@lid",
+    "broadcast": false,
+    "pushName": "FullServerX32"
+  }
+]

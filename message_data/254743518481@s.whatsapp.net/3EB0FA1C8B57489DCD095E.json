@@ -1,0 +1,32 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0FA1C8B57489DCD095E"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "- *ZETECH-MD -Chat-Bot Menu 👾*\n*Enable Settings ✅*      \n> .chatbot on all - Enable AI in all chats\n> .chatbot on ib - Enable AI in inbox only\n> .chatbot on gc - Enable AI in groups only\n*Disable Settings ❌*\n> .chatbot off all - Disable AI in all chats\n> .chatbot off ib - Disable AI in inbox only\n> .chatbot off gc - Disable AI in groups only",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:404 Not Found,\nitem1.TEL;waid=254762917014:254762917014\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759359207",
+    "status": "SERVER_ACK"
+  }
+]

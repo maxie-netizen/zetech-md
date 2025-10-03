@@ -1,0 +1,37 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC0F7257FB86F6DB7FCB78CE83F716F6",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ndio tumeanza 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC412BC00813F06B07ABA97487A75B85",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Si mpeane hadi joto kiasi na hii baridi😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "RYDveqqaorZ5yWOw6Xc+l4wXODavejohHUhFNTOIWVs="
+      }
+    },
+    "messageTimestamp": "1759500942",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂",
+    "userReceipt": [
+      {
+        "userJid": "79341434196121@lid",
+        "readTimestamp": "1759500945"
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACB4719FFF2E658ED3E661B18F2CBEA7",
+      "participant": "50698431541477@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1758738242",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACBBAB78284297A6300CAF4D657F4E71",
+          "participant": "82644129808501@lid"
+        },
+        "text": "🥲",
+        "senderTimestampMs": "1759436111136"
+      }
+    },
+    "messageTimestamp": "1759436191",
+    "participant": "50698431541477@lid",
+    "broadcast": false,
+    "pushName": "mickey"
+  }
+]

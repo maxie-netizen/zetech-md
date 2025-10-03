@@ -1,0 +1,28 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC18A5C25DD9BAAAFE6CCA9AC03E3BE2",
+      "participant": "218872103837943@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiJ+cGbAxAAGiCLmy7zK7tvdJkpWVABiCTRa69uE+OOJKjfbS3SHRpYGCIhBVeC0pgXjOHW/4fxx/WdDlWEq4IxwptIRHdbl2ibARBR"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1757907787",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436415",
+    "participant": "218872103837943@lid",
+    "broadcast": false,
+    "pushName": "Kamande"
+  }
+]

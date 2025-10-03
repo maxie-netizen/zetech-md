@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A55D972244AC2D00DCDFE9950446D6D6"
+    },
+    "message": {
+      "conversation": "𝗞𝗮𝗺𝗮 𝗵𝗶𝗶 𝗻 𝗴𝗮𝗻𝗶𝗶😂😂🥱",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "+NVtpHS6Qh1sQhaquhzupcFY8o+fBDOgsUkUvmmIjaA="
+      }
+    },
+    "messageTimestamp": "1759435224",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

@@ -1,9 +1,16 @@
-let zetechplug = async (m, { conn, reply, text, args, command }) => {
+let zetechplug = async (m, { conn, reply, text, args, command, reaction }) => {
     try {
         const searchQuery = text.trim();
         
         if (!searchQuery) {
             return reply("What song do you want to download?\n\n*Usage:* `.play song name`");
+        }
+
+        // React to the play message
+        try {
+            await reaction(m.chat, "🎵");
+        } catch (error) {
+            console.log('Failed to react to play message:', error.message);
         }
 
         // Send loading message
@@ -44,7 +51,7 @@ let zetechplug = async (m, { conn, reply, text, args, command }) => {
         const downloadData = await downloadResponse.json();
         console.log(`[PLAY] Download API response:`, JSON.stringify(downloadData, null, 2));
         
-        if (!downloadData.status || !downloadData.result || !downloadData.result.success || !downloadData.result.data) {
+        if (!downloadData.status || !downloadData.result || !downloadData.result.data) {
             console.error(`[PLAY] Invalid download response:`, downloadData);
             return reply("Failed to download audio. Please try again later.");
         }
@@ -55,7 +62,7 @@ let zetechplug = async (m, { conn, reply, text, args, command }) => {
         const audioTitle = audioData.title;
         const audioThumbnail = audioData.thumbnail;
         const audioDuration = audioData.duration;
-        const audioQuality = audioData.quality;
+        const audioQuality = audioData.quality || "128"; // Default quality if not provided
         
         console.log(`[PLAY] Download URL: ${audioUrl}`);
         console.log(`[PLAY] Audio Title: ${audioTitle}`);
@@ -85,7 +92,7 @@ let zetechplug = async (m, { conn, reply, text, args, command }) => {
         
         // Prepare context info with audio-specific data
         const contextInfo = {
-            forwardingScore: 999,
+            forwardingScore: 1,
             isForwarded: true,
             externalAdReply: {
                 title: audioTitle,

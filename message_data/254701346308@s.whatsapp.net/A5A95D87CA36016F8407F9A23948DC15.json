@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5A95D87CA36016F8407F9A23948DC15"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ntafix mzee",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5D8939B9515C9098704B8ACD52C864C",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Tegea"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "yuRT6pmMrwq6oer6bJpwmBquohBq1G1/KN5uqBvumTE="
+      }
+    },
+    "messageTimestamp": "1759435499",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B12A2E67CB443104CC230F332E1C74"
+    },
+    "message": {
+      "conversation": "𝗜𝗻𝗴𝗶𝗮 𝘁𝘂𝗴𝘂𝘇𝗲 𝗺𝗼𝗷𝗮 𝗸𝘄𝗮𝗻𝘇𝗮𝗮🫵",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "cObKd63E5A9+6gCOyCpGrqIvRg3thvkG7GFRsE2iVXg="
+      }
+    },
+    "messageTimestamp": "1759437578",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

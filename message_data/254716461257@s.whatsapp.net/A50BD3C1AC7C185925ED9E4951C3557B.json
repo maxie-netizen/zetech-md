@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254716461257@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A50BD3C1AC7C185925ED9E4951C3557B"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Mmi nikamwambia?🌚s\nUsiniekelee plz",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACF4EF4E4A8665A3EDFDA6D632131E77",
+          "participant": "254716461257@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Si ni wewe ulimwambia"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759427699",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

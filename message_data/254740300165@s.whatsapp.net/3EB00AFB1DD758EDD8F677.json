@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "254740300165@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB00AFB1DD758EDD8F677"
+    },
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m235/AQMlJkTjx0qrFW83YL3SNhzolDYm7NuYWMeuAcF1naRH3lIVs7VS30y91v47zFZ1z7VxE70EI1SDFo4e4ga9Zy5VmDkfvtrVS6OxA6ia1A?ccb=9-4&oh=01_Q5Aa2gElfittvyscwOzMgf9KXRKXrs4158-xuGUnalwrYhZMEw&oe=69062D81&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "\n╔═══════════════════════════════════════════════════╗\n║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║\n╠═══════════════════════════════════════════════════╣\n║   ✦ Owner: Maxwell     ║\n║   ✦ Version: 1.5.0                     ║\n║   ✦ Type: Plugin       ║\n╚═══════════════════════════════════════════════════╝\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ menu           ◈ ping\n ◈ ping2          ◈ uptime\n ◈ s              ◈ botinfo\n ◈ listplugin     ◈ update\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙\n ◈ public         ◈ private\n ◈ addaccess      ◈ delaccess\n ◈ autoreact      ◈ block\n ◈ autotyping     ◈ autorecord\n ◈ autorecording  ◈ autobio\n ◈ alwaysonline   ◈ autostatus\n ◈ chatbot        ◈ aichat\n ◈ cloudsync      ◈ cloud\n ◈ $              ◈ menu\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ play           ◈ ytmp4\n ◈ ytvid          ◈ yts\n ◈ pinterestdl    ◈ retrieve\n ◈ song           ◈ twitterdl\n ◈ tt             ◈ tiktok\n ◈ igdl           ◈ ytmp3\n ◈ tg             ◈ telegram\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ zetech\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ vv (reply to view once)\n ◈ vv2 (send to bot)\n ◈ vv3 (send to owner)\n ◈ emoji reply (secret mode)\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ gemma          ◈ indo-ai\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ gethtml        ◈ getpp\n ◈ getplugin      ◈ save\n ◈ gitclone       ◈ weather\n ◈ groups         ◈ mychats\n ◈ tempnum        ◈ templist\n ◈ otpbox         ◈ tools\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ add            ◈ remove\n ◈ promote        ◈ revoke\n ◈ approve        ◈ reject\n ◈ antilinkgc     ◈ antilink\n ◈ antilinkstatus ◈ antilinkget\n ◈ tagall         ◈ hidetag\n ◈ close          ◈ open\n ◈ kickall        ◈ linkgc\n ◈ setppgc        ◈ setdesc\n ◈ tagme\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ enc            ◈ idch\n ◈ dev\n\n├────────────────────────────❖────────────────────────────┤\n〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙\n ◈ glithtext      ◈ lighteffects\n ◈ writetext      ◈ advancedglow\n ◈ typographytext ◈ pixelglitch\n ◈ neonglitch     ◈ flagtext\n ◈ flag3dtext     ◈ deletingtext\n ◈ blackpinkstyle ◈ glowingtex\n ◈ underwater     ◈ logomaker\n ◈ cartoonstyle   ◈ papercutstyle\n ◈ watercolortext ◈ effectclouds\n ◈ blackpinklogo  ◈ gradienttext\n ◈ luxurygold     ◈ sandsummer\n ◈ multicoloredneon ◈ galaxywallpaper\n ◈ 1917style      ◈ galaxystyle\n ◈ royaltext      ◈ freecreate\n\n╔═══════════════════════════════════════════════════╗\n║  Type .menu <category> for specific commands  ║\n╚═══════════════════════════════════════════════════╝\n\n",
+        "fileSha256": "TN0QkfFBmfr31aYeMRxBZxgeA5cPuFYu1yU/Zj699fk=",
+        "fileLength": "23858",
+        "mediaKey": "lrM+DmQNwozRFzG8vr/ju4DHsrH32NFeZPQC0C/v9yk=",
+        "fileEncSha256": "DnlX5Y0yBeeb5Je0Sq/Y5rybc1fLL8Ql7CDy3XrIFSs=",
+        "directPath": "/o1/v/t24/f2/m235/AQMlJkTjx0qrFW83YL3SNhzolDYm7NuYWMeuAcF1naRH3lIVs7VS30y91v47zFZ1z7VxE70EI1SDFo4e4ga9Zy5VmDkfvtrVS6OxA6ia1A?ccb=9-4&oh=01_Q5Aa2gElfittvyscwOzMgf9KXRKXrs4158-xuGUnalwrYhZMEw&oe=69062D81&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1759434839",
+        "contextInfo": {
+          "participant": "0@s.whatsapp.net",
+          "quotedMessage": {
+            "contactMessage": {
+              "displayName": "🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭",
+              "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:XL;Vinzx,;;;\nFN:Brîskyj0kēr🤡,\nitem1.TEL;waid=254740300165:254740300165\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            }
+          },
+          "remoteJid": "status@broadcast",
+          "forwardingScore": 9,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363405142067013@newsletter",
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759434839",
+    "status": "SERVER_ACK"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "ACC52525958ECF52E0B6A9E6CA52FD50",
+      "participant": "167147712061630@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwidifvGAhBsGiBBKxNi2Rk71DY8rq+FF9c/Wm9mr2Xn7zQRAz6dREJ5PyIhBSVmPCcYeRK74vF1CG3H6JC6rTqAKHGE26JmEQ1Exoku"
+      },
+      "extendedTextMessage": {
+        "text": "Nakuhurumia2",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACFA0AD2B5F7631315D1D8FF4F2A7ECC",
+          "participant": "55491380170994@lid",
+          "quotedMessage": {
+            "conversation": "Nugu"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "js1o+VeYYpiIx3LegkibGzPqaEomc3yQvZ1L/JpQvkI="
+      }
+    },
+    "messageTimestamp": "1759436839",
+    "participant": "167147712061630@lid",
+    "broadcast": false,
+    "pushName": "MC Max Lee🎧🎧"
+  }
+]

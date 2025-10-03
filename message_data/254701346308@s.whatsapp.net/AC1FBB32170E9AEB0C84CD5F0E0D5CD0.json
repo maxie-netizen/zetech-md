@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC1FBB32170E9AEB0C84CD5F0E0D5CD0"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Haiwezi",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5F30BD962CC061B78C60FA3179F4870",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ebu eka ii .play tuko fully"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759436493",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

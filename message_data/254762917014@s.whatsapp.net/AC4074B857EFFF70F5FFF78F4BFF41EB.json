@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC4074B857EFFF70F5FFF78F4BFF41EB"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB0C957170264EDED6D7A",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "CjYKEHN0YXR1c0Bicm9hZGNhc3QQABogQUM1RDlGM0I3MUI3MTgzRUYxRjJFMDhGQTk4MjA4MjES/gUa1gUK+gFodHRwczovL21tZy53aGF0c2FwcC5uZXQvbzEvdi90MjQvZjIvbTIzMi9BUU80SjQ0TmYwM0gxc3k3aTRGUU5wWXJfcktQZ21EZ1NkRnRYc1N6LUQxUC1aSUFnZEVaakgxMXk5VUJtRnFLWFpPdmhEWS1MSkdBX1I2T2U3emV5b2puX0pwbzRBYUdiZko0RWFhUkR3P2NjYj05LTQmb2g9MDFfUTVBYTJnRXdLeE5ITWZDZHFWQ25jZkY5REphWWNLV0hlR0FhSTI0STNVelpETjVPdkEmb2U9NjkwNkRFQTAmX25jX3NpZD1lNmVkNmMmbW1zMz10cnVlEgppbWFnZS9qcGVnGgzwn5iC8J+lsvCfkoAiIPDHsm9rE+/tzpv86tgePa+XggOua4J2B/UUsnhwDYXxKNlzMIoEONAFQiAZHO7RgmHUIHqFxKzBS3v3XKxuWWWfSJLRyad2Kf/Chkog/qc9fHt7hMNcO2fWxp6cDw2DY+Q8KoIhfX1DkIs4F4la2AEvbzEvdi90MjQvZjIvbTIzMi9BUU80SjQ0TmYwM0gxc3k3aTRGUU5wWXJfcktQZ21EZ1NkRnRYc1N6LUQxUC1aSUFnZEVaakgxMXk5VUJtRnFLWFpPdmhEWS1MSkdBX1I2T2U3emV5b2puX0pwbzRBYUdiZko0RWFhUkR3P2NjYj05LTQmb2g9MDFfUTVBYTJnRXdLeE5ITWZDZHFWQ25jZkY5REphWWNLV0hlR0FhSTI0STNVelpETjVPdkEmb2U9NjkwNkRFQTAmX25jX3NpZD1lNmVkNmNg+8v9xgaKAQ6oAQCKAwIgAdgDAIAEAKoBKIf7LB6ZuO5lvzEwcd3pQKpK0iAX56qmU0/9QZu1yY1tkr7FpXpTq4awAfMOsAHWN7ABphSwAeoYugEgx1FZrTWEzCpigIWsxupU6cb3AJCLRtpyMbyZmbSCbgyaAiIaIIPFERku2K2NjbWDb83tii9WOVc43P7j4jY5Cb2TNePyGNHM/cYGKhsyNTQ3NTYxNDcxMzBAcy53aGF0c2FwcC5uZXSyAjYKNE1lZGlhLy5TdGF0dXNlcy84YzI5ZTE5OWIyZGI0YjAyYWE1NjQ3NGRjNmQ5ZmU5OS5qcGeKAyCDxREZLtitjY21g2/N7YovVjlXONz+4+I2OQm9kzXj8ogEAA=="
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759500983",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

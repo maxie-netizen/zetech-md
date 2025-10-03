@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC2AF1D128439C05C3A77280AE8C2EFF",
+      "participant": "155289223450819@lid"
+    },
+    "message": {
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACD76AD96F4903E067079CFA80C6BEFD",
+          "participant": "21101526704347@lid"
+        },
+        "text": "🤣",
+        "senderTimestampMs": "1759436458651"
+      }
+    },
+    "messageTimestamp": "1759436459",
+    "participant": "155289223450819@lid",
+    "broadcast": false,
+    "pushName": "💫Austin💉"
+  }
+]

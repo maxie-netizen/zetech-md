@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701717885@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC8BC55FDCAC6ECC60162E6A88803027"
+    },
+    "message": {
+      "conversation": "From Thika town utashuka Gali za muguga,nitamwambia Ni stage gani",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "M8+nqI/tONb02FniorKIJZuCRVBI4jz/Sb9wgj1G8UA="
+      }
+    },
+    "messageTimestamp": "1759502603",
+    "broadcast": false,
+    "pushName": "Dorcas Njoki"
+  }
+]

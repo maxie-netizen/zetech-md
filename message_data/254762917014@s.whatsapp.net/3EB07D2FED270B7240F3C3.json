@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB07D2FED270B7240F3C3"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "nlikuwa natest kama view once inafanya",
+        "contextInfo": {
+          "stanzaId": "A5376CAB913CC4ADBD2DAB7631B21199",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ii ni?",
+            "messageContextInfo": {
+              "messageSecret": "no/zoUsAkzyGCjRueykDSmjz40d4UGuba8cvDlKBFzU="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "DsRM485D1JiQ9/aN6FgjAV8kNgkLqHNl9jXEKwZEWLc=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428338",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

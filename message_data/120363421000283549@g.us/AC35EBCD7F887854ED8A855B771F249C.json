@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "AC35EBCD7F887854ED8A855B771F249C",
+      "participant": "195537362010272@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Aii bana tunatumia Chat Gpt",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5EC3F0D44EDD15416CA9489C320CD68",
+          "participant": "125413565161514@lid",
+          "quotedMessage": {
+            "conversation": "To be easy mwenye uko na number 10 you can copy kwa book before opening ndo after ume.aliza zingine upige picha tu na uchange to pdf usubmit"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "CMUxowmH7XnBrj2/rk4ixHhUtSaIBG5vRQAiXudn8nA="
+      }
+    },
+    "messageTimestamp": "1759501864",
+    "participant": "195537362010272@lid",
+    "broadcast": false,
+    "pushName": "FullServerX32"
+  }
+]

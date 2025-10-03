@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACB85FEE034781F2774D90A3CF4B2CD8",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "tukifika 800 members I'll be gifting you an account for free",
+        "previewType": "NONE",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "XamT+2zWhWfCLXtTkaSjCIAoBrzJ8sXhbwBEEvZku/k="
+      }
+    },
+    "messageTimestamp": "1759436974",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A516D82E08C475AB5A95723A0C84CC00"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗘𝗲𝗲𝗵",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACEF10EEEB966B8739C4F0D70F944EF9",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Nifinye . Zetech??"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "tMUbEUyDve0t6lR1Ta+7p8HkngJhqzZUtJYAoraSdyg="
+      }
+    },
+    "messageTimestamp": "1759435831",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

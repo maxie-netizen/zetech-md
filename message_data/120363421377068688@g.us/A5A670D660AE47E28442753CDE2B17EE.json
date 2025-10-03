@@ -1,0 +1,40 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A5A670D660AE47E28442753CDE2B17EE",
+      "participant": "152257228181739@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjk157xBRAAGiB0h5C7T3H/ywy3UYPVfuc9MA7rLHC4OEgXjZqRfJWpbiIhBYcHcZfxlXgkVaLK9OVX5RHDDx2H0fHurZ3p8K3bVkhe"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "+6jtLQh5i11w/v6DX7fLAwK/6ZDxVIsXsKwAgwwIPdsKUdNQ4NIPsFZTPqrh692iV1E=",
+          "encIv": "jCWITXTMX4MBJzz1"
+        },
+        "senderTimestampMs": "1759435982770"
+      }
+    },
+    "messageTimestamp": "1759435987",
+    "participant": "152257228181739@lid",
+    "broadcast": false,
+    "pushName": "Joshua kimmich koin",
+    "verifiedBizName": "Joshua kimmich koin"
+  }
+]

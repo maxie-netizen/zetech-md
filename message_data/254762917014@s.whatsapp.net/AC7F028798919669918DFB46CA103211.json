@@ -1,0 +1,20 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC7F028798919669918DFB46CA103211"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "INITIAL_SECURITY_NOTIFICATION_SETTING_SYNC",
+        "initialSecurityNotificationSettingSync": {
+          "securityNotificationEnabled": false
+        }
+      }
+    },
+    "messageTimestamp": "1759352697",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

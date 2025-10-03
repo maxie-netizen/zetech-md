@@ -1,0 +1,70 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACEE634E5774C00494F2C018702C0798"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Ni mambo ya dunia hadi😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC3B881C8CB80C0120EE620C045466E4",
+          "participant": "152386161094755@lid",
+          "quotedMessage": {
+            "conversation": "Self pollination manenoz 😅😅😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759501257",
+    "participant": "",
+    "messageSecret": "YIDwfcIwRbMn2p2AtQ+pjuu5JaFtza/Ath4CUyx6XOk=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQu6HKQSmftmGwyyNVSRaTMlL2Q="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACEE634E5774C00494F2C018702C0798",
+      "participant": "73762070380683@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363419497709558@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj3pIu+AxB5GiD+fF2e5m02b05oXJZoh3CyDe76vNelzO2uLjQjYGga2yIhBYZnMnIQVTJ4lborUcOBVdp82nmweURqju1f85ToPSYi"
+      },
+      "extendedTextMessage": {
+        "text": "Ni mambo ya dunia hadi😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC3B881C8CB80C0120EE620C045466E4",
+          "participant": "152386161094755@lid",
+          "quotedMessage": {
+            "conversation": "Self pollination manenoz 😅😅😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "IrTZp4/lwyOlrw==",
+          "senderTimestamp": "1759168098",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "YIDwfcIwRbMn2p2AtQ+pjuu5JaFtza/Ath4CUyx6XOk="
+      }
+    },
+    "messageTimestamp": "1759501265",
+    "participant": "73762070380683@lid",
+    "broadcast": false,
+    "pushName": "Ethan🖤"
+  }
+]

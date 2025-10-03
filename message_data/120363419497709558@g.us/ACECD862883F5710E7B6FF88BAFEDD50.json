@@ -1,0 +1,20 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "ACECD862883F5710E7B6FF88BAFEDD50",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "conversation": "😂😂  unakumbuka ukiniuliza mtu anafanyanga nini 😂",
+      "messageContextInfo": {
+        "messageSecret": "VPpcro0J5rLFuT2aKggmcTAeMHPawxWXZkB2bwhZGsw="
+      }
+    },
+    "messageTimestamp": "1759501909",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

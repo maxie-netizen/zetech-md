@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A506920B1DCC77AA9ACB6B0F9533D786"
+    },
+    "message": {
+      "conversation": "𝗭𝗶𝗹𝗲 𝗱𝗮𝘆𝘀 𝘂𝗹𝗶𝗳𝗮𝗻𝘆𝗮 𝗺𝗯𝗮𝘆𝗮 𝗺𝗯𝗮𝘆𝗮 𝗶𝗻𝗴𝗶𝗮 𝗯𝗼𝗶𝘀🥺🥺🫴",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "a9k9NwtWOefSEdSK+kpafZO4R4iNJd1v4szG1E/xRoo="
+      }
+    },
+    "messageTimestamp": "1759437612",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

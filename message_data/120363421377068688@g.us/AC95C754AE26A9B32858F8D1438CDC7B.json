@@ -1,0 +1,49 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC95C754AE26A9B32858F8D1438CDC7B",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m269/AQO2sWDphS4fE3Y04Lm5rgUJnbMb9_8KXnSR1as_m3Z1J7ozg65SiKK0IB9FZKeDhO3kPKoTCJ0DcmidlfL6lJePG18NtpJsHDhiNI7KgQ?ccb=9-4&oh=01_Q5Aa2gHpq4GaSLwPb8pVXiYT6-OM0mi5Vxl5ttgwhcnL8L1sBg&oe=690656FE&_nc_sid=e6ed6c&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "Acha niingie game nikuje🫡",
+        "fileSha256": "GcKc5FC0ZhGeJDwuC2V/MMNnh9Zd0qpB440nK5qUSYw=",
+        "fileLength": "96808",
+        "height": 1599,
+        "width": 714,
+        "mediaKey": "j1c/gwVFjEjFd3VOWU2GJEuN+4UWtvp8khNS/3pGs4o=",
+        "fileEncSha256": "aLUnrZP8NViMrIzlKqL2WhhMn0rlQ++YzOucTECETRg=",
+        "directPath": "/o1/v/t24/f2/m269/AQO2sWDphS4fE3Y04Lm5rgUJnbMb9_8KXnSR1as_m3Z1J7ozg65SiKK0IB9FZKeDhO3kPKoTCJ0DcmidlfL6lJePG18NtpJsHDhiNI7KgQ?ccb=9-4&oh=01_Q5Aa2gHpq4GaSLwPb8pVXiYT6-OM0mi5Vxl5ttgwhcnL8L1sBg&oe=690656FE&_nc_sid=e6ed6c",
+        "mediaKeyTimestamp": "1759437373",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAEgAIAMBIgACEQEDEQH/xAAuAAACAwEAAAAAAAAAAAAAAAAAAgEDBAYBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAMZ0mvpjkE7PIce9E4tyIo0VwumuxWalBp7KBJcJqGBP/8QAJhAAAgIBBAAFBQAAAAAAAAAAAQIAAxEEBRMhEBIyQlMgIjFBUv/aAAgBAQABPwBduvetTBtOoh2nUSzbr0QswmnxxVsW9sW1SPUJyKP3Na6nS2xbrsAB2i3XfIY113yGNdaVILnEU9TMzGPU5QFCgTliszAkARwT3MeFd1ae2PajZws8568K1VmwY9aLnv6fs/qJW1noBMesocP1FWs/l8T/xAAZEQADAQEBAAAAAAAAAAAAAAAAARFTEiD/2gAIAQIBAT8A6WZVmVlfv//EABoRAAIDAQEAAAAAAAAAAAAAAAERABBSImH/2gAIAQMBAT8AR1EdRX1S9oif/9k=",
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          },
+          "pairedMediaType": "NOT_PAIRED_MEDIA"
+        },
+        "scansSidecar": "CeLRrXFnY54JR3HapLXMGxa46Vm/oprlXBQ+O4DGz4AxIqkccLVI3Q==",
+        "scanLengths": [
+          8647,
+          37066,
+          21027,
+          30068
+        ],
+        "midQualityFileSha256": "VThRw35dFDDllIW/vaA0rE2ALoEFpkzA3g+VU4uq+HI="
+      },
+      "messageContextInfo": {
+        "messageSecret": "5xaoDYRG5r6FXxH9Az4xijcP+cmcmYmSF9tIZ5osYF0="
+      }
+    },
+    "messageTimestamp": "1759437375",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

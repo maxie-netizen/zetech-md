@@ -1,0 +1,247 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACC2AED2703665AF840FF2B2E02FA6B2"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "APP_STATE_SYNC_KEY_SHARE",
+        "appStateSyncKeyShare": {
+          "keys": [
+            {
+              "keyId": {
+                "keyId": "AAAAAPA1"
+              },
+              "keyData": {
+                "keyData": "zHNbQi6OnYprTyNTBFPH24Svxnm338XQ/q29u9ezOJE=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 6,
+                  "deviceIndexes": [
+                    0,
+                    2
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA2"
+              },
+              "keyData": {
+                "keyData": "VFejgnsXNX/bFpf8EQm286WZNywV5nF1AVsakSdk7qU=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 9,
+                  "deviceIndexes": [
+                    0,
+                    7,
+                    8,
+                    9
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPAz"
+              },
+              "keyData": {
+                "keyData": "b4cFm5fIe5Arf/DzRliTCOhn+gh0l7u9qt2hvfnv9tc=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 4,
+                  "deviceIndexes": [
+                    0,
+                    2
+                  ]
+                },
+                "timestamp": "1756834736605"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA0"
+              },
+              "keyData": {
+                "keyData": "rpZEGMy43eG2ZYHD2cWNjKnHPJXGUUhpeq2iV529J58=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 5,
+                  "deviceIndexes": [
+                    0,
+                    2
+                  ]
+                },
+                "timestamp": "1757074775465"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPAx"
+              },
+              "keyData": {
+                "keyData": "CRcANjuOpHwXQd5n20qw5GGtLBQxe597fbaWOkIqT2I=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 2,
+                  "deviceIndexes": [
+                    0,
+                    2
+                  ]
+                },
+                "timestamp": "1756833836905"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPAy"
+              },
+              "keyData": {
+                "keyData": "62bq0tjuN676aMlFXY9oDTeop87slUatWsmOKIT7f2M=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 4,
+                  "deviceIndexes": [
+                    0,
+                    2,
+                    4
+                  ]
+                },
+                "timestamp": "1756833920732"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPAw"
+              },
+              "keyData": {
+                "keyData": "xuSteCpYwSI4dDPkAgLAYhWRRrgHAtnK3cmfcc03nlM=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 1,
+                  "deviceIndexes": [
+                    0,
+                    1
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA7"
+              },
+              "keyData": {
+                "keyData": "6zWzJgyWQgJJLvA3YwZ4Cx6TXso7/xf2KEnWhCoSf40=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 12,
+                  "deviceIndexes": [
+                    0,
+                    7
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA8"
+              },
+              "keyData": {
+                "keyData": "WncFO666J5GtumFw04E5a7EDZFhglPKalqducnt+344=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 13,
+                  "deviceIndexes": [
+                    0,
+                    7
+                  ]
+                },
+                "timestamp": "1758643164947"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA5"
+              },
+              "keyData": {
+                "keyData": "7xClslsySCl8G6m3r4gobFrb72TxmvZT3lyAfyQ+Ado=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 11,
+                  "deviceIndexes": [
+                    0,
+                    7,
+                    10
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA6"
+              },
+              "keyData": {
+                "keyData": "/Ta5wWUS0lVmKqJ65VWABxYUiUz3TCtB/xj1pspmwv8=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 11,
+                  "deviceIndexes": [
+                    0,
+                    7
+                  ]
+                },
+                "timestamp": "1758101956721"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA3"
+              },
+              "keyData": {
+                "keyData": "ZUYhe63uq6/GnnjJsz4d8l+midP83P58O/k5haFCw7w=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 9,
+                  "deviceIndexes": [
+                    0,
+                    7,
+                    9
+                  ]
+                },
+                "timestamp": "0"
+              }
+            },
+            {
+              "keyId": {
+                "keyId": "AAAAAPA4"
+              },
+              "keyData": {
+                "keyData": "KlAxiEFeiKbEYJKDVkj2lFD0o0o1tKd4Cei5MmLfo70=",
+                "fingerprint": {
+                  "rawId": 1354438040,
+                  "currentIndex": 9,
+                  "deviceIndexes": [
+                    0,
+                    7
+                  ]
+                },
+                "timestamp": "0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759363439",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

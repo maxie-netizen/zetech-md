@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363403739187285@g.us",
+      "fromMe": false,
+      "id": "AC6B377DE37739DC0F7060B7433D3C83",
+      "participant": "184129844969686@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Gani",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACCAD6BDAAC8B6491284D1141A61DA89",
+          "participant": "261160200843371@lid",
+          "quotedMessage": {
+            "conversation": "Mm ndio nakuja na gari bois😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "/CY2Yz3VLbENiAd3nZ/mcgdzhOMvbPTL/YV+kV9cpmw="
+      }
+    },
+    "messageTimestamp": "1759438727",
+    "participant": "184129844969686@lid",
+    "broadcast": false,
+    "pushName": "Niceman☺️🫣"
+  }
+]

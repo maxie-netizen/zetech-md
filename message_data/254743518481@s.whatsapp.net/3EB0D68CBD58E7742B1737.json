@@ -1,0 +1,52 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0D68CBD58E7742B1737"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": ".vv",
+        "contextInfo": {
+          "stanzaId": "3EB0E5F0710A326A8A9F03",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "messageContextInfo": {
+              "messageSecret": "xfg9vv0ymPe6G4mt5UG79HMpw3gzRPnsgt74bqteJ0A="
+            },
+            "viewOnceMessage": {
+              "message": {
+                "imageMessage": {
+                  "url": "https://mmg.whatsapp.net/o1/v/t24/f2/m234/AQMHvA6mUwOLdJGBsV_u0nP5dW0LkjTwmtpnyfLcmW6poQuw7_UGghP_06S9U1N24lu4nEy7AhoZXJJhx8TUwFxj8BkuPYmlBuYMiTfZjQ?ccb=9-4&oh=01_Q5Aa2gEgvFppfmI4XUKWKz5ghqkC29lj9JJ0096BSpUIMr8SCQ&oe=690739E7&_nc_sid=e6ed6c&mms3=true",
+                  "mimetype": "image/jpeg",
+                  "fileSha256": "MIsWMQuVrSDI+zfXbrXYQO59e7Xev3TJHMVxSB5CkSI=",
+                  "fileLength": "86316",
+                  "height": 677,
+                  "width": 824,
+                  "mediaKey": "+2G6nBJVD2zMxEmMJ4Wme2KRPz7oj2vEUUfJuR69Mck=",
+                  "fileEncSha256": "56sum1t/l+fKsmXcj+P9/tRp3nKK1HojFAEiXEKT6VM=",
+                  "directPath": "/o1/v/t24/f2/m234/AQMHvA6mUwOLdJGBsV_u0nP5dW0LkjTwmtpnyfLcmW6poQuw7_UGghP_06S9U1N24lu4nEy7AhoZXJJhx8TUwFxj8BkuPYmlBuYMiTfZjQ?ccb=9-4&oh=01_Q5Aa2gEgvFppfmI4XUKWKz5ghqkC29lj9JJ0096BSpUIMr8SCQ&oe=690739E7&_nc_sid=e6ed6c",
+                  "mediaKeyTimestamp": "1759501145",
+                  "viewOnce": true
+                },
+                "messageContextInfo": {
+                  "messageSecret": "xfg9vv0ymPe6G4mt5UG79HMpw3gzRPnsgt74bqteJ0A="
+                }
+              }
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759501153",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

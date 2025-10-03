@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "3A6EA9B48FB66CF3EA4C",
+      "participant": "106974767280310@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjnoqsrEAAaIOPDgpbnNG1oZS2C9j/wzPp9/0xRz6Myf5WwZJ27hQ/tIiEFYN8okKSFxtOhBN8bJk/WxI6ECpaYH4HlsvPRiRAKVn0="
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759423887",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759329808"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "🙏",
+        "senderTimestampMs": "1759435907524"
+      }
+    },
+    "messageTimestamp": "1759435912",
+    "participant": "106974767280310@lid",
+    "broadcast": false,
+    "pushName": "Yceepaapi"
+  }
+]

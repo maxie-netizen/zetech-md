@@ -1,0 +1,27 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": true,
+      "id": "ACB91B21C05EDFF9421BA530AA8FC0B9"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂😂😂walaiii?",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5E392F1BF72B68180C520517E84C5C6",
+          "participant": "254711933670@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀 𝘇𝗶𝗻𝗴𝗶𝗻𝗲 𝗵𝗮𝘁𝗮 𝘀𝗶𝗷𝘂𝗶😂😂🏃💨"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759435153",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

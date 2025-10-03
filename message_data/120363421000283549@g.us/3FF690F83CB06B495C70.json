@@ -1,0 +1,53 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "3FF690F83CB06B495C70"
+    },
+    "message": {
+      "conversation": "hukuwa umefanya"
+    },
+    "messageTimestamp": "1759492151",
+    "participant": "",
+    "reportingTokenInfo": {
+      "reportingTag": "AQs2tM5CH0iVKtApTQ6tmg=="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "3FF690F83CB06B495C70",
+      "participant": "60697098592278@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "hukuwa umefanya",
+        "contextInfo": {
+          "expiration": 0
+        }
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "AJBFLIPDpHf98w==",
+          "senderTimestamp": "1758790849",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "limitSharingV2": {
+          "sharingLimited": true,
+          "trigger": "UNKNOWN",
+          "limitSharingSettingTimestamp": "1759482168000",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759501941",
+    "participant": "60697098592278@lid",
+    "broadcast": false,
+    "pushName": "@lencia..."
+  }
+]

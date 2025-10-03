@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "A54CD755AEBFD8F815B194AC567F0EE1",
+      "participant": "41519767634070@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjikannBxAKGiCYPWJvSxFKNzu8OWpIQn5Y+AeeIRXsXtOGntA02BYyISIhBbZckPAH7HW17Roq4YN+Z+AXdTXQmFU2o842mwPfTjgx"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421090251066@g.us",
+          "fromMe": false,
+          "id": "3EB06B88DBE44465A89112",
+          "participant": "261160200843371@lid"
+        },
+        "text": "😂",
+        "senderTimestampMs": "1759437073360"
+      }
+    },
+    "messageTimestamp": "1759437074",
+    "participant": "41519767634070@lid",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5784F42F7062D6039211B26A7E04533"
+    },
+    "message": {
+      "conversation": "𝗪𝗮𝗰𝗵𝗮 𝘁𝘂𝗺𝗮𝗹𝗶𝘇𝗲 𝗻𝗮 𝗴𝗮𝗺𝗲 𝗺𝗼𝗷𝗮 𝗮𝘂 𝘀𝗶𝗼😹😹🤳",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "novNRmiJAFoy9Zmp4JC4NIgZ+/ojYR2nEXGtyFF9FSk="
+      }
+    },
+    "messageTimestamp": "1759437439",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲",
+    "verifiedBizName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "A541C3A2267E289FEB3853D2775FB700",
+      "participant": "143632950644864@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwj5+qe+BxABGiBkNLpf4U4jY+LCs8HutXwUo3tNjqPp/Kd/qp0q65eQYCIhBTA+VweGt+K8YXyxcH5f6mT5qpQFyatXb1GAIADkNmoX"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "reactionMessage": {
+        "key": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "AC71E6B11E0248D999730D357DC07612",
+          "participant": "82644129808501@lid"
+        },
+        "text": "👍",
+        "senderTimestampMs": "1759435903710"
+      }
+    },
+    "messageTimestamp": "1759435904",
+    "participant": "143632950644864@lid",
+    "broadcast": false,
+    "pushName": "el bicho"
+  }
+]

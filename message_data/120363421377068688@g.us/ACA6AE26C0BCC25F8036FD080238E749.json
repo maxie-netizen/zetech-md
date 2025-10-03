@@ -1,0 +1,36 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACA6AE26C0BCC25F8036FD080238E749",
+      "participant": "256804953002056@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      },
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "BzjWQiFmtoSKGTQps5s6emeOtYmKr6jFPwDNA0j2MvgChvina+zQlJgmvqGa395U6+Q=",
+          "encIv": "VJPlfyvSuvuzTb1Y"
+        },
+        "senderTimestampMs": "1759436538671"
+      }
+    },
+    "messageTimestamp": "1759436560",
+    "participant": "256804953002056@lid",
+    "broadcast": false,
+    "pushName": "Moji production"
+  }
+]

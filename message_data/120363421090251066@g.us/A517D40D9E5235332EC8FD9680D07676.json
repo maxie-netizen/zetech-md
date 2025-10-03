@@ -1,0 +1,19 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "A517D40D9E5235332EC8FD9680D07676"
+    },
+    "message": {
+      "conversation": "𝗠𝗸𝗮𝗹𝗶𝗶 𝗮𝗶𝗻𝗴𝗶𝗲"
+    },
+    "messageTimestamp": "1759437701",
+    "participant": "",
+    "messageSecret": "hp9mNj0arTwRpNqHTW0a67zZkDuskWGNzfELzQVjcRo=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQtlVsdtGJ/LTdDeRcLBRoab7d8="
+    },
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC01E6752DB342D08771A7EB92437A52",
+      "participant": "48765696274645@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwjh64c+EAAaICkpKhj3bsPoqWzKZeNT6sCX94ngYOGfz/Xj5Sl647EEIiEFKPuliuaKCcCyXt8QHQTxqZZnLpNJwiLTj58gbCcd5E8="
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "76NdGawGZ8zjIQ==",
+          "senderTimestamp": "1759125795",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436429",
+    "participant": "48765696274645@lid",
+    "broadcast": false,
+    "pushName": "Mr FTD"
+  }
+]

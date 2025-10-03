@@ -1,0 +1,50 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363420610628343@g.us",
+      "fromMe": false,
+      "id": "AC4960CD8AFDCEEFE0762E82A018865C",
+      "participant": "162079566737556@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363420610628343@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiX5KRoEAAaIHw3uXeFwhMeD3HyuSbEgao2Lhwl0SRkqYJ/4MgsD1IAIiEFo5gGzQqyuBoOqN0vtHOIb5oz/OkdUhjOHylFvLVUdQQ="
+      },
+      "imageMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7118-24/558117641_1131219759143716_3774757451433606532_n.enc?ccb=11-4&oh=01_Q5Aa2gHRiTxisxkN8ttZbjDhEp1ifT5x_nBPg4yiE_nYporjSA&oe=6905DB6E&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "image/jpeg",
+        "caption": "Yoh nadai kuuza hii account",
+        "fileSha256": "1wGko/iONskbZHWfRadAWZnwyA4fsThxsyd/pqpgjOk=",
+        "fileLength": "132164",
+        "height": 714,
+        "width": 1599,
+        "mediaKey": "7CVbLNk6it6sFltyhif2D6ImquA+iH7C/y2DC6aiHm4=",
+        "fileEncSha256": "kKHmg9lnnrhvRhvnSQU79Y01nCqr319KgZ8WMfChfpw=",
+        "directPath": "/v/t62.7118-24/558117641_1131219759143716_3774757451433606532_n.enc?ccb=11-4&oh=01_Q5Aa2gHRiTxisxkN8ttZbjDhEp1ifT5x_nBPg4yiE_nYporjSA&oe=6905DB6E&_nc_sid=5e03e0&_nc_hot=1759435140",
+        "mediaKeyTimestamp": "1759400602",
+        "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIACAASAMBIgACEQEDEQH/xAAxAAACAwEBAAAAAAAAAAAAAAADBAABAgUGAQACAwEAAAAAAAAAAAAAAAABBAACAwX/2gAMAwEAAhADEAAAAPOuovdAKlEXIawzlUrHW6DIFCTcc5xElpDhtCzyxFs5byDzIzBxkf/EACIQAAICAgICAgMAAAAAAAAAAAECAAMREgQhIzMTUiJBYf/aAAgBAQABPwBBmPxQle+4MxDQQgbMrpV1JJwZXTuxGcSxNGK5ziUjxnC5nJVAiEDuJHRRUDnufoyqzRgT2BHza26L1L7UZQAMGDsmcb1NOUuK07lcsINYGwnQAEdKwF1aBTWFCt0ZYiq4yeo+quNZx/Uw/s5bgqgAiwjABhRTj8xNF+4lVqorDaFQTncT4x9xKSgqs8gBnJ00TVwZ/8QAIREAAQMEAgMBAAAAAAAAAAAAAgABAxETITEEIhIjUpH/2gAIAQIBAT8AjfpBSu842uXL7KDhXJM93XY+N5V0bMuOJWRURemJv1TCZyE/i6tn8ugGQYjFxLYvpQuVtl//xAAbEQEBAAIDAQAAAAAAAAAAAAABABExEBIhgf/aAAgBAwEBPwDIds/IvLIMztjl3f/Z",
+        "contextInfo": {
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "pairedMediaType": "NOT_PAIRED_MEDIA"
+        },
+        "scansSidecar": "skLBrT2Oz5zbwJOoi8DouU3lQHrylHlX9QsiT0Who7WsSK2or9XbGQ==",
+        "scanLengths": [
+          11885,
+          68820,
+          20766,
+          30693
+        ],
+        "midQualityFileSha256": "4kIPs+4H4Eg9V8fg6Q/3HM5S0+cjquEIMH6kxD6u9yY="
+      },
+      "messageContextInfo": {
+        "messageSecret": "1MCNx3LzUaRjDPoIE50DgYEse2oNKVr93KaKwx1Z3oQ="
+      }
+    },
+    "messageTimestamp": "1759435151",
+    "participant": "162079566737556@lid",
+    "broadcast": false,
+    "pushName": "DeClinton"
+  }
+]

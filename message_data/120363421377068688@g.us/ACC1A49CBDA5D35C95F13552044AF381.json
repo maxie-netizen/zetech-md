@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACC1A49CBDA5D35C95F13552044AF381",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "messageContextInfo": {
+        "messageSecret": "Z22Zr1QV6ixil68Y9peTSkQEQVSUoi1ekfCdyY/0/XU="
+      },
+      "pollCreationMessageV3": {
+        "name": "iko hivi",
+        "options": [
+          {
+            "optionName": "first person to paste akule 50"
+          },
+          {
+            "optionName": "ama watu tano 10 10"
+          }
+        ],
+        "selectableOptionsCount": 1,
+        "contextInfo": {
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759435947",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

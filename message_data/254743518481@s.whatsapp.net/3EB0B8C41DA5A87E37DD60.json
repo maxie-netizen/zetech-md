@@ -1,0 +1,44 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB0B8C41DA5A87E37DD60"
+    },
+    "message": {
+      "documentMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7119-24/555615352_1841205639806794_6913860296302056165_n.enc?ccb=11-4&oh=01_Q5Aa2gHdQLy3OaX2Ep4VT-h0ZN5C31qEE1JSX-UeQBj3j8Axzw&oe=69053084&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "application/zip",
+        "fileSha256": "9j8ZnX6Cbamn4i288czpuHtNCFFuFJsOejRH7QJHUtA=",
+        "fileLength": "3568175",
+        "mediaKey": "OWoQqdyMLH1jn8kNMYKQ+9OxOFLcavSG9DMAO9MOhKY=",
+        "fileName": "XRI-DOUBLE07-IMMU-MD-733105e.zip",
+        "fileEncSha256": "49+tknhvTSF8BIns184CrDxuXk7Cjhy4Ru5vc6+6/aA=",
+        "directPath": "/v/t62.7119-24/555615352_1841205639806794_6913860296302056165_n.enc?ccb=11-4&oh=01_Q5Aa2gHdQLy3OaX2Ep4VT-h0ZN5C31qEE1JSX-UeQBj3j8Axzw&oe=69053084&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759357565",
+        "contextInfo": {
+          "stanzaId": "3EB01A34791AFFFC10EB23",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": ".gitclone https://github.com/XRI-DOUBLE07/IMMU-MD",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          },
+          "mentionedJid": [
+            "254762917014@s.whatsapp.net"
+          ],
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "forwardedNewsletterMessageInfo": {
+            "newsletterJid": "120363269950668068@newsletter",
+            "serverMessageId": -1,
+            "newsletterName": "❦ ════ •⊰❂ ZETECH-MD ❂⊱• ════ ❦"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759357565",
+    "status": "SERVER_ACK"
+  }
+]

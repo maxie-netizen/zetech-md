@@ -1,0 +1,17 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363405142067013@newsletter",
+      "fromMe": false,
+      "id": "3EB04F98A54BC9CEA40FFC"
+    },
+    "message": {
+      "conversation": ".menu",
+      "messageContextInfo": {
+        "messageSecret": "1vFkmIgQds0NcwX5hXI4KleRldw+mfiW6jnLoECBuls="
+      }
+    },
+    "messageTimestamp": "1759353455",
+    "broadcast": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC5A19653D831B766A4D0E8D23EC8DF9",
+      "participant": "275144413024268@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiN9bw4EAAaIKK7K2zjkzktpl9dnMUGER6bFwjdo3txM1mcEXTavcbtIiEFzS6KpkkiqR+jH6VkS76ClHrLZPL7K2uN4LqcnbZatSk="
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg=="
+        },
+        "deviceListMetadataVersion": 2
+      }
+    },
+    "messageTimestamp": "1759436416",
+    "participant": "275144413024268@lid",
+    "broadcast": false,
+    "pushName": "Toto_Missa😂"
+  }
+]

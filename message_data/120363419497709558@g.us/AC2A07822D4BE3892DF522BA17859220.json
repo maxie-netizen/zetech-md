@@ -1,0 +1,41 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC2A07822D4BE3892DF522BA17859220",
+      "participant": "152386161094755@lid"
+    },
+    "message": {
+      "stickerMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.15575-24/559246165_1137655441631699_4929310148703823894_n.enc?ccb=11-4&oh=01_Q5Aa2gEhNbhdwQ6bSSBkntOF2qFC3CHDXI4LDviWngQWn71FKA&oe=69074156&_nc_sid=5e03e0&mms3=true",
+        "fileSha256": "F8I0mYOKoUrM1od/I4vFvUhxrA6FwdatRflJq1eurQM=",
+        "fileEncSha256": "HFNavMbe38qZ241ShruZplQeApCows/urscqgsKag2Q=",
+        "mediaKey": "/XnZVUW6/bQ8QN3yieTg9co/t5PcqtobNQDgQblEq0E=",
+        "mimetype": "image/webp",
+        "directPath": "/v/t62.15575-24/559246165_1137655441631699_4929310148703823894_n.enc?ccb=11-4&oh=01_Q5Aa2gEhNbhdwQ6bSSBkntOF2qFC3CHDXI4LDviWngQWn71FKA&oe=69074156&_nc_sid=5e03e0",
+        "fileLength": "10214",
+        "mediaKeyTimestamp": "1759500941",
+        "isAnimated": false,
+        "contextInfo": {
+          "stanzaId": "AC412BC00813F06B07ABA97487A75B85",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Si mpeane hadi joto kiasi na hii baridi😂"
+          }
+        },
+        "stickerSentTs": "1759500941396",
+        "isAvatar": false,
+        "isAiSticker": false,
+        "isLottie": false
+      },
+      "messageContextInfo": {
+        "messageSecret": "ssW+SPFXHTg0QqHvK1IN1sD8OWI0qGT42GZNB7mWa1o="
+      }
+    },
+    "messageTimestamp": "1759500942",
+    "participant": "152386161094755@lid",
+    "broadcast": false,
+    "pushName": "Denzo_zee"
+  }
+]

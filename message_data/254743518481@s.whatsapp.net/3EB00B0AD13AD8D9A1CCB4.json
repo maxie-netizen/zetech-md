@@ -1,0 +1,45 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB00B0AD13AD8D9A1CCB4"
+    },
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7114-24/557933628_728923620204652_8056479989296618579_n.enc?ccb=11-4&oh=01_Q5Aa2gF0zLY_g62AQ14YftDn1mBMlcS_C87yy3W1jv0dcLYLmA&oe=6904FC0D&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/mpeg",
+        "fileSha256": "s9xZYUuchnhAHQaRGaA86ZBevIFzQ3uoBUlEdRMlwbQ=",
+        "fileLength": "2819948",
+        "seconds": 176,
+        "ptt": true,
+        "mediaKey": "Uz5naUEArvKQSFt+0FR5Rr9Sltc50pDTS8NVz6Wb66s=",
+        "fileEncSha256": "5oyNgPnD0LnPBcsbJa65y2kQfmm6dhyaSgcRPTsB+gw=",
+        "directPath": "/v/t62.7114-24/557933628_728923620204652_8056479989296618579_n.enc?ccb=11-4&oh=01_Q5Aa2gF0zLY_g62AQ14YftDn1mBMlcS_C87yy3W1jv0dcLYLmA&oe=6904FC0D&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759355147",
+        "contextInfo": {
+          "stanzaId": "3EB054625EF722658CD58D",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "extendedTextMessage": {
+              "text": ".play yuh love",
+              "inviteLinkGroupTypeV2": "DEFAULT"
+            }
+          },
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "externalAdReply": {
+            "title": "Vybz Kartel - Yuh Love - OFFICIAL VIDEO (Produced by Dre Skull)",
+            "body": "2:56 • 128kbps",
+            "mediaType": "VIDEO",
+            "mediaUrl": "https://youtube.com/watch?v=-wQLSsLVlt4",
+            "sourceUrl": "https://youtube.com/watch?v=-wQLSsLVlt4",
+            "renderLargerThumbnail": true
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759355147",
+    "status": "SERVER_ACK"
+  }
+]

@@ -16,10 +16,59 @@ const yargs = require('yargs/yargs');
 const listcolor = ['cyan', 'magenta', 'green', 'yellow', 'blue'];
 const randomcolor = listcolor[Math.floor(Math.random() * listcolor.length)];
 const { color, bgcolor } = require('./library/lib/color.js');
+
+// Cloud Storage Integration
+const CloudStorageManager = require('./library/lib/cloudStorageManager');
+const { getCurrentProvider } = require('./cloudConfig');
+
+// Log Collector Integration
+const LogCollector = require('./library/lib/logCollector');
+
+// Initialize cloud storage
+global.cloudStorage = new CloudStorageManager();
+global.autoSync = null;
+global.cloudInitialized = false;
+
+// Initialize log collector
+global.logCollector = new LogCollector();
+
 global.db = new Low(new JSONFile(`library/database/database.json`))
 
 // Global connection tracker for logging
 global.activeConnections = new Map();
+global.connectionAttempts = new Map(); // Track connection attempts to prevent spam
+
+// Initialize cloud storage and load data
+async function initializeCloudStorage() {
+    try {
+        console.log('🔄 Initializing cloud storage...');
+        
+        // Initialize cloud storage system
+        const connected = await global.cloudStorage.initialize();
+        if (!connected) {
+            console.log('❌ Failed to initialize cloud storage system');
+            return false;
+        }
+        
+        const provider = getCurrentProvider();
+        console.log(`✅ ${provider.name} ready`);
+        
+        // Load database from backup
+        console.log('📥 Loading database from backup...');
+        const dbLoaded = await global.cloudStorage.loadDatabase();
+        if (dbLoaded) {
+            console.log('✅ Database loaded from backup');
+        }
+        
+        global.cloudInitialized = true;
+        console.log('🎉 Cloud storage system ready!');
+        return true;
+        
+    } catch (error) {
+        console.error('❌ Cloud storage initialization failed:', error.message);
+        return false;
+    }
+}
 
 // Function to send logs to owner's WhatsApp
 async function sendLogToOwner(logMessage) {
@@ -300,15 +349,72 @@ function saveConnectedUsers() {
     fs.writeFileSync(connectedUsersFilePath, JSON.stringify(connectedUsers, null, 2));
 }
 
+// Clean up duplicate entries in connectedUsers
+function cleanupConnectedUsers() {
+    for (const chatId in connectedUsers) {
+        if (connectedUsers[chatId] && Array.isArray(connectedUsers[chatId])) {
+            // Remove duplicates based on phone number
+            const uniqueUsers = [];
+            const seenPhoneNumbers = new Set();
+            
+            for (const user of connectedUsers[chatId]) {
+                if (!seenPhoneNumbers.has(user.phoneNumber)) {
+                    seenPhoneNumbers.add(user.phoneNumber);
+                    uniqueUsers.push(user);
+                }
+            }
+            
+            connectedUsers[chatId] = uniqueUsers;
+        }
+    }
+    saveConnectedUsers();
+}
+
 let isFirstLog = true;
 
 async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
+    // Check if connection attempt is already in progress for this phone number
+    if (global.connectionAttempts.has(phoneNumber)) {
+        console.log(`[DUPLICATE] Connection attempt already in progress for ${phoneNumber}, skipping`);
+        if (telegramChatId) {
+            bot.sendMessage(telegramChatId, `⚠️ Connection Already in Progress\n\nA connection attempt for ${phoneNumber} is already in progress. Please wait for it to complete.`);
+        }
+        return;
+    }
+    
+    // Mark connection attempt as in progress
+    global.connectionAttempts.set(phoneNumber, { startTime: Date.now(), telegramChatId });
+    
+    // Set a timeout to clean up stuck connection attempts (5 minutes)
+    setTimeout(() => {
+        if (global.connectionAttempts.has(phoneNumber)) {
+            console.log(`[TIMEOUT] Cleaning up stuck connection attempt for ${phoneNumber}`);
+            global.connectionAttempts.delete(phoneNumber);
+        }
+    }, 5 * 60 * 1000); // 5 minutes timeout
+    
     const sessionPath = path.join(__dirname, 'trash_baileys', `session_${phoneNumber}`);
 
-    // Check if the session directory exists
+    // Check if the session directory exists locally
     if (!fs.existsSync(sessionPath)) {
-        console.log(`Session directory does not exist for ${phoneNumber}.`);
-        return; // Exit the function if the session does not exist
+        console.log(`Session directory does not exist locally for ${phoneNumber}.`);
+        
+        // Try to load session from cloud if cloud storage is initialized
+        if (global.cloudInitialized && global.cloudStorage) {
+            console.log(`🔄 Attempting to load session from cloud for ${phoneNumber}...`);
+            const sessionLoaded = await global.cloudStorage.loadSession(phoneNumber);
+            if (sessionLoaded) {
+                console.log(`✅ Session loaded from cloud for ${phoneNumber}`);
+            } else {
+                console.log(`ℹ️ No session found in cloud for ${phoneNumber} - will create new session`);
+                // Create session directory for new session
+                fs.mkdirSync(sessionPath, { recursive: true });
+            }
+        } else {
+            console.log(`ℹ️ Cloud storage not available - will create new session for ${phoneNumber}`);
+            // Create session directory for new session
+            fs.mkdirSync(sessionPath, { recursive: true });
+        }
     }
 
     let { version, isLatest } = await fetchLatestBaileysVersion();
@@ -369,13 +475,24 @@ conn.public = true
             await saveCreds();
             console.log(`Credentials saved successfully for ${phoneNumber}!`);
 
+            // Clean up connection attempt tracking
+            global.connectionAttempts.delete(phoneNumber);
+
             // Send success messages to the user on Telegram
             if (telegramChatId) {
                 if (!connectedUsers[telegramChatId]) {
                     connectedUsers[telegramChatId] = [];
                 }
-                                connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
-                saveConnectedUsers(); // Save connected users after updating
+                
+                // Check if this phone number is already connected to avoid duplicates
+                const isAlreadyConnected = connectedUsers[telegramChatId].some(user => user.phoneNumber === phoneNumber);
+                if (!isAlreadyConnected) {
+                    connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
+                    saveConnectedUsers(); // Save connected users after updating
+                } else {
+                    console.log(`[DUPLICATE] Phone number ${phoneNumber} is already connected, skipping duplicate connection`);
+                    return; // Exit early to prevent spam
+                }
                 bot.sendMessage(telegramChatId, `
 ┏━━『🩸⃟‣ZETECH-MD-≈🚭 』━━┓
 
@@ -413,6 +530,8 @@ conn.public = true
         } else if (connection === 'close') {
             // Remove connection from global tracker
             global.activeConnections.delete(phoneNumber);
+            // Clean up connection attempt tracking
+            global.connectionAttempts.delete(phoneNumber);
             console.log(`[CONNECTION] Removed ${phoneNumber} from active connections tracker`);
             
             if (lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
@@ -1009,6 +1128,17 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
         // Mark API key as used
         await markApiKeyAsUsed(apiKey, phoneNumber, chatId);
         
+        // Sync new session to cloud if cloud storage is available
+        if (global.cloudInitialized && global.autoSync) {
+            console.log(`🔄 Syncing new session to cloud: ${phoneNumber}`);
+            try {
+                await global.autoSync.syncSession(phoneNumber);
+                console.log(`✅ Session synced to cloud: ${phoneNumber}`);
+            } catch (error) {
+                console.error(`❌ Failed to sync session to cloud: ${error.message}`);
+            }
+        }
+        
         bot.sendMessage(chatId, `📱 Session directory created for ${phoneNumber}\n\n🔑 API Key: ✅ Verified & Used\n📊 Status: Ready to connect\n\n⚠️ Note: This API key has been marked as used and cannot be reused.`);
 
         // Generate and send pairing code
@@ -1186,18 +1316,81 @@ async function loadAllSessions() {
         fs.mkdirSync(sessionsDir);
     }
 
+    // If cloud storage is initialized, try to load sessions from cloud first
+    if (global.cloudInitialized && global.cloudStorage) {
+        console.log('🔄 Loading sessions from cloud...');
+        try {
+            // Load all sessions from cloud
+            const cloudSessions = await global.cloudStorage.listCloudFiles();
+            const sessionFiles = cloudSessions.filter(file => file.startsWith('trash_baileys/session_'));
+            
+            for (const cloudFile of sessionFiles) {
+                const phoneNumber = cloudFile.replace('trash_baileys/session_', '');
+                console.log(`📥 Loading session from cloud: ${phoneNumber}`);
+                await startWhatsAppBot(phoneNumber);
+            }
+        } catch (error) {
+            console.error('❌ Error loading sessions from cloud:', error.message);
+        }
+    }
+
+    // Also load any local sessions that might not be in cloud
     const sessionFiles = fs.readdirSync(sessionsDir);
     for (const file of sessionFiles) {
-        const phoneNumber = file.replace('session_', '');
-        await startWhatsAppBot(phoneNumber);
+        if (file.startsWith('session_')) {
+            const phoneNumber = file.replace('session_', '');
+            console.log(`📱 Loading local session: ${phoneNumber}`);
+            await startWhatsAppBot(phoneNumber);
+        }
     }
 }
 
-// Ensure all sessions are loaded on startup
-loadConnectedUsers(); // Load Connected users from the JSON file
-loadAllSessions().catch(err => {
-    console.log('Error loading sessions:', err);
-});
+// Initialize cloud storage and load sessions
+async function startBot() {
+    try {
+        // Load connected users first
+        loadConnectedUsers();
+        
+        // Clean up any duplicate entries
+        cleanupConnectedUsers();
+        
+        // Initialize log collector
+        console.log('📊 Initializing log collector...');
+        const logBotToken = settings.LOG_BOT_TOKEN || null;
+        const logGroupId = settings.LOG_GROUP_ID || null;
+        global.logCollector.initialize(logBotToken, logGroupId);
+        
+        // Start log scheduler (configurable interval)
+        if (logBotToken && logGroupId) {
+            const logInterval = parseInt(settings.LOG_MIN) || 30; // Default to 30 minutes if not specified
+            global.logCollector.startScheduler(logInterval);
+            console.log(`✅ Log collector ready - logs will be sent every ${logInterval} minutes`);
+        } else {
+            console.log('⚠️ Log collector ready but no Telegram credentials provided');
+        }
+        
+        // Initialize cloud storage
+        console.log('🚀 Starting ZETECH-MD Bot...');
+        const cloudReady = await initializeCloudStorage();
+        
+        if (cloudReady) {
+            console.log('✅ Cloud storage ready, loading sessions...');
+        } else {
+            console.log('⚠️ Cloud storage not available, using local storage only');
+        }
+        
+        // Load all sessions (from cloud and local)
+        await loadAllSessions();
+        
+        console.log('🎉 ZETECH-MD Bot is ready!');
+        
+    } catch (error) {
+        console.error('❌ Error starting bot:', error.message);
+    }
+}
+
+// Start the bot
+startBot();
 
 // Start the bot
 console.log('Telegram bot is running...');

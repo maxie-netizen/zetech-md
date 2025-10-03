@@ -1,0 +1,34 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421815285138@g.us",
+      "fromMe": false,
+      "id": "3F1DC3A0ACFE6B53D5DE"
+    },
+    "message": {
+      "documentMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7119-24/559857043_837923442228429_3081480473425389959_n.enc?ccb=11-4&oh=01_Q5Aa2gEQoeV8oNYC2-ljYYuiEETTDT3b5YC06wjbvCDr9JLrkg&oe=69071E28&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "application/pdf",
+        "title": "📚 Common Units Resource Package (1).pdf",
+        "fileSha256": "7uWDzgE4hTEwgtWr3QigWS2RdKptfAKjo1UTRusO8oE=",
+        "fileLength": "167564",
+        "pageCount": 2,
+        "mediaKey": "I0jub1B4u0OzUvv/6mmfcv8MMT47osCtKVkdlL6DoHg=",
+        "fileName": "📚 Common Units Resource Package (1).pdf",
+        "fileEncSha256": "e68X5s5/7GwgAnaqQPIF0ziEU/BXEV5WrsemsOA3dK0=",
+        "directPath": "/v/t62.7119-24/559857043_837923442228429_3081480473425389959_n.enc?ccb=11-4&oh=01_Q5Aa2gEQoeV8oNYC2-ljYYuiEETTDT3b5YC06wjbvCDr9JLrkg&oe=69071E28&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759483881",
+        "caption": "Good day class,\n\nThe Library team is pleased to share the *Common Unit Resource Package*.\n\nThe units are:\n1. Communication Skills\n2. Digital Literacy\n3. Health and wellness\n4. Entrepreneurship\n\nFind the package  attached for your reference.\n\nIf you encounter a problem in accessing  the above library resources, book a session with us via the link:\nhttps://forms.gle/VzhoidaPRNjN3W3UA"
+      }
+    },
+    "messageTimestamp": "1759484810",
+    "participant": "",
+    "mediaData": {
+      "localPath": "Media/WhatsApp Documents/Private/📚 Common Units Resource Package (1).pdf"
+    },
+    "reportingTokenInfo": {
+      "reportingTag": "AQvb7ch+eLKJ4apZ8PMV3g=="
+    },
+    "isMentionedInStatus": false
+  }
+]

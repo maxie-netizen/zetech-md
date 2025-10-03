@@ -1,0 +1,26 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "1C7D4D0B403782CAD4AA309BE1C416CB",
+      "participant": "60160160620596@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "This command is restricted to the owner and sudos only.",
+        "contextInfo": {
+          "stanzaId": "ACCEA328DB311FC007D62F7DF686B01A",
+          "participant": "261160200843371@lid",
+          "quotedMessage": {
+            "conversation": ".tagall"
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759437054",
+    "participant": "60160160620596@lid",
+    "broadcast": false,
+    "pushName": "@KÏJÄÑĀ KŪLKHËËD ȚẼČĦ:::"
+  }
+]

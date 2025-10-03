@@ -1,0 +1,2926 @@
+[2025-10-03T14:15:09.528Z] [LOG] 📊 Initializing log collector...
+[2025-10-03T14:15:09.531Z] [LOG] 📊 Log collector initialized with Telegram integration
+[2025-10-03T14:15:09.531Z] [LOG] ⏰ Log scheduler started - will send logs every 1 minutes
+[2025-10-03T14:15:09.531Z] [LOG] ✅ Log collector ready - logs will be sent every 1 minutes
+[2025-10-03T14:15:09.531Z] [LOG] 🚀 Starting ZETECH-MD Bot...
+[2025-10-03T14:15:09.532Z] [LOG] 🔄 Initializing cloud storage...
+[2025-10-03T14:15:09.532Z] [LOG] 🔄 Initializing Local Backup...
+[2025-10-03T14:15:09.534Z] [LOG] 🔄 Initializing local backup system...
+[2025-10-03T14:15:09.535Z] [LOG] Telegram bot is running...
+[2025-10-03T14:15:09.542Z] [LOG] [EXPIRY CHECK] API key expiration monitoring started (every 30 minutes)
+[2025-10-03T14:15:09.545Z] [LOG] ✅ Local backup system ready
+[2025-10-03T14:15:09.545Z] [LOG] ✅ Local Backup ready
+[2025-10-03T14:15:09.546Z] [LOG] ✅ Local Backup ready
+[2025-10-03T14:15:09.546Z] [LOG] 📥 Loading database from backup...
+[2025-10-03T14:15:09.546Z] [LOG] ℹ️ No backups available to restore from
+[2025-10-03T14:15:09.547Z] [LOG] 🎉 Cloud storage system ready!
+[2025-10-03T14:15:09.547Z] [LOG] ✅ Cloud storage ready, loading sessions...
+[2025-10-03T14:15:09.547Z] [LOG] 🔄 Loading sessions from cloud...
+[2025-10-03T14:15:09.548Z] [LOG] 📱 Loading local session: 254740300165
+[2025-10-03T14:15:10.232Z] [LOG] Using Baileys version: 2,3000,1023223821 (Latest: true)
+[2025-10-03T14:15:10.252Z] [LOG] [CONNECTION] Added 254740300165 to active connections tracker
+[2025-10-03T14:15:10.256Z] [LOG] Session credentials reloaded successfully for 254740300165!
+[2025-10-03T14:15:10.257Z] [LOG] 📱 Loading local session: 254762917014
+[2025-10-03T14:15:10.410Z] [LOG] [CONNECTION] Added 254762917014 to active connections tracker
+[2025-10-03T14:15:10.413Z] [LOG] Session credentials reloaded successfully for 254762917014!
+[2025-10-03T14:15:10.414Z] [LOG] 🎉 ZETECH-MD Bot is ready!
+[2025-10-03T14:15:12.088Z] [LOG] Credentials saved successfully for 254762917014!
+[2025-10-03T14:15:14.611Z] [LOG] [CONNECTION] Removed 254740300165 from active connections tracker
+[2025-10-03T14:16:09.558Z] [LOG] 📤 Scheduled log sending triggered...
+[2025-10-03T14:16:09.622Z] [ERROR] (node:15960) [node-telegram-bot-api] DeprecationWarning: In the future, content-type of files you send will default to "application/octet-stream". See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files for more information on how sending files has been improved and on how to disable this deprecation message altogether.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-10-03T14:16:10.776Z] [LOG] 📤 Logs sent to Telegram group: terminal-logs-2025-10-03T14-16-09-560Z.txt & whatsapp-logs-2025-10-03T14-16-09-560Z.txt
+[2025-10-03T14:16:10.781Z] [LOG] 🗑️ Cleaned up old terminal log file: terminal-logs-2025-10-02T23-24-07-174Z.txt
+[2025-10-03T14:16:53.957Z] [LOG] [DEBUG] Command detected: "menu", isCmd: true, body: ".menu", prefix: "."
+[2025-10-03T14:16:53.980Z] [LOG] [PLUGIN] Found command: menu in plugin: menu
+[2025-10-03T14:16:53.984Z] [LOG] [PLUGIN] Successfully executed: menu
+[2025-10-03T14:16:54.219Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Tuma pdf  mzee😂", prefix: "."
+[2025-10-03T14:16:54.237Z] [LOG] [DEBUG] Command detected: "menu", isCmd: true, body: ".menu", prefix: "."
+[2025-10-03T14:16:54.262Z] [LOG] [PLUGIN] Found command: menu in plugin: menu
+[2025-10-03T14:16:54.269Z] [LOG] [PLUGIN] Successfully executed: menu
+[2025-10-03T14:16:54.486Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:54.508Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Ndio tumeanza 😂😂", prefix: "."
+[2025-10-03T14:16:54.841Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "tumia tu hiyo, acha nitoe dashes iache kukaa jatgpt😅😅", prefix: "."
+[2025-10-03T14:16:54.854Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:54.880Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:54.909Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:54.987Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.014Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.044Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.073Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.094Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.114Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.136Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.285Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.438Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.548Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.645Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:55.863Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.285Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.446Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "hukuwa umefanya", prefix: "."
+[2025-10-03T14:16:56.472Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-10-03T14:16:56.473Z] [INFO] Closing session: {
+  "_chains": {
+    "BUNmvp8rmVAoYHNnK41hfvSdjTJyB5gI5pBmvyzQ1Y4r": {
+      "chainKey": {
+        "counter": 22,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            135,
+            216,
+            150,
+            67,
+            9,
+            129,
+            42,
+            118,
+            253,
+            208,
+            83,
+            139,
+            76,
+            98,
+            15,
+            62,
+            51,
+            203,
+            225,
+            87,
+            34,
+            78,
+            218,
+            170,
+            47,
+            124,
+            131,
+            61,
+            182,
+            183,
+            116,
+            197
+          ]
+        }
+      },
+      "chainType": 1,
+      "messageKeys": {}
+    }
+  },
+  "registrationId": 1123167029,
+  "currentRatchet": {
+    "ephemeralKeyPair": {
+      "pubKey": {
+        "type": "Buffer",
+        "data": [
+          5,
+          67,
+          102,
+          190,
+          159,
+          43,
+          153,
+          80,
+          40,
+          96,
+          115,
+          103,
+          43,
+          141,
+          97,
+          126,
+          244,
+          157,
+          141,
+          50,
+          114,
+          7,
+          152,
+          8,
+          230,
+          144,
+          102,
+          191,
+          44,
+          208,
+          213,
+          142,
+          43
+        ]
+      },
+      "privKey": {
+        "type": "Buffer",
+        "data": [
+          80,
+          96,
+          33,
+          32,
+          43,
+          105,
+          245,
+          175,
+          173,
+          114,
+          13,
+          129,
+          219,
+          36,
+          196,
+          44,
+          119,
+          88,
+          213,
+          81,
+          97,
+          169,
+          86,
+          91,
+          23,
+          148,
+          170,
+          24,
+          49,
+          173,
+          14,
+          96
+        ]
+      }
+    },
+    "lastRemoteEphemeralKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        114,
+        128,
+        133,
+        188,
+        169,
+        16,
+        62,
+        219,
+        243,
+        111,
+        210,
+        131,
+        251,
+        34,
+        32,
+        128,
+        75,
+        239,
+        65,
+        15,
+        146,
+        112,
+        13,
+        8,
+        86,
+        67,
+        87,
+        8,
+        190,
+        49,
+        141,
+        63
+      ]
+    },
+    "previousCounter": 0,
+    "rootKey": {
+      "type": "Buffer",
+      "data": [
+        107,
+        16,
+        134,
+        223,
+        83,
+        79,
+        238,
+        131,
+        33,
+        101,
+        223,
+        236,
+        56,
+        89,
+        175,
+        138,
+        77,
+        91,
+        147,
+        156,
+        39,
+        197,
+        99,
+        198,
+        144,
+        139,
+        121,
+        180,
+        137,
+        60,
+        133,
+        166
+      ]
+    }
+  },
+  "indexInfo": {
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        152,
+        21,
+        206,
+        35,
+        17,
+        118,
+        152,
+        104,
+        185,
+        165,
+        144,
+        250,
+        144,
+        139,
+        252,
+        241,
+        152,
+        145,
+        200,
+        234,
+        209,
+        67,
+        35,
+        28,
+        55,
+        195,
+        80,
+        57,
+        146,
+        134,
+        221,
+        118
+      ]
+    },
+    "baseKeyType": 1,
+    "closed": -1,
+    "used": 1759440663009,
+    "created": 1759440663009,
+    "remoteIdentityKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        198,
+        207,
+        209,
+        57,
+        227,
+        143,
+        70,
+        235,
+        86,
+        131,
+        20,
+        243,
+        150,
+        27,
+        165,
+        1,
+        115,
+        195,
+        99,
+        198,
+        208,
+        5,
+        51,
+        73,
+        70,
+        43,
+        183,
+        113,
+        7,
+        183,
+        67,
+        25
+      ]
+    }
+  },
+  "pendingPreKey": {
+    "signedKeyId": 1,
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        152,
+        21,
+        206,
+        35,
+        17,
+        118,
+        152,
+        104,
+        185,
+        165,
+        144,
+        250,
+        144,
+        139,
+        252,
+        241,
+        152,
+        145,
+        200,
+        234,
+        209,
+        67,
+        35,
+        28,
+        55,
+        195,
+        80,
+        57,
+        146,
+        134,
+        221,
+        118
+      ]
+    },
+    "preKeyId": 675
+  }
+}
+[2025-10-03T14:16:56.561Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.630Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.714Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.763Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:56.838Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-10-03T14:16:56.839Z] [INFO] Closing session: {
+  "_chains": {
+    "BUf/J97/YYD85kfZqc0lA11zHsH3EBGLkbBpaUPBGi5N": {
+      "chainKey": {
+        "counter": 52,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            173,
+            12,
+            232,
+            120,
+            37,
+            193,
+            87,
+            36,
+            8,
+            178,
+            201,
+            18,
+            179,
+            46,
+            31,
+            94,
+            205,
+            105,
+            135,
+            57,
+            177,
+            111,
+            13,
+            96,
+            247,
+            43,
+            193,
+            24,
+            159,
+            153,
+            134,
+            216
+          ]
+        }
+      },
+      "chainType": 2,
+      "messageKeys": {
+        "19": {
+          "type": "Buffer",
+          "data": [
+            112,
+            19,
+            202,
+            71,
+            94,
+            38,
+            153,
+            69,
+            167,
+            69,
+            211,
+            181,
+            155,
+            132,
+            93,
+            212,
+            203,
+            68,
+            93,
+            11,
+            111,
+            202,
+            154,
+            240,
+            154,
+            6,
+            67,
+            80,
+            216,
+            26,
+            79,
+            182
+          ]
+        },
+        "39": {
+          "type": "Buffer",
+          "data": [
+            41,
+            152,
+            16,
+            230,
+            146,
+            147,
+            170,
+            94,
+            222,
+            227,
+            11,
+            155,
+            215,
+            5,
+            12,
+            120,
+            83,
+            174,
+            215,
+            230,
+            140,
+            64,
+            183,
+            94,
+            46,
+            29,
+            252,
+            15,
+            66,
+            105,
+            52,
+            109
+          ]
+        },
+        "46": {
+          "type": "Buffer",
+          "data": [
+            160,
+            238,
+            141,
+            47,
+            43,
+            109,
+            81,
+            214,
+            158,
+            110,
+            124,
+            12,
+            230,
+            134,
+            224,
+            8,
+            146,
+            226,
+            244,
+            182,
+            51,
+            223,
+            195,
+            115,
+            149,
+            40,
+            154,
+            37,
+            129,
+            19,
+            201,
+            108
+          ]
+        },
+        "49": {
+          "type": "Buffer",
+          "data": [
+            235,
+            146,
+            210,
+            149,
+            121,
+            63,
+            203,
+            92,
+            246,
+            239,
+            231,
+            107,
+            214,
+            143,
+            96,
+            240,
+            79,
+            245,
+            133,
+            150,
+            197,
+            190,
+            19,
+            89,
+            106,
+            91,
+            143,
+            184,
+            255,
+            63,
+            94,
+            52
+          ]
+        },
+        "50": {
+          "type": "Buffer",
+          "data": [
+            134,
+            200,
+            42,
+            178,
+            158,
+            60,
+            97,
+            103,
+            21,
+            177,
+            226,
+            8,
+            134,
+            67,
+            5,
+            56,
+            73,
+            254,
+            22,
+            95,
+            3,
+            184,
+            95,
+            47,
+            86,
+            98,
+            192,
+            153,
+            138,
+            108,
+            25,
+            61
+          ]
+        },
+        "51": {
+          "type": "Buffer",
+          "data": [
+            200,
+            59,
+            24,
+            77,
+            200,
+            179,
+            76,
+            251,
+            40,
+            170,
+            31,
+            145,
+            59,
+            246,
+            38,
+            72,
+            58,
+            200,
+            103,
+            192,
+            22,
+            63,
+            23,
+            167,
+            100,
+            8,
+            145,
+            102,
+            89,
+            94,
+            110,
+            234
+          ]
+        }
+      }
+    },
+    "BV5T5sF7/+dKPCTthib3i3XgSGYfpx4J74u2KhZDr8lb": {
+      "chainKey": {
+        "counter": 2,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            100,
+            111,
+            67,
+            136,
+            251,
+            18,
+            189,
+            25,
+            228,
+            108,
+            65,
+            117,
+            158,
+            3,
+            93,
+            126,
+            77,
+            65,
+            58,
+            199,
+            27,
+            154,
+            154,
+            181,
+            247,
+            150,
+            190,
+            27,
+            204,
+            71,
+            217,
+            173
+          ]
+        }
+      },
+      "chainType": 1,
+      "messageKeys": {}
+    }
+  },
+  "registrationId": 15433,
+  "currentRatchet": {
+    "ephemeralKeyPair": {
+      "pubKey": {
+        "type": "Buffer",
+        "data": [
+          5,
+          94,
+          83,
+          230,
+          193,
+          123,
+          255,
+          231,
+          74,
+          60,
+          36,
+          237,
+          134,
+          38,
+          247,
+          139,
+          117,
+          224,
+          72,
+          102,
+          31,
+          167,
+          30,
+          9,
+          239,
+          139,
+          182,
+          42,
+          22,
+          67,
+          175,
+          201,
+          91
+        ]
+      },
+      "privKey": {
+        "type": "Buffer",
+        "data": [
+          88,
+          199,
+          92,
+          241,
+          228,
+          192,
+          74,
+          90,
+          240,
+          62,
+          55,
+          194,
+          214,
+          49,
+          75,
+          8,
+          234,
+          188,
+          144,
+          93,
+          149,
+          116,
+          114,
+          163,
+          68,
+          161,
+          249,
+          238,
+          73,
+          211,
+          176,
+          98
+        ]
+      }
+    },
+    "lastRemoteEphemeralKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        71,
+        255,
+        39,
+        222,
+        255,
+        97,
+        128,
+        252,
+        230,
+        71,
+        217,
+        169,
+        205,
+        37,
+        3,
+        93,
+        115,
+        30,
+        193,
+        247,
+        16,
+        17,
+        139,
+        145,
+        176,
+        105,
+        105,
+        67,
+        193,
+        26,
+        46,
+        77
+      ]
+    },
+    "previousCounter": 20,
+    "rootKey": {
+      "type": "Buffer",
+      "data": [
+        243,
+        47,
+        191,
+        137,
+        55,
+        105,
+        153,
+        76,
+        201,
+        40,
+        89,
+        4,
+        234,
+        27,
+        245,
+        169,
+        133,
+        29,
+        77,
+        212,
+        78,
+        235,
+        68,
+        222,
+        235,
+        48,
+        137,
+        150,
+        52,
+        78,
+        34,
+        168
+      ]
+    }
+  },
+  "indexInfo": {
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        194,
+        70,
+        161,
+        73,
+        132,
+        139,
+        206,
+        3,
+        57,
+        40,
+        7,
+        186,
+        85,
+        77,
+        204,
+        174,
+        27,
+        34,
+        154,
+        236,
+        14,
+        35,
+        50,
+        103,
+        103,
+        193,
+        142,
+        7,
+        168,
+        21,
+        85,
+        118
+      ]
+    },
+    "baseKeyType": 1,
+    "closed": -1,
+    "used": 1759501013569,
+    "created": 1759440663005,
+    "remoteIdentityKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        166,
+        32,
+        51,
+        165,
+        199,
+        198,
+        191,
+        22,
+        93,
+        75,
+        57,
+        6,
+        251,
+        230,
+        189,
+        181,
+        75,
+        208,
+        226,
+        207,
+        116,
+        155,
+        75,
+        89,
+        106,
+        13,
+        172,
+        181,
+        186,
+        206,
+        93,
+        44
+      ]
+    }
+  }
+}
+[2025-10-03T14:16:56.947Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:57.092Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:57.131Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-10-03T14:16:57.132Z] [INFO] Closing session: {
+  "_chains": {
+    "BZQ8DrKKNtsMykObPICd+Qe4P+n+GPuQ3M8PZxhlT2Nt": {
+      "chainKey": {
+        "counter": 6
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BZKlKzGaxCYJvgBtkkMwh1MZvprtPZwEvr5uTrRQY05L": {
+      "chainKey": {
+        "counter": 3
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BVQ0baX0sbaU/c8d6V9467bsjoXUQ8aFwueXokvuju1/": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BRjLXsd0AkhDm5PZ1kwW3tN0oQvXYgJy03+ETGdDCZBC": {
+      "chainKey": {
+        "counter": 1
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BfQlH6+rG1+s4+lOvQgyvZdbjj68LMNrZIqVU2Kl+5cJ": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "Bd2BkBik/iIlh0SFtynBkFXEuhmjw4Btg+baBRSZCzgd": {
+      "chainKey": {
+        "counter": 2
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BfODD4UmeK9PSKdWB5mKw3ASd02h+ohBbmkG9DF5A2J0": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BSbVGi9rM8G0J1u0K8Bi3xFaNCRKad1hiXGSduIhCBNJ": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BVNrw9+XZeSOFxSlzfFXthFx/PYYVLVzNCasXnHBaX4t": {
+      "chainKey": {
+        "counter": 2
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BRYYkYJWkchzWrbKpZtpvvWidYb4nzsujym2y5dHoTld": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BXeCHlFXdZC8OGqy9PWJ+t9gdwJgXzyUjSR4Fnk7f3dX": {
+      "chainKey": {
+        "counter": 0
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BYEdUm/9Omgd1ixrazpQNmMe5lJbzYGwoA6yUbBJKRgs": {
+      "chainKey": {
+        "counter": 5
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BaBEhg7Uah9LgalNGDl/KSiy1ihJXyXY3jGhKgZ7T7xU": {
+      "chainKey": {
+        "counter": 2
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BfQPP+bYomx7FHMNqt0rIg1r8pnBP40QoaTtVcKcNol/": {
+      "chainKey": {
+        "counter": 19,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            247,
+            208,
+            80,
+            187,
+            2,
+            221,
+            67,
+            233,
+            173,
+            33,
+            9,
+            159,
+            191,
+            201,
+            201,
+            200,
+            84,
+            10,
+            207,
+            234,
+            19,
+            123,
+            234,
+            88,
+            97,
+            159,
+            75,
+            52,
+            25,
+            222,
+            70,
+            161
+          ]
+        }
+      },
+      "chainType": 2,
+      "messageKeys": {}
+    },
+    "BdiMfYTcK6+/iArI0fyzG1uKFnl68iVUWrHOsLiHUCFH": {
+      "chainKey": {
+        "counter": 3,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            21,
+            60,
+            234,
+            79,
+            34,
+            200,
+            255,
+            191,
+            14,
+            53,
+            180,
+            33,
+            185,
+            98,
+            97,
+            81,
+            33,
+            179,
+            192,
+            219,
+            103,
+            161,
+            11,
+            174,
+            254,
+            191,
+            81,
+            109,
+            60,
+            230,
+            224,
+            251
+          ]
+        }
+      },
+      "chainType": 1,
+      "messageKeys": {}
+    }
+  },
+  "registrationId": 612722625,
+  "currentRatchet": {
+    "ephemeralKeyPair": {
+      "pubKey": {
+        "type": "Buffer",
+        "data": [
+          5,
+          216,
+          140,
+          125,
+          132,
+          220,
+          43,
+          175,
+          191,
+          136,
+          10,
+          200,
+          209,
+          252,
+          179,
+          27,
+          91,
+          138,
+          22,
+          121,
+          122,
+          242,
+          37,
+          84,
+          90,
+          177,
+          206,
+          176,
+          184,
+          135,
+          80,
+          33,
+          71
+        ]
+      },
+      "privKey": {
+        "type": "Buffer",
+        "data": [
+          64,
+          40,
+          234,
+          156,
+          252,
+          128,
+          69,
+          62,
+          35,
+          220,
+          153,
+          38,
+          165,
+          238,
+          209,
+          207,
+          188,
+          195,
+          107,
+          44,
+          183,
+          95,
+          58,
+          246,
+          70,
+          2,
+          108,
+          39,
+          124,
+          124,
+          205,
+          90
+        ]
+      }
+    },
+    "lastRemoteEphemeralKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        244,
+        15,
+        63,
+        230,
+        216,
+        162,
+        108,
+        123,
+        20,
+        115,
+        13,
+        170,
+        221,
+        43,
+        34,
+        13,
+        107,
+        242,
+        153,
+        193,
+        63,
+        141,
+        16,
+        161,
+        164,
+        237,
+        85,
+        194,
+        156,
+        54,
+        137,
+        127
+      ]
+    },
+    "previousCounter": 23,
+    "rootKey": {
+      "type": "Buffer",
+      "data": [
+        145,
+        45,
+        199,
+        126,
+        174,
+        6,
+        130,
+        59,
+        192,
+        32,
+        67,
+        211,
+        61,
+        177,
+        160,
+        114,
+        107,
+        205,
+        29,
+        159,
+        67,
+        168,
+        69,
+        54,
+        255,
+        69,
+        142,
+        87,
+        27,
+        173,
+        139,
+        193
+      ]
+    }
+  },
+  "indexInfo": {
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        240,
+        149,
+        39,
+        236,
+        42,
+        107,
+        124,
+        92,
+        105,
+        188,
+        186,
+        141,
+        59,
+        192,
+        57,
+        132,
+        31,
+        242,
+        30,
+        143,
+        86,
+        1,
+        223,
+        58,
+        48,
+        179,
+        130,
+        157,
+        51,
+        61,
+        173,
+        6
+      ]
+    },
+    "baseKeyType": 2,
+    "closed": -1,
+    "used": 1759501015966,
+    "created": 1759440594497,
+    "remoteIdentityKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        82,
+        45,
+        45,
+        77,
+        226,
+        42,
+        70,
+        243,
+        6,
+        128,
+        119,
+        138,
+        251,
+        51,
+        152,
+        214,
+        175,
+        161,
+        61,
+        186,
+        59,
+        188,
+        229,
+        91,
+        215,
+        249,
+        108,
+        168,
+        86,
+        208,
+        51,
+        10
+      ]
+    }
+  }
+}
+[2025-10-03T14:16:57.144Z] [WARN] Decrypted message with closed session.
+[2025-10-03T14:16:57.196Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Add me on StepUp, a fun app to track steps & compete with friends!
+https://join.thestepupapp.com/RGGvKN", prefix: "."
+[2025-10-03T14:16:57.559Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:57.631Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Na chocolate hivi?😂", prefix: "."
+[2025-10-03T14:16:57.948Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "
+╔═══════════════════════════════════════════════════╗
+║  🩸⃟‣ZETECH-MD-𝐂𝐋𝐈𝐄𝐍𝐓≈🚭  ║
+╠═══════════════════════════════════════════════════╣
+║   ✦ Owner: Maxwell     ║
+║   ✦ Version: 1.5.0                     ║
+║   ✦ Type: Plugin       ║
+╚═══════════════════════════════════════════════════╝
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔸𝕀ℕ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ menu           ◈ ping
+ ◈ ping2          ◈ uptime
+ ◈ s              ◈ botinfo
+ ◈ listplugin     ◈ update
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕆𝕋 ℂ𝕆ℕ𝕋ℝ𝕆𝕃 〙
+ ◈ public         ◈ private
+ ◈ addaccess      ◈ delaccess
+ ◈ autoreact      ◈ block
+ ◈ autotyping     ◈ autorecord
+ ◈ autorecording  ◈ autobio
+ ◈ alwaysonline   ◈ autostatus
+ ◈ chatbot        ◈ aichat
+ ◈ cloudsync      ◈ cloud
+ ◈ $              ◈ menu
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕄𝔼𝔻𝕀𝔸 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ play           ◈ ytmp4
+ ◈ ytvid          ◈ yts
+ ◈ pinterestdl    ◈ retrieve
+ ◈ song           ◈ twitterdl
+ ◈ tt             ◈ tiktok
+ ◈ igdl           ◈ ytmp3
+ ◈ tg             ◈ telegram
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔹𝕌𝔾 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ zetech
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕍𝕀𝔼𝕎-𝕆ℕℂ𝔼 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ vv (reply to view once)
+ ◈ vv2 (send to bot)
+ ◈ vv3 (send to owner)
+ ◈ emoji reply (secret mode)
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔸𝕀 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gemma          ◈ indo-ai
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾𝔼𝕋 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ gethtml        ◈ getpp
+ ◈ getplugin      ◈ save
+ ◈ gitclone       ◈ weather
+ ◈ groups         ◈ mychats
+ ◈ tempnum        ◈ templist
+ ◈ otpbox         ◈ tools
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔾ℝ𝕆𝕌ℙ ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ add            ◈ remove
+ ◈ promote        ◈ revoke
+ ◈ approve        ◈ reject
+ ◈ antilinkgc     ◈ antilink
+ ◈ antilinkstatus ◈ antilinkget
+ ◈ tagall         ◈ hidetag
+ ◈ close          ◈ open
+ ◈ kickall        ◈ linkgc
+ ◈ setppgc        ◈ setdesc
+ ◈ tagme
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝕋𝕆𝕆𝕃𝕊 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ enc            ◈ idch
+ ◈ dev
+
+├────────────────────────────❖────────────────────────────┤
+〘 𝔼ℙℍ𝕆𝕋𝕆 ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 〙
+ ◈ glithtext      ◈ lighteffects
+ ◈ writetext      ◈ advancedglow
+ ◈ typographytext ◈ pixelglitch
+ ◈ neonglitch     ◈ flagtext
+ ◈ flag3dtext     ◈ deletingtext
+ ◈ blackpinkstyle ◈ glowingtex
+ ◈ underwater     ◈ logomaker
+ ◈ cartoonstyle   ◈ papercutstyle
+ ◈ watercolortext ◈ effectclouds
+ ◈ blackpinklogo  ◈ gradienttext
+ ◈ luxurygold     ◈ sandsummer
+ ◈ multicoloredneon ◈ galaxywallpaper
+ ◈ 1917style      ◈ galaxystyle
+ ◈ royaltext      ◈ freecreate
+
+╔═══════════════════════════════════════════════════╗
+║  Type .menu <category> for specific commands  ║
+╚═══════════════════════════════════════════════════╝
+
+", prefix: "."
+[2025-10-03T14:16:58.273Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:16:58.742Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "Iko sawa bado😂", prefix: "."
+[2025-10-03T14:16:59.094Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-10-03T14:16:59.095Z] [INFO] Closing session: {
+  "_chains": {
+    "BfQPP+bYomx7FHMNqt0rIg1r8pnBP40QoaTtVcKcNol/": {
+      "chainKey": {
+        "counter": 20,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            150,
+            142,
+            38,
+            89,
+            196,
+            212,
+            47,
+            174,
+            239,
+            55,
+            225,
+            192,
+            247,
+            40,
+            102,
+            35,
+            41,
+            170,
+            41,
+            120,
+            169,
+            216,
+            149,
+            89,
+            53,
+            159,
+            93,
+            104,
+            1,
+            33,
+            172,
+            138
+          ]
+        }
+      },
+      "chainType": 2,
+      "messageKeys": {
+        "0": {
+          "type": "Buffer",
+          "data": [
+            122,
+            197,
+            110,
+            194,
+            246,
+            116,
+            150,
+            255,
+            80,
+            205,
+            160,
+            232,
+            199,
+            33,
+            100,
+            206,
+            205,
+            103,
+            254,
+            182,
+            100,
+            180,
+            37,
+            236,
+            3,
+            133,
+            82,
+            128,
+            245,
+            93,
+            227,
+            58
+          ]
+        },
+        "1": {
+          "type": "Buffer",
+          "data": [
+            87,
+            198,
+            169,
+            177,
+            159,
+            157,
+            250,
+            209,
+            179,
+            218,
+            79,
+            135,
+            214,
+            11,
+            247,
+            48,
+            224,
+            216,
+            111,
+            215,
+            184,
+            151,
+            9,
+            10,
+            134,
+            57,
+            103,
+            32,
+            14,
+            64,
+            21,
+            206
+          ]
+        },
+        "2": {
+          "type": "Buffer",
+          "data": [
+            122,
+            233,
+            201,
+            135,
+            235,
+            31,
+            6,
+            59,
+            183,
+            47,
+            12,
+            136,
+            104,
+            33,
+            53,
+            140,
+            159,
+            191,
+            112,
+            166,
+            84,
+            170,
+            255,
+            175,
+            151,
+            45,
+            113,
+            157,
+            223,
+            63,
+            95,
+            153
+          ]
+        },
+        "3": {
+          "type": "Buffer",
+          "data": [
+            77,
+            170,
+            69,
+            128,
+            69,
+            163,
+            57,
+            150,
+            12,
+            193,
+            66,
+            81,
+            204,
+            39,
+            208,
+            40,
+            152,
+            154,
+            19,
+            160,
+            207,
+            140,
+            60,
+            170,
+            77,
+            215,
+            214,
+            223,
+            232,
+            79,
+            65,
+            219
+          ]
+        },
+        "4": {
+          "type": "Buffer",
+          "data": [
+            58,
+            176,
+            228,
+            181,
+            151,
+            24,
+            123,
+            165,
+            220,
+            236,
+            114,
+            239,
+            112,
+            211,
+            203,
+            184,
+            206,
+            11,
+            141,
+            28,
+            26,
+            210,
+            52,
+            188,
+            3,
+            18,
+            38,
+            179,
+            34,
+            150,
+            228,
+            142
+          ]
+        },
+        "5": {
+          "type": "Buffer",
+          "data": [
+            151,
+            7,
+            146,
+            201,
+            195,
+            6,
+            79,
+            145,
+            249,
+            232,
+            151,
+            229,
+            193,
+            153,
+            145,
+            53,
+            23,
+            184,
+            133,
+            125,
+            27,
+            218,
+            172,
+            180,
+            101,
+            84,
+            99,
+            219,
+            245,
+            230,
+            130,
+            89
+          ]
+        },
+        "6": {
+          "type": "Buffer",
+          "data": [
+            185,
+            46,
+            136,
+            75,
+            73,
+            173,
+            242,
+            194,
+            70,
+            236,
+            120,
+            131,
+            170,
+            216,
+            71,
+            2,
+            127,
+            200,
+            0,
+            29,
+            211,
+            168,
+            85,
+            209,
+            28,
+            198,
+            222,
+            58,
+            211,
+            216,
+            64,
+            65
+          ]
+        },
+        "7": {
+          "type": "Buffer",
+          "data": [
+            61,
+            238,
+            101,
+            130,
+            149,
+            139,
+            232,
+            177,
+            28,
+            144,
+            252,
+            241,
+            132,
+            90,
+            176,
+            5,
+            44,
+            36,
+            168,
+            167,
+            105,
+            253,
+            242,
+            235,
+            239,
+            235,
+            212,
+            252,
+            159,
+            57,
+            22,
+            148
+          ]
+        },
+        "8": {
+          "type": "Buffer",
+          "data": [
+            95,
+            103,
+            75,
+            235,
+            185,
+            234,
+            59,
+            2,
+            165,
+            144,
+            72,
+            166,
+            198,
+            179,
+            199,
+            141,
+            213,
+            1,
+            223,
+            131,
+            4,
+            178,
+            236,
+            120,
+            202,
+            59,
+            204,
+            165,
+            127,
+            42,
+            124,
+            162
+          ]
+        },
+        "9": {
+          "type": "Buffer",
+          "data": [
+            254,
+            141,
+            31,
+            42,
+            193,
+            34,
+            32,
+            164,
+            208,
+            190,
+            134,
+            135,
+            245,
+            58,
+            58,
+            7,
+            122,
+            71,
+            99,
+            85,
+            234,
+            3,
+            151,
+            252,
+            118,
+            112,
+            195,
+            77,
+            175,
+            135,
+            133,
+            102
+          ]
+        },
+        "10": {
+          "type": "Buffer",
+          "data": [
+            22,
+            83,
+            134,
+            42,
+            158,
+            130,
+            15,
+            202,
+            108,
+            218,
+            62,
+            119,
+            106,
+            80,
+            63,
+            166,
+            121,
+            148,
+            113,
+            165,
+            210,
+            105,
+            21,
+            156,
+            165,
+            217,
+            226,
+            117,
+            27,
+            87,
+            243,
+            5
+          ]
+        },
+        "11": {
+          "type": "Buffer",
+          "data": [
+            212,
+            124,
+            97,
+            220,
+            113,
+            138,
+            203,
+            55,
+            157,
+            98,
+            14,
+            215,
+            160,
+            100,
+            1,
+            135,
+            19,
+            74,
+            114,
+            132,
+            170,
+            200,
+            53,
+            246,
+            7,
+            164,
+            17,
+            178,
+            207,
+            70,
+            157,
+            215
+          ]
+        },
+        "12": {
+          "type": "Buffer",
+          "data": [
+            78,
+            246,
+            231,
+            20,
+            88,
+            148,
+            117,
+            26,
+            188,
+            125,
+            228,
+            224,
+            47,
+            34,
+            252,
+            154,
+            108,
+            3,
+            209,
+            170,
+            154,
+            87,
+            121,
+            206,
+            82,
+            163,
+            194,
+            100,
+            68,
+            235,
+            217,
+            99
+          ]
+        },
+        "13": {
+          "type": "Buffer",
+          "data": [
+            212,
+            110,
+            0,
+            35,
+            197,
+            33,
+            54,
+            97,
+            223,
+            24,
+            167,
+            186,
+            97,
+            125,
+            48,
+            197,
+            120,
+            117,
+            47,
+            119,
+            94,
+            170,
+            45,
+            146,
+            79,
+            123,
+            156,
+            50,
+            199,
+            173,
+            27,
+            45
+          ]
+        },
+        "14": {
+          "type": "Buffer",
+          "data": [
+            210,
+            170,
+            73,
+            114,
+            160,
+            177,
+            106,
+            28,
+            177,
+            84,
+            241,
+            195,
+            188,
+            80,
+            228,
+            155,
+            187,
+            114,
+            181,
+            252,
+            201,
+            82,
+            77,
+            118,
+            104,
+            181,
+            214,
+            84,
+            162,
+            105,
+            173,
+            222
+          ]
+        },
+        "15": {
+          "type": "Buffer",
+          "data": [
+            9,
+            62,
+            219,
+            84,
+            234,
+            111,
+            110,
+            23,
+            58,
+            131,
+            240,
+            35,
+            108,
+            49,
+            42,
+            149,
+            176,
+            158,
+            53,
+            132,
+            254,
+            101,
+            221,
+            90,
+            196,
+            116,
+            119,
+            231,
+            148,
+            106,
+            14,
+            120
+          ]
+        },
+        "16": {
+          "type": "Buffer",
+          "data": [
+            192,
+            128,
+            246,
+            2,
+            138,
+            130,
+            162,
+            64,
+            68,
+            48,
+            191,
+            182,
+            13,
+            218,
+            237,
+            67,
+            222,
+            32,
+            158,
+            28,
+            240,
+            160,
+            116,
+            15,
+            250,
+            249,
+            208,
+            215,
+            222,
+            135,
+            117,
+            133
+          ]
+        },
+        "17": {
+          "type": "Buffer",
+          "data": [
+            235,
+            99,
+            248,
+            235,
+            156,
+            201,
+            152,
+            166,
+            73,
+            62,
+            111,
+            164,
+            62,
+            2,
+            239,
+            125,
+            58,
+            22,
+            226,
+            162,
+            73,
+            79,
+            37,
+            248,
+            227,
+            148,
+            213,
+            8,
+            194,
+            51,
+            58,
+            251
+          ]
+        },
+        "18": {
+          "type": "Buffer",
+          "data": [
+            173,
+            145,
+            145,
+            238,
+            127,
+            101,
+            249,
+            60,
+            242,
+            72,
+            175,
+            211,
+            219,
+            171,
+            234,
+            71,
+            139,
+            197,
+            74,
+            142,
+            223,
+            71,
+            219,
+            110,
+            190,
+            190,
+            49,
+            89,
+            37,
+            34,
+            32,
+            215
+          ]
+        },
+        "19": {
+          "type": "Buffer",
+          "data": [
+            98,
+            203,
+            176,
+            172,
+            30,
+            223,
+            212,
+            71,
+            185,
+            171,
+            65,
+            247,
+            111,
+            38,
+            219,
+            206,
+            173,
+            92,
+            193,
+            10,
+            252,
+            180,
+            15,
+            162,
+            170,
+            195,
+            38,
+            142,
+            91,
+            70,
+            178,
+            106
+          ]
+        }
+      }
+    },
+    "BX5w7pDYR6CRMClX9l++UpbPIB3PQQF1W2kbTuuGKBZR": {
+      "chainKey": {
+        "counter": 1,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            241,
+            88,
+            44,
+            117,
+            79,
+            155,
+            135,
+            131,
+            240,
+            205,
+            201,
+            157,
+            207,
+            167,
+            240,
+            45,
+            139,
+            86,
+            243,
+            101,
+            148,
+            198,
+            245,
+            227,
+            41,
+            61,
+            29,
+            207,
+            187,
+            233,
+            84,
+            128
+          ]
+        }
+      },
+      "chainType": 1,
+      "messageKeys": {}
+    }
+  },
+  "registrationId": 612722625,
+  "currentRatchet": {
+    "ephemeralKeyPair": {
+      "pubKey": {
+        "type": "Buffer",
+        "data": [
+          5,
+          126,
+          112,
+          238,
+          144,
+          216,
+          71,
+          160,
+          145,
+          48,
+          41,
+          87,
+          246,
+          95,
+          190,
+          82,
+          150,
+          207,
+          32,
+          29,
+          207,
+          65,
+          1,
+          117,
+          91,
+          105,
+          27,
+          78,
+          235,
+          134,
+          40,
+          22,
+          81
+        ]
+      },
+      "privKey": {
+        "type": "Buffer",
+        "data": [
+          16,
+          19,
+          229,
+          203,
+          217,
+          192,
+          145,
+          107,
+          172,
+          43,
+          98,
+          187,
+          245,
+          34,
+          216,
+          21,
+          232,
+          48,
+          129,
+          90,
+          35,
+          88,
+          64,
+          45,
+          64,
+          212,
+          110,
+          230,
+          167,
+          96,
+          82,
+          91
+        ]
+      }
+    },
+    "lastRemoteEphemeralKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        244,
+        15,
+        63,
+        230,
+        216,
+        162,
+        108,
+        123,
+        20,
+        115,
+        13,
+        170,
+        221,
+        43,
+        34,
+        13,
+        107,
+        242,
+        153,
+        193,
+        63,
+        141,
+        16,
+        161,
+        164,
+        237,
+        85,
+        194,
+        156,
+        54,
+        137,
+        127
+      ]
+    },
+    "previousCounter": -1,
+    "rootKey": {
+      "type": "Buffer",
+      "data": [
+        138,
+        234,
+        147,
+        5,
+        244,
+        74,
+        237,
+        247,
+        86,
+        96,
+        29,
+        149,
+        84,
+        14,
+        179,
+        171,
+        22,
+        59,
+        118,
+        193,
+        132,
+        162,
+        33,
+        15,
+        18,
+        159,
+        125,
+        191,
+        230,
+        101,
+        166,
+        4
+      ]
+    }
+  },
+  "indexInfo": {
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        21,
+        254,
+        87,
+        232,
+        60,
+        193,
+        165,
+        64,
+        145,
+        156,
+        84,
+        14,
+        40,
+        43,
+        17,
+        212,
+        188,
+        245,
+        244,
+        183,
+        37,
+        219,
+        197,
+        64,
+        36,
+        238,
+        88,
+        84,
+        169,
+        192,
+        217,
+        47
+      ]
+    },
+    "baseKeyType": 1,
+    "closed": -1,
+    "used": 1759501017125,
+    "created": 1759501017125,
+    "remoteIdentityKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        82,
+        45,
+        45,
+        77,
+        226,
+        42,
+        70,
+        243,
+        6,
+        128,
+        119,
+        138,
+        251,
+        51,
+        152,
+        214,
+        175,
+        161,
+        61,
+        186,
+        59,
+        188,
+        229,
+        91,
+        215,
+        249,
+        108,
+        168,
+        86,
+        208,
+        51,
+        10
+      ]
+    }
+  },
+  "pendingPreKey": {
+    "signedKeyId": 4,
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        21,
+        254,
+        87,
+        232,
+        60,
+        193,
+        165,
+        64,
+        145,
+        156,
+        84,
+        14,
+        40,
+        43,
+        17,
+        212,
+        188,
+        245,
+        244,
+        183,
+        37,
+        219,
+        197,
+        64,
+        36,
+        238,
+        88,
+        84,
+        169,
+        192,
+        217,
+        47
+      ]
+    },
+    "preKeyId": 4916905
+  }
+}
+[2025-10-03T14:16:59.383Z] [WARN] Closing stale open session for new outgoing prekey bundle
+[2025-10-03T14:16:59.383Z] [INFO] Closing session: {
+  "_chains": {
+    "BdtfpS4+UQmgoRLH3vkh2V+4m1kcghw+2P7S2JFNjYBV": {
+      "chainKey": {
+        "counter": -1,
+        "key": {
+          "type": "Buffer",
+          "data": [
+            99,
+            24,
+            30,
+            149,
+            14,
+            182,
+            139,
+            253,
+            228,
+            65,
+            121,
+            36,
+            57,
+            115,
+            12,
+            106,
+            68,
+            76,
+            15,
+            128,
+            52,
+            63,
+            254,
+            68,
+            249,
+            24,
+            222,
+            119,
+            101,
+            208,
+            228,
+            53
+          ]
+        }
+      },
+      "chainType": 1,
+      "messageKeys": {}
+    }
+  },
+  "registrationId": 612722625,
+  "currentRatchet": {
+    "ephemeralKeyPair": {
+      "pubKey": {
+        "type": "Buffer",
+        "data": [
+          5,
+          219,
+          95,
+          165,
+          46,
+          62,
+          81,
+          9,
+          160,
+          161,
+          18,
+          199,
+          222,
+          249,
+          33,
+          217,
+          95,
+          184,
+          155,
+          89,
+          28,
+          130,
+          28,
+          62,
+          216,
+          254,
+          210,
+          216,
+          145,
+          77,
+          141,
+          128,
+          85
+        ]
+      },
+      "privKey": {
+        "type": "Buffer",
+        "data": [
+          160,
+          204,
+          68,
+          8,
+          78,
+          228,
+          35,
+          132,
+          124,
+          189,
+          72,
+          146,
+          124,
+          54,
+          131,
+          119,
+          57,
+          227,
+          111,
+          186,
+          92,
+          232,
+          237,
+          115,
+          76,
+          3,
+          244,
+          43,
+          217,
+          141,
+          69,
+          66
+        ]
+      }
+    },
+    "lastRemoteEphemeralKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        83,
+        118,
+        60,
+        186,
+        234,
+        154,
+        160,
+        114,
+        80,
+        103,
+        86,
+        159,
+        185,
+        139,
+        53,
+        253,
+        183,
+        164,
+        181,
+        171,
+        213,
+        116,
+        60,
+        58,
+        122,
+        220,
+        250,
+        40,
+        73,
+        239,
+        194,
+        23
+      ]
+    },
+    "previousCounter": 0,
+    "rootKey": {
+      "type": "Buffer",
+      "data": [
+        39,
+        93,
+        82,
+        187,
+        161,
+        28,
+        215,
+        145,
+        60,
+        164,
+        169,
+        172,
+        240,
+        121,
+        69,
+        60,
+        213,
+        208,
+        61,
+        96,
+        81,
+        138,
+        5,
+        62,
+        251,
+        51,
+        240,
+        177,
+        202,
+        115,
+        134,
+        99
+      ]
+    }
+  },
+  "indexInfo": {
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        119,
+        169,
+        120,
+        80,
+        11,
+        3,
+        250,
+        127,
+        194,
+        64,
+        251,
+        163,
+        192,
+        243,
+        50,
+        98,
+        0,
+        168,
+        32,
+        141,
+        69,
+        79,
+        211,
+        70,
+        254,
+        83,
+        165,
+        1,
+        216,
+        72,
+        150,
+        125
+      ]
+    },
+    "baseKeyType": 1,
+    "closed": -1,
+    "used": 1759501019093,
+    "created": 1759501019093,
+    "remoteIdentityKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        82,
+        45,
+        45,
+        77,
+        226,
+        42,
+        70,
+        243,
+        6,
+        128,
+        119,
+        138,
+        251,
+        51,
+        152,
+        214,
+        175,
+        161,
+        61,
+        186,
+        59,
+        188,
+        229,
+        91,
+        215,
+        249,
+        108,
+        168,
+        86,
+        208,
+        51,
+        10
+      ]
+    }
+  },
+  "pendingPreKey": {
+    "signedKeyId": 4,
+    "baseKey": {
+      "type": "Buffer",
+      "data": [
+        5,
+        119,
+        169,
+        120,
+        80,
+        11,
+        3,
+        250,
+        127,
+        194,
+        64,
+        251,
+        163,
+        192,
+        243,
+        50,
+        98,
+        0,
+        168,
+        32,
+        141,
+        69,
+        79,
+        211,
+        70,
+        254,
+        83,
+        165,
+        1,
+        216,
+        72,
+        150,
+        125
+      ]
+    },
+    "preKeyId": 4916938
+  }
+}
+[2025-10-03T14:17:06.802Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "", prefix: "."
+[2025-10-03T14:17:07.290Z] [LOG] [DEBUG] Command detected: "", isCmd: false, body: "December ama 2027?😂", prefix: "."
+[2025-10-03T14:17:09.569Z] [LOG] 📤 Scheduled log sending triggered...

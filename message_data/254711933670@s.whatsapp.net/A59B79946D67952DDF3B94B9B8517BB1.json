@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254711933670@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A59B79946D67952DDF3B94B9B8517BB1"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "𝗛𝗮𝘄𝗲𝘇𝗶𝗶 𝗳𝗶𝗸𝗮 𝗵𝘂𝗸𝗼𝗼😹😹",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACD81B735D3EE76CC05E5B54FC1A5B71",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Leta number nione kaa atatii roadtrip"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759038561",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "N3WQHSdyu2jD7lsnQREty5748CFXr2QzYIFD658KFSs="
+      }
+    },
+    "messageTimestamp": "1759436206",
+    "broadcast": false,
+    "pushName": "𝗷𝗼𝘀𝗲𝗲"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "key": {
+      "remoteJid": "254112371732@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A505853C10011A035C512E794AD804B9"
+    },
+    "message": {
+      "conversation": "Ee"
+    },
+    "messageTimestamp": "1759428429",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler",
+    "verifiedBizName": "Spoiler"
+  }
+]

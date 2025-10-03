@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421090251066@g.us",
+      "fromMe": false,
+      "id": "ACCEA328DB311FC007D62F7DF686B01A",
+      "participant": "261160200843371@lid"
+    },
+    "message": {
+      "conversation": ".tagall",
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421090251066@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwiu8LfGBxBkGiAiKBRM79xePqXyyXT9S3p0zPU911xUyrpUCeXRsNAdQyIhBWKJkd/CoWLi6gC2er41ICHr4HxKzISTaFDS7FcMGncj"
+      },
+      "messageContextInfo": {
+        "messageSecret": "qiS7AgJy3E0wSGzpeacPMVbR0yz3GYVuABEHQblTRTg="
+      }
+    },
+    "messageTimestamp": "1759437045",
+    "participant": "261160200843371@lid",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  }
+]

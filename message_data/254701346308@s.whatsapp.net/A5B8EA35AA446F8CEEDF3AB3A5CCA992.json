@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A5B8EA35AA446F8CEEDF3AB3A5CCA992"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Na Haina API error jameni",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC04B9AEC54E55DCA3A8FA961474B67C",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Eeeh najua😂🫴"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "EjUxsk4FhlOj32Lo7EDhmWUTtFFxyiSGanGgXUAULpw="
+      }
+    },
+    "messageTimestamp": "1759435251",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

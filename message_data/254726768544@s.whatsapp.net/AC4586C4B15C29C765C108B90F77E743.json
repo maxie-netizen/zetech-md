@@ -1,0 +1,23 @@
+[
+  {
+    "key": {
+      "remoteJid": "254726768544@s.whatsapp.net",
+      "fromMe": false,
+      "id": "AC4586C4B15C29C765C108B90F77E743"
+    },
+    "message": {
+      "conversation": "Money fest sahii ni mbaya Ostoh hataki mchezo😂",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "JXyA4hu6+ux+xKTwLnrbA11jdhW+CZYi5qzqLp/h1yw="
+      }
+    },
+    "messageTimestamp": "1759435478",
+    "broadcast": false,
+    "pushName": "K'mwaki 🔥🤑"
+  }
+]

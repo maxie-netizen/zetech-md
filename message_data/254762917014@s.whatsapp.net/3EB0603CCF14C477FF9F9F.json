@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254762917014@s.whatsapp.net",
+      "fromMe": false,
+      "id": "3EB0603CCF14C477FF9F9F"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "ebu niongeze 3bob niongeze nchukue blunt moja",
+        "contextInfo": {
+          "stanzaId": "A517D3C5D1FCB2279A2D5968ADDF8EE5",
+          "participant": "254701346308@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Ee",
+            "messageContextInfo": {
+              "messageSecret": "yo97t43CdFLwjy+QP47K9/PjT7G15B9bEmQ3u6QR3+Q="
+            }
+          },
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "/uJMm152wcMt0g==",
+          "senderTimestamp": "1759363483",
+          "senderAccountType": "E2EE",
+          "receiverAccountType": "E2EE",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1758109207"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "6CI9CbgxQwrY869TidbPSe897cyA5z+KujN2NDl3tqg=",
+        "limitSharingV2": {
+          "trigger": "UNKNOWN",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759428309",
+    "broadcast": false,
+    "pushName": "404 Not Found"
+  }
+]

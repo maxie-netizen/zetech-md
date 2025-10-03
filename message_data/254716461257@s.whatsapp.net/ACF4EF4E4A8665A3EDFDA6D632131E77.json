@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254716461257@s.whatsapp.net",
+      "fromMe": false,
+      "id": "ACF4EF4E4A8665A3EDFDA6D632131E77"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Si ni wewe ulimwambia",
+        "previewType": "NONE",
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "B3jaI8Hv4FsfWQ==",
+          "senderTimestamp": "1759041117",
+          "recipientKeyHash": "D96lATl0rGwxMw==",
+          "recipientTimestamp": "1759427261"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "o+QtzSYZX4z4jVTP5Tq4kqpi+6D6ZkK7ltJ6OpiEa+0="
+      }
+    },
+    "messageTimestamp": "1759427340",
+    "broadcast": false,
+    "pushName": "🖤ℕ𝕚𝕔𝕣𝕚🥷"
+  }
+]

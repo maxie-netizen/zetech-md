@@ -1,0 +1,31 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC38FF35D45E35ECA8FC56DD49AAADE5",
+      "participant": "115389178613979@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Uyo ni Iysher kujitetea 😂😂 wewe umeshindwa kushoot shot 😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC72FD784BB89615B092348FCE219D4D",
+          "participant": "73762070380683@lid",
+          "quotedMessage": {
+            "conversation": "Tebu ambia Iysher akuonyeshe zile screenshot alinitumia jana😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "GybUDoqAZLlVVESeMP24QkHqugO3o/Yqw6YZCcPbdn8="
+      }
+    },
+    "messageTimestamp": "1759502433",
+    "participant": "115389178613979@lid",
+    "broadcast": false,
+    "pushName": "🙂"
+  }
+]

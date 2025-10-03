@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419712143560@g.us",
+      "fromMe": false,
+      "id": "AC8DEE4B846C125D162019BCE7A1F255",
+      "participant": "124206780022898@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363419712143560@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwjasbWfBBACGiDttLp7zYepzmWlJ/OLDEyEyNaydyliswOzay7/+VGvEiIhBUwaEyDeXScACpybonh4KlbyL5ClS5YgShzuzN6n7Dgo"
+      },
+      "extendedTextMessage": {
+        "text": "Kama akuna kitu kali  ya kuongelelea  sasa tuta do😂😂😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A57C2C7228EAC85A0E9530935B51F107",
+          "participant": "18911328235532@lid",
+          "quotedMessage": {
+            "conversation": "Mliamua kuzip nyote"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "5OByr6uzkRHZoCtwhHPjCOa6s1bWPtcsuZzPtLKj4X0="
+      }
+    },
+    "messageTimestamp": "1759427551",
+    "participant": "124206780022898@lid",
+    "broadcast": false,
+    "pushName": "🫆"
+  }
+]

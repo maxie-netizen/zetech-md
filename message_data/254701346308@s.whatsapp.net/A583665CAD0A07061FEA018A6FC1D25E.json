@@ -1,0 +1,24 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A583665CAD0A07061FEA018A6FC1D25E"
+    },
+    "message": {
+      "conversation": "Nikose aje 😂 nimejua makosa jameni",
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "ogAeoGDaqI8fAplB1il8JTZINAUMdUSP7bapSDf3sEo="
+      }
+    },
+    "messageTimestamp": "1759435828",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

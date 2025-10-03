@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "AC4D4460A50891975AC59EEAB91001CA",
+      "participant": "258815249408132@lid"
+    },
+    "message": {
+      "pollUpdateMessage": {
+        "pollCreationMessageKey": {
+          "remoteJid": "120363421377068688@g.us",
+          "fromMe": false,
+          "id": "ACC1A49CBDA5D35C95F13552044AF381",
+          "participant": "82644129808501@lid"
+        },
+        "vote": {
+          "encPayload": "YlxXNtJdQ0VuZNn6wOFZrk+R6uf8+h3P+xrsgPJaM3HIMw90bXMRTkXAOfsfBz6uRlI=",
+          "encIv": "xhEL6KcVvGq46X0Z"
+        },
+        "senderTimestampMs": "1759435973394"
+      }
+    },
+    "messageTimestamp": "1759435973",
+    "participant": "258815249408132@lid",
+    "broadcast": false,
+    "pushName": "CASCANTE"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "key": {
+      "remoteJid": "254701346308@s.whatsapp.net",
+      "fromMe": false,
+      "id": "A51AAB083DCC520EEF72E59879C840F6"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Aje sasa 🫴🏽😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "AC1FBB32170E9AEB0C84CD5F0E0D5CD0",
+          "participant": "254740300165@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "Haiwezi"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderTimestamp": "1759427261",
+          "recipientKeyHash": "V1/oFT+sr/N0qg==",
+          "recipientTimestamp": "1759434496"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "NyE6XrKCDL9woMAj5BgV4LmiokKOs4HYdidXj3YzfYU="
+      }
+    },
+    "messageTimestamp": "1759436536",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

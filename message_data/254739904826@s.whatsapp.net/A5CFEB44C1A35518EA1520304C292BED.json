@@ -1,0 +1,16 @@
+[
+  {
+    "key": {
+      "remoteJid": "254739904826@s.whatsapp.net",
+      "fromMe": true,
+      "id": "A5CFEB44C1A35518EA1520304C292BED"
+    },
+    "message": {
+      "conversation": "Mtoto mjinga kabisa"
+    },
+    "messageTimestamp": "1759428421",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Spoiler"
+  }
+]

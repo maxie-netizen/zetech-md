@@ -1,0 +1,19 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363230268777458@g.us",
+      "fromMe": false,
+      "id": "AC902C97E538DFB007A2D73AB702D004"
+    },
+    "message": {
+      "conversation": "Add me on StepUp, a fun app to track steps & compete with friends!\nhttps://join.thestepupapp.com/RGGvKN"
+    },
+    "messageTimestamp": "1759492232",
+    "participant": "",
+    "messageSecret": "ORyeTKQc4JxVul7TFn5nuAWYVzRK0CDqczNU5o4YgiY=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQvIdVhAmML5J7pOZ+h9KYN2+SA="
+    },
+    "isMentionedInStatus": false
+  }
+]

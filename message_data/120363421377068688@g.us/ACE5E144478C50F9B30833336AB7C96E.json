@@ -1,0 +1,38 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421377068688@g.us",
+      "fromMe": false,
+      "id": "ACE5E144478C50F9B30833336AB7C96E",
+      "participant": "82644129808501@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "120363421377068688@g.us",
+        "axolotlSenderKeyDistributionMessage": "MwiE9a6SBhAAGiCwPHgRcMU2BIyBc1Hgyn4Xfc6ysZbadLm/st2E9bmxLyIhBTHi6B77kuVoYZ/8Rqf7xzVJekH0WpmGROY8E/3475ZG"
+      },
+      "extendedTextMessage": {
+        "text": "@35678914117744 congratulations 🫡pastw",
+        "previewType": "NONE",
+        "contextInfo": {
+          "mentionedJid": [
+            "35678914117744@lid"
+          ],
+          "expiration": 604800,
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "UNKNOWN"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "Z9VXsLxrei07qtY8k0FNZ75p+YsaM7jjjXHbPGMUjGE="
+      }
+    },
+    "messageTimestamp": "1759436760",
+    "participant": "82644129808501@lid",
+    "broadcast": false,
+    "pushName": "Mjukuu🌴"
+  }
+]

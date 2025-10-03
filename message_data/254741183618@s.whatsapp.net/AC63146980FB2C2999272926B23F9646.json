@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC63146980FB2C2999272926B23F9646"
+    },
+    "message": {
+      "conversation": "Highschool"
+    },
+    "messageTimestamp": "1759437371",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "Brîskyj0kēr🤡"
+  },
+  {
+    "key": {
+      "remoteJid": "254741183618@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC63146980FB2C2999272926B23F9646"
+    },
+    "message": {
+      "conversation": "Highschool",
+      "messageContextInfo": {
+        "messageSecret": "JQuC65tlIZCxg8nbXp6/rqeCKq3T6r091i/wWZOLOd0="
+      }
+    },
+    "messageTimestamp": "1759437301",
+    "status": "READ",
+    "userReceipt": [
+      {
+        "userJid": "254741183618@s.whatsapp.net",
+        "receiptTimestamp": "1759437301",
+        "readTimestamp": "1759437367",
+        "playedTimestamp": "0"
+      }
+    ],
+    "messageSecret": "JQuC65tlIZCxg8nbXp6/rqeCKq3T6r091i/wWZOLOd0=",
+    "originalSelfAuthorUserJidString": "254740300165@s.whatsapp.net",
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "key": {
+      "remoteJid": "254740300165@s.whatsapp.net",
+      "fromMe": true,
+      "id": "AC40287169BB5A5F0191D88C3204CB0B"
+    },
+    "message": {
+      "protocolMessage": {
+        "type": "PEER_DATA_OPERATION_REQUEST_RESPONSE_MESSAGE",
+        "peerDataOperationRequestResponseMessage": {
+          "peerDataOperationRequestType": "PLACEHOLDER_MESSAGE_RESEND",
+          "stanzaId": "3EB05B78A6A74D954182F5",
+          "peerDataOperationResult": [
+            {
+              "mediaUploadResult": "SUCCESS",
+              "placeholderMessageResendResponse": {
+                "webMessageInfoBytes": "CkEKGzI1NDcxMTkzMzY3MEBzLndoYXRzYXBwLm5ldBABGiBBQ0U2NEE5MkE5NTM2NTc0NjUzRTI4NTEyMEIxQzJFNBKzBNIBigQKwwFodHRwczovL21tZy53aGF0c2FwcC5uZXQvdi90NjIuMTU1NzUtMjQvNTU2NjAwNDk4XzQzNDc0MjYxODg4MjU0NTBfNjEyOTY2MTk4NTQwMTkxOTU5N19uLmVuYz9jY2I9MTEtNCZvaD0wMV9RNUFhMmdFcXhqZy1QNURjXzBNRmZoTTc1MFBmZTlxUTVMU0xVbFpYeHJsZmhJdHp6ZyZvZT02OTA2NkM1NiZfbmNfc2lkPTVlMDNlMCZtbXMzPXRydWUSIKerdn3wjYEAKpLu2vpMt6ZizLwDuh5/QCO2sj77mX0VGiBfLvDS5ut3KVje1C2qgNCj3gnJq78TvDL+jq9ooiWzWCIgR7yxt97+k6JRp9BsRjsSI1Q/7s1NW65v5KM4+qd0SMEqCmltYWdlL3dlYnBCoQEvdi90NjIuMTU1NzUtMjQvNTU2NjAwNDk4XzQzNDc0MjYxODg4MjU0NTBfNjEyOTY2MTk4NTQwMTkxOTU5N19uLmVuYz9jY2I9MTEtNCZvaD0wMV9RNUFhMmdFcXhqZy1QNURjXzBNRmZoTTc1MFBmZTlxUTVMU0xVbFpYeHJsZmhJdHp6ZyZvZT02OTA2NkM1NiZfbmNfc2lkPTVlMDNlMEjEhAdQqZqdid4yWMSBB2IKC/McTi8vAHxrWmgBkAGG3om1mjOYAQCgAQCoAQCaAiIaIJYdlf2Zbiv9siOUN87a01ZoXu8uLbOI/Q3FezyvPb32GOfD+8YGIAOyAjIKME1lZGlhL1doYXRzQXBwIFN0aWNrZXJzL1NUSy0yMDI1MDgxMC1XQTAwNDYud2VicMICJwobMjU0NzExOTMzNjcwQHMud2hhdHNhcHAubmV0EOnD+8YGGAAgAIoDIJYdlf2Zbiv9siOUN87a01ZoXu8uLbOI/Q3FezyvPb32mgMbMjU0NzQwMzAwMTY1QHMud2hhdHNhcHAubmV0iAQA"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "messageTimestamp": "1759437365",
+    "status": "SERVER_ACK",
+    "broadcast": false
+  }
+]

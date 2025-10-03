@@ -1,0 +1,42 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB008EAC138B16DBDEF3F"
+    },
+    "message": {
+      "audioMessage": {
+        "url": "https://mmg.whatsapp.net/v/t62.7114-24/558000256_4169699983270789_1758124835590851697_n.enc?ccb=11-4&oh=01_Q5Aa2gF2RdVmd9q-kbmFKAo_OY6vrlpvQedjV2EQFt7GG1_hRg&oe=69066831&_nc_sid=5e03e0&mms3=true",
+        "mimetype": "audio/mpeg",
+        "fileSha256": "eWN/tyNp6cXXtdTihfDqPvlGHVLy6pff1gqWvnpQAvc=",
+        "fileLength": "2195948",
+        "seconds": 137,
+        "ptt": true,
+        "mediaKey": "wH9tU++2UsmdWdeaeMIpZlUpLYJAQGgLPTxJ2BwG6+8=",
+        "fileEncSha256": "0Mk7vpS7vBA3NKx+n52lS4+5/7R09XI7Jp4aTCgmN4c=",
+        "directPath": "/v/t62.7114-24/558000256_4169699983270789_1758124835590851697_n.enc?ccb=11-4&oh=01_Q5Aa2gF2RdVmd9q-kbmFKAo_OY6vrlpvQedjV2EQFt7GG1_hRg&oe=69066831&_nc_sid=5e03e0",
+        "mediaKeyTimestamp": "1759441228",
+        "contextInfo": {
+          "stanzaId": "ACFE1FB2BA11CF12AB8B3B4326529F91",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": ".play tuko fully"
+          },
+          "forwardingScore": 1,
+          "isForwarded": true,
+          "externalAdReply": {
+            "title": "MADGAZA REPUBLIK - TUKO FULLY LIVE  (VISUALIZER)",
+            "body": "2:17 • 128kbps",
+            "mediaType": "VIDEO",
+            "mediaUrl": "https://youtube.com/watch?v=B5D38L4D7To",
+            "sourceUrl": "https://youtube.com/watch?v=B5D38L4D7To",
+            "renderLargerThumbnail": true
+          }
+        }
+      }
+    },
+    "messageTimestamp": "1759441228",
+    "status": "SERVER_ACK"
+  }
+]

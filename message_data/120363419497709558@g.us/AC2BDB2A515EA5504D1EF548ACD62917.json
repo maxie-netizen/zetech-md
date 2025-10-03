@@ -1,0 +1,33 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363419497709558@g.us",
+      "fromMe": false,
+      "id": "AC2BDB2A515EA5504D1EF548ACD62917"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Tunaona dust huku😂",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "ACC345372BD82DAF91DA09C9BFCA54BE",
+          "participant": "93763582058578@lid",
+          "quotedMessage": {
+            "conversation": "Ati nini😂😂"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "hEwiRVztUUB5OK4k3HpWG3HvB+IaRNI9T22QRlnLVoA="
+      }
+    },
+    "messageTimestamp": "1759500205",
+    "participant": "",
+    "messageSecret": "hEwiRVztUUB5OK4k3HpWG3HvB+IaRNI9T22QRlnLVoA=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQuSfclx3UgXnSmA5ZeIAEZF/Tc="
+    },
+    "isMentionedInStatus": false
+  }
+]
