@@ -1,0 +1,25 @@
+[
+  {
+    "key": {
+      "remoteJid": "254743518481@s.whatsapp.net",
+      "fromMe": true,
+      "id": "3EB00BD7B344D4C8CE72D2"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": ".menu",
+        "contextInfo": {
+          "disappearingMode": {
+            "initiator": "CHANGED_IN_CHAT",
+            "trigger": "CHAT_SETTING"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759507578",
+    "status": "SERVER_ACK",
+    "broadcast": false,
+    "pushName": "maxwell"
+  }
+]

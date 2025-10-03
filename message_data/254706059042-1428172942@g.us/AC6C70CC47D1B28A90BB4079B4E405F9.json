@@ -1,0 +1,48 @@
+[
+  {
+    "key": {
+      "remoteJid": "254706059042-1428172942@g.us",
+      "fromMe": false,
+      "id": "AC6C70CC47D1B28A90BB4079B4E405F9",
+      "participant": "140424090021894@lid"
+    },
+    "message": {
+      "conversation": "Wewe ni IT guru",
+      "senderKeyDistributionMessage": {
+        "groupId": "254706059042-1428172942@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwing6PjBxANGiAzcbYp/KM3qmQG5624KgOkur57IpR17+rvtnc/4uRpBiIhBQYxjz/JfEg1FuKcxMXWH1lt97axzs7Vj6IyNzdqrvMu"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "j5IeLw53AWFckw==",
+          "senderTimestamp": "1759390557",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "tu3mVF2mSkbnbabtZCtnCtXqtAwLQZ5IZlOpeWqJSNw="
+      }
+    },
+    "messageTimestamp": "1759507579",
+    "participant": "140424090021894@lid",
+    "broadcast": false,
+    "pushName": "Susan K"
+  },
+  {
+    "key": {
+      "remoteJid": "254706059042-1428172942@g.us",
+      "fromMe": false,
+      "id": "AC6C70CC47D1B28A90BB4079B4E405F9"
+    },
+    "message": {
+      "conversation": "Wewe ni IT guru"
+    },
+    "messageTimestamp": "1759506246",
+    "participant": "",
+    "messageSecret": "tu3mVF2mSkbnbabtZCtnCtXqtAwLQZ5IZlOpeWqJSNw=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQvx6+OQTVO+Kzdu6brW1ejv7Og="
+    },
+    "isMentionedInStatus": false
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "key": {
+      "remoteJid": "120363421000283549@g.us",
+      "fromMe": false,
+      "id": "A50AD2ECCFE40B181B1E216B56515683",
+      "participant": "56810203541690@lid"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "😂😂😂😂....",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "A5AEF420B2EB0DB6003DD9970941876F",
+          "participant": "68208996442331@lid",
+          "quotedMessage": {
+            "conversation": "Mm nmemaliza mtu bado anulizia class iko wapi 😅"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "messageSecret": "S98crfp8Ee978mUVakIYP64wW/OZHisesdQy9BaLOws=",
+        "limitSharingV2": {
+          "sharingLimited": true,
+          "trigger": "CHAT_SETTING",
+          "limitSharingSettingTimestamp": "1758376462973",
+          "initiatedByMe": false
+        }
+      }
+    },
+    "messageTimestamp": "1759506202",
+    "participant": "56810203541690@lid",
+    "broadcast": false,
+    "pushName": "hoop flex",
+    "userReceipt": [
+      {
+        "userJid": "79341434196121@lid",
+        "readTimestamp": "1759506228"
+      }
+    ]
+  }
+]

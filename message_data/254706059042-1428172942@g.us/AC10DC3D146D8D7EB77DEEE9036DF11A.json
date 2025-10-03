@@ -1,0 +1,70 @@
+[
+  {
+    "key": {
+      "remoteJid": "254706059042-1428172942@g.us",
+      "fromMe": false,
+      "id": "AC10DC3D146D8D7EB77DEEE9036DF11A"
+    },
+    "message": {
+      "extendedTextMessage": {
+        "text": "Karibu sana Maxwel",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB036D6AB287170A61D7C",
+          "participant": "254762917014@s.whatsapp.net",
+          "quotedMessage": {
+            "conversation": "I am Maxwell Irungu"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      }
+    },
+    "messageTimestamp": "1759506237",
+    "participant": "",
+    "messageSecret": "skZewAFu7y630+V6LhvDhQUq+K3cjozDdEfhdwwhvGE=",
+    "reportingTokenInfo": {
+      "reportingTag": "AQvvOboL14Cm6ZOOy+k1HmcU16c="
+    },
+    "isMentionedInStatus": false
+  },
+  {
+    "key": {
+      "remoteJid": "254706059042-1428172942@g.us",
+      "fromMe": false,
+      "id": "AC10DC3D146D8D7EB77DEEE9036DF11A",
+      "participant": "140424090021894@lid"
+    },
+    "message": {
+      "senderKeyDistributionMessage": {
+        "groupId": "254706059042-1428172942@g.us",
+        "axolotlSenderKeyDistributionMessage": "Mwing6PjBxANGiAzcbYp/KM3qmQG5624KgOkur57IpR17+rvtnc/4uRpBiIhBQYxjz/JfEg1FuKcxMXWH1lt97axzs7Vj6IyNzdqrvMu"
+      },
+      "extendedTextMessage": {
+        "text": "Karibu sana Maxwel",
+        "previewType": "NONE",
+        "contextInfo": {
+          "stanzaId": "3EB036D6AB287170A61D7C",
+          "participant": "79341434196121@lid",
+          "quotedMessage": {
+            "conversation": "I am Maxwell Irungu"
+          }
+        },
+        "inviteLinkGroupTypeV2": "DEFAULT"
+      },
+      "messageContextInfo": {
+        "deviceListMetadata": {
+          "senderKeyHash": "j5IeLw53AWFckw==",
+          "senderTimestamp": "1759390557",
+          "recipientKeyHash": "FBRY6lSOscKLdQ==",
+          "recipientTimestamp": "1759440582"
+        },
+        "deviceListMetadataVersion": 2,
+        "messageSecret": "skZewAFu7y630+V6LhvDhQUq+K3cjozDdEfhdwwhvGE="
+      }
+    },
+    "messageTimestamp": "1759507566",
+    "participant": "140424090021894@lid",
+    "broadcast": false,
+    "pushName": "Susan K"
+  }
+]

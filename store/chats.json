@@ -2,6 +2,40 @@
   {
     "id": "254706059042-1428172942@g.us",
     "name": "Kamothos Family",
-    "conversationTimestamp": 1428172942
+    "conversationTimestamp": 1759507590,
+    "messages": [
+      {
+        "message": {
+          "key": {
+            "remoteJid": "254706059042-1428172942@g.us",
+            "fromMe": false,
+            "id": "AC94649F1AC7A4E215A738EC707E033F",
+            "participant": "140424090021894@lid",
+            "participantPn": "254722638468@s.whatsapp.net"
+          },
+          "messageTimestamp": 1759507590,
+          "pushName": "Susan K",
+          "broadcast": false,
+          "message": {
+            "conversation": "Great",
+            "senderKeyDistributionMessage": {
+              "groupId": "254706059042-1428172942@g.us",
+              "axolotlSenderKeyDistributionMessage": "Mwing6PjBxANGiAzcbYp/KM3qmQG5624KgOkur57IpR17+rvtnc/4uRpBiIhBQYxjz/JfEg1FuKcxMXWH1lt97axzs7Vj6IyNzdqrvMu"
+            },
+            "messageContextInfo": {
+              "deviceListMetadata": {
+                "senderKeyHash": "j5IeLw53AWFckw==",
+                "senderTimestamp": "1759390557",
+                "recipientKeyHash": "FBRY6lSOscKLdQ==",
+                "recipientTimestamp": "1759440582"
+              },
+              "deviceListMetadataVersion": 2,
+              "messageSecret": "y2BVYbroJvAIhaLx7g93Xq/mTMSvZbcpiseo9zKDJ0Q="
+            }
+          }
+        }
+      }
+    ],
+    "unreadCount": 1
   }
 ]
