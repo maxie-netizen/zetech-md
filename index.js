@@ -496,7 +496,6 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
                 if (!connectedUsers[telegramChatId]) {
                     connectedUsers[telegramChatId] = [];
                 }
-<<<<<<< HEAD
                 
                 // Check if this phone number is already connected to avoid duplicates
                 const isAlreadyConnected = connectedUsers[telegramChatId].some(user => user.phoneNumber === phoneNumber);
@@ -507,10 +506,9 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
                     console.log(`[DUPLICATE] Phone number ${phoneNumber} is already connected, skipping duplicate connection`);
                     return; // Exit early to prevent spam
                 }
-=======
+				
                 connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
                 saveConnectedUsers(); // Save connected users after updating
->>>>>>> 145a85818c9fac1a567cc67c1125ac015f5ab1f2
                 bot.sendMessage(telegramChatId, `
 ┏━━『🩸⃟‣ZETECH-MD-≈🚭 』━━┓
 
