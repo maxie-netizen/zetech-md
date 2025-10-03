@@ -381,6 +381,18 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
         return;
     }
     
+    // Check for too many connection attempts
+    if (!global.connectionAttemptCount) global.connectionAttemptCount = new Map();
+    const attemptCount = global.connectionAttemptCount.get(phoneNumber) || 0;
+    if (attemptCount > 5) {
+        console.log(`[LIMIT] Too many connection attempts for ${phoneNumber}, stopping`);
+        if (telegramChatId) {
+            bot.sendMessage(telegramChatId, `⚠️ Too Many Connection Attempts\n\nPhone: ${phoneNumber}\n\nPlease wait before trying again.`);
+        }
+        return;
+    }
+    global.connectionAttemptCount.set(phoneNumber, attemptCount + 1);
+    
     // Mark connection attempt as in progress
     global.connectionAttempts.set(phoneNumber, { startTime: Date.now(), telegramChatId });
     
@@ -554,12 +566,12 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
             
             if (shouldReconnect) {
                 console.log(`Session closed for ${phoneNumber}. Attempting to restart...`);
-                // Add delay before restarting to prevent infinite loop
+                // Add longer delay before restarting to prevent infinite loop
                 setTimeout(() => {
                     startWhatsAppBot(phoneNumber, telegramChatId).catch(err => {
                         console.error(`Failed to restart session for ${phoneNumber}:`, err);
                     });
-                }, 5000); // 5 second delay before restart
+                }, 30000); // 30 second delay before restart
             } else {
                 console.log(`Session for ${phoneNumber} was logged out. Not restarting.`);
                 if (telegramChatId) {
