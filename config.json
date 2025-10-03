@@ -2,10 +2,15 @@
   "prefix": ".",
   "public": false,
   "BotName": "Zetech-MD",
+<<<<<<< HEAD
   "BOT_TOKEN":"8255950384:AAENquLbbAT7ayE8RqQhzHPJQGTyNO2VRcc", 
   "OWNER_ID": "7802048260",
   "LOG_BOT_TOKEN": "8447581310:AAEXxEuvDIe75MWfPi8bVhXy1toGnUErfIc",
   "LOG_GROUP_ID": "-4802245818",
   "LOG_MIN": "30"
+=======
+  "BOT_TOKEN":"7638444652:AAHot9-oxDae6Rqeiw5Aw2CHTScoVL2w6WY", 
+  "OWNER_ID": "7802048260"
+>>>>>>> 145a85818c9fac1a567cc67c1125ac015f5ab1f2
 }
   
