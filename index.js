@@ -234,7 +234,7 @@ async function disconnectSession(phoneNumber, telegramChatId, reason = 'API key 
         
         // Send notification to user
         if (telegramChatId) {
-            bot.sendMessage(telegramChatId, `🔒 Session Disconnected\n\n📱 Phone: ${phoneNumber}\n📋 Reason: ${reason}\n\n💡 Please generate a new API key and reconnect using /connect command.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+            safeSendMessage(telegramChatId, `🔒 Session Disconnected\n\n📱 Phone: ${phoneNumber}\n📋 Reason: ${reason}\n\n💡 Please generate a new API key and reconnect using /connect command.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
         }
         
         // Log to owner
@@ -328,7 +328,204 @@ const store = createToxxicStore('./store', {
 const settings = require("./config.json")
 const BOT_TOKEN = settings.BOT_TOKEN;  // Replace with your Telegram bot token
 let OWNER_ID = settings.OWNER_ID
-const bot = new TelegramBot(BOT_TOKEN, { polling: true });
+
+// Global bot instance management to prevent multiple instances
+let bot = null;
+let botInitialized = false;
+let botStopped = false;
+
+// Process lock to prevent multiple instances
+const lockFile = path.join(__dirname, '.bot.lock');
+let lockFileHandle = null;
+
+// Function to check if a process is actually running
+function isProcessRunning(pid) {
+    try {
+        // On Windows, use tasklist to check if process exists
+        const { execSync } = require('child_process');
+        const result = execSync(`tasklist /FI "PID eq ${pid}" /FO CSV`, { encoding: 'utf8' });
+        return result.includes(pid.toString());
+    } catch (error) {
+        // If command fails, assume process is not running
+        return false;
+    }
+}
+
+// Function to create process lock with smart handling
+async function createProcessLock() {
+    try {
+        if (fs.existsSync(lockFile)) {
+            const lockData = fs.readFileSync(lockFile, 'utf8');
+            const lockInfo = JSON.parse(lockData);
+            const now = Date.now();
+            
+            // Check if lock is stale (older than 5 minutes)
+            if (now - lockInfo.timestamp > 5 * 60 * 1000) {
+                console.log('🔄 Removing stale lock file');
+                fs.unlinkSync(lockFile);
+            } else {
+                // Check if the process is actually still running
+                const isRunning = isProcessRunning(lockInfo.pid);
+                
+                if (!isRunning) {
+                    console.log('🔄 Previous process is no longer running, removing stale lock');
+                    fs.unlinkSync(lockFile);
+                } else {
+                    console.log('⚠️ Another bot instance is running');
+                    console.log(`Lock created at: ${new Date(lockInfo.timestamp).toLocaleString()}`);
+                    console.log(`Process ID: ${lockInfo.pid}`);
+                    console.log('🔄 Options:');
+                    console.log('   1. Wait for previous instance to finish (recommended)');
+                    console.log('   2. Force stop previous instance');
+                    console.log('   3. Exit and try again later');
+                    console.log('');
+                    console.log('🔄 Waiting for previous instance to finish...');
+                    
+                    // Wait for the lock file to be removed (up to 30 seconds)
+                    let attempts = 0;
+                    const maxAttempts = 30; // 30 seconds
+                    
+                    while (fs.existsSync(lockFile) && attempts < maxAttempts) {
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                        attempts++;
+                        
+                        // Check if the process is still running
+                        if (!isProcessRunning(lockInfo.pid)) {
+                            console.log('🔄 Previous process finished, removing lock');
+                            fs.unlinkSync(lockFile);
+                            break;
+                        }
+                        
+                        if (attempts % 5 === 0) {
+                            console.log(`⏳ Still waiting... (${attempts}/${maxAttempts} seconds)`);
+                        }
+                    }
+                    
+                    // If still locked after waiting, force stop the previous instance
+                    if (fs.existsSync(lockFile)) {
+                        console.log('⚠️ Previous instance is still running after 30 seconds');
+                        console.log('🔄 Force stopping previous instance...');
+                        
+                        try {
+                            // Force kill the previous process
+                            const { execSync } = require('child_process');
+                            execSync(`taskkill /PID ${lockInfo.pid} /F`, { stdio: 'ignore' });
+                            console.log('✅ Previous instance force stopped');
+                            
+                            // Wait a moment for cleanup
+                            await new Promise(resolve => setTimeout(resolve, 2000));
+                            
+                            // Remove lock file
+                            if (fs.existsSync(lockFile)) {
+                                fs.unlinkSync(lockFile);
+                            }
+                            
+                        } catch (killError) {
+                            console.log('⚠️ Could not force stop previous instance');
+                            console.log('🔄 Forcing removal of lock file and continuing...');
+                            console.log('💡 If you get conflicts, use: npm run cleanup');
+                            fs.unlinkSync(lockFile);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Create new lock file
+        const lockData = {
+            pid: process.pid,
+            timestamp: Date.now(),
+            startTime: new Date().toISOString()
+        };
+        
+        fs.writeFileSync(lockFile, JSON.stringify(lockData, null, 2));
+        console.log('🔒 Process lock created successfully');
+        
+        // Clean up lock file on exit
+        process.on('exit', () => {
+            if (fs.existsSync(lockFile)) {
+                fs.unlinkSync(lockFile);
+            }
+        });
+        
+    } catch (error) {
+        console.error('❌ Failed to create process lock:', error.message);
+        console.log('🔄 Continuing anyway...');
+    }
+}
+
+// Function to initialize bot with proper error handling
+function initializeBot() {
+    if (botInitialized && bot && !botStopped) {
+        console.log('Bot already initialized, reusing existing instance');
+        return bot;
+    }
+    
+    if (botStopped) {
+        console.log('🔄 Previous bot was stopped due to conflict, initializing new instance...');
+        botStopped = false;
+    }
+    
+    try {
+        bot = new TelegramBot(BOT_TOKEN, { 
+            polling: true,
+            request: {
+                agentOptions: {
+                    keepAlive: true,
+                    family: 4
+                }
+            }
+        });
+        
+        // Add error handlers
+        bot.on('error', (error) => {
+            console.error('❌ Bot error:', error.message);
+        });
+        
+        bot.on('polling_error', (error) => {
+            console.error('❌ Bot polling error:', error.message);
+            
+            // If it's a 409 conflict, stop polling to allow new instance
+            if (error.message.includes('409 Conflict')) {
+                console.log('🔄 Detected 409 conflict, stopping polling to allow new instance...');
+                botStopped = true;
+                if (bot && bot.stopPolling) {
+                    bot.stopPolling();
+                }
+            }
+        });
+        
+        botInitialized = true;
+        console.log('✅ Telegram bot initialized successfully');
+        return bot;
+    } catch (error) {
+        console.error('❌ Failed to initialize Telegram bot:', error.message);
+        throw error;
+    }
+}
+
+// Initialize bot
+bot = initializeBot();
+
+// Add a simple test to verify bot is working
+bot.on('message', (msg) => {
+    console.log('📨 Message received:', msg.text || '[non-text message]', 'from:', msg.chat.id);
+});
+
+// Helper function to safely send messages
+function safeSendMessage(chatId, message, options = {}) {
+    if (!bot || !botInitialized) {
+        console.log('⚠️ Bot not initialized, cannot send message');
+        return Promise.resolve();
+    }
+    
+    try {
+        return bot.sendMessage(chatId, message, options);
+    } catch (error) {
+        console.error('❌ Error sending message:', error.message);
+        return Promise.resolve();
+    }
+}
 const pairingCodes = new NodeCache({ stdTTL: 3600, checkperiod: 600 });
 const requestLimits = new NodeCache({ stdTTL: 120, checkperiod: 60 }); // Store request counts for 2 minutes
 let connectedUsers = {}; // Maps chat IDs to phone numbers
@@ -376,7 +573,7 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
     if (global.connectionAttempts.has(phoneNumber)) {
         console.log(`[DUPLICATE] Connection attempt already in progress for ${phoneNumber}, skipping`);
         if (telegramChatId) {
-            bot.sendMessage(telegramChatId, `⚠️ Connection Already in Progress\n\nA connection attempt for ${phoneNumber} is already in progress. Please wait for it to complete.`);
+            safeSendMessage(telegramChatId, `⚠️ Connection Already in Progress\n\nA connection attempt for ${phoneNumber} is already in progress. Please wait for it to complete.`);
         }
         return;
     }
@@ -387,7 +584,7 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
     if (attemptCount > 5) {
         console.log(`[LIMIT] Too many connection attempts for ${phoneNumber}, stopping`);
         if (telegramChatId) {
-            bot.sendMessage(telegramChatId, `⚠️ Too Many Connection Attempts\n\nPhone: ${phoneNumber}\n\nPlease wait before trying again.`);
+            safeSendMessage(telegramChatId, `⚠️ Too Many Connection Attempts\n\nPhone: ${phoneNumber}\n\nPlease wait before trying again.`);
         }
         return;
     }
@@ -478,12 +675,12 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
                 let code = await conn.requestPairingCode(phoneNumber);
                 code = code?.match(/.{1,4}/g)?.join("-") || code;
                 pairingCodes.set(code, { count: 0, phoneNumber });
-                bot.sendMessage(telegramChatId, `📱 Your Pairing Code for ${phoneNumber}:\n\n🔑 ${code}\n\n💡 Use this code to connect your WhatsApp account.`);
+                safeSendMessage(telegramChatId, `📱 Your Pairing Code for ${phoneNumber}:\n\n🔑 ${code}\n\n💡 Use this code to connect your WhatsApp account.`);
                 console.log(`Your Pairing Code for ${phoneNumber}: ${code}`);
             } catch (error) {
                 console.error(`Error generating pairing code for ${phoneNumber}:`, error);
                 if (telegramChatId) {
-                    bot.sendMessage(telegramChatId, `❌ Error generating pairing code for ${phoneNumber}:\n\n${error.message}\n\nPlease try again.`);
+                    safeSendMessage(telegramChatId, `❌ Error generating pairing code for ${phoneNumber}:\n\n${error.message}\n\nPlease try again.`);
                 }
                 // Remove from active connections
                 global.activeConnections.delete(phoneNumber);
@@ -521,7 +718,7 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
 				
                 connectedUsers[telegramChatId].push({ phoneNumber, connectedAt: startTime });
                 saveConnectedUsers(); // Save connected users after updating
-                bot.sendMessage(telegramChatId, `
+                safeSendMessage(telegramChatId, `
 ┏━━『🩸⃟‣ZETECH-MD-≈🚭 』━━┓
 
 ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
@@ -575,7 +772,7 @@ async function startWhatsAppBot(phoneNumber, telegramChatId = null) {
             } else {
                 console.log(`Session for ${phoneNumber} was logged out. Not restarting.`);
                 if (telegramChatId) {
-                    bot.sendMessage(telegramChatId, `🔒 Session Logged Out\n\n📱 Phone: ${phoneNumber}\n\n💡 Use /connect to reconnect.`);
+                    safeSendMessage(telegramChatId, `🔒 Session Logged Out\n\n📱 Phone: ${phoneNumber}\n\n💡 Use /connect to reconnect.`);
                 }
             }
         }
@@ -1134,28 +1331,28 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
         const usedKeyData = global.db.data.usedApiKeys[apiKey];
         const usedTime = new Date(usedKeyData.usedAt).toLocaleString();
         
-        bot.sendMessage(chatId, `🔒 API Key Already Used\n\nThis API key has already been used and cannot be reused.\n\n📋 Used Details:\n• Phone Number: ${usedKeyData.phoneNumber}\n• Used At: ${usedTime}\n• Telegram Chat: ${usedKeyData.telegramChatId}\n\n💡 Solution:\n• Generate a new API key from the dashboard\n• Each API key can only be used once\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+        safeSendMessage(chatId, `🔒 API Key Already Used\n\nThis API key has already been used and cannot be reused.\n\n📋 Used Details:\n• Phone Number: ${usedKeyData.phoneNumber}\n• Used At: ${usedTime}\n• Telegram Chat: ${usedKeyData.telegramChatId}\n\n💡 Solution:\n• Generate a new API key from the dashboard\n• Each API key can only be used once\n\n🌐 Dashboard: https://api.devmaxwell.site`);
         return;
     }
     
     // Verify API key first
-    bot.sendMessage(chatId, `🔐 Verifying API Key...\n\nPlease wait while we verify your API key.`);
+    safeSendMessage(chatId, `🔐 Verifying API Key...\n\nPlease wait while we verify your API key.`);
     
     const verification = await verifyApiKey(apiKey);
     
     if (!verification.success) {
-        bot.sendMessage(chatId, `❌ API Key Verification Failed\n\n📋 Error Details:\n\`\`\`\n${verification.error}\n\`\`\`\n\n💡 Possible Solutions:\n• Check if your API key is correct\n• Ensure your account is active\n• Try generating a new API key\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n🔧 For debugging, use: /testapi your_api_key`);
+        safeSendMessage(chatId, `❌ API Key Verification Failed\n\n📋 Error Details:\n\`\`\`\n${verification.error}\n\`\`\`\n\n💡 Possible Solutions:\n• Check if your API key is correct\n• Ensure your account is active\n• Try generating a new API key\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n🔧 For debugging, use: /testapi your_api_key`);
         return;
     }
     
     // Additional check: Verify API key is not expired
     const isExpired = await isApiKeyExpired(apiKey);
     if (isExpired) {
-        bot.sendMessage(chatId, `❌ API Key Expired\n\n🔒 Your API key has expired and is no longer valid.\n\n💡 Please generate a new API key from the dashboard and try again.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
+        safeSendMessage(chatId, `❌ API Key Expired\n\n🔒 Your API key has expired and is no longer valid.\n\n💡 Please generate a new API key from the dashboard and try again.\n\n🌐 Dashboard: https://api.devmaxwell.site`);
         return;
     }
     
-    bot.sendMessage(chatId, `✅ API Key Verified Successfully!\n\n👤 User: ${verification.data.user || 'Unknown'}\n📊 Status: ${verification.data.status || 'Active'}\n\n🔄 Proceeding with WhatsApp connection...`);
+    safeSendMessage(chatId, `✅ API Key Verified Successfully!\n\n👤 User: ${verification.data.user || 'Unknown'}\n📊 Status: ${verification.data.status || 'Active'}\n\n🔄 Proceeding with WhatsApp connection...`);
     
     // Check if the number is allowed
     const sessionPath = path.join(__dirname, 'trash_baileys', `session_${phoneNumber}`);
@@ -1180,38 +1377,40 @@ bot.onText(/\/connect (\d+) (.+)/, async (msg, match) => {
             }
         }
         
-        bot.sendMessage(chatId, `📱 Session directory created for ${phoneNumber}\n\n🔑 API Key: ✅ Verified & Used\n📊 Status: Ready to connect\n\n⚠️ Note: This API key has been marked as used and cannot be reused.`);
+        safeSendMessage(chatId, `📱 Session directory created for ${phoneNumber}\n\n🔑 API Key: ✅ Verified & Used\n📊 Status: Ready to connect\n\n⚠️ Note: This API key has been marked as used and cannot be reused.`);
 
         // Generate and send pairing code
         startWhatsAppBot(phoneNumber, chatId).catch(err => {
             console.log('Error:', err);
-            bot.sendMessage(chatId, '❌ An error occurred while connecting.\n\nPlease try again or contact support.');
+            safeSendMessage(chatId, '❌ An error occurred while connecting.\n\nPlease try again or contact support.');
         });
     } else {
         // If the session already exists, check if the user is already connected
         const isAlreadyConnected = connectedUsers[chatId] && connectedUsers[chatId].some(user => user.phoneNumber === phoneNumber);
         if (isAlreadyConnected) {
-            bot.sendMessage(chatId, `⚠️ Already Connected\n\nThe phone number ${phoneNumber} is already connected.\n\n💡 Use /delsession to remove it before connecting again.`);
+            safeSendMessage(chatId, `⚠️ Already Connected\n\nThe phone number ${phoneNumber} is already connected.\n\n💡 Use /delsession to remove it before connecting again.`);
             return;
         }
 
         // Proceed with the connection if the session exists
-        bot.sendMessage(chatId, `⚠️ Session Exists\n\nThe session for ${phoneNumber} already exists.\n\n💡 Use /delsession to remove it or connect again.`);
+        safeSendMessage(chatId, `⚠️ Session Exists\n\nThe session for ${phoneNumber} already exists.\n\n💡 Use /delsession to remove it or connect again.`);
     }
 });
 
 // Handle /connect command without API key (show help)
 bot.onText(/\/connect$/, async (msg) => {
     const chatId = msg.chat.id;
-    bot.sendMessage(chatId, `🔐 API Key Required\n\n📝 Usage: /connect <phone_number> <api_key>\n\n💡 Example: /connect 254762917014 your_api_key_here\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n📋 Steps:\n1. Visit the dashboard\n2. Create an API key\n3. Use the key with /connect command`);
+    safeSendMessage(chatId, `🔐 API Key Required\n\n📝 Usage: /connect <phone_number> <api_key>\n\n💡 Example: /connect 254762917014 your_api_key_here\n\n🌐 Get your API key from the dashboard:\nhttps://api.devmaxwell.site\n\n📋 Steps:\n1. Visit the dashboard\n2. Create an API key\n3. Use the key with /connect command`);
 });
 
 // Handle /start command
 bot.onText(/\/start/, async (msg) => {
+    console.log('📱 /start command received from:', msg.chat.id);
     const chatId = msg.chat.id;
     const welcomeMessage = `🎉 Welcome to Zetech-MD Bot!\n\nTo get started, you need an API key from our dashboard.\n\n📋 Step-by-Step Guide:\n\n1️⃣ Visit Dashboard:\n   🔗 https://api.devmaxwell.site\n\n2️⃣ Create Account:\n   • Sign up with your email\n   • Verify your account\n   • Complete your profile\n\n3️⃣ Generate API Key:\n   • Go to "API Keys" section\n   • Click "Create New Key"\n   • Copy your API key\n\n4️⃣ Connect WhatsApp:\n   • Use: /connect <phone> <api_key>\n   • Example: /connect 254762917014 your_api_key_here\n\n💡 Need Help?\n• Type /help for all commands\n• Contact: @maxie_dev\n• Dashboard: https://api.devmaxwell.site\n\n🚀 Ready to connect? Get your API key now!`;
     
-    bot.sendMessage(chatId, welcomeMessage);
+    console.log('📤 Sending welcome message...');
+    safeSendMessage(chatId, welcomeMessage);
 });
 
 // Handle /help command
@@ -1225,7 +1424,7 @@ bot.onText(/\/help/, async (msg) => {
         helpText += `\n\n👑 Admin Commands:\n• /usedkeys - View all used API keys\n• /checkexpiry - Manually check API key expiration`;
     }
     
-    bot.sendMessage(chatId, helpText);
+    safeSendMessage(chatId, helpText);
 });
 
 // Handle /testapi command for debugging
@@ -1233,14 +1432,14 @@ bot.onText(/\/testapi (.+)/, async (msg, match) => {
     const chatId = msg.chat.id;
     const apiKey = match[1];
     
-    bot.sendMessage(chatId, `🔍 Testing API Key...\n\n🔑 Key: ${apiKey.substring(0, 8)}...\n\n📋 Debug logs will be sent to owner's WhatsApp DM.`);
+    safeSendMessage(chatId, `🔍 Testing API Key...\n\n🔑 Key: ${apiKey.substring(0, 8)}...\n\n📋 Debug logs will be sent to owner's WhatsApp DM.`);
     
     const verification = await verifyApiKey(apiKey);
     
     if (verification.success) {
-        bot.sendMessage(chatId, `✅ API Key Test Successful!\n\n📋 Response:\n\`\`\`json\n${JSON.stringify(verification.data, null, 2)}\n\`\`\``);
+        safeSendMessage(chatId, `✅ API Key Test Successful!\n\n📋 Response:\n\`\`\`json\n${JSON.stringify(verification.data, null, 2)}\n\`\`\``);
     } else {
-        bot.sendMessage(chatId, `❌ API Key Test Failed!\n\n📋 Error:\n\`\`\`\n${verification.error}\n\`\`\``);
+        safeSendMessage(chatId, `❌ API Key Test Failed!\n\n📋 Error:\n\`\`\`\n${verification.error}\n\`\`\``);
     }
 });
 
@@ -1251,50 +1450,82 @@ bot.onText(/\/delsession (\d+)/, async (msg, match) => {
     const ownerId = msg.from.id.toString();
     const phoneNumber = match[1];
     const sessionPath = path.join(__dirname, 'trash_baileys', `session_${phoneNumber}`);
-    // Check if the session directory exists
-    if (fs.existsSync(sessionPath)) {
-           fs.rmSync(sessionPath, { recursive: true, force: true });
-            bot.sendMessage(chatId, `🗑️ Session for ${phoneNumber} has been deleted.\n\n✅ You can now request a new pairing code.`);
-            connectedUsers[chatId] = connectedUsers[chatId].filter(user => user.phoneNumber !== phoneNumber); // Remove the association after deletion
-            saveConnectedUsers(); // Save updated connected users
+    
+    console.log(`🗑️ Deleting session for ${phoneNumber}...`);
+    
+    // Check if the phone number is actually connected
+    const isConnected = global.activeConnections.has(phoneNumber);
+    const isInConnectedUsers = connectedUsers[chatId] && connectedUsers[chatId].some(user => user.phoneNumber === phoneNumber);
+    
+    if (isConnected || isInConnectedUsers) {
+        // Disconnect the WhatsApp connection if it exists
+        if (isConnected) {
+            try {
+                const conn = global.activeConnections.get(phoneNumber);
+                if (conn && conn.logout) {
+                    await conn.logout();
+                    console.log(`✅ Disconnected WhatsApp connection for ${phoneNumber}`);
+                }
+                global.activeConnections.delete(phoneNumber);
+            } catch (error) {
+                console.log(`⚠️ Error disconnecting ${phoneNumber}:`, error.message);
+            }
+        }
+        
+        // Remove from connected users
+        if (connectedUsers[chatId]) {
+            connectedUsers[chatId] = connectedUsers[chatId].filter(user => user.phoneNumber !== phoneNumber);
+            saveConnectedUsers();
+            console.log(`✅ Removed ${phoneNumber} from connected users`);
+        }
+        
+        // Remove session directory if it exists
+        if (fs.existsSync(sessionPath)) {
+            fs.rmSync(sessionPath, { recursive: true, force: true });
+            console.log(`✅ Deleted session directory for ${phoneNumber}`);
+        }
+        
+        safeSendMessage(chatId, `🗑️ Session for ${phoneNumber} has been deleted.\n\n✅ WhatsApp connection disconnected\n✅ Session files removed\n✅ You can now request a new pairing code.`);
+        
     } else {
-        bot.sendMessage(chatId, `❌ No session found for ${phoneNumber}.\n\n💡 It may have already been deleted.`);
+        // Check if session directory exists but not connected
+        if (fs.existsSync(sessionPath)) {
+            fs.rmSync(sessionPath, { recursive: true, force: true });
+            safeSendMessage(chatId, `🗑️ Session files for ${phoneNumber} have been deleted.\n\nℹ️ No active connection was found, but session files were removed.`);
+        } else {
+            safeSendMessage(chatId, `❌ No session found for ${phoneNumber}.\n\n💡 It may have already been deleted or never existed.`);
+        }
     }
 });
 
 // Handle /menu command
 
-bot.onText(/\/start/, (msg) => {
-  const chatId = msg.chat.id;
-  const imageUrl = './media/porno.jpg'; // Replace with the actual URL of your image
-  const menuText = `╭─⊷ZETECH-MD─
-│▢ Owner: maxwell dev
-│▢ Version: 1.3.0
-│▢ Type: ZETECH-MD
-╰────────────
-╭─⊷🐦‍🔥MAIN-CMD─
-│ /connect 2547xxxx api_key
-│ /delsession 2547xxxxx
-│ /status
-│ /start
-╰────────────`;
-  bot.sendPhoto(chatId, imageUrl, {
-    caption: menuText,
-  });
-});
+// Removed duplicate /start handler - using the one above with welcome message
 bot.onText(/\/status/, (msg) => {
     const chatId = msg.chat.id;
-    const connectedUser  = connectedUsers[chatId];
+    const connectedUser = connectedUsers[chatId];
 
-    if (connectedUser  && connectedUser .length > 0) {
+    if (connectedUser && connectedUser.length > 0) {
         let statusText = `📊 Bot Status\n\n🔗 Connected Numbers:\n`;
-        connectedUser .forEach(user => {
+        let hasActiveConnections = false;
+        
+        connectedUser.forEach(user => {
             const uptime = Math.floor((Date.now() - user.connectedAt) / 1000); // Runtime in seconds
-            statusText += `📱 ${user.phoneNumber} (Uptime: ${uptime} seconds)\n`;
+            const isActive = global.activeConnections.has(user.phoneNumber);
+            const status = isActive ? '🟢 Active' : '🔴 Disconnected';
+            
+            if (isActive) hasActiveConnections = true;
+            
+            statusText += `📱 ${user.phoneNumber} (Uptime: ${uptime}s) ${status}\n`;
         });
-        bot.sendMessage(chatId, statusText);
+        
+        if (!hasActiveConnections) {
+            statusText += `\n⚠️ No active WhatsApp connections found.\n💡 Use /connect to reconnect.`;
+        }
+        
+        safeSendMessage(chatId, statusText);
     } else {
-        bot.sendMessage(chatId, `📊 Bot Status\n\n❌ You have no registered numbers.\n\n💡 Use /connect to get started!`);
+        safeSendMessage(chatId, `📊 Bot Status\n\n❌ You have no registered numbers.\n\n💡 Use /connect to get started!`);
     }
 });
 
@@ -1304,7 +1535,7 @@ bot.onText(/\/usedkeys/, async (msg) => {
     
     // Only allow owner to check used keys
     if (chatId.toString() !== settings.OWNER_ID) {
-        bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
+        safeSendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
         return;
     }
     
@@ -1313,7 +1544,7 @@ bot.onText(/\/usedkeys/, async (msg) => {
     const keyCount = Object.keys(usedKeys).length;
     
     if (keyCount === 0) {
-        bot.sendMessage(chatId, `📋 Used API Keys\n\nNo API keys have been used yet.`);
+        safeSendMessage(chatId, `📋 Used API Keys\n\nNo API keys have been used yet.`);
         return;
     }
     
@@ -1327,7 +1558,7 @@ bot.onText(/\/usedkeys/, async (msg) => {
         keysText += `   • Chat: ${data.telegramChatId}\n\n`;
     }
     
-    bot.sendMessage(chatId, keysText);
+    safeSendMessage(chatId, keysText);
 });
 
 // Command to manually check API key expiration (for testing/admin purposes)
@@ -1336,17 +1567,17 @@ bot.onText(/\/checkexpiry/, async (msg) => {
     
     // Only allow owner to check expiration
     if (chatId.toString() !== settings.OWNER_ID) {
-        bot.sendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
+        safeSendMessage(chatId, `❌ Access Denied\n\nThis command is only available to the bot owner.`);
         return;
     }
     
-    bot.sendMessage(chatId, `🔍 Checking API key expiration...\n\nThis may take a few moments.`);
+    safeSendMessage(chatId, `🔍 Checking API key expiration...\n\nThis may take a few moments.`);
     
     try {
         await checkAllSessionsForExpiration();
-        bot.sendMessage(chatId, `✅ API key expiration check completed.\n\n📋 Check console logs for detailed results.`);
+        safeSendMessage(chatId, `✅ API key expiration check completed.\n\n📋 Check console logs for detailed results.`);
     } catch (error) {
-        bot.sendMessage(chatId, `❌ Error during expiration check:\n\n\`\`\`\n${error.message}\n\`\`\``);
+        safeSendMessage(chatId, `❌ Error during expiration check:\n\n\`\`\`\n${error.message}\n\`\`\``);
     }
 });
 
@@ -1389,6 +1620,9 @@ async function loadAllSessions() {
 // Initialize cloud storage and load sessions
 async function startBot() {
     try {
+        // Create process lock to prevent multiple instances
+        await createProcessLock();
+        
         // Load connected users first
         loadConnectedUsers();
         
@@ -1399,7 +1633,7 @@ async function startBot() {
         console.log('📊 Initializing log collector...');
         const logBotToken = settings.LOG_BOT_TOKEN || null;
         const logGroupId = settings.LOG_GROUP_ID || null;
-        global.logCollector.initialize(logBotToken, logGroupId);
+        global.logCollector.initialize(logBotToken, logGroupId, bot);
         
         // Start log scheduler (configurable interval)
         if (logBotToken && logGroupId) {
@@ -1430,11 +1664,85 @@ async function startBot() {
     }
 }
 
-// Start the bot
-startBot();
+// Process management and cleanup
+let isShuttingDown = false;
+
+// Graceful shutdown handler
+async function gracefulShutdown(signal) {
+    if (isShuttingDown) {
+        console.log('Shutdown already in progress...');
+        return;
+    }
+    
+    isShuttingDown = true;
+    console.log(`\n🛑 Received ${signal}. Starting graceful shutdown...`);
+    
+    try {
+        // Stop bot polling
+        if (bot && bot.stopPolling) {
+            console.log('🛑 Stopping Telegram bot polling...');
+            bot.stopPolling();
+        }
+        
+        // Close all WhatsApp connections
+        console.log('🛑 Closing WhatsApp connections...');
+        for (const [phoneNumber, conn] of global.activeConnections) {
+            try {
+                if (conn && conn.logout) {
+                    await conn.logout();
+                    console.log(`✅ Disconnected ${phoneNumber}`);
+                }
+            } catch (error) {
+                console.log(`⚠️ Error disconnecting ${phoneNumber}:`, error.message);
+            }
+        }
+        
+        // Clear global connections
+        global.activeConnections.clear();
+        global.connectionAttempts.clear();
+        
+        // Clean up lock file
+        if (fs.existsSync(lockFile)) {
+            fs.unlinkSync(lockFile);
+            console.log('🔓 Process lock file removed');
+        }
+        
+        console.log('✅ Graceful shutdown completed');
+        process.exit(0);
+    } catch (error) {
+        console.error('❌ Error during shutdown:', error.message);
+        process.exit(1);
+    }
+}
+
+// Handle shutdown signals
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+process.on('SIGUSR2', () => gracefulShutdown('SIGUSR2')); // For nodemon restart
+
+// Global error handling for unhandled promise rejections
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('🚨 Unhandled Rejection at:', promise, 'reason:', reason);
+    // Don't exit the process, just log the error
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('🚨 Uncaught Exception:', error);
+    // Don't exit the process, just log the error
+});
 
 // Start the bot
-console.log('Telegram bot is running...');
+startBot().then(() => {
+    console.log('✅ Telegram bot is running...');
+    console.log('🔍 Bot status check:');
+    console.log(`   • Bot initialized: ${botInitialized}`);
+    console.log(`   • Bot object exists: ${!!bot}`);
+    console.log(`   • Bot token configured: ${!!BOT_TOKEN}`);
+    console.log('📱 Bot is ready to receive commands!');
+}).catch((error) => {
+    console.error('❌ Failed to start bot:', error.message);
+    process.exit(1);
+});
 
 // Set up periodic API key expiration check (every 30 minutes)
 setInterval(async () => {

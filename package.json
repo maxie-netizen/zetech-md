@@ -4,7 +4,9 @@
   "description": "Zetech-MD WhatsApp Bot with Multi Device Support",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "cleanup": "node cleanup.js",
+    "clean": "node cleanup.js && npm start"
   },
   "author": "earthsaf",
   "license": "MIT",

@@ -94,12 +94,19 @@ class LogCollector {
         }
     }
     
-    initialize(telegramBotToken, telegramGroupId) {
+    initialize(telegramBotToken, telegramGroupId, sharedBot = null) {
         this.telegramBotToken = telegramBotToken;
         this.telegramGroupId = telegramGroupId;
         
         if (telegramBotToken && telegramGroupId) {
-            this.telegramBot = new TelegramBot(telegramBotToken, { polling: false });
+            // Use shared bot instance if provided, otherwise create a new one
+            if (sharedBot) {
+                this.telegramBot = sharedBot;
+                console.log('📊 Log collector using shared bot instance');
+            } else {
+                this.telegramBot = new TelegramBot(telegramBotToken, { polling: false });
+                console.log('📊 Log collector created new bot instance (no polling)');
+            }
             this.isInitialized = true;
             console.log('📊 Log collector initialized with Telegram integration');
         } else {
@@ -132,33 +139,53 @@ class LogCollector {
         }
         
         try {
+            // Check if logs directory exists
+            if (!fs.existsSync(this.logFilePath)) {
+                console.log('⚠️ Log directory does not exist, creating it...');
+                fs.mkdirSync(this.logFilePath, { recursive: true });
+            }
+            
             const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
             const terminalLogs = this.getTerminalLogsAsText();
             const whatsappLogs = this.getWhatsAppLogsAsText();
             
-            // Create terminal logs file
-            const terminalFileName = `terminal-logs-${timestamp}.txt`;
-            const terminalFilePath = path.join(this.logFilePath, terminalFileName);
-            fs.writeFileSync(terminalFilePath, terminalLogs, 'utf8');
+            // Only send logs if there are actual logs to send
+            if (!terminalLogs.trim() && !whatsappLogs.trim()) {
+                console.log('📝 No logs to send to Telegram');
+                return true;
+            }
             
-            // Create WhatsApp logs file
-            const whatsappFileName = `whatsapp-logs-${timestamp}.txt`;
-            const whatsappFilePath = path.join(this.logFilePath, whatsappFileName);
-            fs.writeFileSync(whatsappFilePath, whatsappLogs, 'utf8');
+            // Create terminal logs file only if there are terminal logs
+            if (terminalLogs.trim()) {
+                const terminalFileName = `terminal-logs-${timestamp}.txt`;
+                const terminalFilePath = path.join(this.logFilePath, terminalFileName);
+                fs.writeFileSync(terminalFilePath, terminalLogs, 'utf8');
+                
+                // Verify file was created and has content
+                if (fs.existsSync(terminalFilePath) && fs.statSync(terminalFilePath).size > 0) {
+                    const terminalFileStream = fs.createReadStream(terminalFilePath);
+                    await this.telegramBot.sendDocument(this.telegramGroupId, terminalFileStream, {
+                        caption: `🖥️ Terminal Logs - ${new Date().toLocaleString()}\n📊 Terminal logs: ${this.logs.filter(log => log.type === 'terminal').length}\n⏰ Generated at: ${new Date().toISOString()}`
+                    });
+                    console.log(`📤 Terminal logs sent: ${terminalFileName}`);
+                }
+            }
             
-            // Send terminal logs file
-            const terminalFileStream = fs.createReadStream(terminalFilePath);
-            await this.telegramBot.sendDocument(this.telegramGroupId, terminalFileStream, {
-                caption: `🖥️ Terminal Logs - ${new Date().toLocaleString()}\n📊 Terminal logs: ${this.logs.filter(log => log.type === 'terminal').length}\n⏰ Generated at: ${new Date().toISOString()}`
-            });
-            
-            // Send WhatsApp logs file
-            const whatsappFileStream = fs.createReadStream(whatsappFilePath);
-            await this.telegramBot.sendDocument(this.telegramGroupId, whatsappFileStream, {
-                caption: `📱 WhatsApp Messages - ${new Date().toLocaleString()}\n📊 WhatsApp messages: ${this.logs.filter(log => log.type === 'whatsapp').length}\n⏰ Generated at: ${new Date().toISOString()}`
-            });
-            
-            console.log(`📤 Logs sent to Telegram group: ${terminalFileName} & ${whatsappFileName}`);
+            // Create WhatsApp logs file only if there are WhatsApp logs
+            if (whatsappLogs.trim()) {
+                const whatsappFileName = `whatsapp-logs-${timestamp}.txt`;
+                const whatsappFilePath = path.join(this.logFilePath, whatsappFileName);
+                fs.writeFileSync(whatsappFilePath, whatsappLogs, 'utf8');
+                
+                // Verify file was created and has content
+                if (fs.existsSync(whatsappFilePath) && fs.statSync(whatsappFilePath).size > 0) {
+                    const whatsappFileStream = fs.createReadStream(whatsappFilePath);
+                    await this.telegramBot.sendDocument(this.telegramGroupId, whatsappFileStream, {
+                        caption: `📱 WhatsApp Messages - ${new Date().toLocaleString()}\n📊 WhatsApp messages: ${this.logs.filter(log => log.type === 'whatsapp').length}\n⏰ Generated at: ${new Date().toISOString()}`
+                    });
+                    console.log(`📤 WhatsApp logs sent: ${whatsappFileName}`);
+                }
+            }
             
             // Clean up old log files (keep only last 5)
             this.cleanupOldLogFiles();

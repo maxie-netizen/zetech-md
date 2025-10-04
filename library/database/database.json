@@ -1,9 +1,6 @@
 {
-  "sticker": {},
-  "database": {},
-  "game": {},
-  "others": {},
   "users": {},
+  "database": {},
   "chats": {
     "254762917014@s.whatsapp.net": {
       "antilinkgc": false,
@@ -145,6 +142,7 @@
       "antilink": false
     }
   },
+  "game": {},
   "settings": {
     "254762917014": {
       "anticall": false,
@@ -189,6 +187,8 @@
       "autoRecord": false
     }
   },
+  "sticker": {},
+  "others": {},
   "usedApiKeys": {
     "ztmd_1lJdpS6q1VeqOM3DiL9bEX54Yk5BWQHC": {
       "phoneNumber": "254762917014",
